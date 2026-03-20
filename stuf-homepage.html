@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Them Up Foundation | Empowering Young People Through Financial Literacy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0A4D3C;
+            --primary-light: #0F6B52;
+            --accent: #F59E0B;
+            --text-dark: #1F2937;
+            --text-medium: #4B5563;
+            --text-light: #6B7280;
+            --bg-light: #F9FAFB;
+            --bg-white: #FFFFFF;
+            --border: #E5E7EB;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            background: var(--primary);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-light);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #0A4D3C 0%, #0F6B52 100%);
+            padding: 120px 0 140px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="800" height="800" fill="url(%23grid)"/></svg>');
+            opacity: 0.4;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 680px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.1;
+            color: white;
+            margin-bottom: 24px;
+            letter-spacing: -1.5px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+            display: inline-block;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Stats Bar */
+        .stats {
+            background: var(--bg-white);
+            padding: 48px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 48px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: var(--text-medium);
+            font-weight: 500;
+        }
+
+        /* Section */
+        section {
+            padding: 96px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 64px;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: rgba(10, 77, 60, 0.1);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .section-description {
+            font-size: 18px;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        /* Who We Help */
+        .who-we-help {
+            background: var(--bg-light);
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .audience-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+            border: 1px solid var(--border);
+        }
+
+        .audience-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .audience-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(10, 77, 60, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 28px;
+        }
+
+        .audience-card h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .audience-card p {
+            color: var(--text-medium);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .audience-card a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .audience-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background: white;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 48px;
+            margin-top: 64px;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 64px;
+            height: 64px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 800;
+            margin: 0 auto 24px;
+        }
+
+        .step h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .step p {
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        /* Impact */
+        .impact {
+            background: var(--bg-light);
+        }
+
+        .impact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .impact-image {
+            background: linear-gradient(135deg, #0A4D3C 0%, #0F6B52 100%);
+            border-radius: 16px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .impact-stats {
+            display: grid;
+            gap: 32px;
+        }
+
+        .impact-stat {
+            border-left: 4px solid var(--primary);
+            padding-left: 24px;
+        }
+
+        .impact-stat h3 {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .impact-stat p {
+            font-size: 16px;
+            color: var(--text-medium);
+            line-height: 1.5;
+        }
+
+        /* Programs */
+        .programs {
+            background: white;
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+        }
+
+        .program-card {
+            background: var(--bg-light);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .program-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .program-image {
+            height: 200px;
+            background: linear-gradient(135deg, rgba(10, 77, 60, 0.8) 0%, rgba(15, 107, 82, 0.8) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .program-content {
+            padding: 32px;
+        }
+
+        .program-content h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .program-content p {
+            color: var(--text-medium);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 96px 0;
+        }
+
+        .cta-section h2 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .cta-section .btn {
+            background: white;
+            color: var(--primary);
+            font-size: 18px;
+            padding: 18px 40px;
+        }
+
+        .cta-section .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 64px 0 32px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-about h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+        }
+
+        .footer-links h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 32px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 80px 0 100px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+            }
+
+            .btn {
+                text-align: center;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .impact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 64px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">STUF</div>
+                <ul class="nav-links">
+                    <li><a href="#who-we-help">Who We Help</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <a href="#contact" class="nav-cta">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Building Financial Futures for UK's Next Generation</h1>
+                <p>We equip 15–19 year olds with essential money skills through expert-led workshops, transforming how young people think about budgeting, saving, and investing.</p>
+                <div class="hero-ctas">
+                    <a href="#partner" class="btn btn-primary">Partner with Us</a>
+                    <a href="#schools" class="btn btn-secondary">Bring STUF to Your School</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div>
+                    <span class="stat-number">10,000+</span>
+                    <span class="stat-label">Students Reached</span>
+                </div>
+                <div>
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Partner Schools</span>
+                </div>
+                <div>
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Satisfaction Rate</span>
+                </div>
+                <div>
+                    <span class="stat-number">12+</span>
+                    <span class="stat-label">Counties Served</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="who-we-help" class="who-we-help">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Help</span>
+                <h2 class="section-title">Partnering Across the Education Ecosystem</h2>
+                <p class="section-description">We work with schools, funders, and partners to create lasting impact through financial education.</p>
+            </div>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">🏫</div>
+                    <h3>Schools & Colleges</h3>
+                    <p>Bring engaging, curriculum-aligned financial literacy workshops to your students. Our expert-led sessions fit seamlessly into your timetable.</p>
+                    <a href="#schools">Learn more →</a>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">🤝</div>
+                    <h3>Funders & Donors</h3>
+                    <p>Support proven programs that create measurable impact. Your investment directly transforms young lives through financial education.</p>
+                    <a href="#funders">View impact report →</a>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">💼</div>
+                    <h3>Corporate Partners</h3>
+                    <p>Align your CSR goals with youth financial empowerment. Co-create programs, provide volunteers, and make a real difference.</p>
+                    <a href="#partners">Partner with us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Simple, Effective, Impact-Driven</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Connect</h3>
+                    <p>Reach out to discuss your school's needs and student demographics. We'll design a program that fits your schedule and goals.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Deliver</h3>
+                    <p>Our expert facilitators deliver engaging, interactive workshops that make financial concepts accessible and relevant to young people.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Measure Impact</h3>
+                    <p>Track student progress and outcomes through our comprehensive evaluation framework. See the real difference in financial confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="impact-content">
+                <div class="impact-image">
+                    [Impact Visualization]
+                </div>
+                <div>
+                    <span class="section-tag">Real Impact</span>
+                    <h2 class="section-title">Transforming Young Lives Through Financial Education</h2>
+                    <div class="impact-stats">
+                        <div class="impact-stat">
+                            <h3>89%</h3>
+                            <p>Of students report increased confidence in managing personal finances after completing our program</p>
+                        </div>
+                        <div class="impact-stat">
+                            <h3>£2.4M</h3>
+                            <p>Estimated future value created through improved financial decision-making skills</p>
+                        </div>
+                        <div class="impact-stat">
+                            <h3>40+</h3>
+                            <p>Hours of workshop content delivered each week across the UK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Programs</span>
+                <h2 class="section-title">Expert-Led Workshops Tailored for Impact</h2>
+                <p class="section-description">From budgeting basics to investment fundamentals, our programs cover the essential skills every young person needs.</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">[Money Basics Workshop]</div>
+                    <div class="program-content">
+                        <h3>Money Basics</h3>
+                        <p>Foundation workshop covering budgeting, saving, and understanding income and expenses. Perfect for students aged 15-16.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">[Smart Spending Workshop]</div>
+                    <div class="program-content">
+                        <h3>Smart Spending</h3>
+                        <p>Learn to make informed purchasing decisions, understand credit, and avoid common financial pitfalls. Ages 16-18.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">[Future Planning Workshop]</div>
+                    <div class="program-content">
+                        <h3>Future Planning</h3>
+                        <p>Introduction to investing, pensions, and long-term financial planning. Designed for students aged 17-19.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Financial Education?</h2>
+            <p>Join 150+ schools across the UK empowering students with essential money skills.</p>
+            <a href="#contact" class="btn">Start the Conversation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Set Them Up Foundation</h3>
+                    <p>A UK-based charity dedicated to empowering young people with the financial skills they need to thrive in the modern world.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#workshops">Workshops</a></li>
+                        <li><a href="#curriculum">Curriculum</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="#schools">For Schools</a></li>
+                        <li><a href="#partners">Partner</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#mission">Our Mission</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Set Them Up Foundation. Registered Charity No. 1234567. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
