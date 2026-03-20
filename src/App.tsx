@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 function App() {
   const [scrollY, setScrollY] = useState(0);
   const [countersVisible, setCountersVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -31,13 +32,17 @@ function App() {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-      if (!countersVisible) return;
+      if (!countersVisible || hasAnimated) return;
       let startTime: number;
       const animate = (currentTime: number) => {
         if (!startTime) startTime = currentTime;
         const progress = Math.min((currentTime - startTime) / duration, 1);
         setCount(Math.floor(progress * end));
-        if (progress < 1) requestAnimationFrame(animate);
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        } else {
+          setHasAnimated(true);
+        }
       };
       requestAnimationFrame(animate);
     }, [countersVisible, end, duration]);
@@ -46,9 +51,11 @@ function App() {
   };
 
   useEffect(() => {
+    if (hasAnimated) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting && !countersVisible) {
+        if (entries[0].isIntersecting && !countersVisible && !hasAnimated) {
           setCountersVisible(true);
           observer.disconnect();
         }
@@ -58,7 +65,7 @@ function App() {
     const statsSection = document.getElementById('stats');
     if (statsSection) observer.observe(statsSection);
     return () => observer.disconnect();
-  }, [countersVisible]);
+  }, [countersVisible, hasAnimated]);
 
   return (
     <>
