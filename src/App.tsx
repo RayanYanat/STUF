@@ -1,15 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 function App() {
-  const [scrollY, setScrollY] = useState(0);
   const [countersVisible, setCountersVisible] = useState(false);
-  const [hasAnimated, setHasAnimated] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -30,30 +22,41 @@ function App() {
 
   const CountUpAnimation = ({ end, duration = 2000, suffix = '' }: { end: number; duration?: number; suffix?: string }) => {
     const [count, setCount] = useState(0);
+    const hasAnimatedRef = useRef(false);
 
     useEffect(() => {
-      if (!countersVisible) return;
+      if (!countersVisible || hasAnimatedRef.current) return;
+
+      hasAnimatedRef.current = true;
       let startTime: number;
+      let animationFrameId: number;
+
       const animate = (currentTime: number) => {
         if (!startTime) startTime = currentTime;
         const progress = Math.min((currentTime - startTime) / duration, 1);
         setCount(Math.floor(progress * end));
+
         if (progress < 1) {
-          requestAnimationFrame(animate);
+          animationFrameId = requestAnimationFrame(animate);
         }
       };
-      requestAnimationFrame(animate);
+
+      animationFrameId = requestAnimationFrame(animate);
+
+      return () => {
+        if (animationFrameId) {
+          cancelAnimationFrame(animationFrameId);
+        }
+      };
     }, [countersVisible, end, duration]);
 
     return <>{count}{suffix}</>;
   };
 
   useEffect(() => {
-    if (hasAnimated) return;
-
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting && !countersVisible && !hasAnimated) {
+        if (entries[0].isIntersecting) {
           setCountersVisible(true);
           observer.disconnect();
         }
@@ -63,7 +66,7 @@ function App() {
     const statsSection = document.getElementById('stats');
     if (statsSection) observer.observe(statsSection);
     return () => observer.disconnect();
-  }, [countersVisible, hasAnimated]);
+  }, []);
 
   return (
     <>
