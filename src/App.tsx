@@ -1,4 +1,37 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
+
+const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { end: number; duration?: number; suffix?: string; isVisible: boolean }) => {
+  const [count, setCount] = useState(0);
+  const hasAnimatedRef = useRef(false);
+
+  useEffect(() => {
+    if (!isVisible || hasAnimatedRef.current) return;
+
+    hasAnimatedRef.current = true;
+    let startTime: number | null = null;
+    let animationFrameId: number;
+
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      setCount(Math.floor(progress * end));
+
+      if (progress < 1) {
+        animationFrameId = requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrameId = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
+  }, [isVisible, end, duration]);
+
+  return <>{count}{suffix}</>;
+};
 
 function App() {
   const [countersVisible, setCountersVisible] = useState(false);
@@ -19,39 +52,6 @@ function App() {
     document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
-
-  const CountUpAnimation = ({ end, duration = 2000, suffix = '' }: { end: number; duration?: number; suffix?: string }) => {
-    const [count, setCount] = useState(0);
-    const hasAnimatedRef = useRef(false);
-
-    useEffect(() => {
-      if (!countersVisible || hasAnimatedRef.current) return;
-
-      hasAnimatedRef.current = true;
-      let startTime: number;
-      let animationFrameId: number;
-
-      const animate = (currentTime: number) => {
-        if (!startTime) startTime = currentTime;
-        const progress = Math.min((currentTime - startTime) / duration, 1);
-        setCount(Math.floor(progress * end));
-
-        if (progress < 1) {
-          animationFrameId = requestAnimationFrame(animate);
-        }
-      };
-
-      animationFrameId = requestAnimationFrame(animate);
-
-      return () => {
-        if (animationFrameId) {
-          cancelAnimationFrame(animationFrameId);
-        }
-      };
-    }, [countersVisible, end, duration]);
-
-    return <>{count}{suffix}</>;
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -184,13 +184,13 @@ function App() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
             <div className="group cursor-default scroll-reveal">
               <span className="text-6xl font-extrabold block mb-3 transition-all duration-500 group-hover:scale-125" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>
-                <CountUpAnimation end={11} suffix=".5M" />
+                <CountUpAnimation end={11} suffix=".5M" isVisible={countersVisible} />
               </span>
               <span className="text-base text-gray-600 font-semibold transition-colors duration-300 group-hover:text-gray-900">UK residents with under £100 in savings</span>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.1s' }}>
               <span className="text-6xl font-extrabold block mb-3 transition-all duration-500 group-hover:scale-125" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>
-                <CountUpAnimation end={22} suffix="%" />
+                <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
               </span>
               <span className="text-base text-gray-600 font-semibold transition-colors duration-300 group-hover:text-gray-900">Live below minimum decent living standards</span>
             </div>
@@ -200,7 +200,7 @@ function App() {
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.3s' }}>
               <span className="text-6xl font-extrabold block mb-3 transition-all duration-500 group-hover:scale-125" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>
-                <CountUpAnimation end={8} suffix="M" />
+                <CountUpAnimation end={8} suffix="M" isVisible={countersVisible} />
               </span>
               <span className="text-base text-gray-600 font-semibold transition-colors duration-300 group-hover:text-gray-900">In serious UK debt</span>
             </div>
