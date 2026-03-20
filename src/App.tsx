@@ -32,7 +32,7 @@ function App() {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-      if (!countersVisible || hasAnimated) return;
+      if (!countersVisible) return;
       let startTime: number;
       const animate = (currentTime: number) => {
         if (!startTime) startTime = currentTime;
@@ -40,8 +40,6 @@ function App() {
         setCount(Math.floor(progress * end));
         if (progress < 1) {
           requestAnimationFrame(animate);
-        } else {
-          setHasAnimated(true);
         }
       };
       requestAnimationFrame(animate);
