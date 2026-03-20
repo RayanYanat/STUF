@@ -370,19 +370,25 @@ function App() {
                 { name: 'Thomas Hamer', role: 'Co-Chair (Research)', desc: '9+ years in financial services across Venture/PE, Corporate Banking, and Wealth Management', photo: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true' },
                 { name: 'Matthew Smith', role: 'Co-Chair (Business Dev)', desc: 'Sports and Business Development expertise with major European tax refund company', photo: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Matthew.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true' },
                 { name: 'Zofia Barnes', role: 'Policy', desc: '11+ years in Banking and Finance. LSE Masters in Gender Studies, Policy & Inequalities', photo: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Zofia.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true' },
-                { name: 'Paul Mokuolu', role: 'Partnerships', desc: 'Decade in financial sector. Technical Specialist at Bank of England', photo: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Paul.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true' },
-                { name: 'Jalpa Lai', role: 'Mentorship', desc: '6+ years mentoring diverse youth, specializing in financial coaching', photo: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jalpa.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true' },
+                { name: 'Paul Mokuolu', role: 'Partnerships', desc: 'Decade in financial sector. Technical Specialist at Bank of England', photo: null },
+                { name: 'Jalpa Lai', role: 'Mentorship', desc: '6+ years mentoring diverse youth, specializing in financial coaching', photo: null },
                 { name: 'Truman Alberto Sullivan', role: 'Advisory', desc: 'Head of Rugby at Skinners School, Kent. Decade in education sector', photo: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true' },
                 { name: 'Tina Creed', role: 'Advisory', desc: '25 years in childcare/education. Former Ark Elvin Academy Governor', photo: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true' }
               ].map((member, idx) => (
                 <div key={member.name} className="group scroll-reveal" style={{ transitionDelay: `${idx * 0.05}s` }}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-3">
                     <div className="relative h-64 overflow-hidden">
-                      <img
-                        src={member.photo}
-                        alt={member.name}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      />
+                      {member.photo ? (
+                        <img
+                          src={member.photo}
+                          alt={member.name}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-white text-5xl font-bold" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #D4A5AB 100%)' }}>
+                          {member.name.split(' ').map(n => n[0]).join('')}
+                        </div>
+                      )}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div className="p-6">
