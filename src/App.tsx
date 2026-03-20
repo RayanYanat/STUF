@@ -14,8 +14,9 @@ function App() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
             entry.target.classList.add('animate-in');
+            observer.unobserve(entry.target);
           }
         });
       },
@@ -47,14 +48,17 @@ function App() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting) setCountersVisible(true);
+        if (entries[0].isIntersecting && !countersVisible) {
+          setCountersVisible(true);
+          observer.disconnect();
+        }
       },
       { threshold: 0.5 }
     );
     const statsSection = document.getElementById('stats');
     if (statsSection) observer.observe(statsSection);
     return () => observer.disconnect();
-  }, []);
+  }, [countersVisible]);
 
   return (
     <>
