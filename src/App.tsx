@@ -71,238 +71,311 @@ function App() {
   return (
     <>
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+        * {
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
         @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(30px); }
+          from { opacity: 0; transform: translateY(40px); }
           to { opacity: 1; transform: translateY(0); }
         }
         @keyframes fadeInRight {
-          from { opacity: 0; transform: translateX(30px); }
+          from { opacity: 0; transform: translateX(40px); }
           to { opacity: 1; transform: translateX(0); }
         }
         @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-25px) rotate(3deg); }
         }
         @keyframes shimmer {
           0% { background-position: -1000px 0; }
           100% { background-position: 1000px 0; }
         }
-        .animate-fade-in-up { animation: fadeInUp 0.8s ease-out; }
-        .animate-fade-in-right { animation: fadeInRight 0.8s ease-out 0.2s both; }
-        .animate-float { animation: float 3s ease-in-out infinite; }
-        .scroll-reveal { opacity: 0; transform: translateY(50px); transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); }
-        .scroll-reveal.animate-in { opacity: 1; transform: translateY(0); }
+        @keyframes gradient-shift {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+        @keyframes pulse-glow {
+          0%, 100% { box-shadow: 0 0 30px rgba(238, 189, 194, 0.4), 0 0 60px rgba(238, 189, 194, 0.2); }
+          50% { box-shadow: 0 0 50px rgba(238, 189, 194, 0.6), 0 0 100px rgba(238, 189, 194, 0.3); }
+        }
+
+        .animate-fade-in-up { animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1); }
+        .animate-fade-in-right { animation: fadeInRight 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+        .animate-float { animation: float 4s ease-in-out infinite; }
+
+        .scroll-reveal {
+          opacity: 0;
+          transform: translateY(60px);
+          transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .scroll-reveal.animate-in {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
         .gradient-text {
-          background: linear-gradient(135deg, #EEBDC2 0%, #D4A5AB 50%, #EEBDC2 100%);
-          background-size: 200% auto;
+          background: linear-gradient(135deg, #E8A5AD 0%, #EEBDC2 25%, #F5D4D8 50%, #EEBDC2 75%, #E8A5AD 100%);
+          background-size: 300% auto;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
-          animation: shimmer 3s linear infinite;
+          animation: shimmer 4s ease-in-out infinite;
+          font-weight: 900;
         }
+
         .glass-card {
-          background: rgba(255, 255, 255, 0.7);
-          backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.3);
+          background: rgba(255, 255, 255, 0.85);
+          backdrop-filter: blur(20px) saturate(180%);
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
         }
+
         .glow-effect {
-          box-shadow: 0 0 20px rgba(238, 189, 194, 0.3);
+          box-shadow: 0 4px 24px rgba(238, 189, 194, 0.35), 0 12px 48px rgba(238, 189, 194, 0.15);
+        }
+
+        .premium-shadow {
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .premium-hover {
+          transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .premium-hover:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 32px 80px rgba(0, 0, 0, 0.16), 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .animated-bg {
+          background: linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 25%, #FFEEF2 50%, #F5D4D8 75%, #EEBDC2 100%);
+          background-size: 400% 400%;
+          animation: gradient-shift 15s ease infinite;
+        }
+
+        .text-balance {
+          text-wrap: balance;
+        }
+
+        .counter-glow {
+          text-shadow: 0 0 30px rgba(238, 189, 194, 0.3);
         }
       `}</style>
 
-      <header className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50 shadow-sm transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-6">
-          <nav className="flex justify-between items-center py-5">
+      <header className="bg-white/80 backdrop-blur-xl border-b border-gray-100 sticky top-0 z-50 transition-all duration-500 premium-shadow">
+        <div className="max-w-7xl mx-auto px-8">
+          <nav className="flex justify-between items-center py-6">
             <div className="flex items-center gap-3">
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Logo_Web.svg/:/rs=h:69,cg:true,m/qt=q:100/ll"
                 alt="Set Them Up Foundation"
-                className="h-12 transition-transform duration-300 hover:scale-110 hover:rotate-2"
+                className="h-14 transition-all duration-500 hover:scale-110 hover:rotate-3 filter drop-shadow-lg"
               />
             </div>
-            <div className="hidden md:flex gap-8">
-              <a href="#who-we-help" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-all duration-200 hover:translate-y-[-2px] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full">Who We Help</a>
-              <a href="#programs" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-all duration-200 hover:translate-y-[-2px] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full">Programs</a>
-              <a href="#team" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-all duration-200 hover:translate-y-[-2px] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full">Team</a>
-              <a href="#roadmap" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-all duration-200 hover:translate-y-[-2px] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full">Roadmap</a>
-              <a href="#donate" className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-all duration-200 hover:translate-y-[-2px] relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full">Donate</a>
+            <div className="hidden md:flex gap-10">
+              <a href="#who-we-help" className="text-gray-700 hover:text-gray-900 font-semibold text-sm tracking-wide transition-all duration-300 hover:translate-y-[-2px] relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-400 after:to-pink-300 after:transition-all after:duration-500 hover:after:w-full">Who We Help</a>
+              <a href="#programs" className="text-gray-700 hover:text-gray-900 font-semibold text-sm tracking-wide transition-all duration-300 hover:translate-y-[-2px] relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-400 after:to-pink-300 after:transition-all after:duration-500 hover:after:w-full">Programs</a>
+              <a href="#team" className="text-gray-700 hover:text-gray-900 font-semibold text-sm tracking-wide transition-all duration-300 hover:translate-y-[-2px] relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-400 after:to-pink-300 after:transition-all after:duration-500 hover:after:w-full">Team</a>
+              <a href="#roadmap" className="text-gray-700 hover:text-gray-900 font-semibold text-sm tracking-wide transition-all duration-300 hover:translate-y-[-2px] relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-400 after:to-pink-300 after:transition-all after:duration-500 hover:after:w-full">Roadmap</a>
+              <a href="#donate" className="text-gray-700 hover:text-gray-900 font-semibold text-sm tracking-wide transition-all duration-300 hover:translate-y-[-2px] relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-400 after:to-pink-300 after:transition-all after:duration-500 hover:after:w-full">Donate</a>
             </div>
-            <a href="mailto:hello@stuf.org.uk" className="px-6 py-2.5 rounded-md font-semibold text-sm transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 glow-effect" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>Contact Us</a>
+            <a href="mailto:hello@stuf.org.uk" className="px-8 py-3 rounded-xl font-bold text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:scale-105 active:scale-95 relative overflow-hidden group" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
+              <span className="relative z-10">Contact Us</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-300 to-pink-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </a>
           </nav>
         </div>
       </header>
 
-      <section className="relative overflow-hidden min-h-screen flex items-center" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 50%, #EEBDC2 100%)' }}>
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+      <section className="relative overflow-hidden min-h-screen flex items-center animated-bg">
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-10 w-96 h-96 bg-white rounded-full blur-3xl animate-float"></div>
+          <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-white/40 to-transparent rounded-full blur-3xl animate-float" style={{ animationDelay: '0.75s' }}></div>
         </div>
-        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-          <div className="grid md:grid-cols-2 gap-12 items-center py-20">
+        <div className="max-w-7xl mx-auto px-8 relative z-10 w-full">
+          <div className="grid md:grid-cols-2 gap-16 items-center py-24">
             <div className="animate-fade-in-up">
-              <div className="inline-block mb-6 px-4 py-2 bg-white/30 backdrop-blur-sm rounded-full text-sm font-semibold" style={{ color: '#161616' }}>
-                🎓 Empowering 15-19 Year Olds Since 2022
+              <div className="inline-flex items-center gap-2 mb-8 px-5 py-3 bg-white/40 backdrop-blur-md rounded-full text-sm font-bold shadow-lg border border-white/30" style={{ color: '#161616' }}>
+                <span className="text-lg">🎓</span>
+                <span className="tracking-wide">Empowering 15-19 Year Olds Since 2022</span>
               </div>
-              <h1 className="text-6xl md:text-7xl font-extrabold mb-6 leading-tight" style={{ letterSpacing: '-2px', color: '#161616' }}>
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-[1.1] text-balance" style={{ letterSpacing: '-3px', color: '#161616' }}>
                 We've got the <span className="gradient-text">money stuf</span> covered
               </h1>
-              <p className="text-xl md:text-2xl mb-10 leading-relaxed" style={{ color: '#161616', opacity: 0.9 }}>
+              <p className="text-xl md:text-2xl mb-12 leading-relaxed text-balance font-medium" style={{ color: '#161616', opacity: 0.85 }}>
                 Making money stuf simple for young people. We help students get a handle on the fundamentals of finance through partnerships with educational and financial institutions.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href="#partner" className="group bg-white px-10 py-5 rounded-xl font-bold text-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 inline-block text-center active:scale-95 relative overflow-hidden" style={{ color: '#161616' }}>
+              <div className="flex flex-col sm:flex-row gap-5">
+                <a href="#partner" className="group bg-white px-10 py-5 rounded-2xl font-bold text-lg premium-hover shadow-xl inline-block text-center active:scale-95 relative overflow-hidden border-2 border-transparent hover:border-white" style={{ color: '#161616' }}>
                   <span className="relative z-10">Partner with Us</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-pink-100 via-white to-pink-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </a>
-                <a href="#schools" className="bg-black/10 backdrop-blur-sm px-10 py-5 rounded-xl font-bold text-lg hover:bg-black/20 transition-all duration-300 inline-block text-center active:scale-95 hover:-translate-y-2 hover:shadow-xl" style={{ color: '#161616' }}>
+                <a href="#schools" className="bg-white/20 backdrop-blur-md px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/30 transition-all duration-500 inline-block text-center active:scale-95 hover:-translate-y-2 shadow-lg hover:shadow-2xl border border-white/40" style={{ color: '#161616' }}>
                   Bring STUF to Your School
                 </a>
               </div>
             </div>
             <div className="animate-fade-in-right hidden md:block">
               <div className="relative group">
-                <div className="absolute -inset-4 bg-white rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 blur-2xl"></div>
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Image_Images_Website.png/:/cr=t:1.33%25,l:0%25,w:100%25,h:97.34%25/rs=w:1240,h:620,cg:true"
-                  alt="Making money stuf simple for young people"
-                  className="relative rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500"
-                />
+                <div className="absolute -inset-6 bg-gradient-to-br from-white/50 to-pink-200/50 rounded-[40px] opacity-50 group-hover:opacity-70 transition-all duration-700 blur-3xl"></div>
+                <div className="relative rounded-[32px] overflow-hidden shadow-2xl ring-1 ring-white/50">
+                  <img
+                    src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Image_Images_Website.png/:/cr=t:1.33%25,l:0%25,w:100%25,h:97.34%25/rs=w:1240,h:620,cg:true"
+                    alt="Making money stuf simple for young people"
+                    className="relative group-hover:scale-105 transition-all duration-700"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-white/50 flex items-start justify-center p-2">
-            <div className="w-1 h-2 bg-white/50 rounded-full"></div>
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce opacity-60">
+          <div className="w-7 h-11 rounded-full border-2 border-white/70 flex items-start justify-center p-2 backdrop-blur-sm bg-white/10">
+            <div className="w-1.5 h-2.5 bg-white/70 rounded-full"></div>
           </div>
         </div>
       </section>
 
-      <section id="stats" className="bg-white py-16 border-b border-gray-200 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-50 to-transparent"></div>
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+      <section id="stats" className="bg-gradient-to-b from-white via-gray-50 to-white py-24 border-y border-gray-100 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-50/30 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-8 relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-16 text-center">
             <div className="group cursor-default scroll-reveal">
-              <span className="text-6xl font-extrabold block mb-3 transition-all duration-500 group-hover:scale-125" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>
-                <CountUpAnimation end={11} suffix=".5M" isVisible={countersVisible} />
-              </span>
-              <span className="text-base text-gray-600 font-semibold transition-colors duration-300 group-hover:text-gray-900">UK residents with under £100 in savings</span>
+              <div className="bg-white rounded-3xl p-8 premium-hover shadow-lg border border-gray-100">
+                <span className="text-6xl md:text-7xl font-black block mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-3px', color: '#EEBDC2' }}>
+                  <CountUpAnimation end={11} suffix=".5M" isVisible={countersVisible} />
+                </span>
+                <span className="text-sm md:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 leading-snug block">UK residents with under £100 in savings</span>
+              </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.1s' }}>
-              <span className="text-6xl font-extrabold block mb-3 transition-all duration-500 group-hover:scale-125" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>
-                <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
-              </span>
-              <span className="text-base text-gray-600 font-semibold transition-colors duration-300 group-hover:text-gray-900">Live below minimum decent living standards</span>
+              <div className="bg-white rounded-3xl p-8 premium-hover shadow-lg border border-gray-100">
+                <span className="text-6xl md:text-7xl font-black block mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-3px', color: '#EEBDC2' }}>
+                  <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
+                </span>
+                <span className="text-sm md:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 leading-snug block">Live below minimum decent living standards</span>
+              </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.2s' }}>
-              <span className="text-6xl font-extrabold block mb-3 transition-all duration-500 group-hover:scale-125" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>6 in 10</span>
-              <span className="text-base text-gray-600 font-semibold transition-colors duration-300 group-hover:text-gray-900">Feel lacking money management skills</span>
+              <div className="bg-white rounded-3xl p-8 premium-hover shadow-lg border border-gray-100">
+                <span className="text-6xl md:text-7xl font-black block mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-3px', color: '#EEBDC2' }}>6 in 10</span>
+                <span className="text-sm md:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 leading-snug block">Feel lacking money management skills</span>
+              </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.3s' }}>
-              <span className="text-6xl font-extrabold block mb-3 transition-all duration-500 group-hover:scale-125" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>
-                <CountUpAnimation end={8} suffix="M" isVisible={countersVisible} />
-              </span>
-              <span className="text-base text-gray-600 font-semibold transition-colors duration-300 group-hover:text-gray-900">In serious UK debt</span>
+              <div className="bg-white rounded-3xl p-8 premium-hover shadow-lg border border-gray-100">
+                <span className="text-6xl md:text-7xl font-black block mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-3px', color: '#EEBDC2' }}>
+                  <CountUpAnimation end={8} suffix="M" isVisible={countersVisible} />
+                </span>
+                <span className="text-sm md:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 leading-snug block">In serious UK debt</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="who-we-help" className="bg-gray-50 py-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white to-transparent"></div>
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-20 scroll-reveal">
-            <span className="inline-block px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)', color: '#161616' }}>Who We Help</span>
-            <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight" style={{ letterSpacing: '-2px' }}>
+      <section id="who-we-help" className="bg-white py-32 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-pink-50/40 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-gray-50/60 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-8 relative z-10">
+          <div className="text-center max-w-4xl mx-auto mb-24 scroll-reveal">
+            <span className="inline-block px-8 py-3 rounded-full text-xs font-black uppercase tracking-widest mb-8 shadow-md border border-pink-100" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)', color: '#161616' }}>Who We Help</span>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 mb-8 leading-[1.1] text-balance" style={{ letterSpacing: '-3px' }}>
               Breaking the cycle of poverty through <span className="gradient-text">financial education</span>
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-medium">
               Providing lifelong skills, understanding and access to previously closed off worlds of money for disadvantaged youth.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="group bg-white p-10 rounded-2xl shadow-md border border-gray-100 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 scroll-reveal">
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)' }}>🏫</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 transition-colors duration-300 group-hover:text-gray-700">Schools & Colleges</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+          <div className="grid md:grid-cols-3 gap-10">
+            <div className="group bg-white p-12 rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal">
+              <div className="w-20 h-20 rounded-3xl flex items-center justify-center text-5xl mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>🏫</div>
+              <h3 className="text-3xl font-black text-gray-900 mb-5 transition-colors duration-300 group-hover:text-gray-700">Schools & Colleges</h3>
+              <p className="text-gray-600 mb-8 leading-relaxed text-lg font-medium">
                 Bring engaging, curriculum-aligned financial literacy workshops to your students. Our expert-led sessions fit seamlessly into your timetable.
               </p>
-              <a href="#schools" className="font-bold text-sm inline-flex items-center gap-2 transition-all duration-300 group-hover:gap-4" style={{ color: '#EEBDC2' }}>
+              <a href="#schools" className="font-bold text-base inline-flex items-center gap-3 transition-all duration-500 group-hover:gap-5" style={{ color: '#EEBDC2' }}>
                 Learn more
-                <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                <span className="transform group-hover:translate-x-2 transition-transform text-xl">→</span>
               </a>
             </div>
-            <div className="group bg-white p-10 rounded-2xl shadow-md border border-gray-100 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 scroll-reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)' }}>🤝</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 transition-colors duration-300 group-hover:text-gray-700">Youth Organizations</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+            <div className="group bg-white p-12 rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal" style={{ transitionDelay: '0.1s' }}>
+              <div className="w-20 h-20 rounded-3xl flex items-center justify-center text-5xl mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>🤝</div>
+              <h3 className="text-3xl font-black text-gray-900 mb-5 transition-colors duration-300 group-hover:text-gray-700">Youth Organizations</h3>
+              <p className="text-gray-600 mb-8 leading-relaxed text-lg font-medium">
                 Partner with us to offer financial education programs that complement your existing youth development initiatives.
               </p>
-              <a href="#youth" className="font-bold text-sm inline-flex items-center gap-2 transition-all duration-300 group-hover:gap-4" style={{ color: '#EEBDC2' }}>
+              <a href="#youth" className="font-bold text-base inline-flex items-center gap-3 transition-all duration-500 group-hover:gap-5" style={{ color: '#EEBDC2' }}>
                 Partner with us
-                <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                <span className="transform group-hover:translate-x-2 transition-transform text-xl">→</span>
               </a>
             </div>
-            <div className="group bg-white p-10 rounded-2xl shadow-md border border-gray-100 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 scroll-reveal" style={{ transitionDelay: '0.2s' }}>
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-4xl mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)' }}>👥</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 transition-colors duration-300 group-hover:text-gray-700">Young People</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+            <div className="group bg-white p-12 rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal" style={{ transitionDelay: '0.2s' }}>
+              <div className="w-20 h-20 rounded-3xl flex items-center justify-center text-5xl mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>👥</div>
+              <h3 className="text-3xl font-black text-gray-900 mb-5 transition-colors duration-300 group-hover:text-gray-700">Young People</h3>
+              <p className="text-gray-600 mb-8 leading-relaxed text-lg font-medium">
                 Access free workshops, mentorship programs, and resources to build your financial confidence and independence.
               </p>
-              <a href="#youth-programs" className="font-bold text-sm inline-flex items-center gap-2 transition-all duration-300 group-hover:gap-4" style={{ color: '#EEBDC2' }}>
+              <a href="#youth-programs" className="font-bold text-base inline-flex items-center gap-3 transition-all duration-500 group-hover:gap-5" style={{ color: '#EEBDC2' }}>
                 Get involved
-                <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                <span className="transform group-hover:translate-x-2 transition-transform text-xl">→</span>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="programs" className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-20 scroll-reveal">
-            <span className="inline-block px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)', color: '#161616' }}>Our Programs</span>
-            <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight" style={{ letterSpacing: '-2px' }}>
+      <section id="programs" className="bg-gradient-to-b from-gray-50 to-white py-32">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center max-w-4xl mx-auto mb-24 scroll-reveal">
+            <span className="inline-block px-8 py-3 rounded-full text-xs font-black uppercase tracking-widest mb-8 shadow-md border border-pink-100" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)', color: '#161616' }}>Our Programs</span>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 mb-6 leading-[1.1]" style={{ letterSpacing: '-3px' }}>
               What <span className="gradient-text">We Offer</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="group scroll-reveal">
-              <div className="relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+              <div className="relative overflow-hidden rounded-[32px] premium-shadow premium-hover ring-1 ring-gray-100">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10"></div>
                 <img
                   src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Financial Literacy Workshops"
-                  className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-8 z-20">
-                  <h3 className="text-3xl font-bold text-white mb-3">Financial Literacy Workshops</h3>
-                  <p className="text-white/90 text-lg mb-4 leading-relaxed">
+                <div className="absolute bottom-0 left-0 right-0 p-10 z-20">
+                  <h3 className="text-4xl font-black text-white mb-4" style={{ letterSpacing: '-1px' }}>Financial Literacy Workshops</h3>
+                  <p className="text-white/95 text-lg mb-6 leading-relaxed font-medium">
                     Interactive sessions covering budgeting, saving, investing, and real-world financial decision-making.
                   </p>
-                  <div className="inline-flex items-center gap-2 text-white font-semibold group-hover:gap-4 transition-all">
+                  <div className="inline-flex items-center gap-3 text-white font-bold text-lg group-hover:gap-5 transition-all duration-500">
                     Learn more
-                    <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                    <span className="transform group-hover:translate-x-2 transition-transform text-xl">→</span>
                   </div>
                 </div>
               </div>
             </div>
             <div className="group scroll-reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+              <div className="relative overflow-hidden rounded-[32px] premium-shadow premium-hover ring-1 ring-gray-100">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10"></div>
                 <img
                   src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Mentorship Programs"
-                  className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-8 z-20">
-                  <h3 className="text-3xl font-bold text-white mb-3">Mentorship Programs</h3>
-                  <p className="text-white/90 text-lg mb-4 leading-relaxed">
+                <div className="absolute bottom-0 left-0 right-0 p-10 z-20">
+                  <h3 className="text-4xl font-black text-white mb-4" style={{ letterSpacing: '-1px' }}>Mentorship Programs</h3>
+                  <p className="text-white/95 text-lg mb-6 leading-relaxed font-medium">
                     One-on-one guidance from finance professionals helping young people navigate their financial journey.
                   </p>
-                  <div className="inline-flex items-center gap-2 text-white font-semibold group-hover:gap-4 transition-all">
+                  <div className="inline-flex items-center gap-3 text-white font-bold text-lg group-hover:gap-5 transition-all duration-500">
                     Get a mentor
-                    <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                    <span className="transform group-hover:translate-x-2 transition-transform text-xl">→</span>
                   </div>
                 </div>
               </div>
