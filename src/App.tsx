@@ -79,6 +79,12 @@ function App() {
           -moz-osx-font-smoothing: grayscale;
         }
 
+        @media (max-width: 640px) {
+          body {
+            font-size: 16px;
+          }
+        }
+
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(40px); }
           to { opacity: 1; transform: translateY(0); }
@@ -209,22 +215,22 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center py-12 sm:py-16 lg:py-24">
             <div className="animate-fade-in-up">
-              <div className="inline-flex items-center gap-2 mb-6 sm:mb-8 px-4 sm:px-5 py-2 sm:py-3 bg-white/40 backdrop-blur-md rounded-full text-xs sm:text-sm font-bold shadow-lg border border-white/30" style={{ color: '#161616' }}>
-                <span className="text-base sm:text-lg">🎓</span>
-                <span className="tracking-wide">Empowering 15-19 Year Olds Since 2022</span>
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 mb-5 sm:mb-6 lg:mb-8 px-3 sm:px-4 lg:px-5 py-1.5 sm:py-2 lg:py-3 bg-white/40 backdrop-blur-md rounded-full text-[0.7rem] sm:text-xs lg:text-sm font-bold shadow-lg border border-white/30" style={{ color: '#161616' }}>
+                <span className="text-sm sm:text-base lg:text-lg">🎓</span>
+                <span className="tracking-wide leading-tight">Empowering 15-19 Year Olds Since 2022</span>
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 sm:mb-8 leading-[1.1] text-balance" style={{ letterSpacing: '-2px', color: '#161616' }}>
-                We've got the <span className="gradient-text">money stuf</span> covered
+              <h1 className="text-[2.5rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 sm:mb-8 sm:leading-[1.1] text-balance" style={{ letterSpacing: '-1.5px', color: '#161616' }}>
+                We've got the <span className="gradient-text block sm:inline">money stuf</span> covered
               </h1>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 leading-relaxed text-balance font-medium" style={{ color: '#161616', opacity: 0.85 }}>
+              <p className="text-[1.05rem] leading-[1.6] sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 sm:leading-relaxed text-balance font-medium max-w-2xl" style={{ color: '#161616', opacity: 0.85 }}>
                 Making money stuf simple for young people. We help students get a handle on the fundamentals of finance through partnerships with educational and financial institutions.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-                <a href="#partner" className="group bg-white px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg premium-hover shadow-xl inline-block text-center active:scale-95 relative overflow-hidden border-2 border-transparent hover:border-white" style={{ color: '#161616' }}>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-5">
+                <a href="#partner" className="group bg-white px-6 sm:px-8 lg:px-10 py-3.5 sm:py-4 lg:py-5 rounded-xl sm:rounded-2xl font-bold text-[0.95rem] sm:text-base lg:text-lg premium-hover shadow-xl inline-block text-center active:scale-95 relative overflow-hidden border-2 border-transparent hover:border-white" style={{ color: '#161616' }}>
                   <span className="relative z-10">Partner with Us</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-pink-100 via-white to-pink-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </a>
-                <a href="#schools" className="bg-white/20 backdrop-blur-md px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg hover:bg-white/30 transition-all duration-500 inline-block text-center active:scale-95 hover:-translate-y-2 shadow-lg hover:shadow-2xl border border-white/40" style={{ color: '#161616' }}>
+                <a href="#schools" className="bg-white/20 backdrop-blur-md px-6 sm:px-8 lg:px-10 py-3.5 sm:py-4 lg:py-5 rounded-xl sm:rounded-2xl font-bold text-[0.95rem] sm:text-base lg:text-lg hover:bg-white/30 transition-all duration-500 inline-block text-center active:scale-95 hover:-translate-y-2 shadow-lg hover:shadow-2xl border border-white/40" style={{ color: '#161616' }}>
                   Bring STUF to Your School
                 </a>
               </div>
@@ -256,32 +262,32 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-16 text-center">
             <div className="group cursor-default scroll-reveal">
               <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 premium-hover shadow-lg border border-gray-100">
-                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>
+                <span className="text-[2.5rem] leading-none sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-1.5px', color: '#EEBDC2' }}>
                   <CountUpAnimation end={11} suffix=".5M" isVisible={countersVisible} />
                 </span>
-                <span className="text-xs sm:text-sm md:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 leading-snug block">UK residents with under £100 in savings</span>
+                <span className="text-[0.75rem] leading-[1.4] sm:text-xs md:text-sm lg:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 sm:leading-snug block px-1">UK residents with under £100 in savings</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.1s' }}>
               <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 premium-hover shadow-lg border border-gray-100">
-                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>
+                <span className="text-[2.5rem] leading-none sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-1.5px', color: '#EEBDC2' }}>
                   <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
                 </span>
-                <span className="text-xs sm:text-sm md:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 leading-snug block">Live below minimum decent living standards</span>
+                <span className="text-[0.75rem] leading-[1.4] sm:text-xs md:text-sm lg:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 sm:leading-snug block px-1">Live below minimum decent living standards</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.2s' }}>
               <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 premium-hover shadow-lg border border-gray-100">
-                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>6 in 10</span>
-                <span className="text-xs sm:text-sm md:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 leading-snug block">Feel lacking money management skills</span>
+                <span className="text-[2.5rem] leading-none sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-1.5px', color: '#EEBDC2' }}>6 in 10</span>
+                <span className="text-[0.75rem] leading-[1.4] sm:text-xs md:text-sm lg:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 sm:leading-snug block px-1">Feel lacking money management skills</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.3s' }}>
               <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 premium-hover shadow-lg border border-gray-100">
-                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-2px', color: '#EEBDC2' }}>
+                <span className="text-[2.5rem] leading-none sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-1.5px', color: '#EEBDC2' }}>
                   <CountUpAnimation end={8} suffix="M" isVisible={countersVisible} />
                 </span>
-                <span className="text-xs sm:text-sm md:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 leading-snug block">In serious UK debt</span>
+                <span className="text-[0.75rem] leading-[1.4] sm:text-xs md:text-sm lg:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 sm:leading-snug block px-1">In serious UK debt</span>
               </div>
             </div>
           </div>
@@ -293,46 +299,46 @@ function App() {
         <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-gray-50/60 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 lg:mb-24 scroll-reveal">
-            <span className="inline-block px-5 sm:px-6 lg:px-8 py-2 sm:py-2.5 lg:py-3 rounded-full text-xs font-black uppercase tracking-widest mb-6 sm:mb-8 shadow-md border border-pink-100" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)', color: '#161616' }}>Who We Help</span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 mb-6 sm:mb-8 leading-[1.1] text-balance px-4 sm:px-0" style={{ letterSpacing: '-2px' }}>
-              Breaking the cycle of poverty through <span className="gradient-text">financial education</span>
+            <span className="inline-block px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 lg:py-3 rounded-full text-[0.65rem] sm:text-xs font-black uppercase tracking-widest mb-5 sm:mb-6 lg:mb-8 shadow-md border border-pink-100" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)', color: '#161616' }}>Who We Help</span>
+            <h2 className="text-[1.95rem] leading-[1.15] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 mb-5 sm:mb-6 lg:mb-8 sm:leading-[1.1] text-balance px-2 sm:px-0" style={{ letterSpacing: '-1.2px' }}>
+              Breaking the cycle of poverty through <span className="gradient-text block sm:inline">financial education</span>
             </h2>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed font-medium px-4 sm:px-0">
+            <p className="text-[1.05rem] leading-[1.6] sm:text-lg md:text-xl lg:text-2xl text-gray-600 sm:leading-relaxed font-medium px-2 sm:px-0 max-w-3xl mx-auto">
               Providing lifelong skills, understanding and access to previously closed off worlds of money for disadvantaged youth.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-            <div className="group bg-white p-8 sm:p-10 lg:p-12 rounded-2xl sm:rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal">
-              <div className="w-16 sm:w-18 lg:w-20 h-16 sm:h-18 lg:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center text-4xl sm:text-4xl lg:text-5xl mb-6 sm:mb-7 lg:mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>🏫</div>
-              <h3 className="text-2xl sm:text-2xl lg:text-3xl font-black text-gray-900 mb-4 sm:mb-5 transition-colors duration-300 group-hover:text-gray-700">Schools & Colleges</h3>
-              <p className="text-gray-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg font-medium">
+            <div className="group bg-white p-6 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal">
+              <div className="w-14 sm:w-16 lg:w-20 h-14 sm:h-16 lg:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center text-3xl sm:text-4xl lg:text-5xl mb-5 sm:mb-6 lg:mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>🏫</div>
+              <h3 className="text-[1.35rem] leading-tight sm:text-2xl lg:text-3xl font-black text-gray-900 mb-3 sm:mb-4 lg:mb-5 transition-colors duration-300 group-hover:text-gray-700">Schools & Colleges</h3>
+              <p className="text-gray-600 mb-5 sm:mb-6 lg:mb-8 leading-[1.6] text-[0.95rem] sm:text-base lg:text-lg font-medium">
                 Bring engaging, curriculum-aligned financial literacy workshops to your students. Our expert-led sessions fit seamlessly into your timetable.
               </p>
-              <a href="#schools" className="font-bold text-sm sm:text-base inline-flex items-center gap-2 sm:gap-3 transition-all duration-500 group-hover:gap-4 sm:group-hover:gap-5" style={{ color: '#EEBDC2' }}>
+              <a href="#schools" className="font-bold text-[0.9rem] sm:text-base inline-flex items-center gap-2 sm:gap-3 transition-all duration-500 group-hover:gap-4 sm:group-hover:gap-5" style={{ color: '#EEBDC2' }}>
                 Learn more
-                <span className="transform group-hover:translate-x-2 transition-transform text-lg sm:text-xl">→</span>
+                <span className="transform group-hover:translate-x-2 transition-transform text-base sm:text-lg lg:text-xl">→</span>
               </a>
             </div>
-            <div className="group bg-white p-8 sm:p-10 lg:p-12 rounded-2xl sm:rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="w-16 sm:w-18 lg:w-20 h-16 sm:h-18 lg:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center text-4xl sm:text-4xl lg:text-5xl mb-6 sm:mb-7 lg:mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>🤝</div>
-              <h3 className="text-2xl sm:text-2xl lg:text-3xl font-black text-gray-900 mb-4 sm:mb-5 transition-colors duration-300 group-hover:text-gray-700">Youth Organizations</h3>
-              <p className="text-gray-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg font-medium">
+            <div className="group bg-white p-6 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal" style={{ transitionDelay: '0.1s' }}>
+              <div className="w-14 sm:w-16 lg:w-20 h-14 sm:h-16 lg:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center text-3xl sm:text-4xl lg:text-5xl mb-5 sm:mb-6 lg:mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>🤝</div>
+              <h3 className="text-[1.35rem] leading-tight sm:text-2xl lg:text-3xl font-black text-gray-900 mb-3 sm:mb-4 lg:mb-5 transition-colors duration-300 group-hover:text-gray-700">Youth Organizations</h3>
+              <p className="text-gray-600 mb-5 sm:mb-6 lg:mb-8 leading-[1.6] text-[0.95rem] sm:text-base lg:text-lg font-medium">
                 Partner with us to offer financial education programs that complement your existing youth development initiatives.
               </p>
-              <a href="#youth" className="font-bold text-sm sm:text-base inline-flex items-center gap-2 sm:gap-3 transition-all duration-500 group-hover:gap-4 sm:group-hover:gap-5" style={{ color: '#EEBDC2' }}>
+              <a href="#youth" className="font-bold text-[0.9rem] sm:text-base inline-flex items-center gap-2 sm:gap-3 transition-all duration-500 group-hover:gap-4 sm:group-hover:gap-5" style={{ color: '#EEBDC2' }}>
                 Partner with us
-                <span className="transform group-hover:translate-x-2 transition-transform text-lg sm:text-xl">→</span>
+                <span className="transform group-hover:translate-x-2 transition-transform text-base sm:text-lg lg:text-xl">→</span>
               </a>
             </div>
-            <div className="group bg-white p-8 sm:p-10 lg:p-12 rounded-2xl sm:rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal sm:col-span-2 lg:col-span-1" style={{ transitionDelay: '0.2s' }}>
-              <div className="w-16 sm:w-18 lg:w-20 h-16 sm:h-18 lg:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center text-4xl sm:text-4xl lg:text-5xl mb-6 sm:mb-7 lg:mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>👥</div>
-              <h3 className="text-2xl sm:text-2xl lg:text-3xl font-black text-gray-900 mb-4 sm:mb-5 transition-colors duration-300 group-hover:text-gray-700">Young People</h3>
-              <p className="text-gray-600 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg font-medium">
+            <div className="group bg-white p-6 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal sm:col-span-2 lg:col-span-1" style={{ transitionDelay: '0.2s' }}>
+              <div className="w-14 sm:w-16 lg:w-20 h-14 sm:h-16 lg:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center text-3xl sm:text-4xl lg:text-5xl mb-5 sm:mb-6 lg:mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>👥</div>
+              <h3 className="text-[1.35rem] leading-tight sm:text-2xl lg:text-3xl font-black text-gray-900 mb-3 sm:mb-4 lg:mb-5 transition-colors duration-300 group-hover:text-gray-700">Young People</h3>
+              <p className="text-gray-600 mb-5 sm:mb-6 lg:mb-8 leading-[1.6] text-[0.95rem] sm:text-base lg:text-lg font-medium">
                 Access free workshops, mentorship programs, and resources to build your financial confidence and independence.
               </p>
-              <a href="#youth-programs" className="font-bold text-sm sm:text-base inline-flex items-center gap-2 sm:gap-3 transition-all duration-500 group-hover:gap-4 sm:group-hover:gap-5" style={{ color: '#EEBDC2' }}>
+              <a href="#youth-programs" className="font-bold text-[0.9rem] sm:text-base inline-flex items-center gap-2 sm:gap-3 transition-all duration-500 group-hover:gap-4 sm:group-hover:gap-5" style={{ color: '#EEBDC2' }}>
                 Get involved
-                <span className="transform group-hover:translate-x-2 transition-transform text-lg sm:text-xl">→</span>
+                <span className="transform group-hover:translate-x-2 transition-transform text-base sm:text-lg lg:text-xl">→</span>
               </a>
             </div>
           </div>
@@ -342,8 +348,8 @@ function App() {
       <section id="programs" className="bg-gradient-to-b from-gray-50 to-white py-16 sm:py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 lg:mb-24 scroll-reveal">
-            <span className="inline-block px-5 sm:px-6 lg:px-8 py-2 sm:py-2.5 lg:py-3 rounded-full text-xs font-black uppercase tracking-widest mb-6 sm:mb-8 shadow-md border border-pink-100" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)', color: '#161616' }}>Our Programs</span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 mb-6 leading-[1.1] px-4 sm:px-0" style={{ letterSpacing: '-2px' }}>
+            <span className="inline-block px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 lg:py-3 rounded-full text-[0.65rem] sm:text-xs font-black uppercase tracking-widest mb-5 sm:mb-6 lg:mb-8 shadow-md border border-pink-100" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)', color: '#161616' }}>Our Programs</span>
+            <h2 className="text-[1.95rem] leading-[1.15] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 mb-6 sm:leading-[1.1] px-2 sm:px-0" style={{ letterSpacing: '-1.2px' }}>
               What <span className="gradient-text">We Offer</span>
             </h2>
           </div>
@@ -356,14 +362,14 @@ function App() {
                   alt="Financial Literacy Workshops"
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-10 z-20">
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3 sm:mb-4" style={{ letterSpacing: '-1px' }}>Financial Literacy Workshops</h3>
-                  <p className="text-white/95 text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 leading-relaxed font-medium">
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 lg:p-10 z-20">
+                  <h3 className="text-[1.4rem] leading-tight sm:text-2xl lg:text-3xl xl:text-4xl font-black text-white mb-2.5 sm:mb-3 lg:mb-4" style={{ letterSpacing: '-0.8px' }}>Financial Literacy Workshops</h3>
+                  <p className="text-white/95 text-[0.9rem] leading-[1.5] sm:text-sm lg:text-base xl:text-lg mb-3 sm:mb-4 lg:mb-6 sm:leading-relaxed font-medium">
                     Interactive sessions covering budgeting, saving, investing, and real-world financial decision-making.
                   </p>
-                  <div className="inline-flex items-center gap-2 sm:gap-3 text-white font-bold text-base sm:text-lg group-hover:gap-4 sm:group-hover:gap-5 transition-all duration-500">
+                  <div className="inline-flex items-center gap-2 sm:gap-3 text-white font-bold text-[0.9rem] sm:text-base lg:text-lg group-hover:gap-4 sm:group-hover:gap-5 transition-all duration-500">
                     Learn more
-                    <span className="transform group-hover:translate-x-2 transition-transform text-lg sm:text-xl">→</span>
+                    <span className="transform group-hover:translate-x-2 transition-transform text-base sm:text-lg lg:text-xl">→</span>
                   </div>
                 </div>
               </div>
@@ -376,14 +382,14 @@ function App() {
                   alt="Mentorship Programs"
                   className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-10 z-20">
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3 sm:mb-4" style={{ letterSpacing: '-1px' }}>Mentorship Programs</h3>
-                  <p className="text-white/95 text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 leading-relaxed font-medium">
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 lg:p-10 z-20">
+                  <h3 className="text-[1.4rem] leading-tight sm:text-2xl lg:text-3xl xl:text-4xl font-black text-white mb-2.5 sm:mb-3 lg:mb-4" style={{ letterSpacing: '-0.8px' }}>Mentorship Programs</h3>
+                  <p className="text-white/95 text-[0.9rem] leading-[1.5] sm:text-sm lg:text-base xl:text-lg mb-3 sm:mb-4 lg:mb-6 sm:leading-relaxed font-medium">
                     One-on-one guidance from finance professionals helping young people navigate their financial journey.
                   </p>
-                  <div className="inline-flex items-center gap-2 sm:gap-3 text-white font-bold text-base sm:text-lg group-hover:gap-4 sm:group-hover:gap-5 transition-all duration-500">
+                  <div className="inline-flex items-center gap-2 sm:gap-3 text-white font-bold text-[0.9rem] sm:text-base lg:text-lg group-hover:gap-4 sm:group-hover:gap-5 transition-all duration-500">
                     Get a mentor
-                    <span className="transform group-hover:translate-x-2 transition-transform text-lg sm:text-xl">→</span>
+                    <span className="transform group-hover:translate-x-2 transition-transform text-base sm:text-lg lg:text-xl">→</span>
                   </div>
                 </div>
               </div>
