@@ -71,10 +71,17 @@ function App() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+        h1, h2, h3, h4, h5, h6 {
+          font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+          text-transform: uppercase;
+          font-weight: 700;
+          letter-spacing: 0.05em;
+        }
 
         * {
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+          font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
         }
@@ -181,113 +188,103 @@ function App() {
         }
       `}</style>
 
-      <header className="bg-white/80 backdrop-blur-xl border-b border-gray-100 sticky top-0 z-50 transition-all duration-500 premium-shadow">
+      <header className="bg-white/90 backdrop-blur-xl border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex justify-between items-center py-4 sm:py-6">
+          <nav className="flex justify-between items-center py-5 sm:py-6">
             <div className="flex items-center gap-3">
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Logo_Web.svg/:/rs=h:69,cg:true,m/qt=q:100/ll"
                 alt="Set Them Up Foundation"
-                className="h-10 sm:h-12 md:h-14 transition-all duration-500 hover:scale-110 hover:rotate-3 filter drop-shadow-lg"
+                className="h-10 sm:h-12 md:h-14 transition-all duration-300"
               />
             </div>
-            <div className="hidden lg:flex gap-8 xl:gap-10">
-              <a href="#who-we-help" className="text-gray-700 hover:text-gray-900 font-semibold text-sm tracking-wide transition-all duration-300 hover:translate-y-[-2px] relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-400 after:to-pink-300 after:transition-all after:duration-500 hover:after:w-full">Who We Help</a>
-              <a href="#programs" className="text-gray-700 hover:text-gray-900 font-semibold text-sm tracking-wide transition-all duration-300 hover:translate-y-[-2px] relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-400 after:to-pink-300 after:transition-all after:duration-500 hover:after:w-full">Programs</a>
-              <a href="#team" className="text-gray-700 hover:text-gray-900 font-semibold text-sm tracking-wide transition-all duration-300 hover:translate-y-[-2px] relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-400 after:to-pink-300 after:transition-all after:duration-500 hover:after:w-full">Team</a>
-              <a href="#roadmap" className="text-gray-700 hover:text-gray-900 font-semibold text-sm tracking-wide transition-all duration-300 hover:translate-y-[-2px] relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-400 after:to-pink-300 after:transition-all after:duration-500 hover:after:w-full">Roadmap</a>
-              <a href="#donate" className="text-gray-700 hover:text-gray-900 font-semibold text-sm tracking-wide transition-all duration-300 hover:translate-y-[-2px] relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-pink-400 after:to-pink-300 after:transition-all after:duration-500 hover:after:w-full">Donate</a>
+            <div className="hidden lg:flex gap-10 xl:gap-12">
+              <a href="#who-we-help" className="text-gray-900 font-semibold text-sm uppercase tracking-widest transition-all duration-200 hover:opacity-60">Who We Help</a>
+              <a href="#programs" className="text-gray-900 font-semibold text-sm uppercase tracking-widest transition-all duration-200 hover:opacity-60">Programs</a>
+              <a href="#team" className="text-gray-900 font-semibold text-sm uppercase tracking-widest transition-all duration-200 hover:opacity-60">Team</a>
+              <a href="#roadmap" className="text-gray-900 font-semibold text-sm uppercase tracking-widest transition-all duration-200 hover:opacity-60">Roadmap</a>
+              <a href="#donate" className="text-gray-900 font-semibold text-sm uppercase tracking-widest transition-all duration-200 hover:opacity-60">Donate</a>
             </div>
-            <a href="mailto:hello@stuf.org.uk" className="px-4 py-2 sm:px-6 sm:py-2.5 md:px-8 md:py-3 rounded-lg sm:rounded-xl font-bold text-xs sm:text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:scale-105 active:scale-95 relative overflow-hidden group" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
-              <span className="relative z-10">Contact</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-pink-300 to-pink-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <a href="mailto:hello@stuf.org.uk" className="px-6 py-3 sm:px-8 sm:py-3.5 md:px-10 md:py-4 font-bold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 hover:opacity-80 border-2" style={{ backgroundColor: '#EEBDC2', color: '#161616', borderColor: '#161616' }}>
+              Contact
             </a>
           </nav>
         </div>
       </header>
 
-      <section className="relative overflow-hidden min-h-[90vh] sm:min-h-screen flex items-center animated-bg">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-64 sm:w-96 h-64 sm:h-96 bg-white rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-80 sm:w-[500px] h-80 sm:h-[500px] bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }}></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 sm:w-[600px] h-96 sm:h-[600px] bg-gradient-to-br from-white/40 to-transparent rounded-full blur-3xl animate-float" style={{ animationDelay: '0.75s' }}></div>
+      <section className="relative overflow-hidden min-h-screen flex items-center" style={{ backgroundColor: '#161616' }}>
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 w-96 h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#EEBDC2' }}></div>
+          <div className="absolute bottom-20 right-10 w-[500px] h-[500px] rounded-full blur-3xl animate-float" style={{ backgroundColor: '#EEBDC2', animationDelay: '1.5s' }}></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center py-12 sm:py-16 lg:py-24">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center py-20 lg:py-32">
             <div className="animate-fade-in-up">
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 mb-5 sm:mb-6 lg:mb-8 px-3 sm:px-4 lg:px-5 py-1.5 sm:py-2 lg:py-3 bg-white/40 backdrop-blur-md rounded-full text-[0.7rem] sm:text-xs lg:text-sm font-bold shadow-lg border border-white/30" style={{ color: '#161616' }}>
-                <span className="text-sm sm:text-base lg:text-lg">🎓</span>
-                <span className="tracking-wide leading-tight">Empowering 15-19 Year Olds Since 2022</span>
+              <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 border-2 text-xs font-bold uppercase tracking-widest" style={{ borderColor: '#EEBDC2', color: '#EEBDC2' }}>
+                <span className="text-base">🎓</span>
+                <span>Empowering Youth Since 2022</span>
               </div>
-              <h1 className="text-[2.5rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 sm:mb-8 sm:leading-[1.1] text-balance" style={{ letterSpacing: '-1.5px', color: '#161616' }}>
-                We've got the <span className="gradient-text block sm:inline">money stuf</span> covered
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black mb-8 leading-[0.95] uppercase" style={{ color: 'white', letterSpacing: '0.02em' }}>
+                We've got the <span className="block" style={{ color: '#EEBDC2' }}>money stuf</span> covered
               </h1>
-              <p className="text-[1.05rem] leading-[1.6] sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 sm:leading-relaxed text-balance font-medium max-w-2xl" style={{ color: '#161616', opacity: 0.85 }}>
+              <p className="text-lg sm:text-xl lg:text-2xl mb-10 leading-relaxed font-medium" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                 Making money stuf simple for young people. We help students get a handle on the fundamentals of finance through partnerships with educational and financial institutions.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-5">
-                <a href="#partner" className="group bg-white px-6 sm:px-8 lg:px-10 py-3.5 sm:py-4 lg:py-5 rounded-xl sm:rounded-2xl font-bold text-[0.95rem] sm:text-base lg:text-lg premium-hover shadow-xl inline-block text-center active:scale-95 relative overflow-hidden border-2 border-transparent hover:border-white" style={{ color: '#161616' }}>
-                  <span className="relative z-10">Partner with Us</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-pink-100 via-white to-pink-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="#partner" className="px-10 py-4 font-bold text-sm uppercase tracking-widest transition-all duration-300 hover:opacity-80 inline-block text-center border-2" style={{ backgroundColor: '#EEBDC2', color: '#161616', borderColor: '#EEBDC2' }}>
+                  Partner with Us
                 </a>
-                <a href="#schools" className="bg-white/20 backdrop-blur-md px-6 sm:px-8 lg:px-10 py-3.5 sm:py-4 lg:py-5 rounded-xl sm:rounded-2xl font-bold text-[0.95rem] sm:text-base lg:text-lg hover:bg-white/30 transition-all duration-500 inline-block text-center active:scale-95 hover:-translate-y-2 shadow-lg hover:shadow-2xl border border-white/40" style={{ color: '#161616' }}>
+                <a href="#schools" className="px-10 py-4 font-bold text-sm uppercase tracking-widest transition-all duration-300 hover:bg-white/10 inline-block text-center border-2" style={{ color: '#EEBDC2', borderColor: '#EEBDC2' }}>
                   Bring STUF to Your School
                 </a>
               </div>
             </div>
             <div className="animate-fade-in-right hidden md:block">
               <div className="relative group">
-                <div className="absolute -inset-4 lg:-inset-6 bg-gradient-to-br from-white/50 to-pink-200/50 rounded-[32px] lg:rounded-[40px] opacity-50 group-hover:opacity-70 transition-all duration-700 blur-3xl"></div>
-                <div className="relative rounded-[24px] lg:rounded-[32px] overflow-hidden shadow-2xl ring-1 ring-white/50">
+                <div className="relative overflow-hidden border-4" style={{ borderColor: '#EEBDC2' }}>
                   <img
                     src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Image_Images_Website.png/:/cr=t:1.33%25,l:0%25,w:100%25,h:97.34%25/rs=w:1240,h:620,cg:true"
                     alt="Making money stuf simple for young people"
-                    className="relative group-hover:scale-105 transition-all duration-700"
+                    className="relative transition-all duration-500 group-hover:scale-105"
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="absolute bottom-6 sm:bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce opacity-60 hidden sm:block">
-          <div className="w-6 sm:w-7 h-10 sm:h-11 rounded-full border-2 border-white/70 flex items-start justify-center p-2 backdrop-blur-sm bg-white/10">
-            <div className="w-1 sm:w-1.5 h-2 sm:h-2.5 bg-white/70 rounded-full"></div>
-          </div>
-        </div>
       </section>
 
-      <section id="stats" className="bg-gradient-to-b from-white via-gray-50 to-white py-12 sm:py-16 lg:py-24 border-y border-gray-100 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-50/30 to-transparent"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-16 text-center">
+      <section id="stats" className="bg-white py-16 lg:py-24 border-y-4" style={{ borderColor: '#EEBDC2' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center">
             <div className="group cursor-default scroll-reveal">
-              <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 premium-hover shadow-lg border border-gray-100">
-                <span className="text-[2.5rem] leading-none sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-1.5px', color: '#EEBDC2' }}>
+              <div className="bg-white p-8 border-2 border-gray-200 transition-all duration-300 hover:border-gray-900">
+                <span className="text-5xl sm:text-6xl lg:text-7xl font-black block mb-4 uppercase" style={{ color: '#EEBDC2' }}>
                   <CountUpAnimation end={11} suffix=".5M" isVisible={countersVisible} />
                 </span>
-                <span className="text-[0.75rem] leading-[1.4] sm:text-xs md:text-sm lg:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 sm:leading-snug block px-1">UK residents with under £100 in savings</span>
+                <span className="text-xs sm:text-sm lg:text-base text-gray-700 font-bold uppercase tracking-wide block">UK residents with under £100 in savings</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 premium-hover shadow-lg border border-gray-100">
-                <span className="text-[2.5rem] leading-none sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-1.5px', color: '#EEBDC2' }}>
+              <div className="bg-white p-8 border-2 border-gray-200 transition-all duration-300 hover:border-gray-900">
+                <span className="text-5xl sm:text-6xl lg:text-7xl font-black block mb-4 uppercase" style={{ color: '#EEBDC2' }}>
                   <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
                 </span>
-                <span className="text-[0.75rem] leading-[1.4] sm:text-xs md:text-sm lg:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 sm:leading-snug block px-1">Live below minimum decent living standards</span>
+                <span className="text-xs sm:text-sm lg:text-base text-gray-700 font-bold uppercase tracking-wide block">Live below minimum decent living standards</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.2s' }}>
-              <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 premium-hover shadow-lg border border-gray-100">
-                <span className="text-[2.5rem] leading-none sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-1.5px', color: '#EEBDC2' }}>6 in 10</span>
-                <span className="text-[0.75rem] leading-[1.4] sm:text-xs md:text-sm lg:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 sm:leading-snug block px-1">Feel lacking money management skills</span>
+              <div className="bg-white p-8 border-2 border-gray-200 transition-all duration-300 hover:border-gray-900">
+                <span className="text-5xl sm:text-6xl lg:text-7xl font-black block mb-4 uppercase" style={{ color: '#EEBDC2' }}>6 in 10</span>
+                <span className="text-xs sm:text-sm lg:text-base text-gray-700 font-bold uppercase tracking-wide block">Feel lacking money management skills</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.3s' }}>
-              <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 premium-hover shadow-lg border border-gray-100">
-                <span className="text-[2.5rem] leading-none sm:text-5xl md:text-6xl lg:text-7xl font-black block mb-3 sm:mb-4 transition-all duration-700 group-hover:scale-110 counter-glow" style={{ letterSpacing: '-1.5px', color: '#EEBDC2' }}>
+              <div className="bg-white p-8 border-2 border-gray-200 transition-all duration-300 hover:border-gray-900">
+                <span className="text-5xl sm:text-6xl lg:text-7xl font-black block mb-4 uppercase" style={{ color: '#EEBDC2' }}>
                   <CountUpAnimation end={8} suffix="M" isVisible={countersVisible} />
                 </span>
-                <span className="text-[0.75rem] leading-[1.4] sm:text-xs md:text-sm lg:text-base text-gray-700 font-bold transition-colors duration-300 group-hover:text-gray-900 sm:leading-snug block px-1">In serious UK debt</span>
+                <span className="text-xs sm:text-sm lg:text-base text-gray-700 font-bold uppercase tracking-wide block">In serious UK debt</span>
               </div>
             </div>
           </div>
@@ -298,47 +295,47 @@ function App() {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-pink-50/40 to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-gray-50/60 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 lg:mb-24 scroll-reveal">
-            <span className="inline-block px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 lg:py-3 rounded-full text-[0.65rem] sm:text-xs font-black uppercase tracking-widest mb-5 sm:mb-6 lg:mb-8 shadow-md border border-pink-100" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)', color: '#161616' }}>Who We Help</span>
-            <h2 className="text-[1.95rem] leading-[1.15] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 mb-5 sm:mb-6 lg:mb-8 sm:leading-[1.1] text-balance px-2 sm:px-0" style={{ letterSpacing: '-1.2px' }}>
-              Breaking the cycle of poverty through <span className="gradient-text block sm:inline">financial education</span>
+          <div className="text-center max-w-4xl mx-auto mb-16 lg:mb-24 scroll-reveal">
+            <span className="inline-block px-6 py-2 border-2 text-xs font-bold uppercase tracking-widest mb-8" style={{ borderColor: '#EEBDC2', color: '#EEBDC2' }}>Who We Help</span>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 mb-8 leading-[0.95] uppercase">
+              Breaking the cycle of poverty through <span className="block" style={{ color: '#EEBDC2' }}>financial education</span>
             </h2>
-            <p className="text-[1.05rem] leading-[1.6] sm:text-lg md:text-xl lg:text-2xl text-gray-600 sm:leading-relaxed font-medium px-2 sm:px-0 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed font-medium max-w-3xl mx-auto">
               Providing lifelong skills, understanding and access to previously closed off worlds of money for disadvantaged youth.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-            <div className="group bg-white p-6 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal">
-              <div className="w-14 sm:w-16 lg:w-20 h-14 sm:h-16 lg:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center text-3xl sm:text-4xl lg:text-5xl mb-5 sm:mb-6 lg:mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>🏫</div>
-              <h3 className="text-[1.35rem] leading-tight sm:text-2xl lg:text-3xl font-black text-gray-900 mb-3 sm:mb-4 lg:mb-5 transition-colors duration-300 group-hover:text-gray-700">Schools & Colleges</h3>
-              <p className="text-gray-600 mb-5 sm:mb-6 lg:mb-8 leading-[1.6] text-[0.95rem] sm:text-base lg:text-lg font-medium">
+            <div className="group bg-white p-8 lg:p-12 border-2 border-gray-200 transition-all duration-300 hover:border-gray-900 scroll-reveal">
+              <div className="w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center text-4xl lg:text-5xl mb-6" style={{ backgroundColor: '#EEBDC2' }}>🏫</div>
+              <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4 uppercase">Schools & Colleges</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed text-base lg:text-lg">
                 Bring engaging, curriculum-aligned financial literacy workshops to your students. Our expert-led sessions fit seamlessly into your timetable.
               </p>
-              <a href="#schools" className="font-bold text-[0.9rem] sm:text-base inline-flex items-center gap-2 sm:gap-3 transition-all duration-500 group-hover:gap-4 sm:group-hover:gap-5" style={{ color: '#EEBDC2' }}>
+              <a href="#schools" className="font-bold text-sm uppercase tracking-wider inline-flex items-center gap-3 transition-all duration-300 group-hover:gap-5" style={{ color: '#EEBDC2' }}>
                 Learn more
-                <span className="transform group-hover:translate-x-2 transition-transform text-base sm:text-lg lg:text-xl">→</span>
+                <span className="text-lg">→</span>
               </a>
             </div>
-            <div className="group bg-white p-6 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="w-14 sm:w-16 lg:w-20 h-14 sm:h-16 lg:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center text-3xl sm:text-4xl lg:text-5xl mb-5 sm:mb-6 lg:mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>🤝</div>
-              <h3 className="text-[1.35rem] leading-tight sm:text-2xl lg:text-3xl font-black text-gray-900 mb-3 sm:mb-4 lg:mb-5 transition-colors duration-300 group-hover:text-gray-700">Youth Organizations</h3>
-              <p className="text-gray-600 mb-5 sm:mb-6 lg:mb-8 leading-[1.6] text-[0.95rem] sm:text-base lg:text-lg font-medium">
+            <div className="group bg-white p-8 lg:p-12 border-2 border-gray-200 transition-all duration-300 hover:border-gray-900 scroll-reveal" style={{ transitionDelay: '0.1s' }}>
+              <div className="w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center text-4xl lg:text-5xl mb-6" style={{ backgroundColor: '#EEBDC2' }}>🤝</div>
+              <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4 uppercase">Youth Organizations</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed text-base lg:text-lg">
                 Partner with us to offer financial education programs that complement your existing youth development initiatives.
               </p>
-              <a href="#youth" className="font-bold text-[0.9rem] sm:text-base inline-flex items-center gap-2 sm:gap-3 transition-all duration-500 group-hover:gap-4 sm:group-hover:gap-5" style={{ color: '#EEBDC2' }}>
+              <a href="#youth" className="font-bold text-sm uppercase tracking-wider inline-flex items-center gap-3 transition-all duration-300 group-hover:gap-5" style={{ color: '#EEBDC2' }}>
                 Partner with us
-                <span className="transform group-hover:translate-x-2 transition-transform text-base sm:text-lg lg:text-xl">→</span>
+                <span className="text-lg">→</span>
               </a>
             </div>
-            <div className="group bg-white p-6 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl premium-shadow premium-hover border border-gray-100 scroll-reveal sm:col-span-2 lg:col-span-1" style={{ transitionDelay: '0.2s' }}>
-              <div className="w-14 sm:w-16 lg:w-20 h-14 sm:h-16 lg:h-20 rounded-2xl sm:rounded-3xl flex items-center justify-center text-3xl sm:text-4xl lg:text-5xl mb-5 sm:mb-6 lg:mb-8 transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>👥</div>
-              <h3 className="text-[1.35rem] leading-tight sm:text-2xl lg:text-3xl font-black text-gray-900 mb-3 sm:mb-4 lg:mb-5 transition-colors duration-300 group-hover:text-gray-700">Young People</h3>
-              <p className="text-gray-600 mb-5 sm:mb-6 lg:mb-8 leading-[1.6] text-[0.95rem] sm:text-base lg:text-lg font-medium">
+            <div className="group bg-white p-8 lg:p-12 border-2 border-gray-200 transition-all duration-300 hover:border-gray-900 scroll-reveal sm:col-span-2 lg:col-span-1" style={{ transitionDelay: '0.2s' }}>
+              <div className="w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center text-4xl lg:text-5xl mb-6" style={{ backgroundColor: '#EEBDC2' }}>👥</div>
+              <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4 uppercase">Young People</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed text-base lg:text-lg">
                 Access free workshops, mentorship programs, and resources to build your financial confidence and independence.
               </p>
-              <a href="#youth-programs" className="font-bold text-[0.9rem] sm:text-base inline-flex items-center gap-2 sm:gap-3 transition-all duration-500 group-hover:gap-4 sm:group-hover:gap-5" style={{ color: '#EEBDC2' }}>
+              <a href="#youth-programs" className="font-bold text-sm uppercase tracking-wider inline-flex items-center gap-3 transition-all duration-300 group-hover:gap-5" style={{ color: '#EEBDC2' }}>
                 Get involved
-                <span className="transform group-hover:translate-x-2 transition-transform text-base sm:text-lg lg:text-xl">→</span>
+                <span className="text-lg">→</span>
               </a>
             </div>
           </div>
@@ -347,49 +344,49 @@ function App() {
 
       <section id="programs" className="bg-gradient-to-b from-gray-50 to-white py-16 sm:py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16 lg:mb-24 scroll-reveal">
-            <span className="inline-block px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 lg:py-3 rounded-full text-[0.65rem] sm:text-xs font-black uppercase tracking-widest mb-5 sm:mb-6 lg:mb-8 shadow-md border border-pink-100" style={{ backgroundColor: 'rgba(238, 189, 194, 0.15)', color: '#161616' }}>Our Programs</span>
-            <h2 className="text-[1.95rem] leading-[1.15] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 mb-6 sm:leading-[1.1] px-2 sm:px-0" style={{ letterSpacing: '-1.2px' }}>
-              What <span className="gradient-text">We Offer</span>
+          <div className="text-center max-w-4xl mx-auto mb-16 lg:mb-24 scroll-reveal">
+            <span className="inline-block px-6 py-2 border-2 text-xs font-bold uppercase tracking-widest mb-8" style={{ borderColor: '#EEBDC2', color: '#EEBDC2' }}>Our Programs</span>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 mb-6 leading-[0.95] uppercase">
+              What <span style={{ color: '#EEBDC2' }}>We Offer</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
             <div className="group scroll-reveal">
-              <div className="relative overflow-hidden rounded-[24px] sm:rounded-[32px] premium-shadow premium-hover ring-1 ring-gray-100">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10"></div>
+              <div className="relative overflow-hidden border-4 transition-all duration-300 hover:border-gray-900" style={{ borderColor: '#EEBDC2' }}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent z-10"></div>
                 <img
                   src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Financial Literacy Workshops"
-                  className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-[400px] lg:h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 lg:p-10 z-20">
-                  <h3 className="text-[1.4rem] leading-tight sm:text-2xl lg:text-3xl xl:text-4xl font-black text-white mb-2.5 sm:mb-3 lg:mb-4" style={{ letterSpacing: '-0.8px' }}>Financial Literacy Workshops</h3>
-                  <p className="text-white/95 text-[0.9rem] leading-[1.5] sm:text-sm lg:text-base xl:text-lg mb-3 sm:mb-4 lg:mb-6 sm:leading-relaxed font-medium">
+                <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10 z-20">
+                  <h3 className="text-2xl lg:text-3xl xl:text-4xl font-black text-white mb-3 uppercase">Financial Literacy Workshops</h3>
+                  <p className="text-white/90 text-base lg:text-lg mb-5 leading-relaxed">
                     Interactive sessions covering budgeting, saving, investing, and real-world financial decision-making.
                   </p>
-                  <div className="inline-flex items-center gap-2 sm:gap-3 text-white font-bold text-[0.9rem] sm:text-base lg:text-lg group-hover:gap-4 sm:group-hover:gap-5 transition-all duration-500">
+                  <div className="inline-flex items-center gap-3 text-white font-bold text-sm uppercase tracking-wider group-hover:gap-5 transition-all duration-300">
                     Learn more
-                    <span className="transform group-hover:translate-x-2 transition-transform text-base sm:text-lg lg:text-xl">→</span>
+                    <span className="text-lg">→</span>
                   </div>
                 </div>
               </div>
             </div>
             <div className="group scroll-reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="relative overflow-hidden rounded-[24px] sm:rounded-[32px] premium-shadow premium-hover ring-1 ring-gray-100">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10"></div>
+              <div className="relative overflow-hidden border-4 transition-all duration-300 hover:border-gray-900" style={{ borderColor: '#EEBDC2' }}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent z-10"></div>
                 <img
                   src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Mentorship Programs"
-                  className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-[400px] lg:h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 lg:p-10 z-20">
-                  <h3 className="text-[1.4rem] leading-tight sm:text-2xl lg:text-3xl xl:text-4xl font-black text-white mb-2.5 sm:mb-3 lg:mb-4" style={{ letterSpacing: '-0.8px' }}>Mentorship Programs</h3>
-                  <p className="text-white/95 text-[0.9rem] leading-[1.5] sm:text-sm lg:text-base xl:text-lg mb-3 sm:mb-4 lg:mb-6 sm:leading-relaxed font-medium">
+                <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10 z-20">
+                  <h3 className="text-2xl lg:text-3xl xl:text-4xl font-black text-white mb-3 uppercase">Mentorship Programs</h3>
+                  <p className="text-white/90 text-base lg:text-lg mb-5 leading-relaxed">
                     One-on-one guidance from finance professionals helping young people navigate their financial journey.
                   </p>
-                  <div className="inline-flex items-center gap-2 sm:gap-3 text-white font-bold text-[0.9rem] sm:text-base lg:text-lg group-hover:gap-4 sm:group-hover:gap-5 transition-all duration-500">
+                  <div className="inline-flex items-center gap-3 text-white font-bold text-sm uppercase tracking-wider group-hover:gap-5 transition-all duration-300">
                     Get a mentor
-                    <span className="transform group-hover:translate-x-2 transition-transform text-base sm:text-lg lg:text-xl">→</span>
+                    <span className="text-lg">→</span>
                   </div>
                 </div>
               </div>
@@ -402,17 +399,17 @@ function App() {
         <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIgZmlsbD0iYmxhY2siLz48L3N2Zz4=')] bg-repeat"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-20 scroll-reveal">
-            <span className="inline-block px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)', color: '#161616' }}>Our Team</span>
-            <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight" style={{ letterSpacing: '-2px' }}>
-              Meet the People Behind <span className="gradient-text">STUF</span>
+            <span className="inline-block px-6 py-2 border-2 text-xs font-bold uppercase tracking-widest mb-8" style={{ borderColor: '#EEBDC2', color: '#EEBDC2' }}>Our Team</span>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-[0.95] uppercase">
+              Meet the People Behind <span style={{ color: '#EEBDC2' }}>STUF</span>
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
               A dedicated team of financial experts, educators, and change-makers committed to transforming financial education.
             </p>
           </div>
 
           <div className="mb-24">
-            <h3 className="text-4xl font-bold text-gray-900 mb-12 text-center scroll-reveal">Founders</h3>
+            <h3 className="text-3xl lg:text-4xl font-black text-gray-900 mb-12 text-center uppercase scroll-reveal">Founders</h3>
             <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
               <div className="group scroll-reveal">
                 <div className="relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
@@ -463,7 +460,7 @@ function App() {
           </div>
 
           <div>
-            <h3 className="text-4xl font-bold text-gray-900 mb-12 text-center scroll-reveal">Board Members</h3>
+            <h3 className="text-3xl lg:text-4xl font-black text-gray-900 mb-12 text-center uppercase scroll-reveal">Board Members</h3>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
               {[
                 { name: 'Thomas Hamer', role: 'Co-Chair (Research)', desc: '9+ years in financial services across Venture/PE, Corporate Banking, and Wealth Management', photo: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true' },
@@ -701,66 +698,58 @@ function App() {
         </div>
       </section>
 
-      <section className="py-32 text-center relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 50%, #EEBDC2 100%)' }}>
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: '1.5s' }}></div>
-        </div>
+      <section className="py-24 lg:py-32 text-center relative overflow-hidden" style={{ backgroundColor: '#EEBDC2' }}>
         <div className="max-w-5xl mx-auto px-6 relative z-10 scroll-reveal">
-          <h2 className="text-5xl md:text-6xl font-extrabold mb-8 leading-tight" style={{ letterSpacing: '-2px', color: '#161616' }}>
-            Ready to Transform <span className="gradient-text">Financial Education?</span>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-8 leading-[0.95] uppercase" style={{ color: '#161616' }}>
+            Ready to Transform <span className="block" style={{ color: 'white' }}>Financial Education?</span>
           </h2>
-          <p className="text-2xl mb-12 leading-relaxed" style={{ color: '#161616', opacity: 0.9 }}>
+          <p className="text-xl lg:text-2xl mb-12 leading-relaxed" style={{ color: '#161616' }}>
             Join schools and partners across the UK empowering students with essential money skills.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="mailto:hello@stuf.org.uk" className="group bg-white px-12 py-6 rounded-xl font-bold text-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 inline-block active:scale-95 relative overflow-hidden" style={{ color: '#161616' }}>
-              <span className="relative z-10 flex items-center gap-3">
-                ✉️ Email: hello@stuf.org.uk
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+            <a href="mailto:hello@stuf.org.uk" className="bg-white px-10 py-5 font-bold text-sm uppercase tracking-widest transition-all duration-300 hover:opacity-80 inline-block border-2" style={{ color: '#161616', borderColor: '#161616' }}>
+              ✉️ Email: hello@stuf.org.uk
             </a>
-            <a href="mailto:info@ug-stuf.com" className="bg-black/10 backdrop-blur-sm px-12 py-6 rounded-xl font-bold text-xl hover:bg-black/20 transition-all duration-300 inline-block active:scale-95 hover:-translate-y-2 hover:shadow-xl flex items-center gap-3" style={{ color: '#161616' }}>
+            <a href="mailto:info@ug-stuf.com" className="px-10 py-5 font-bold text-sm uppercase tracking-widest transition-all duration-300 hover:bg-white/20 inline-block border-2" style={{ color: '#161616', borderColor: '#161616' }}>
               🌍 Uganda: info@ug-stuf.com
             </a>
           </div>
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-white py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=')] bg-repeat"></div>
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <footer className="bg-black text-white py-20">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="md:col-span-2">
-              <h3 className="text-3xl font-bold mb-6">Set Them Up Foundation</h3>
-              <p className="text-white/80 leading-relaxed text-lg mb-6">
+              <h3 className="text-2xl font-bold mb-6 uppercase tracking-wider">Set Them Up Foundation</h3>
+              <p className="text-white/70 leading-relaxed text-base mb-6">
                 A UK-based charity dedicated to empowering young people with the financial skills they need to thrive in the modern world.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center text-xl transition-all duration-300 hover:scale-125 hover:-translate-y-1" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>📘</a>
-                <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center text-xl transition-all duration-300 hover:scale-125 hover:-translate-y-1" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>🐦</a>
-                <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center text-xl transition-all duration-300 hover:scale-125 hover:-translate-y-1" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>💼</a>
+                <a href="#" className="w-12 h-12 flex items-center justify-center text-xl transition-all duration-300 hover:opacity-60 border-2" style={{ borderColor: '#EEBDC2', backgroundColor: '#EEBDC2' }}>📘</a>
+                <a href="#" className="w-12 h-12 flex items-center justify-center text-xl transition-all duration-300 hover:opacity-60 border-2" style={{ borderColor: '#EEBDC2', backgroundColor: '#EEBDC2' }}>🐦</a>
+                <a href="#" className="w-12 h-12 flex items-center justify-center text-xl transition-all duration-300 hover:opacity-60 border-2" style={{ borderColor: '#EEBDC2', backgroundColor: '#EEBDC2' }}>💼</a>
               </div>
             </div>
             <div>
-              <h4 className="text-xl font-bold mb-6">Quick Links</h4>
+              <h4 className="text-base font-bold mb-6 uppercase tracking-wider">Quick Links</h4>
               <ul className="space-y-3">
-                <li><a href="#who-we-help" className="text-white/70 hover:text-white transition-colors duration-200 text-lg hover:translate-x-1 inline-block">Who We Help</a></li>
-                <li><a href="#programs" className="text-white/70 hover:text-white transition-colors duration-200 text-lg hover:translate-x-1 inline-block">Programs</a></li>
-                <li><a href="#team" className="text-white/70 hover:text-white transition-colors duration-200 text-lg hover:translate-x-1 inline-block">Team</a></li>
-                <li><a href="#donate" className="text-white/70 hover:text-white transition-colors duration-200 text-lg hover:translate-x-1 inline-block">Donate</a></li>
+                <li><a href="#who-we-help" className="text-white/60 hover:text-white transition-colors duration-200 text-sm uppercase tracking-wide">Who We Help</a></li>
+                <li><a href="#programs" className="text-white/60 hover:text-white transition-colors duration-200 text-sm uppercase tracking-wide">Programs</a></li>
+                <li><a href="#team" className="text-white/60 hover:text-white transition-colors duration-200 text-sm uppercase tracking-wide">Team</a></li>
+                <li><a href="#donate" className="text-white/60 hover:text-white transition-colors duration-200 text-sm uppercase tracking-wide">Donate</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-xl font-bold mb-6">Contact</h4>
-              <ul className="space-y-3 text-lg">
-                <li className="text-white/70">hello@stuf.org.uk</li>
-                <li className="text-white/70">info@ug-stuf.com</li>
+              <h4 className="text-base font-bold mb-6 uppercase tracking-wider">Contact</h4>
+              <ul className="space-y-3 text-sm">
+                <li className="text-white/60">hello@stuf.org.uk</li>
+                <li className="text-white/60">info@ug-stuf.com</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-white/20 pt-8 text-center">
-            <p className="text-white/60 text-lg">© 2025 Set Them Up Foundation. All rights reserved.</p>
+          <div className="border-t-2 pt-8 text-center" style={{ borderColor: '#EEBDC2' }}>
+            <p className="text-white/60 text-sm uppercase tracking-wide">© 2025 Set Them Up Foundation. All rights reserved.</p>
           </div>
         </div>
       </footer>
