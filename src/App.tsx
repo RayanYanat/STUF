@@ -273,6 +273,10 @@ function App() {
                 Programs
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
+              <a href="#workshop-locations" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group">
+                Workshops
+                <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
+              </a>
               <a href="#team" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group">
                 Team
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
@@ -688,26 +692,136 @@ function App() {
         </div>
       </section>
 
-      <section id="workshop-locations" className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-20 scroll-reveal">
-            <span className="inline-block px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)', color: '#161616' }}>Workshop Locations</span>
-            <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight" style={{ letterSpacing: '-2px' }}>
-              Serving Communities <span className="gradient-text">Across the UK</span>
+      <section id="workshop-locations" className="bg-gradient-to-b from-white via-pink-50/20 to-white py-16 sm:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto mb-20 lg:mb-28 scroll-reveal">
+            <span className="inline-block px-6 py-2.5 bg-pink-50 rounded-full text-xs font-semibold tracking-wider mb-8 shadow-sm" style={{ color: '#EEBDC2' }}>Our Workshops</span>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 leading-[1.15]">
+              Workshops in <span className="gradient-text">Action</span>
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              We've delivered workshops in schools and communities across England, with expansion plans for nationwide and international coverage.
+            <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-light">
+              From London to Uganda, we're empowering young people with essential financial knowledge through engaging, hands-on workshops.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {['Bristol', 'Brent', 'Barnet', 'Bushey', 'Camden', 'Croydon', 'Harrow', 'Kensington & Chelsea', 'Kent', 'Southwark', 'King College', 'Uganda'].map((location, idx) => (
-              <div key={location} className="group scroll-reveal" style={{ transitionDelay: `${idx * 0.03}s` }}>
-                <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl text-center font-bold text-gray-800 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 cursor-default border-4 border-transparent hover:border-opacity-100" style={{ borderTopColor: '#EEBDC2' }}>
-                  <span className="text-2xl mb-2 block group-hover:scale-125 transition-transform duration-300">📍</span>
-                  {location}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            {[
+              {
+                location: 'Bristol STUF',
+                image: 'https://images.pexels.com/photos/8500398/pexels-photo-8500398.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '45+',
+                sessions: '12'
+              },
+              {
+                location: 'Brent STUF',
+                image: 'https://images.pexels.com/photos/5212653/pexels-photo-5212653.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '60+',
+                sessions: '15'
+              },
+              {
+                location: 'Barnet STUF',
+                image: 'https://images.pexels.com/photos/5212320/pexels-photo-5212320.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '38+',
+                sessions: '10'
+              },
+              {
+                location: 'Bushey STUF',
+                image: 'https://images.pexels.com/photos/5212695/pexels-photo-5212695.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '35+',
+                sessions: '9'
+              },
+              {
+                location: 'Camden STUF',
+                image: 'https://images.pexels.com/photos/5212340/pexels-photo-5212340.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '52+',
+                sessions: '14'
+              },
+              {
+                location: 'Croydon STUF',
+                image: 'https://images.pexels.com/photos/8500433/pexels-photo-8500433.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '70+',
+                sessions: '18'
+              },
+              {
+                location: 'Harrow STUF',
+                image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '55+',
+                sessions: '16'
+              },
+              {
+                location: 'Kensington & Chelsea STUF',
+                image: 'https://images.pexels.com/photos/8500427/pexels-photo-8500427.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '42+',
+                sessions: '11'
+              },
+              {
+                location: 'King College STUF',
+                image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '48+',
+                sessions: '13'
+              },
+              {
+                location: 'Kent STUF',
+                image: 'https://images.pexels.com/photos/8500452/pexels-photo-8500452.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '50+',
+                sessions: '14'
+              },
+              {
+                location: 'Southwark STUF',
+                image: 'https://images.pexels.com/photos/5212662/pexels-photo-5212662.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '65+',
+                sessions: '17'
+              },
+              {
+                location: 'Uganda STUF',
+                image: 'https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                students: '80+',
+                sessions: '20'
+              }
+            ].map((workshop, idx) => (
+              <div key={workshop.location} className="group scroll-reveal" style={{ transitionDelay: `${idx * 0.05}s` }}>
+                <div className="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-700 magnetic-hover bg-white">
+                  <div className="relative h-72 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+                    <img
+                      src={workshop.image}
+                      alt={workshop.location}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                      <h3 className="text-2xl font-bold text-white mb-3">{workshop.location}</h3>
+                      <div className="flex gap-4">
+                        <div className="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/30">
+                          <p className="text-white text-sm font-semibold">{workshop.students} Students</p>
+                        </div>
+                        <div className="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/30">
+                          <p className="text-white text-sm font-semibold">{workshop.sessions} Sessions</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-6 bg-gradient-to-br from-pink-50/50 to-white">
+                    <div className="flex items-center justify-between">
+                      <span className="text-gray-600 text-sm font-medium">Financial Literacy Workshop</span>
+                      <div className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110" style={{ backgroundColor: '#EEBDC2' }}>
+                        <span className="text-white text-lg">✓</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-20 text-center scroll-reveal">
+            <div className="inline-flex flex-col sm:flex-row gap-5">
+              <a href="#donate" className="px-10 py-5 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 magnetic-hover" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
+                Bring STUF to Your Area
+              </a>
+              <a href="#partners" className="px-10 py-5 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:bg-gray-900 hover:text-white border-2 border-gray-900 text-gray-900">
+                View Our Partners
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -834,6 +948,7 @@ function App() {
               <ul className="space-y-3">
                 <li><a href="#who-we-help" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Who We Help</a></li>
                 <li><a href="#programs" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Programs</a></li>
+                <li><a href="#workshop-locations" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Workshops</a></li>
                 <li><a href="#team" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Team</a></li>
                 <li><a href="#donate" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Donate</a></li>
               </ul>
