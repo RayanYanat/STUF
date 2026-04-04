@@ -521,7 +521,7 @@ function App() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent z-10"></div>
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10"></div>
                 <img
-                  src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="https://images.pexels.com/photos/8919566/pexels-photo-8919566.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Financial Literacy Workshops"
                   className="w-full h-[250px] sm:h-[350px] lg:h-[450px] xl:h-[550px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
