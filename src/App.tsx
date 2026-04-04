@@ -656,10 +656,30 @@ function App() {
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 hidden md:block" style={{ background: 'linear-gradient(180deg, #EEBDC2 0%, #D4A5AB 50%, #EEBDC2 100%)' }}></div>
             <div className="space-y-16">
               {[
-                { year: '2022', title: 'Foundation Setup', desc: 'Established STUF and developed comprehensive syllabus for financial education', past: true },
-                { year: '2023', title: 'Workshop Pilots', desc: 'Successfully launched pilot workshops across London, Bristol, and Kent', past: true },
-                { year: '2024', title: 'South England Expansion', desc: 'Expanded workshops, launched mentorship program, and partnered with universities for research', past: true },
-                { year: '2025', title: 'Curriculum Integration & Accreditation', desc: 'Integrating into school curricula, launching e-learning platform, and expanding UK-wide with international reach', past: false }
+                {
+                  year: '2022',
+                  title: 'Foundation & Syllabus',
+                  items: ['Set up of the foundation', 'Production of the syllabus'],
+                  past: true
+                },
+                {
+                  year: '2023',
+                  title: 'Workshop Pilots',
+                  items: ['Piloting the workshops: London, Bristol and Kent'],
+                  past: true
+                },
+                {
+                  year: '2024',
+                  title: 'Programs & Research Launch',
+                  items: ['Mentorship programme begins Q4', 'Delivering workshops: South of England', 'Research programme with University Of West London starts Q4'],
+                  past: true
+                },
+                {
+                  year: '2025',
+                  title: 'National Expansion & Platform',
+                  items: ['Become a necessary curriculum lesson', 'Reach accreditation', 'E-learning platform', 'Coverage across the United Kingdom offering financial education to schools, community associations, colleges and universities', 'Worldwide outreach 2'],
+                  past: false
+                }
               ].map((milestone, idx) => (
                 <div key={milestone.year} className={`grid md:grid-cols-2 gap-8 items-center scroll-reveal ${idx % 2 === 0 ? '' : 'md:flex-row-reverse'}`} style={{ transitionDelay: `${idx * 0.1}s` }}>
                   {idx % 2 === 0 ? (
@@ -668,8 +688,15 @@ function App() {
                         <div className={`inline-block px-8 py-4 rounded-2xl border-4 font-bold text-3xl mb-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 ${milestone.past ? 'bg-white' : 'text-white'}`} style={{ borderColor: '#EEBDC2', backgroundColor: milestone.past ? 'white' : '#EEBDC2', color: milestone.past ? '#161616' : 'white' }}>
                           {milestone.year}
                         </div>
-                        <h3 className="text-3xl font-bold text-gray-900 mb-3">{milestone.title}</h3>
-                        <p className="text-gray-600 text-lg leading-relaxed">{milestone.desc}</p>
+                        <h3 className="text-3xl font-bold text-gray-900 mb-4">{milestone.title}</h3>
+                        <ul className="space-y-3">
+                          {milestone.items.map((item, i) => (
+                            <li key={i} className="text-gray-600 text-lg leading-relaxed flex items-start gap-3 justify-end">
+                              <span className="md:order-2">{item}</span>
+                              <span className="text-2xl md:order-1" style={{ color: '#EEBDC2' }}>–</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                       <div className="hidden md:block"></div>
                     </>
@@ -680,8 +707,15 @@ function App() {
                         <div className={`inline-block px-8 py-4 rounded-2xl border-4 font-bold text-3xl mb-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 ${milestone.past ? 'bg-white' : 'text-white'}`} style={{ borderColor: '#EEBDC2', backgroundColor: milestone.past ? 'white' : '#EEBDC2', color: milestone.past ? '#161616' : 'white' }}>
                           {milestone.year}
                         </div>
-                        <h3 className="text-3xl font-bold text-gray-900 mb-3">{milestone.title}</h3>
-                        <p className="text-gray-600 text-lg leading-relaxed">{milestone.desc}</p>
+                        <h3 className="text-3xl font-bold text-gray-900 mb-4">{milestone.title}</h3>
+                        <ul className="space-y-3">
+                          {milestone.items.map((item, i) => (
+                            <li key={i} className="text-gray-600 text-lg leading-relaxed flex items-start gap-3">
+                              <span className="text-2xl" style={{ color: '#EEBDC2' }}>–</span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </>
                   )}
