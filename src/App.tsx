@@ -965,7 +965,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/BRENT%20LOGO%20%2B%20white%20%2B%20LOGOTYPE%20black%20small.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:514,h:200,cg:true"
                 alt="Brent Council"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -973,7 +973,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/bentley%20logo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                 alt="Bentley"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -981,7 +981,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Power%20up%20london%20logo.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:334,h:200,cg:true"
                 alt="Power Up London"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -989,7 +989,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/CAF-Logo-Standard.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:320,h:200,cg:true"
                 alt="CAF"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -997,7 +997,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Woodward-Logo-March-2023-374x374.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                 alt="Woodward"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -1005,7 +1005,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/64ee2af5aa132.webp/:/rs=w:916,h:200,cg:true,m/cr=w:916,h:200"
                 alt="Partner"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -1013,7 +1013,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/clothworkers_foundation_navy.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:650,h:200,cg:true"
                 alt="Clothworkers Foundation"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -1021,7 +1021,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/images%20(2).png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                 alt="Partner"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -1029,7 +1029,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/DiNN%2Blogo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                 alt="DiNN"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -1037,7 +1037,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-fdb8e4a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:200,h:200,cg:true"
                 alt="Partner"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -1045,7 +1045,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Camden-Giving-cmyk-logo-01-300x133.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:300,h:133,cg:true"
                 alt="Camden Giving"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
 
@@ -1053,7 +1053,7 @@ function App() {
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/living%20wage.jpg/:/rs=w:253,h:200,cg:true,m/cr=w:253,h:200"
                 alt="Living Wage"
-                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full h-auto max-h-20 object-contain transition-all duration-300 group-hover:scale-110"
               />
             </div>
           </div>
