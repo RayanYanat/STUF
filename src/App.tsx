@@ -63,7 +63,7 @@ function App() {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 }
     );
     const statsSection = document.getElementById('stats');
     if (statsSection) observer.observe(statsSection);
@@ -295,6 +295,7 @@ function App() {
             <a href="#ready-to-transform" className="hidden lg:block px-5 py-2.5 xl:px-7 xl:py-3.5 rounded-full font-semibold text-xs xl:text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 hover:scale-105 active:scale-95 relative overflow-hidden group shine-effect flex-shrink-0" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
               <span className="relative z-10">Contact Us</span>
             </a>
+            <MobileMenu />
           </nav>
         </div>
       </header>
@@ -1159,7 +1160,6 @@ function App() {
           </div>
         </div>
       </footer>
-      <MobileMenu />
     </>
   );
 }

@@ -37,7 +37,7 @@ export default function MobileMenu() {
   };
 
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center justify-center w-10 h-10 rounded-lg transition-all duration-300 hover:bg-gray-100"
@@ -53,7 +53,8 @@ export default function MobileMenu() {
       {isOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 top-[73px]"
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+            style={{ top: '73px' }}
             onClick={() => setIsOpen(false)}
           />
           <div className="absolute top-full right-0 mt-2 z-50 bg-white rounded-2xl shadow-2xl overflow-hidden w-56 border border-gray-100">
