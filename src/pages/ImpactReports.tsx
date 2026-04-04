@@ -92,29 +92,6 @@ function ImpactReports() {
                         In partnership with Investec, we delivered the Money Matters Academy to 20 young people from Newham College in East London. This comprehensive report showcases measurable improvements in financial capability, confidence, and behavioural intention among participants.
                       </p>
 
-                      <div className="space-y-4 mb-8">
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 rounded-full mt-2" style={{ backgroundColor: '#EEBDC2' }}></div>
-                          <div>
-                            <h4 className="font-semibold text-gray-900 mb-1">100% Budgeting Understanding</h4>
-                            <p className="text-gray-600 text-sm">All participants now understand how to create an effective budget plan</p>
-                          </div>
-                        </div>
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 rounded-full mt-2" style={{ backgroundColor: '#EEBDC2' }}></div>
-                          <div>
-                            <h4 className="font-semibold text-gray-900 mb-1">75% Saving Confidence</h4>
-                            <p className="text-gray-600 text-sm">Young people now feel confident saving for long-term goals</p>
-                          </div>
-                        </div>
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 rounded-full mt-2" style={{ backgroundColor: '#EEBDC2' }}></div>
-                          <div>
-                            <h4 className="font-semibold text-gray-900 mb-1">Corporate Partnership Impact</h4>
-                            <p className="text-gray-600 text-sm">Engaging 10 Investec volunteers who gained new perspectives on financial inequality</p>
-                          </div>
-                        </div>
-                      </div>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">
