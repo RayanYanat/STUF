@@ -729,92 +729,30 @@ function App() {
         </div>
       </section>
 
-      <section id="impact-banner" className="bg-gradient-to-br from-pink-50 via-white to-pink-100 py-32 relative overflow-hidden border-t-4 border-b-4" style={{ borderColor: '#EEBDC2' }}>
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-80 h-80 rounded-full blur-3xl" style={{ backgroundColor: '#EEBDC2' }}></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full blur-3xl" style={{ backgroundColor: '#F5D4D8' }}></div>
-        </div>
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="scroll-reveal">
-              <div className="inline-flex items-center gap-2 mb-6 px-5 py-2.5 bg-white/90 backdrop-blur-md rounded-full text-xs font-bold uppercase tracking-wider shadow-lg border-2" style={{ borderColor: '#EEBDC2', color: '#161616' }}>
-                <span className="text-2xl">📊</span>
-                <span>2025 Annual Report</span>
-              </div>
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-6 leading-[1.1]" style={{ letterSpacing: '-2px' }}>
-                Money Matters Academy <span className="gradient-text block">Impact Report 2025</span>
-              </h2>
-              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8 font-light">
-                Discover how our partnership with Investec empowered 20 young people with essential financial skills, achieving 100% budgeting understanding and 75% saving confidence.
-              </p>
-              <div className="grid grid-cols-3 gap-6 mb-10">
-                <div className="text-center p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border" style={{ borderColor: '#EEBDC2' }}>
-                  <div className="text-4xl font-extrabold gradient-text mb-1">100%</div>
-                  <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Budgeting Understanding</div>
-                </div>
-                <div className="text-center p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border" style={{ borderColor: '#EEBDC2' }}>
-                  <div className="text-4xl font-extrabold gradient-text mb-1">75%</div>
-                  <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Saving Confidence</div>
-                </div>
-                <div className="text-center p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border" style={{ borderColor: '#EEBDC2' }}>
-                  <div className="text-4xl font-extrabold gradient-text mb-1">95%</div>
-                  <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Will Share Learning</div>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="/impact-reports"
-                  className="group px-10 py-5 rounded-full font-bold text-base tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/70 hover:scale-105 magnetic-hover inline-block text-center shine-effect relative overflow-hidden"
-                  style={{ backgroundColor: '#EEBDC2', color: '#161616' }}
-                >
-                  <span className="relative z-10 flex items-center justify-center gap-3">
-                    <span>View Full Report</span>
-                    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
-                </a>
-                <a
-                  href="/STUF_2025_ANNUAL_REPORT.pdf"
-                  download
-                  className="px-10 py-5 rounded-full font-bold text-base tracking-wide transition-all duration-500 hover:bg-gray-900 hover:text-white magnetic-hover inline-block text-center border-3 border-gray-900 text-gray-900 flex items-center justify-center gap-3"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                  <span>Download PDF</span>
-                </a>
-              </div>
-            </div>
-            <div className="scroll-reveal hidden md:block">
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-pink-200/60 via-pink-300/60 to-pink-200/60 rounded-3xl blur-2xl opacity-60 group-hover:opacity-80 transition-all duration-700 animate-pulse-glow"></div>
-                <div className="relative bg-white rounded-3xl shadow-2xl p-8 ring-1 ring-gray-900/5 transform transition-all duration-700 group-hover:scale-[1.02]">
-                  <img
-                    src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="Money Matters Academy Workshop"
-                    className="rounded-2xl w-full h-auto shadow-lg"
-                  />
-                  <div className="mt-6 space-y-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-full flex items-center justify-center text-2xl" style={{ backgroundColor: '#EEBDC2' }}>🎓</div>
-                      <div>
-                        <div className="font-bold text-gray-900">20 Students</div>
-                        <div className="text-sm text-gray-600">Newham College, East London</div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-full flex items-center justify-center text-2xl" style={{ backgroundColor: '#EEBDC2' }}>💼</div>
-                      <div>
-                        <div className="font-bold text-gray-900">10 Volunteers</div>
-                        <div className="text-sm text-gray-600">Investec Employees</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section id="impact-banner" className="bg-white py-16 relative overflow-hidden border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
+          <div className="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-pink-50 rounded-full border" style={{ borderColor: '#EEBDC2' }}>
+            <svg className="w-5 h-5" style={{ color: '#EEBDC2' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <span className="text-sm font-semibold text-gray-700">Our Impact</span>
           </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+            Read Our <span className="gradient-text">Impact Reports</span>
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 font-light leading-relaxed max-w-2xl mx-auto">
+            Explore detailed insights into our programs and the difference we're making in financial education
+          </p>
+          <a
+            href="/impact-reports"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-base tracking-wide transition-all duration-500 hover:shadow-xl hover:shadow-pink-200/50 hover:scale-105 magnetic-hover shine-effect group"
+            style={{ backgroundColor: '#EEBDC2', color: '#161616' }}
+          >
+            <span>View Impact Reports</span>
+            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
         </div>
       </section>
 
@@ -1096,12 +1034,6 @@ function App() {
           <p className="text-xl lg:text-2xl mb-8 leading-relaxed text-gray-600 font-light max-w-3xl mx-auto">
             Join schools and partners across the UK empowering students with essential money skills.
           </p>
-          <div className="mb-10">
-            <a href="/impact-reports" className="inline-flex items-center gap-2 text-lg font-semibold hover:gap-4 transition-all duration-300" style={{ color: '#EEBDC2' }}>
-              See our latest impact reports
-              <span className="text-xl">→</span>
-            </a>
-          </div>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="mailto:hello@stuf.org.uk" className="group px-12 py-6 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 magnetic-hover inline-block shine-effect" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
               <span className="relative z-10">✉️ Email: hello@stuf.org.uk</span>
