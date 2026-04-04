@@ -277,10 +277,6 @@ function App() {
                 Workshops
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="/impact-reports" className="text-gray-700 hover:text-gray-900 font-medium text-xs xl:text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
-                Impact Reports
-                <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
-              </a>
               <a href="#team" className="text-gray-700 hover:text-gray-900 font-medium text-xs xl:text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Team
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
