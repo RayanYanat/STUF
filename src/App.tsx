@@ -708,73 +708,73 @@ function App() {
             {[
               {
                 location: 'Bristol STUF',
-                image: 'https://images.pexels.com/photos/8500398/pexels-photo-8500398.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Bristol%20Class%20STUF.jpg/:/cr=t:11.67%25,l:0%25,w:100%25,h:76.67%25/rs=w:800,h:800,cg:true',
                 students: '45+',
                 sessions: '12'
               },
               {
                 location: 'Brent STUF',
-                image: 'https://images.pexels.com/photos/5212653/pexels-photo-5212653.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20240306-WA0014.jpg/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true',
                 students: '60+',
                 sessions: '15'
               },
               {
                 location: 'Barnet STUF',
-                image: 'https://images.pexels.com/photos/5212320/pexels-photo-5212320.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_4275.jpeg/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true',
                 students: '38+',
                 sessions: '10'
               },
               {
                 location: 'Bushey STUF',
-                image: 'https://images.pexels.com/photos/5212695/pexels-photo-5212695.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_4243.jpeg/:/cr=t:21.15%25,l:11.54%25,w:76.92%25,h:57.69%25/rs=w:800,h:800,cg:true,m',
                 students: '35+',
                 sessions: '9'
               },
               {
                 location: 'Camden STUF',
-                image: 'https://images.pexels.com/photos/5212340/pexels-photo-5212340.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0094.jpg/:/cr=t:18.7%25,l:0%25,w:100%25,h:75%25/rs=w:800,h:800,cg:true',
                 students: '52+',
                 sessions: '14'
               },
               {
                 location: 'Croydon STUF',
-                image: 'https://images.pexels.com/photos/8500433/pexels-photo-8500433.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/20241120_100054.jpg/:/cr=t:31.31%25,l:0%25,w:100%25,h:46.72%25/rs=w:800,h:800,cg:true',
                 students: '70+',
                 sessions: '18'
               },
               {
                 location: 'Harrow STUF',
-                image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20240228-WA0021.jpg/:/cr=t:12.5%25,l:0%25,w:100%25,h:75%25/rs=w:800,h:800,cg:true',
                 students: '55+',
                 sessions: '16'
               },
               {
                 location: 'Kensington & Chelsea STUF',
-                image: 'https://images.pexels.com/photos/8500427/pexels-photo-8500427.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-9fc4e86.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true',
                 students: '42+',
                 sessions: '11'
               },
               {
                 location: 'King College STUF',
-                image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_2268.JPG/:/cr=t:0%25,l:0%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true',
                 students: '48+',
                 sessions: '13'
               },
               {
                 location: 'Kent STUF',
-                image: 'https://images.pexels.com/photos/8500452/pexels-photo-8500452.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0079.jpg/:/rs=w:800,h:800,cg:true,m/cr=w:800,h:800',
                 students: '50+',
                 sessions: '14'
               },
               {
                 location: 'Southwark STUF',
-                image: 'https://images.pexels.com/photos/5212662/pexels-photo-5212662.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-1a71eb1.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true',
                 students: '65+',
                 sessions: '17'
               },
               {
                 location: 'Uganda STUF',
-                image: 'https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=1200',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/20240814_150409.jpg/:/cr=t:11.54%25,l:11.54%25,w:76.92%25,h:76.92%25/rs=w:800,h:800,cg:true,m',
                 students: '80+',
                 sessions: '20'
               }
