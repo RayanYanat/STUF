@@ -100,7 +100,7 @@ function ImpactReports() {
 
                     <div className="flex flex-col sm:flex-row gap-4">
                       <a
-                        href="/STUF_2025_ANNUAL_REPORT_copy.pdf"
+                        href="/STUF_PDF_FINALE_REPORT.pdf"
                         download
                         className="flex items-center justify-center gap-3 px-8 py-4 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 hover:scale-105 shine-effect"
                         style={{ backgroundColor: '#EEBDC2', color: '#161616' }}
@@ -109,7 +109,7 @@ function ImpactReports() {
                         Download Report
                       </a>
                       <a
-                        href="/STUF_2025_ANNUAL_REPORT_copy.pdf"
+                        href="/STUF_PDF_FINALE_REPORT.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-3 px-8 py-4 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:bg-gray-900 hover:text-white border-2 border-gray-900 text-gray-900"
