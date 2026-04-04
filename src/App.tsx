@@ -407,6 +407,74 @@ function App() {
         </div>
       </section>
 
+      <section id="what-we-do" className="bg-gradient-to-b from-pink-100/60 via-pink-50/40 to-white py-16 sm:py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 lg:mb-20 scroll-reveal">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-4">
+              WHAT WE DO
+            </h2>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-8 lg:gap-12">
+            <div className="group scroll-reveal">
+              <div className="bg-gray-900 rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover h-full flex flex-col">
+                <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+                  <span className="text-pink-200">GOOD MONEY</span>
+                  <br />
+                  <span className="text-pink-200">HABITS </span>
+                  <span className="bg-white text-gray-900 px-3 py-1 inline-block font-black">STUF</span>
+                </h3>
+                <p className="text-gray-900 bg-white px-6 py-8 rounded-2xl text-lg lg:text-xl leading-relaxed mt-6">
+                  Financial planning basics that'll help young people to form and reach their life goals.
+                </p>
+              </div>
+            </div>
+
+            <div className="group scroll-reveal" style={{ transitionDelay: '0.1s' }}>
+              <div className="bg-gray-900 rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover h-full flex flex-col">
+                <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+                  <span className="text-pink-200">GROWING YOUR</span>
+                  <br />
+                  <span className="text-pink-200">FUNDS </span>
+                  <span className="bg-white text-gray-900 px-3 py-1 inline-block font-black">STUF</span>
+                </h3>
+                <p className="text-gray-900 bg-white px-6 py-8 rounded-2xl text-lg lg:text-xl leading-relaxed mt-6">
+                  Helping young people to make smart choices about how to invest their money.
+                </p>
+              </div>
+            </div>
+
+            <div className="group scroll-reveal" style={{ transitionDelay: '0.2s' }}>
+              <div className="bg-gray-900 rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover h-full flex flex-col">
+                <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+                  <span className="text-pink-200">GETTING YOUR</span>
+                  <br />
+                  <span className="text-pink-200">OWN PLACE </span>
+                  <span className="bg-white text-gray-900 px-3 py-1 inline-block font-black">STUF</span>
+                </h3>
+                <p className="text-gray-900 bg-white px-6 py-8 rounded-2xl text-lg lg:text-xl leading-relaxed mt-6">
+                  Mortgage and rental fundamentals that'll help set first time buyers, renters, and flat sharers up for success.
+                </p>
+              </div>
+            </div>
+
+            <div className="group scroll-reveal" style={{ transitionDelay: '0.3s' }}>
+              <div className="bg-gray-900 rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover h-full flex flex-col">
+                <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+                  <span className="text-pink-200">SAVING FOR THE</span>
+                  <br />
+                  <span className="text-pink-200">FUTURE </span>
+                  <span className="bg-white text-gray-900 px-3 py-1 inline-block font-black">STUF</span>
+                </h3>
+                <p className="text-gray-900 bg-white px-6 py-8 rounded-2xl text-lg lg:text-xl leading-relaxed mt-6">
+                  Covering the importance of pensions and how current you can support future you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="who-we-help" className="bg-white py-16 sm:py-24 lg:py-32 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-pink-50/40 to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-gray-50/60 to-transparent"></div>
