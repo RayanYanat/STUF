@@ -294,7 +294,7 @@ function App() {
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
             </div>
-            <a href="mailto:hello@stuf.org.uk" className="hidden lg:block px-5 py-2.5 xl:px-7 xl:py-3.5 rounded-full font-semibold text-xs xl:text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 hover:scale-105 active:scale-95 relative overflow-hidden group shine-effect flex-shrink-0" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
+            <a href="#contact" className="hidden lg:block px-5 py-2.5 xl:px-7 xl:py-3.5 rounded-full font-semibold text-xs xl:text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 hover:scale-105 active:scale-95 relative overflow-hidden group shine-effect flex-shrink-0" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
               <span className="relative z-10">Contact Us</span>
             </a>
           </nav>
@@ -1115,43 +1115,95 @@ function App() {
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-white py-24">
+      <section id="contact" className="bg-gray-900 text-white py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-12 mb-16">
-            <div className="md:col-span-2">
-              <h3 className="text-3xl font-bold mb-6">Set Them Up Foundation</h3>
-              <p className="text-white/70 leading-relaxed text-base mb-8 font-light">
-                A UK-based charity dedicated to empowering young people with the financial skills they need to thrive in the modern world.
-              </p>
-              <div className="flex gap-4">
-                <a href="#" className="w-14 h-14 rounded-full flex items-center justify-center text-xl transition-all duration-500 hover:scale-110 hover:-translate-y-1 shadow-lg" style={{ backgroundColor: '#EEBDC2' }}>📘</a>
-                <a href="#" className="w-14 h-14 rounded-full flex items-center justify-center text-xl transition-all duration-500 hover:scale-110 hover:-translate-y-1 shadow-lg" style={{ backgroundColor: '#EEBDC2' }}>🐦</a>
-                <a href="#" className="w-14 h-14 rounded-full flex items-center justify-center text-xl transition-all duration-500 hover:scale-110 hover:-translate-y-1 shadow-lg" style={{ backgroundColor: '#EEBDC2' }}>💼</a>
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-pink-200 to-pink-100 bg-clip-text text-transparent">Get In Touch</h2>
+            <p className="text-white/70 text-xl max-w-3xl mx-auto font-light">
+              We'd love to hear from you. Reach out to us for any questions or to learn more about our programs.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div className="glass-card p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 bg-white/5 backdrop-blur-sm border border-white/10">
+              <h3 className="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span className="w-12 h-12 rounded-full flex items-center justify-center text-xl" style={{ backgroundColor: '#EEBDC2' }}>✉️</span>
+                Email Us
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <p className="text-white/50 text-sm mb-2 uppercase tracking-wider">UK Office</p>
+                  <a href="mailto:hello@stuf.org.uk" className="text-2xl font-semibold hover:text-pink-300 transition-colors duration-300 block">
+                    hello@stuf.org.uk
+                  </a>
+                </div>
+                <div>
+                  <p className="text-white/50 text-sm mb-2 uppercase tracking-wider">Uganda Office</p>
+                  <a href="mailto:info@ug-stuf.com" className="text-2xl font-semibold hover:text-pink-300 transition-colors duration-300 block">
+                    info@ug-stuf.com
+                  </a>
+                </div>
               </div>
             </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
-              <ul className="space-y-3">
-                <li><a href="#who-we-help" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Who We Help</a></li>
-                <li><a href="#programs" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Programs</a></li>
-                <li><a href="#workshop-locations" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Workshops</a></li>
-                <li><a href="#team" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Team</a></li>
-                <li><a href="#donate" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Donate</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-6">Contact</h4>
-              <ul className="space-y-3 text-sm">
-                <li className="text-white/60 hover:text-white transition-colors duration-300">hello@stuf.org.uk</li>
-                <li className="text-white/60 hover:text-white transition-colors duration-300">info@ug-stuf.com</li>
-              </ul>
+
+            <div className="glass-card p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 bg-white/5 backdrop-blur-sm border border-white/10">
+              <h3 className="text-3xl font-bold mb-8 flex items-center gap-3">
+                <span className="w-12 h-12 rounded-full flex items-center justify-center text-xl" style={{ backgroundColor: '#EEBDC2' }}>📍</span>
+                Visit Us
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <p className="text-white/50 text-sm mb-2 uppercase tracking-wider">Registered Address</p>
+                  <p className="text-xl leading-relaxed font-light">
+                    Set Them Up Foundation<br />
+                    71-75 Shelton Street<br />
+                    Covent Garden<br />
+                    London, WC2H 9JQ<br />
+                    United Kingdom
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="border-t border-white/20 pt-10 text-center">
+
+          <div className="border-t border-white/20 pt-16">
+            <div className="grid md:grid-cols-4 gap-12">
+              <div className="md:col-span-2">
+                <h3 className="text-3xl font-bold mb-6">Set Them Up Foundation</h3>
+                <p className="text-white/70 leading-relaxed text-base mb-8 font-light">
+                  A UK-based charity dedicated to empowering young people with the financial skills they need to thrive in the modern world.
+                </p>
+                <div className="flex gap-4">
+                  <a href="#" className="w-14 h-14 rounded-full flex items-center justify-center text-xl transition-all duration-500 hover:scale-110 hover:-translate-y-1 shadow-lg" style={{ backgroundColor: '#EEBDC2' }}>📘</a>
+                  <a href="#" className="w-14 h-14 rounded-full flex items-center justify-center text-xl transition-all duration-500 hover:scale-110 hover:-translate-y-1 shadow-lg" style={{ backgroundColor: '#EEBDC2' }}>🐦</a>
+                  <a href="#" className="w-14 h-14 rounded-full flex items-center justify-center text-xl transition-all duration-500 hover:scale-110 hover:-translate-y-1 shadow-lg" style={{ backgroundColor: '#EEBDC2' }}>💼</a>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
+                <ul className="space-y-3">
+                  <li><a href="#who-we-help" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Who We Help</a></li>
+                  <li><a href="#programs" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Programs</a></li>
+                  <li><a href="#workshop-locations" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Workshops</a></li>
+                  <li><a href="#team" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Team</a></li>
+                  <li><a href="#donate" className="text-white/60 hover:text-white transition-colors duration-300 text-sm">Donate</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold mb-6">Charity Info</h4>
+                <ul className="space-y-3 text-sm">
+                  <li className="text-white/60">Charity No. 1234567</li>
+                  <li className="text-white/60">Registered in England & Wales</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-white/20 mt-16 pt-10 text-center">
             <p className="text-white/50 text-sm font-light">© 2025 Set Them Up Foundation. All rights reserved.</p>
           </div>
         </div>
-      </footer>
+      </section>
     </>
   );
 }
