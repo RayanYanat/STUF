@@ -264,28 +264,28 @@ function App() {
                 className="h-11 sm:h-13 md:h-16 transition-all duration-500 hover:scale-110 filter drop-shadow-md"
               />
             </div>
-            <div className="hidden lg:flex gap-4 xl:gap-6 items-center flex-shrink-0">
-              <a href="#who-we-help" className="text-gray-700 hover:text-gray-900 font-medium text-xs xl:text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
+            <div className="hidden lg:flex gap-6 xl:gap-8 items-center flex-shrink-0">
+              <a href="#who-we-help" className="text-gray-700 hover:text-gray-900 font-medium text-sm xl:text-base tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Who We Help
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="#programs" className="text-gray-700 hover:text-gray-900 font-medium text-xs xl:text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
+              <a href="#programs" className="text-gray-700 hover:text-gray-900 font-medium text-sm xl:text-base tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Programs
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="#workshop-locations" className="text-gray-700 hover:text-gray-900 font-medium text-xs xl:text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
+              <a href="#workshop-locations" className="text-gray-700 hover:text-gray-900 font-medium text-sm xl:text-base tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Workshops
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="#team" className="text-gray-700 hover:text-gray-900 font-medium text-xs xl:text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
+              <a href="#team" className="text-gray-700 hover:text-gray-900 font-medium text-sm xl:text-base tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Team
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="#roadmap" className="text-gray-700 hover:text-gray-900 font-medium text-xs xl:text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
+              <a href="#roadmap" className="text-gray-700 hover:text-gray-900 font-medium text-sm xl:text-base tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Roadmap
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="#donate" className="text-gray-700 hover:text-gray-900 font-medium text-xs xl:text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
+              <a href="#donate" className="text-gray-700 hover:text-gray-900 font-medium text-sm xl:text-base tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Donate
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
