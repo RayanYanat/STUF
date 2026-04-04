@@ -963,7 +963,55 @@ function App() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12 items-center scroll-reveal">
             <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
               <img
-                src="https://www.clothworkersfoundation.org.uk/wp-content/themes/clothworkers/img/logo.svg"
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/BRENT%20LOGO%20%2B%20white%20%2B%20LOGOTYPE%20black%20small.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:514,h:200,cg:true"
+                alt="Brent Council"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/bentley%20logo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                alt="Bentley"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Power%20up%20london%20logo.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:334,h:200,cg:true"
+                alt="Power Up London"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/CAF-Logo-Standard.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:320,h:200,cg:true"
+                alt="CAF"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Woodward-Logo-March-2023-374x374.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                alt="Woodward"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/64ee2af5aa132.webp/:/rs=w:916,h:200,cg:true,m/cr=w:916,h:200"
+                alt="Partner"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/clothworkers_foundation_navy.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:650,h:200,cg:true"
                 alt="Clothworkers Foundation"
                 className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
               />
@@ -971,47 +1019,42 @@ function App() {
 
             <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
               <img
-                src="https://www.brent.gov.uk/media/16409844/brent-council-logo.png"
-                alt="Brent Council"
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/images%20(2).png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                alt="Partner"
                 className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
               />
             </div>
 
             <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900 mb-1">Big Issue</div>
-                <div className="text-sm font-semibold" style={{ color: '#EEBDC2' }}>Power Up London</div>
-              </div>
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/DiNN%2Blogo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                alt="DiNN"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
             </div>
 
             <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
-              <div className="text-center">
-                <div className="text-xl font-bold text-gray-900">Partner Logo</div>
-              </div>
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-fdb8e4a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:200,h:200,cg:true"
+                alt="Partner"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
             </div>
 
             <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
-              <div className="text-center">
-                <div className="text-xl font-bold text-gray-900">Partner Logo</div>
-              </div>
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Camden-Giving-cmyk-logo-01-300x133.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:300,h:133,cg:true"
+                alt="Camden Giving"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
             </div>
 
             <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
-              <div className="text-center">
-                <div className="text-xl font-bold text-gray-900">Partner Logo</div>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
-              <div className="text-center">
-                <div className="text-xl font-bold text-gray-900">Partner Logo</div>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
-              <div className="text-center">
-                <div className="text-xl font-bold text-gray-900">Partner Logo</div>
-              </div>
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/living%20wage.jpg/:/rs=w:253,h:200,cg:true,m/cr=w:253,h:200"
+                alt="Living Wage"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
             </div>
           </div>
         </div>
