@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 
 const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { end: number; duration?: number; suffix?: string; isVisible: boolean }) => {
   const [count, setCount] = useState(0);
@@ -674,8 +675,8 @@ function App() {
           <p className="text-lg text-gray-600 mb-8 font-light leading-relaxed max-w-2xl mx-auto">
             Explore detailed insights into our programs and the difference we're making in financial education
           </p>
-          <a
-            href="/impact-reports"
+          <Link
+            to="/impact-reports"
             className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-base tracking-wide transition-all duration-500 hover:shadow-xl hover:shadow-pink-200/50 hover:scale-105 magnetic-hover shine-effect group"
             style={{ backgroundColor: '#EEBDC2', color: '#161616' }}
           >
@@ -683,7 +684,7 @@ function App() {
             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </Link>
         </div>
       </section>
 
