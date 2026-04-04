@@ -861,14 +861,9 @@ function App() {
           </div>
 
           <div className="mt-20 text-center scroll-reveal">
-            <div className="inline-flex flex-col sm:flex-row gap-5">
-              <a href="#donate" className="px-10 py-5 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 magnetic-hover" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
-                Bring STUF to Your Area
-              </a>
-              <a href="#partners" className="px-10 py-5 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:bg-gray-900 hover:text-white border-2 border-gray-900 text-gray-900">
-                View Our Partners
-              </a>
-            </div>
+            <a href="#donate" className="inline-block px-10 py-5 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 magnetic-hover" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
+              Bring STUF to Your Area
+            </a>
           </div>
         </div>
       </section>
