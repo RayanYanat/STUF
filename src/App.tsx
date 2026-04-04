@@ -489,13 +489,9 @@ function App() {
             <div className="group bg-white p-10 lg:p-12 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover scroll-reveal border border-gray-100">
               <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl flex items-center justify-center text-4xl lg:text-5xl mb-8 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>🏫</div>
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Schools & Colleges</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed text-base lg:text-lg font-light">
+              <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
                 Bring engaging, curriculum-aligned financial literacy workshops to your students. Our expert-led sessions fit seamlessly into your timetable.
               </p>
-              <a href="#schools" className="font-semibold text-sm tracking-wide inline-flex items-center gap-3 transition-all duration-500 group-hover:gap-5" style={{ color: '#EEBDC2' }}>
-                Learn more
-                <span className="text-lg transition-transform duration-500 group-hover:translate-x-1">→</span>
-              </a>
             </div>
             <div className="group bg-white p-10 lg:p-12 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover scroll-reveal border border-gray-100" style={{ transitionDelay: '0.1s' }}>
               <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl flex items-center justify-center text-4xl lg:text-5xl mb-8 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>🤝</div>
@@ -543,13 +539,9 @@ function App() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-10 lg:p-12 z-20">
                   <h3 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">Financial Literacy Workshops</h3>
-                  <p className="text-white/95 text-base lg:text-lg mb-6 leading-relaxed font-light">
+                  <p className="text-white/95 text-base lg:text-lg leading-relaxed font-light">
                     Interactive sessions covering budgeting, saving, investing, and real-world financial decision-making.
                   </p>
-                  <div className="inline-flex items-center gap-3 text-white font-semibold text-sm tracking-wide group-hover:gap-5 transition-all duration-500">
-                    Learn more
-                    <span className="text-lg transition-transform duration-500 group-hover:translate-x-1">→</span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -564,13 +556,9 @@ function App() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-10 lg:p-12 z-20">
                   <h3 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">Mentorship Programs</h3>
-                  <p className="text-white/95 text-base lg:text-lg mb-6 leading-relaxed font-light">
+                  <p className="text-white/95 text-base lg:text-lg leading-relaxed font-light">
                     One-on-one guidance from finance professionals helping young people navigate their financial journey.
                   </p>
-                  <div className="inline-flex items-center gap-3 text-white font-semibold text-sm tracking-wide group-hover:gap-5 transition-all duration-500">
-                    Get a mentor
-                    <span className="text-lg transition-transform duration-500 group-hover:translate-x-1">→</span>
-                  </div>
                 </div>
               </div>
             </div>
