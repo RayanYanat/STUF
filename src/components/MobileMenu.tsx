@@ -37,11 +37,10 @@ export default function MobileMenu() {
   };
 
   return (
-    <>
+    <div className="lg:hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 lg:hidden"
-        style={{ backgroundColor: '#EEBDC2' }}
+        className="flex items-center justify-center w-10 h-10 rounded-lg transition-all duration-300 hover:bg-gray-100"
         aria-label="Menu"
       >
         {isOpen ? (
@@ -54,16 +53,16 @@ export default function MobileMenu() {
       {isOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 top-[73px]"
             onClick={() => setIsOpen(false)}
           />
-          <div className="fixed bottom-24 right-6 z-40 bg-white rounded-3xl shadow-2xl overflow-hidden lg:hidden max-h-[70vh] overflow-y-auto">
-            <div className="p-2">
+          <div className="absolute top-full right-0 mt-2 z-50 bg-white rounded-2xl shadow-2xl overflow-hidden w-56 border border-gray-100">
+            <div className="py-2">
               {sections.map((section, index) => (
                 <button
                   key={section.id}
                   onClick={() => scrollToSection(section.id)}
-                  className="w-full text-left px-6 py-4 text-sm font-medium text-gray-700 hover:bg-pink-50 rounded-2xl transition-all duration-200"
+                  className="w-full text-left px-5 py-3 text-sm font-medium text-gray-700 hover:bg-pink-50 transition-all duration-200"
                   style={{
                     animationDelay: `${index * 30}ms`,
                     animation: 'fadeInUp 0.3s ease-out forwards'
@@ -76,6 +75,6 @@ export default function MobileMenu() {
           </div>
         </>
       )}
-    </>
+    </div>
   );
 }
