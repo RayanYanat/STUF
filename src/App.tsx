@@ -676,8 +676,14 @@ function App() {
                 },
                 {
                   year: '2025',
-                  title: 'National Expansion & Platform',
-                  items: ['Become a necessary curriculum lesson', 'Reach accreditation', 'E-learning platform', 'Coverage across the United Kingdom offering financial education to schools, community associations, colleges and universities', 'Worldwide outreach 2'],
+                  title: 'National Expansion',
+                  items: ['Become a necessary curriculum lesson', 'Coverage across the United Kingdom offering financial education to schools, community associations, colleges and universities'],
+                  past: false
+                },
+                {
+                  year: '2026',
+                  title: 'Global Recognition',
+                  items: ['Reach accreditation', 'E-learning platform', 'Worldwide outreach 2'],
                   past: false
                 }
               ].map((milestone, idx) => (
