@@ -352,35 +352,55 @@ function App() {
           <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-pink-300 to-transparent"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 text-center">
             <div className="group cursor-default scroll-reveal">
               <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
+                <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: '#EEBDC2' }}>Financial Security</div>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">
                   <CountUpAnimation end={11} suffix=".5M" isVisible={countersVisible} />
                 </span>
-                <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block">UK residents with under £100 in savings</span>
+                <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block">11.5 million people in the UK have less than £100 in savings</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.1s' }}>
               <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
+                <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: '#EEBDC2' }}>Lifting People Out of Poverty</div>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">
                   <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
                 </span>
-                <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block">Live below minimum decent living standards</span>
+                <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block">22% of people in the UK live in conditions worse than what is classed the minimum decent standard of living</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.2s' }}>
               <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
+                <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: '#EEBDC2' }}>Financial Literacy</div>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">6 in 10</span>
-                <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block">Feel lacking money management skills</span>
+                <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block">6 in 10 UK people feel they don't have the skills to manage their money properly</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.3s' }}>
               <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
+                <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: '#EEBDC2' }}>Mental Wellbeing</div>
+                <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">
+                  <CountUpAnimation end={4} suffix=".2%" isVisible={countersVisible} />
+                </span>
+                <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block">People with problem debts are 4.2% more likely to suffer with depression more severely and for longer</span>
+              </div>
+            </div>
+            <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.4s' }}>
+              <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
+                <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: '#EEBDC2' }}>Homelessness</div>
+                <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">1 in 22</span>
+                <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block">1 in every 22 people lack a home (in some places in England)</span>
+              </div>
+            </div>
+            <div className="group cursor-default scroll-reveal" style={{ transitionDelay: '0.5s' }}>
+              <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
+                <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: '#EEBDC2' }}>Debt Crises</div>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">
                   <CountUpAnimation end={8} suffix="M" isVisible={countersVisible} />
                 </span>
-                <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block">In serious UK debt</span>
+                <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block">More than 8 million people in the UK are in serious debt and only around a third receive help</span>
               </div>
             </div>
           </div>
