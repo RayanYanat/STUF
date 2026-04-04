@@ -178,14 +178,16 @@ function App() {
         }
 
         .gradient-text {
-          background: linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 25%, #FFE5E9 50%, #F5D4D8 75%, #EEBDC2 100%);
+          background: linear-gradient(135deg, #E91E63 0%, #EC407A 25%, #F48FB1 50%, #EC407A 75%, #E91E63 100%);
           background-size: 300% auto;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
           animation: shimmer 5s ease-in-out infinite;
-          font-weight: 700;
+          font-weight: 800;
           position: relative;
+          filter: drop-shadow(0 0 20px rgba(233, 30, 99, 0.4));
+          text-shadow: 0 0 30px rgba(233, 30, 99, 0.5);
         }
 
         .luxury-border {
