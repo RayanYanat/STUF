@@ -1000,9 +1000,15 @@ function App() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-[1.15] text-gray-900">
             Ready to Transform <span className="gradient-text">Financial Education?</span>
           </h2>
-          <p className="text-xl lg:text-2xl mb-14 leading-relaxed text-gray-600 font-light max-w-3xl mx-auto">
+          <p className="text-xl lg:text-2xl mb-8 leading-relaxed text-gray-600 font-light max-w-3xl mx-auto">
             Join schools and partners across the UK empowering students with essential money skills.
           </p>
+          <div className="mb-10">
+            <a href="/impact-reports" className="inline-flex items-center gap-2 text-lg font-semibold hover:gap-4 transition-all duration-300" style={{ color: '#EEBDC2' }}>
+              See our latest impact reports
+              <span className="text-xl">→</span>
+            </a>
+          </div>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="mailto:hello@stuf.org.uk" className="group px-12 py-6 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 magnetic-hover inline-block shine-effect" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
               <span className="relative z-10">✉️ Email: hello@stuf.org.uk</span>
