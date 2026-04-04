@@ -277,6 +277,10 @@ function App() {
                 Workshops
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
+              <a href="/impact-reports" className="text-gray-700 hover:text-gray-900 font-bold text-sm tracking-wide transition-all duration-300 relative group">
+                Impact Reports
+                <span className="absolute bottom-[-8px] left-0 w-full h-0.5 bg-gradient-to-r from-pink-400 to-pink-300"></span>
+              </a>
               <a href="#team" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group">
                 Team
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
@@ -719,6 +723,95 @@ function App() {
                     <p className="text-gray-700 text-lg leading-relaxed group-hover:text-gray-900 transition-colors">{item}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact-banner" className="bg-gradient-to-br from-pink-50 via-white to-pink-100 py-32 relative overflow-hidden border-t-4 border-b-4" style={{ borderColor: '#EEBDC2' }}>
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-20 w-80 h-80 rounded-full blur-3xl" style={{ backgroundColor: '#EEBDC2' }}></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full blur-3xl" style={{ backgroundColor: '#F5D4D8' }}></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="scroll-reveal">
+              <div className="inline-flex items-center gap-2 mb-6 px-5 py-2.5 bg-white/90 backdrop-blur-md rounded-full text-xs font-bold uppercase tracking-wider shadow-lg border-2" style={{ borderColor: '#EEBDC2', color: '#161616' }}>
+                <span className="text-2xl">📊</span>
+                <span>2025 Annual Report</span>
+              </div>
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-6 leading-[1.1]" style={{ letterSpacing: '-2px' }}>
+                Money Matters Academy <span className="gradient-text block">Impact Report 2025</span>
+              </h2>
+              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8 font-light">
+                Discover how our partnership with Investec empowered 20 young people with essential financial skills, achieving 100% budgeting understanding and 75% saving confidence.
+              </p>
+              <div className="grid grid-cols-3 gap-6 mb-10">
+                <div className="text-center p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border" style={{ borderColor: '#EEBDC2' }}>
+                  <div className="text-4xl font-extrabold gradient-text mb-1">100%</div>
+                  <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Budgeting Understanding</div>
+                </div>
+                <div className="text-center p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border" style={{ borderColor: '#EEBDC2' }}>
+                  <div className="text-4xl font-extrabold gradient-text mb-1">75%</div>
+                  <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Saving Confidence</div>
+                </div>
+                <div className="text-center p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border" style={{ borderColor: '#EEBDC2' }}>
+                  <div className="text-4xl font-extrabold gradient-text mb-1">95%</div>
+                  <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Will Share Learning</div>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="/impact-reports"
+                  className="group px-10 py-5 rounded-full font-bold text-base tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/70 hover:scale-105 magnetic-hover inline-block text-center shine-effect relative overflow-hidden"
+                  style={{ backgroundColor: '#EEBDC2', color: '#161616' }}
+                >
+                  <span className="relative z-10 flex items-center justify-center gap-3">
+                    <span>View Full Report</span>
+                    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </a>
+                <a
+                  href="/STUF_2025_ANNUAL_REPORT.pdf"
+                  download
+                  className="px-10 py-5 rounded-full font-bold text-base tracking-wide transition-all duration-500 hover:bg-gray-900 hover:text-white magnetic-hover inline-block text-center border-3 border-gray-900 text-gray-900 flex items-center justify-center gap-3"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span>Download PDF</span>
+                </a>
+              </div>
+            </div>
+            <div className="scroll-reveal hidden md:block">
+              <div className="relative group">
+                <div className="absolute -inset-4 bg-gradient-to-r from-pink-200/60 via-pink-300/60 to-pink-200/60 rounded-3xl blur-2xl opacity-60 group-hover:opacity-80 transition-all duration-700 animate-pulse-glow"></div>
+                <div className="relative bg-white rounded-3xl shadow-2xl p-8 ring-1 ring-gray-900/5 transform transition-all duration-700 group-hover:scale-[1.02]">
+                  <img
+                    src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Money Matters Academy Workshop"
+                    className="rounded-2xl w-full h-auto shadow-lg"
+                  />
+                  <div className="mt-6 space-y-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full flex items-center justify-center text-2xl" style={{ backgroundColor: '#EEBDC2' }}>🎓</div>
+                      <div>
+                        <div className="font-bold text-gray-900">20 Students</div>
+                        <div className="text-sm text-gray-600">Newham College, East London</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full flex items-center justify-center text-2xl" style={{ backgroundColor: '#EEBDC2' }}>💼</div>
+                      <div>
+                        <div className="font-bold text-gray-900">10 Volunteers</div>
+                        <div className="text-sm text-gray-600">Investec Employees</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
