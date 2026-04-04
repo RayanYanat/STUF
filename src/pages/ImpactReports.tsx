@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 
 function ImpactReports() {
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
