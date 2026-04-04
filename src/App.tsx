@@ -687,47 +687,6 @@ function App() {
         </div>
       </section>
 
-      <section id="testimonials" className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-20 scroll-reveal">
-            <span className="inline-block px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)', color: '#161616' }}>Testimonials</span>
-            <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight" style={{ letterSpacing: '-2px' }}>
-              What People <span className="gradient-text">Say</span>
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="group rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 scroll-reveal">
-              <img
-                src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Workshop session"
-                className="w-full h-96 object-cover transition-all duration-700 group-hover:scale-110"
-              />
-            </div>
-            <div className="scroll-reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="glass-card p-10 rounded-2xl border-l-8 mb-10 hover:shadow-2xl transition-all duration-500 hover:-translate-x-2" style={{ borderColor: '#EEBDC2' }}>
-                <p className="text-2xl text-gray-900 mb-6 leading-relaxed italic font-medium">
-                  "One of the best workshops we've ever had"
-                </p>
-                <p className="text-lg text-gray-700 font-bold">
-                  Troy, Head of Youth Services at QCCA
-                </p>
-              </div>
-              <div className="space-y-6">
-                {[
-                  'Youth excitement and practical application through penny challenges and ISA research',
-                  'Behavioral shift toward sensible financial discussions',
-                  'Engaging facilitators who make complex topics accessible'
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-4 group cursor-default">
-                    <div className="w-3 h-3 rounded-full mt-2 transition-all duration-300 group-hover:scale-150" style={{ backgroundColor: '#EEBDC2' }}></div>
-                    <p className="text-gray-700 text-lg leading-relaxed group-hover:text-gray-900 transition-colors">{item}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="impact-banner" className="bg-white py-16 relative overflow-hidden border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
