@@ -708,104 +708,64 @@ function App() {
             {[
               {
                 location: 'Bristol STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Bristol%20Class%20STUF.jpg/:/cr=t:11.67%25,l:0%25,w:100%25,h:76.67%25/rs=w:800,h:800,cg:true',
-                students: '45+',
-                sessions: '12'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Bristol%20Class%20STUF.jpg/:/cr=t:11.67%25,l:0%25,w:100%25,h:76.67%25/rs=w:800,h:800,cg:true'
               },
               {
                 location: 'Brent STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20240306-WA0014.jpg/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true',
-                students: '60+',
-                sessions: '15'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20240306-WA0014.jpg/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true'
               },
               {
                 location: 'Barnet STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_4275.jpeg/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true',
-                students: '38+',
-                sessions: '10'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_4275.jpeg/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true'
               },
               {
                 location: 'Bushey STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_4243.jpeg/:/cr=t:21.15%25,l:11.54%25,w:76.92%25,h:57.69%25/rs=w:800,h:800,cg:true,m',
-                students: '35+',
-                sessions: '9'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_4243.jpeg/:/cr=t:21.15%25,l:11.54%25,w:76.92%25,h:57.69%25/rs=w:800,h:800,cg:true,m'
               },
               {
                 location: 'Camden STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0094.jpg/:/cr=t:18.7%25,l:0%25,w:100%25,h:75%25/rs=w:800,h:800,cg:true',
-                students: '52+',
-                sessions: '14'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0094.jpg/:/cr=t:18.7%25,l:0%25,w:100%25,h:75%25/rs=w:800,h:800,cg:true'
               },
               {
                 location: 'Croydon STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/20241120_100054.jpg/:/cr=t:31.31%25,l:0%25,w:100%25,h:46.72%25/rs=w:800,h:800,cg:true',
-                students: '70+',
-                sessions: '18'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/20241120_100054.jpg/:/cr=t:31.31%25,l:0%25,w:100%25,h:46.72%25/rs=w:800,h:800,cg:true'
               },
               {
                 location: 'Harrow STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20240228-WA0021.jpg/:/cr=t:12.5%25,l:0%25,w:100%25,h:75%25/rs=w:800,h:800,cg:true',
-                students: '55+',
-                sessions: '16'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20240228-WA0021.jpg/:/cr=t:12.5%25,l:0%25,w:100%25,h:75%25/rs=w:800,h:800,cg:true'
               },
               {
                 location: 'Kensington & Chelsea STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-9fc4e86.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true',
-                students: '42+',
-                sessions: '11'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-9fc4e86.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true'
               },
               {
                 location: 'King College STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_2268.JPG/:/cr=t:0%25,l:0%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true',
-                students: '48+',
-                sessions: '13'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_2268.JPG/:/cr=t:0%25,l:0%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true'
               },
               {
                 location: 'Kent STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0079.jpg/:/rs=w:800,h:800,cg:true,m/cr=w:800,h:800',
-                students: '50+',
-                sessions: '14'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0079.jpg/:/rs=w:800,h:800,cg:true,m/cr=w:800,h:800'
               },
               {
                 location: 'Southwark STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-1a71eb1.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true',
-                students: '65+',
-                sessions: '17'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-1a71eb1.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true'
               },
               {
                 location: 'Uganda STUF',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/20240814_150409.jpg/:/cr=t:11.54%25,l:11.54%25,w:76.92%25,h:76.92%25/rs=w:800,h:800,cg:true,m',
-                students: '80+',
-                sessions: '20'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/20240814_150409.jpg/:/cr=t:11.54%25,l:11.54%25,w:76.92%25,h:76.92%25/rs=w:800,h:800,cg:true,m'
               }
             ].map((workshop, idx) => (
               <div key={workshop.location} className="group scroll-reveal" style={{ transitionDelay: `${idx * 0.05}s` }}>
                 <div className="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-700 magnetic-hover bg-white">
-                  <div className="relative h-72 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+                  <div className="relative h-80 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10 opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
                     <img
                       src={workshop.image}
                       alt={workshop.location}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                      <h3 className="text-2xl font-bold text-white mb-3">{workshop.location}</h3>
-                      <div className="flex gap-4">
-                        <div className="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/30">
-                          <p className="text-white text-sm font-semibold">{workshop.students} Students</p>
-                        </div>
-                        <div className="bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/30">
-                          <p className="text-white text-sm font-semibold">{workshop.sessions} Sessions</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6 bg-gradient-to-br from-pink-50/50 to-white">
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-600 text-sm font-medium">Financial Literacy Workshop</span>
-                      <div className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110" style={{ backgroundColor: '#EEBDC2' }}>
-                        <span className="text-white text-lg">✓</span>
-                      </div>
+                      <h3 className="text-2xl font-bold text-white">{workshop.location}</h3>
                     </div>
                   </div>
                 </div>
