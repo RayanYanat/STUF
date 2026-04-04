@@ -299,21 +299,21 @@ function App() {
 
       <section className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-gray-50 via-white to-pink-50/30">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-10 w-96 h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#EEBDC2' }}></div>
-          <div className="absolute bottom-20 right-10 w-[500px] h-[500px] rounded-full blur-3xl animate-float" style={{ backgroundColor: '#F5D4D8', animationDelay: '2s' }}></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl animate-float" style={{ backgroundColor: '#FFE5E9', animationDelay: '1s' }}></div>
+          <div className="absolute top-20 left-10 w-48 h-48 sm:w-96 sm:h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#EEBDC2' }}></div>
+          <div className="absolute bottom-20 right-10 w-64 h-64 sm:w-[500px] sm:h-[500px] rounded-full blur-3xl animate-float" style={{ backgroundColor: '#F5D4D8', animationDelay: '2s' }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 sm:w-[600px] sm:h-[600px] rounded-full blur-3xl animate-float" style={{ backgroundColor: '#FFE5E9', animationDelay: '1s' }}></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center py-20 lg:py-32">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center py-12 sm:py-16 lg:py-20 xl:py-32">
             <div className="animate-fade-in-up">
               <div className="inline-flex items-center gap-2 mb-8 px-5 py-2.5 bg-white/80 backdrop-blur-md rounded-full text-xs font-semibold tracking-wide shadow-lg border border-pink-100" style={{ color: '#161616' }}>
                 <span className="text-lg animate-glow">🎓</span>
                 <span>Empowering Youth Since 2022</span>
               </div>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-[1.1] text-gray-900">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-[1.1] text-gray-900">
                 We've got the <span className="gradient-text block sm:inline">money stuf</span> covered
               </h1>
-              <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed text-gray-600 font-light">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-600 font-light">
                 Making money stuf simple for young people. We help students get a handle on the fundamentals of finance through partnerships with educational and financial institutions.
               </p>
             </div>
@@ -346,7 +346,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 text-center">
             <div className="group cursor-default scroll-reveal h-full">
-              <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
+              <div className="bg-white/80 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
                 <div className="text-base lg:text-lg font-bold uppercase tracking-wider mb-4" style={{ color: '#EEBDC2' }}>Financial Security</div>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">
                   <CountUpAnimation end={11} suffix=".5M" isVisible={countersVisible} />
@@ -355,7 +355,7 @@ function App() {
               </div>
             </div>
             <div className="group cursor-default scroll-reveal h-full" style={{ transitionDelay: '0.1s' }}>
-              <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
+              <div className="bg-white/80 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
                 <div className="text-base lg:text-lg font-bold uppercase tracking-wider mb-4" style={{ color: '#EEBDC2' }}>Lifting People Out of Poverty</div>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">
                   <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
@@ -364,14 +364,14 @@ function App() {
               </div>
             </div>
             <div className="group cursor-default scroll-reveal h-full" style={{ transitionDelay: '0.2s' }}>
-              <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
+              <div className="bg-white/80 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
                 <div className="text-base lg:text-lg font-bold uppercase tracking-wider mb-4" style={{ color: '#EEBDC2' }}>Financial Literacy</div>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">6 in 10</span>
                 <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block mt-auto">6 in 10 UK people feel they don't have the skills to manage their money properly</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal h-full" style={{ transitionDelay: '0.3s' }}>
-              <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
+              <div className="bg-white/80 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
                 <div className="text-base lg:text-lg font-bold uppercase tracking-wider mb-4" style={{ color: '#EEBDC2' }}>Mental Wellbeing</div>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">
                   <CountUpAnimation end={4} suffix=".2%" isVisible={countersVisible} />
@@ -380,14 +380,14 @@ function App() {
               </div>
             </div>
             <div className="group cursor-default scroll-reveal h-full" style={{ transitionDelay: '0.4s' }}>
-              <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
+              <div className="bg-white/80 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
                 <div className="text-base lg:text-lg font-bold uppercase tracking-wider mb-4" style={{ color: '#EEBDC2' }}>Homelessness</div>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">1 in 22</span>
                 <span className="text-sm lg:text-base text-gray-700 font-medium leading-relaxed block mt-auto">1 in every 22 people lack a home (in some places in England)</span>
               </div>
             </div>
             <div className="group cursor-default scroll-reveal h-full" style={{ transitionDelay: '0.5s' }}>
-              <div className="bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
+              <div className="bg-white/80 backdrop-blur-sm p-6 sm:p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100 h-full flex flex-col">
                 <div className="text-base lg:text-lg font-bold uppercase tracking-wider mb-4" style={{ color: '#EEBDC2' }}>Debt Crises</div>
                 <span className="text-5xl sm:text-6xl lg:text-7xl font-bold block mb-5 gradient-text">
                   <CountUpAnimation end={8} suffix="M" isVisible={countersVisible} />
@@ -399,12 +399,12 @@ function App() {
         </div>
       </section>
 
-      <section id="what-we-do" className="bg-white py-16 sm:py-24 lg:py-32 relative overflow-hidden">
+      <section id="what-we-do" className="bg-white py-12 sm:py-16 md:py-24 lg:py-32 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIgZmlsbD0iYmxhY2siLz48L3N2Zz4=')] bg-repeat"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-20 lg:mb-28 scroll-reveal">
             <span className="inline-block px-6 py-2.5 bg-pink-50 rounded-full text-xs font-semibold tracking-wider mb-8 shadow-sm" style={{ color: '#EEBDC2' }}>What We Do</span>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 leading-[1.15]">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 leading-[1.15]">
               Essential <span className="gradient-text">financial skills</span> for life
             </h2>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed font-light">
@@ -415,7 +415,7 @@ function App() {
           <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
             <div className="group scroll-reveal">
               <div className="glass-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
-                <div className="p-10 lg:p-12">
+                <div className="p-6 sm:p-8 lg:p-12">
                   <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center text-3xl lg:text-4xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>💰</div>
                   <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Good Money Habits</h3>
                   <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
@@ -427,7 +427,7 @@ function App() {
 
             <div className="group scroll-reveal" style={{ transitionDelay: '0.1s' }}>
               <div className="glass-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
-                <div className="p-10 lg:p-12">
+                <div className="p-6 sm:p-8 lg:p-12">
                   <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center text-3xl lg:text-4xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>📈</div>
                   <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Growing Your Funds</h3>
                   <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
@@ -439,7 +439,7 @@ function App() {
 
             <div className="group scroll-reveal" style={{ transitionDelay: '0.2s' }}>
               <div className="glass-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
-                <div className="p-10 lg:p-12">
+                <div className="p-6 sm:p-8 lg:p-12">
                   <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center text-3xl lg:text-4xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>🏠</div>
                   <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Getting Your Own Place</h3>
                   <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
@@ -451,7 +451,7 @@ function App() {
 
             <div className="group scroll-reveal" style={{ transitionDelay: '0.3s' }}>
               <div className="glass-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
-                <div className="p-10 lg:p-12">
+                <div className="p-6 sm:p-8 lg:p-12">
                   <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center text-3xl lg:text-4xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>🎯</div>
                   <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Saving for the Future</h3>
                   <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
@@ -464,13 +464,13 @@ function App() {
         </div>
       </section>
 
-      <section id="who-we-help" className="bg-white py-16 sm:py-24 lg:py-32 relative overflow-hidden">
+      <section id="who-we-help" className="bg-white py-12 sm:py-16 md:py-24 lg:py-32 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-pink-50/40 to-transparent"></div>
         <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-gray-50/60 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-20 lg:mb-28 scroll-reveal">
             <span className="inline-block px-6 py-2.5 bg-pink-50 rounded-full text-xs font-semibold tracking-wider mb-8 shadow-sm" style={{ color: '#EEBDC2' }}>Who We Help</span>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 leading-[1.15]">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 leading-[1.15]">
               Breaking the cycle of poverty through <span className="gradient-text">financial education</span>
             </h2>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed font-light max-w-3xl mx-auto">
@@ -478,21 +478,21 @@ function App() {
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-            <div className="group bg-white p-10 lg:p-12 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover scroll-reveal border border-gray-100">
+            <div className="group bg-white p-6 sm:p-8 lg:p-12 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover scroll-reveal border border-gray-100">
               <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl flex items-center justify-center text-4xl lg:text-5xl mb-8 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>🏫</div>
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Schools & Colleges</h3>
               <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
                 Bring engaging, curriculum-aligned financial literacy workshops to your students. Our expert-led sessions fit seamlessly into your timetable.
               </p>
             </div>
-            <div className="group bg-white p-10 lg:p-12 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover scroll-reveal border border-gray-100" style={{ transitionDelay: '0.1s' }}>
+            <div className="group bg-white p-6 sm:p-8 lg:p-12 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover scroll-reveal border border-gray-100" style={{ transitionDelay: '0.1s' }}>
               <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl flex items-center justify-center text-4xl lg:text-5xl mb-8 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>🤝</div>
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Youth Organizations</h3>
               <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
                 Partner with us to offer financial education programs that complement your existing youth development initiatives.
               </p>
             </div>
-            <div className="group bg-white p-10 lg:p-12 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover scroll-reveal sm:col-span-2 lg:col-span-1 border border-gray-100" style={{ transitionDelay: '0.2s' }}>
+            <div className="group bg-white p-6 sm:p-8 lg:p-12 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover scroll-reveal sm:col-span-2 lg:col-span-1 border border-gray-100" style={{ transitionDelay: '0.2s' }}>
               <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl flex items-center justify-center text-4xl lg:text-5xl mb-8 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>👥</div>
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Young People</h3>
               <p className="text-gray-600 mb-8 leading-relaxed text-base lg:text-lg font-light">
@@ -523,9 +523,9 @@ function App() {
                 <img
                   src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Financial Literacy Workshops"
-                  className="w-full h-[450px] lg:h-[550px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-[250px] sm:h-[350px] lg:h-[450px] xl:h-[550px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-10 lg:p-12 z-20">
+                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-12 z-20">
                   <h3 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">Financial Literacy Workshops</h3>
                   <p className="text-white/95 text-base lg:text-lg leading-relaxed font-light">
                     Interactive sessions covering budgeting, saving, investing, and real-world financial decision-making.
@@ -540,9 +540,9 @@ function App() {
                 <img
                   src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="Mentorship Programs"
-                  className="w-full h-[450px] lg:h-[550px] object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-[250px] sm:h-[350px] lg:h-[450px] xl:h-[550px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-10 lg:p-12 z-20">
+                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-12 z-20">
                   <h3 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">Mentorship Programs</h3>
                   <p className="text-white/95 text-base lg:text-lg leading-relaxed font-light">
                     One-on-one guidance from finance professionals helping young people navigate their financial journey.
@@ -569,16 +569,16 @@ function App() {
 
           <div className="mb-24">
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center scroll-reveal">Founders</h3>
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 max-w-5xl mx-auto">
               <div className="group scroll-reveal">
                 <div className="relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <img
                     src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true"
                     alt="James Jordan"
-                    className="w-full h-[500px] object-cover"
+                    className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover"
                   />
-                  <div className="absolute inset-0 z-20 p-8 flex flex-col justify-end">
+                  <div className="absolute inset-0 z-20 p-4 sm:p-6 md:p-8 flex flex-col justify-end">
                     <h4 className="text-3xl font-bold text-white mb-2 transform transition-transform duration-500 group-hover:translate-y-0 translate-y-4">James Jordan</h4>
                     <p className="text-xl font-semibold mb-4 text-white transform transition-transform duration-500 group-hover:translate-y-0 translate-y-4" style={{ color: '#EEBDC2' }}>Development Director</p>
                     <p className="text-white/90 mb-4 leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
@@ -599,9 +599,9 @@ function App() {
                   <img
                     src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true"
                     alt="Jermaine Bishop"
-                    className="w-full h-[500px] object-cover"
+                    className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover"
                   />
-                  <div className="absolute inset-0 z-20 p-8 flex flex-col justify-end">
+                  <div className="absolute inset-0 z-20 p-4 sm:p-6 md:p-8 flex flex-col justify-end">
                     <h4 className="text-3xl font-bold text-white mb-2 transform transition-transform duration-500 group-hover:translate-y-0 translate-y-4">Jermaine Bishop</h4>
                     <p className="text-xl font-semibold mb-4 text-white transform transition-transform duration-500 group-hover:translate-y-0 translate-y-4" style={{ color: '#EEBDC2' }}>Operations Director</p>
                     <p className="text-white/90 mb-4 leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100">
@@ -886,7 +886,7 @@ function App() {
               { icon: '🏦', title: 'Educational Institutions', desc: 'Partnering with schools and colleges across Bristol, Brent, Barnet, Camden, Croydon, Harrow, Kensington & Chelsea, Kent, and Southwark.' },
               { icon: '🤝', title: 'Financial Sector Partners', desc: 'Collaborating with financial institutions to provide real-world insights and expertise to young people across the UK.' }
             ].map((partner, idx) => (
-              <div key={partner.title} className="group glass-card p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 scroll-reveal" style={{ transitionDelay: `${idx * 0.1}s` }}>
+              <div key={partner.title} className="group glass-card p-6 sm:p-8 lg:p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 scroll-reveal" style={{ transitionDelay: `${idx * 0.1}s` }}>
                 <div className="flex items-start gap-6">
                   <div className="w-20 h-20 rounded-2xl flex items-center justify-center text-4xl flex-shrink-0 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12" style={{ backgroundColor: 'rgba(238, 189, 194, 0.2)' }}>
                     {partner.icon}
@@ -959,7 +959,7 @@ function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12 items-center scroll-reveal">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 items-center scroll-reveal">
             <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/BRENT%20LOGO%20%2B%20white%20%2B%20LOGOTYPE%20black%20small.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:514,h:200,cg:true"
@@ -1059,13 +1059,13 @@ function App() {
         </div>
       </section>
 
-      <section id="ready-to-transform" className="py-32 lg:py-40 text-center relative overflow-hidden bg-gradient-to-br from-pink-100 via-pink-50 to-white">
+      <section id="ready-to-transform" className="py-16 sm:py-20 md:py-28 lg:py-32 xl:py-40 text-center relative overflow-hidden bg-gradient-to-br from-pink-100 via-pink-50 to-white">
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-20 left-20 w-96 h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#EEBDC2' }}></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#F5D4D8', animationDelay: '1s' }}></div>
+          <div className="absolute top-20 left-20 w-48 h-48 sm:w-96 sm:h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#EEBDC2' }}></div>
+          <div className="absolute bottom-20 right-20 w-48 h-48 sm:w-96 sm:h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#F5D4D8', animationDelay: '1s' }}></div>
         </div>
         <div className="max-w-5xl mx-auto px-6 relative z-10 scroll-reveal">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-[1.15] text-gray-900">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-[1.15] text-gray-900">
             Ready to Transform <span className="gradient-text">Financial Education?</span>
           </h2>
           <p className="text-xl lg:text-2xl mb-8 leading-relaxed text-gray-600 font-light max-w-3xl mx-auto">
@@ -1073,7 +1073,7 @@ function App() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
-            <div className="glass-card p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group text-left">
+            <div className="glass-card p-6 sm:p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group text-left">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition-transform duration-500" style={{ backgroundColor: '#EEBDC2' }}>
                   ✉️
@@ -1096,7 +1096,7 @@ function App() {
               </div>
             </div>
 
-            <div className="glass-card p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group text-left">
+            <div className="glass-card p-6 sm:p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group text-left">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition-transform duration-500" style={{ backgroundColor: '#EEBDC2' }}>
                   📍
@@ -1127,8 +1127,8 @@ function App() {
                 A UK-based charity dedicated to empowering young people with the financial skills they need to thrive in the modern world.
               </p>
               <div className="flex gap-4">
-                <a href="https://www.youtube.com/@SetThemUpFoundation" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full flex items-center justify-center transition-all duration-500 hover:scale-110 hover:-translate-y-1 shadow-lg" style={{ backgroundColor: '#EEBDC2' }}>
-                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" style={{ color: '#161616' }}>
+                <a href="https://www.youtube.com/@SetThemUpFoundation" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full flex items-center justify-center transition-all duration-500 hover:scale-110 hover:-translate-y-1 shadow-lg" style={{ backgroundColor: '#FF0000' }}>
+                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" style={{ color: '#FFFFFF' }}>
                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                   </svg>
                 </a>
