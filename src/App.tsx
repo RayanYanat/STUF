@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import MobileMenu from './components/MobileMenu';
 
 const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { end: number; duration?: number; suffix?: string; isVisible: boolean }) => {
   const [count, setCount] = useState(0);
@@ -1158,6 +1159,7 @@ function App() {
           </div>
         </div>
       </footer>
+      <MobileMenu />
     </>
   );
 }
