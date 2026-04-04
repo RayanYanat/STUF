@@ -407,68 +407,65 @@ function App() {
         </div>
       </section>
 
-      <section id="what-we-do" className="bg-gradient-to-b from-pink-100/60 via-pink-50/40 to-white py-16 sm:py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 lg:mb-20 scroll-reveal">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-4">
-              WHAT WE DO
+      <section id="what-we-do" className="bg-white py-16 sm:py-24 lg:py-32 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIgZmlsbD0iYmxhY2siLz48L3N2Zz4=')] bg-repeat"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-4xl mx-auto mb-20 lg:mb-28 scroll-reveal">
+            <span className="inline-block px-6 py-2.5 bg-pink-50 rounded-full text-xs font-semibold tracking-wider mb-8 shadow-sm" style={{ color: '#EEBDC2' }}>What We Do</span>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-8 leading-[1.15]">
+              Essential <span className="gradient-text">financial skills</span> for life
             </h2>
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed font-light">
+              We cover four key areas that help young people build a strong financial foundation
+            </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
             <div className="group scroll-reveal">
-              <div className="bg-gray-900 rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover h-full flex flex-col">
-                <h3 className="text-3xl lg:text-4xl font-bold mb-4">
-                  <span className="text-pink-200">GOOD MONEY</span>
-                  <br />
-                  <span className="text-pink-200">HABITS </span>
-                  <span className="bg-white text-gray-900 px-3 py-1 inline-block font-black">STUF</span>
-                </h3>
-                <p className="text-gray-900 bg-white px-6 py-8 rounded-2xl text-lg lg:text-xl leading-relaxed mt-6">
-                  Financial planning basics that'll help young people to form and reach their life goals.
-                </p>
+              <div className="glass-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
+                <div className="p-10 lg:p-12">
+                  <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center text-3xl lg:text-4xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>💰</div>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Good Money Habits</h3>
+                  <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
+                    Financial planning basics that'll help young people to form and reach their life goals.
+                  </p>
+                </div>
               </div>
             </div>
 
             <div className="group scroll-reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="bg-gray-900 rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover h-full flex flex-col">
-                <h3 className="text-3xl lg:text-4xl font-bold mb-4">
-                  <span className="text-pink-200">GROWING YOUR</span>
-                  <br />
-                  <span className="text-pink-200">FUNDS </span>
-                  <span className="bg-white text-gray-900 px-3 py-1 inline-block font-black">STUF</span>
-                </h3>
-                <p className="text-gray-900 bg-white px-6 py-8 rounded-2xl text-lg lg:text-xl leading-relaxed mt-6">
-                  Helping young people to make smart choices about how to invest their money.
-                </p>
+              <div className="glass-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
+                <div className="p-10 lg:p-12">
+                  <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center text-3xl lg:text-4xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>📈</div>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Growing Your Funds</h3>
+                  <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
+                    Helping young people to make smart choices about how to invest their money.
+                  </p>
+                </div>
               </div>
             </div>
 
             <div className="group scroll-reveal" style={{ transitionDelay: '0.2s' }}>
-              <div className="bg-gray-900 rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover h-full flex flex-col">
-                <h3 className="text-3xl lg:text-4xl font-bold mb-4">
-                  <span className="text-pink-200">GETTING YOUR</span>
-                  <br />
-                  <span className="text-pink-200">OWN PLACE </span>
-                  <span className="bg-white text-gray-900 px-3 py-1 inline-block font-black">STUF</span>
-                </h3>
-                <p className="text-gray-900 bg-white px-6 py-8 rounded-2xl text-lg lg:text-xl leading-relaxed mt-6">
-                  Mortgage and rental fundamentals that'll help set first time buyers, renters, and flat sharers up for success.
-                </p>
+              <div className="glass-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
+                <div className="p-10 lg:p-12">
+                  <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center text-3xl lg:text-4xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>🏠</div>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Getting Your Own Place</h3>
+                  <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
+                    Mortgage and rental fundamentals that'll help set first time buyers, renters, and flat sharers up for success.
+                  </p>
+                </div>
               </div>
             </div>
 
             <div className="group scroll-reveal" style={{ transitionDelay: '0.3s' }}>
-              <div className="bg-gray-900 rounded-3xl p-10 lg:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 magnetic-hover h-full flex flex-col">
-                <h3 className="text-3xl lg:text-4xl font-bold mb-4">
-                  <span className="text-pink-200">SAVING FOR THE</span>
-                  <br />
-                  <span className="text-pink-200">FUTURE </span>
-                  <span className="bg-white text-gray-900 px-3 py-1 inline-block font-black">STUF</span>
-                </h3>
-                <p className="text-gray-900 bg-white px-6 py-8 rounded-2xl text-lg lg:text-xl leading-relaxed mt-6">
-                  Covering the importance of pensions and how current you can support future you.
-                </p>
+              <div className="glass-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover border border-gray-100">
+                <div className="p-10 lg:p-12">
+                  <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center text-3xl lg:text-4xl mb-6 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>🎯</div>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Saving for the Future</h3>
+                  <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
+                    Covering the importance of pensions and how current you can support future you.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
