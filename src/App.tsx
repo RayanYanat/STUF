@@ -264,37 +264,33 @@ function App() {
                 className="h-11 sm:h-13 md:h-16 transition-all duration-500 hover:scale-110 filter drop-shadow-md"
               />
             </div>
-            <div className="hidden lg:flex gap-12 xl:gap-14 items-center">
-              <a href="#who-we-help" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group">
+            <div className="hidden lg:flex gap-6 xl:gap-8 items-center flex-shrink-0">
+              <a href="#who-we-help" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Who We Help
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="#programs" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group">
+              <a href="#programs" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Programs
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="#workshop-locations" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group">
+              <a href="#workshop-locations" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Workshops
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="/impact-reports" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group">
-                Impact Reports
-                <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
-              </a>
-              <a href="#team" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group">
+              <a href="#team" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Team
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="#roadmap" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group">
+              <a href="#roadmap" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Roadmap
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
-              <a href="#donate" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group">
+              <a href="#donate" className="text-gray-700 hover:text-gray-900 font-medium text-sm tracking-wide transition-all duration-300 relative group whitespace-nowrap">
                 Donate
                 <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-pink-300 group-hover:w-full transition-all duration-500"></span>
               </a>
             </div>
-            <a href="mailto:hello@stuf.org.uk" className="px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-4 rounded-full font-semibold text-xs sm:text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 hover:scale-105 active:scale-95 relative overflow-hidden group shine-effect" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
+            <a href="mailto:hello@stuf.org.uk" className="hidden lg:block px-6 py-3 xl:px-8 xl:py-4 rounded-full font-semibold text-xs xl:text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 hover:scale-105 active:scale-95 relative overflow-hidden group shine-effect flex-shrink-0" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
               <span className="relative z-10">Contact Us</span>
             </a>
           </nav>
