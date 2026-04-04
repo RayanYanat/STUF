@@ -643,7 +643,7 @@ function App() {
           </div>
 
           <div>
-            <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center scroll-reveal">Board Members</h3>
+            <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center scroll-reveal">People Behind STUF</h3>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
               {[
                 { name: 'Thomas Hamer', role: 'Co-Chair (Research)', desc: '9+ years in financial services across Venture/PE, Corporate Banking, and Wealth Management', photo: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true' },
