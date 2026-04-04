@@ -949,6 +949,74 @@ function App() {
         </div>
       </section>
 
+      <section className="bg-white py-16 sm:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Our <span className="gradient-text">Partners</span>
+            </h2>
+            <p className="text-gray-600 text-base lg:text-lg font-light">
+              Working together to create lasting change in financial education
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-12 items-center scroll-reveal">
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <img
+                src="https://www.clothworkersfoundation.org.uk/wp-content/themes/clothworkers/img/logo.svg"
+                alt="Clothworkers Foundation"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <img
+                src="https://www.brent.gov.uk/media/16409844/brent-council-logo.png"
+                alt="Brent Council"
+                className="max-w-full h-auto max-h-20 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-gray-900 mb-1">Big Issue</div>
+                <div className="text-sm font-semibold" style={{ color: '#EEBDC2' }}>Power Up London</div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <div className="text-center">
+                <div className="text-xl font-bold text-gray-900">Partner Logo</div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <div className="text-center">
+                <div className="text-xl font-bold text-gray-900">Partner Logo</div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <div className="text-center">
+                <div className="text-xl font-bold text-gray-900">Partner Logo</div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <div className="text-center">
+                <div className="text-xl font-bold text-gray-900">Partner Logo</div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:shadow-lg group">
+              <div className="text-center">
+                <div className="text-xl font-bold text-gray-900">Partner Logo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-gray-900 text-white py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-12 mb-16">
