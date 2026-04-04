@@ -948,29 +948,6 @@ function App() {
         </div>
       </section>
 
-      <section id="ready-to-transform" className="py-32 lg:py-40 text-center relative overflow-hidden bg-gradient-to-br from-pink-100 via-pink-50 to-white">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-20 left-20 w-96 h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#EEBDC2' }}></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#F5D4D8', animationDelay: '1s' }}></div>
-        </div>
-        <div className="max-w-5xl mx-auto px-6 relative z-10 scroll-reveal">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-[1.15] text-gray-900">
-            Ready to Transform <span className="gradient-text">Financial Education?</span>
-          </h2>
-          <p className="text-xl lg:text-2xl mb-8 leading-relaxed text-gray-600 font-light max-w-3xl mx-auto">
-            Join schools and partners across the UK empowering students with essential money skills.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="mailto:hello@stuf.org.uk" className="group px-12 py-6 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 magnetic-hover inline-block shine-effect" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
-              <span className="relative z-10">✉️ Email: hello@stuf.org.uk</span>
-            </a>
-            <a href="mailto:info@ug-stuf.com" className="px-12 py-6 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:bg-gray-900 hover:text-white magnetic-hover inline-block border-2 border-gray-900 text-gray-900">
-              🌍 Uganda: info@ug-stuf.com
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-white py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
@@ -1082,6 +1059,64 @@ function App() {
         </div>
       </section>
 
+      <section id="ready-to-transform" className="py-32 lg:py-40 text-center relative overflow-hidden bg-gradient-to-br from-pink-100 via-pink-50 to-white">
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-20 w-96 h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#EEBDC2' }}></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full blur-3xl animate-float" style={{ backgroundColor: '#F5D4D8', animationDelay: '1s' }}></div>
+        </div>
+        <div className="max-w-5xl mx-auto px-6 relative z-10 scroll-reveal">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-[1.15] text-gray-900">
+            Ready to Transform <span className="gradient-text">Financial Education?</span>
+          </h2>
+          <p className="text-xl lg:text-2xl mb-8 leading-relaxed text-gray-600 font-light max-w-3xl mx-auto">
+            Join schools and partners across the UK empowering students with essential money skills.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+            <div className="glass-card p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group text-left">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition-transform duration-500" style={{ backgroundColor: '#EEBDC2' }}>
+                  ✉️
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Email Us</h3>
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <p className="text-gray-500 text-xs mb-1 uppercase tracking-wider font-semibold">UK Office</p>
+                  <a href="mailto:hello@stuf.org.uk" className="text-lg font-bold hover:opacity-70 transition-opacity duration-300 block" style={{ color: '#EEBDC2' }}>
+                    hello@stuf.org.uk
+                  </a>
+                </div>
+                <div>
+                  <p className="text-gray-500 text-xs mb-1 uppercase tracking-wider font-semibold">Uganda Office</p>
+                  <a href="mailto:info@ug-stuf.com" className="text-lg font-bold hover:opacity-70 transition-opacity duration-300 block" style={{ color: '#EEBDC2' }}>
+                    info@ug-stuf.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass-card p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group text-left">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition-transform duration-500" style={{ backgroundColor: '#EEBDC2' }}>
+                  📍
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Visit Us</h3>
+              </div>
+              <div>
+                <p className="text-gray-500 text-xs mb-3 uppercase tracking-wider font-semibold">Registered Address</p>
+                <p className="text-lg leading-relaxed text-gray-700">
+                  IDEALondon<br />
+                  69 Wilson St, Shoreditch<br />
+                  London, England<br />
+                  EC2A 2BB<br />
+                  United Kingdom
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer className="bg-gray-900 text-white py-24">
         <div className="max-w-7xl mx-auto px-6">
