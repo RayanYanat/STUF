@@ -313,17 +313,9 @@ function App() {
               <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-[1.1] text-gray-900">
                 We've got the <span className="gradient-text block sm:inline">money stuf</span> covered
               </h1>
-              <p className="text-lg sm:text-xl lg:text-2xl mb-10 leading-relaxed text-gray-600 font-light">
+              <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed text-gray-600 font-light">
                 Making money stuf simple for young people. We help students get a handle on the fundamentals of finance through partnerships with educational and financial institutions.
               </p>
-              <div className="flex flex-col sm:flex-row gap-5">
-                <a href="#partner" className="group px-10 py-5 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:shadow-2xl hover:shadow-pink-200/50 magnetic-hover inline-block text-center shine-effect relative overflow-hidden" style={{ backgroundColor: '#EEBDC2', color: '#161616' }}>
-                  <span className="relative z-10">Partner with Us</span>
-                </a>
-                <a href="#schools" className="px-10 py-5 rounded-full font-semibold text-sm tracking-wide transition-all duration-500 hover:bg-gray-900 magnetic-hover inline-block text-center border-2 border-gray-900 text-gray-900 hover:text-white">
-                  Bring STUF to Your School
-                </a>
-              </div>
             </div>
             <div className="animate-fade-in-right hidden md:block">
               <div className="relative group">
@@ -496,13 +488,9 @@ function App() {
             <div className="group bg-white p-10 lg:p-12 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover scroll-reveal border border-gray-100" style={{ transitionDelay: '0.1s' }}>
               <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl flex items-center justify-center text-4xl lg:text-5xl mb-8 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>🤝</div>
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Youth Organizations</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed text-base lg:text-lg font-light">
+              <p className="text-gray-600 leading-relaxed text-base lg:text-lg font-light">
                 Partner with us to offer financial education programs that complement your existing youth development initiatives.
               </p>
-              <a href="#youth" className="font-semibold text-sm tracking-wide inline-flex items-center gap-3 transition-all duration-500 group-hover:gap-5" style={{ color: '#EEBDC2' }}>
-                Partner with us
-                <span className="text-lg transition-transform duration-500 group-hover:translate-x-1">→</span>
-              </a>
             </div>
             <div className="group bg-white p-10 lg:p-12 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 magnetic-hover scroll-reveal sm:col-span-2 lg:col-span-1 border border-gray-100" style={{ transitionDelay: '0.2s' }}>
               <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl flex items-center justify-center text-4xl lg:text-5xl mb-8 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-md" style={{ background: 'linear-gradient(135deg, #EEBDC2 0%, #F5D4D8 100%)' }}>👥</div>
