@@ -965,56 +965,56 @@ function App() {
             {[
               {
                 name: 'James Jordan',
-                role: 'Founding Trustee',
-                bio: 'Entrepreneur with Sales and Marketing expertise. Founded STUF to help young people.',
+                role: 'Founder & Trustee',
+                bio: 'Ambitious entrepreneur with expertise in Sales and Marketing. Founded STUF to provide financial education to underprivileged children.',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png'
               },
               {
                 name: 'Jermaine Bishop',
                 role: 'Founding Trustee',
-                bio: '15+ years in Tech and Communications. Co-founder focused on providing free financial education.',
+                bio: '15+ years of experience in Tech and Communications sectors. Co-founder focused on providing free financial education to lower-income children.',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png'
               },
               {
                 name: 'Tina Creed',
                 role: 'Advisory',
-                bio: '25 years in childcare/education. Former Ark Elvin Academy Governor.',
+                bio: '25 years in childcare/education. Former Ark Elvin Academy Governor',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png'
               },
               {
                 name: 'Thomas Hamer',
                 role: 'Trustee',
-                bio: 'Experienced trustee bringing strategic oversight and governance expertise.',
+                bio: '9+ years in financial services across Venture/PE, Corporate Banking, and Wealth Management',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png'
               },
               {
                 name: 'Matthew Smith',
                 role: 'Trustee',
-                bio: 'Strategic advisor with expertise in organizational development and growth.',
+                bio: 'Sports and Business Development expertise with major European tax refund company',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Matthew.png'
               },
               {
                 name: 'Zofia Barnes',
                 role: 'Trustee',
-                bio: 'Professional with extensive experience in education and community development.',
+                bio: '11+ years in Banking and Finance. LSE Masters in Gender Studies, Policy & Inequalities',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Zofia.png'
               },
               {
                 name: 'Paul Mokuolu',
                 role: 'Trustee',
-                bio: 'Specialist in youth development and educational program delivery.',
+                bio: 'Decade in financial sector. Technical Specialist at Bank of England',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-c729d57.png/:/cr=t:16.75%25,l:0%25,w:100%25,h:66.5%25/rs=w:365,h:365,cg:true/qt=q:93'
               },
               {
                 name: 'Jalpa Lai',
                 role: 'Trustee',
-                bio: 'Expert in financial literacy and youth empowerment initiatives.',
+                bio: '6+ years mentoring diverse youth, specializing in financial coaching',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-875f474.png/:/cr=t:0%25,l:4.38%25,w:91.25%25,h:100%25/rs=w:365,h:365,cg:true/qt=q:93'
               },
               {
                 name: 'Truman Alberto Sullivan',
                 role: 'Trustee',
-                bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector.',
+                bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png'
               },
             ].map((member) => (
