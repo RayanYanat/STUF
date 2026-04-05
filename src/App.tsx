@@ -434,7 +434,7 @@ function App() {
             </div>
 
             <div className="space-y-5">
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl overflow-hidden scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between pr-8">
+              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible">
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Investment Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -444,16 +444,16 @@ function App() {
                     Learn more
                   </button>
                 </div>
-                <div className="w-32 h-32 flex-shrink-0">
+                <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <img
                     src="/investment_stuf.png"
                     alt="Investment"
-                    className="w-full h-full object-contain opacity-90 transform group-hover:scale-110 transition-all duration-500"
+                    className="w-full h-full object-contain opacity-90 drop-shadow-2xl"
                   />
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl overflow-hidden scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between pr-8">
+              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible">
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Financial planning Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -463,16 +463,16 @@ function App() {
                     Learn more
                   </button>
                 </div>
-                <div className="w-32 h-32 flex-shrink-0">
+                <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <img
                     src="/financial_planning_stuf.png"
                     alt="Financial Planning"
-                    className="w-full h-full object-contain opacity-90 transform group-hover:scale-110 transition-all duration-500"
+                    className="w-full h-full object-contain opacity-90 drop-shadow-2xl"
                   />
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl overflow-hidden scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between pr-8">
+              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible">
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Mortgage and rental Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -482,16 +482,16 @@ function App() {
                     Learn more
                   </button>
                 </div>
-                <div className="w-32 h-32 flex-shrink-0">
+                <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <img
                     src="/mortgage_rental_stuf.png"
                     alt="Mortgage and Rental"
-                    className="w-full h-full object-contain opacity-90 transform group-hover:scale-110 transition-all duration-500"
+                    className="w-full h-full object-contain opacity-90 drop-shadow-2xl"
                   />
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl overflow-hidden scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between pr-8">
+              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible">
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Pension Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -501,11 +501,11 @@ function App() {
                     Learn more
                   </button>
                 </div>
-                <div className="w-32 h-32 flex-shrink-0">
+                <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <img
                     src="/pensio_stuf.png"
                     alt="Pension"
-                    className="w-full h-full object-contain opacity-90 transform group-hover:scale-110 transition-all duration-500"
+                    className="w-full h-full object-contain opacity-90 drop-shadow-2xl"
                   />
                 </div>
               </div>
