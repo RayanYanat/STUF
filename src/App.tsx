@@ -944,7 +944,7 @@ function App() {
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png'
                 },
               ].map((member) => (
-                <div key={member.name} className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div key={member.name} className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
                   <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
                       <img
@@ -1019,7 +1019,7 @@ function App() {
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png'
                 },
               ].map((member) => (
-                <div key={member.name} className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div key={member.name} className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
                   <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
                       <img
