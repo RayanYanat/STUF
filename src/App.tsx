@@ -577,64 +577,6 @@ function App() {
         </div>
       </section>
 
-      <section id="workshops" className="bg-black py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Programs</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Expert-Led Workshops Tailored for Impact
-            </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              From budgeting basics to investment fundamentals, our programs cover the essential skills every young person needs
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 premium-card">
-              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-pink-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Money Basics</h3>
-              <p className="text-gray-400 text-base leading-relaxed mb-6">
-                Foundation workshop covering budgeting, saving, and understanding income and expenses. Perfect for students aged 15-16.
-              </p>
-              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                Learn More
-              </button>
-            </div>
-
-            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 premium-card">
-              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-pink-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Smart Spending</h3>
-              <p className="text-gray-400 text-base leading-relaxed mb-6">
-                Learn to make informed purchasing decisions, understand credit, and avoid common financial pitfalls. Ages 16-18.
-              </p>
-              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                Learn More
-              </button>
-            </div>
-
-            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 premium-card">
-              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <TrendingUp className="w-8 h-8 text-pink-accent" />
-              </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Future Planning</h3>
-              <p className="text-gray-400 text-base leading-relaxed mb-6">
-                Introduction to investing, pensions, and long-term financial planning. Designed for students aged 17-19.
-              </p>
-              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="bg-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
