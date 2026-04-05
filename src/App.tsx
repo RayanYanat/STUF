@@ -422,91 +422,91 @@ function App() {
 
       <section id="programs" className="bg-pink-accent py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="grid lg:grid-cols-[45%_55%] gap-12 items-start">
             <div className="scroll-reveal lg:sticky lg:top-32">
-              <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">What We Do</p>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+              <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">What we do</p>
+              <h2 className="text-5xl sm:text-6xl font-bold text-black mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
                 WE'VE GOT THE MONEY STUF COVERED
               </h2>
-              <p className="text-xl text-black/90 leading-relaxed font-medium">
+              <p className="text-lg text-black leading-relaxed">
                 The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance. By working with schools, banks, and other likeminded partners we provide lifelong skills, understanding and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
               </p>
             </div>
 
-            <div className="space-y-6">
-              <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden scroll-reveal group hover:scale-[1.02] transition-all duration-300 shadow-2xl border-4 border-black relative">
-                <div className="absolute top-6 right-6 w-40 h-40 opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="space-y-5">
+              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl overflow-hidden scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between pr-8">
+                <div className="p-8 flex-1">
+                  <h3 className="text-2xl font-bold mb-3 text-white">Investment Stuf</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
+                  </p>
+                  <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
+                    Learn more
+                  </button>
+                </div>
+                <div className="w-32 h-32 flex-shrink-0">
                   <img
                     src="/investment_stuf.png"
                     alt="Investment"
-                    className="w-full h-full object-contain drop-shadow-2xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
+                    className="w-full h-full object-contain opacity-90 transform group-hover:scale-110 transition-all duration-500"
                   />
-                </div>
-                <div className="p-10 relative z-10">
-                  <h3 className="text-3xl font-bold mb-4 text-white">Investment Stuf</h3>
-                  <p className="text-gray-300 text-base leading-relaxed mb-6">
-                    Some light-hearted copy here to support the image
-                  </p>
-                  <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
-                    Learn more
-                  </button>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden scroll-reveal group hover:scale-[1.02] transition-all duration-300 shadow-2xl border-4 border-black relative">
-                <div className="absolute top-6 right-6 w-40 h-40 opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl overflow-hidden scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between pr-8">
+                <div className="p-8 flex-1">
+                  <h3 className="text-2xl font-bold mb-3 text-white">Financial planning Stuf</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
+                  </p>
+                  <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
+                    Learn more
+                  </button>
+                </div>
+                <div className="w-32 h-32 flex-shrink-0">
                   <img
                     src="/financial_planning_stuf.png"
                     alt="Financial Planning"
-                    className="w-full h-full object-contain drop-shadow-2xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
+                    className="w-full h-full object-contain opacity-90 transform group-hover:scale-110 transition-all duration-500"
                   />
-                </div>
-                <div className="p-10 relative z-10">
-                  <h3 className="text-3xl font-bold mb-4 text-white">Financial planning Stuf</h3>
-                  <p className="text-gray-300 text-base leading-relaxed mb-6">
-                    Some light-hearted copy here to support the image
-                  </p>
-                  <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
-                    Learn more
-                  </button>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden scroll-reveal group hover:scale-[1.02] transition-all duration-300 shadow-2xl border-4 border-black relative">
-                <div className="absolute top-6 right-6 w-40 h-40 opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl overflow-hidden scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between pr-8">
+                <div className="p-8 flex-1">
+                  <h3 className="text-2xl font-bold mb-3 text-white">Mortgage and rental Stuf</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
+                  </p>
+                  <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
+                    Learn more
+                  </button>
+                </div>
+                <div className="w-32 h-32 flex-shrink-0">
                   <img
                     src="/mortgage_rental_stuf.png"
                     alt="Mortgage and Rental"
-                    className="w-full h-full object-contain drop-shadow-2xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
+                    className="w-full h-full object-contain opacity-90 transform group-hover:scale-110 transition-all duration-500"
                   />
-                </div>
-                <div className="p-10 relative z-10">
-                  <h3 className="text-3xl font-bold mb-4 text-white">Mortgage and rental Stuf</h3>
-                  <p className="text-gray-300 text-base leading-relaxed mb-6">
-                    Some light-hearted copy here to support the image
-                  </p>
-                  <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
-                    Learn more
-                  </button>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden scroll-reveal group hover:scale-[1.02] transition-all duration-300 shadow-2xl border-4 border-black relative">
-                <div className="absolute top-6 right-6 w-40 h-40 opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl overflow-hidden scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between pr-8">
+                <div className="p-8 flex-1">
+                  <h3 className="text-2xl font-bold mb-3 text-white">Pension Stuf</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
+                  </p>
+                  <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
+                    Learn more
+                  </button>
+                </div>
+                <div className="w-32 h-32 flex-shrink-0">
                   <img
                     src="/pensio_stuf.png"
                     alt="Pension"
-                    className="w-full h-full object-contain drop-shadow-2xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
+                    className="w-full h-full object-contain opacity-90 transform group-hover:scale-110 transition-all duration-500"
                   />
-                </div>
-                <div className="p-10 relative z-10">
-                  <h3 className="text-3xl font-bold mb-4 text-white">Pension Stuf</h3>
-                  <p className="text-gray-300 text-base leading-relaxed mb-6">
-                    Some light-hearted copy here to support the image
-                  </p>
-                  <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
-                    Learn more
-                  </button>
                 </div>
               </div>
             </div>
