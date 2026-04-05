@@ -420,80 +420,94 @@ function App() {
         </div>
       </section>
 
-      <section id="programs" className="bg-white py-20 lg:py-32">
+      <section id="programs" className="bg-pink-accent py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">What We Do</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Our Programs
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive financial education covering all the important STUF
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-black text-white rounded-2xl scroll-reveal premium-card border border-gray-900 group hover:border-pink-accent/50 transition-all relative overflow-visible">
-              <div className="absolute -top-8 left-8 w-20 h-20 bg-gradient-to-br from-pink-accent to-pink-accent/80 rounded-2xl flex items-center justify-center shadow-2xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 border-4 border-black z-10">
-                <img
-                  src="/investment_stuf.png"
-                  alt="Investment"
-                  className="w-12 h-12 object-contain drop-shadow-lg"
-                />
-              </div>
-              <div className="p-8 pt-16">
-                <h3 className="text-2xl font-bold mb-3 pink-accent">Investment Stuf</h3>
-                <p className="text-gray-400 text-base leading-relaxed">
-                  Learn how to grow your money and make smart investment decisions.
-                </p>
-              </div>
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <div className="scroll-reveal lg:sticky lg:top-32">
+              <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">What We Do</p>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+                WE'VE GOT THE MONEY STUF COVERED
+              </h2>
+              <p className="text-xl text-black/90 leading-relaxed font-medium">
+                The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance. By working with schools, banks, and other likeminded partners we provide lifelong skills, understanding and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
+              </p>
             </div>
 
-            <div className="bg-black text-white rounded-2xl scroll-reveal premium-card border border-gray-900 group hover:border-pink-accent/50 transition-all relative overflow-visible">
-              <div className="absolute -top-8 left-8 w-20 h-20 bg-gradient-to-br from-pink-accent to-pink-accent/80 rounded-2xl flex items-center justify-center shadow-2xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 border-4 border-black z-10">
-                <img
-                  src="/financial_planning_stuf.png"
-                  alt="Financial Planning"
-                  className="w-12 h-12 object-contain drop-shadow-lg"
-                />
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden scroll-reveal group hover:scale-[1.02] transition-all duration-300 shadow-2xl border-4 border-black relative">
+                <div className="absolute top-6 right-6 w-40 h-40 opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src="/investment_stuf.png"
+                    alt="Investment"
+                    className="w-full h-full object-contain drop-shadow-2xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
+                  />
+                </div>
+                <div className="p-10 relative z-10">
+                  <h3 className="text-3xl font-bold mb-4 text-white">Investment Stuf</h3>
+                  <p className="text-gray-300 text-base leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
+                  </p>
+                  <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
+                    Learn more
+                  </button>
+                </div>
               </div>
-              <div className="p-8 pt-16">
-                <h3 className="text-2xl font-bold mb-3 pink-accent">Financial planning Stuf</h3>
-                <p className="text-gray-400 text-base leading-relaxed">
-                  Master budgeting, saving, and planning to achieve your goals.
-                </p>
-              </div>
-            </div>
 
-            <div className="bg-black text-white rounded-2xl scroll-reveal premium-card border border-gray-900 group hover:border-pink-accent/50 transition-all relative overflow-visible">
-              <div className="absolute -top-8 left-8 w-20 h-20 bg-gradient-to-br from-pink-accent to-pink-accent/80 rounded-2xl flex items-center justify-center shadow-2xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 border-4 border-black z-10">
-                <img
-                  src="/mortgage_rental_stuf.png"
-                  alt="Mortgage and Rental"
-                  className="w-12 h-12 object-contain drop-shadow-lg"
-                />
+              <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden scroll-reveal group hover:scale-[1.02] transition-all duration-300 shadow-2xl border-4 border-black relative">
+                <div className="absolute top-6 right-6 w-40 h-40 opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src="/financial_planning_stuf.png"
+                    alt="Financial Planning"
+                    className="w-full h-full object-contain drop-shadow-2xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
+                  />
+                </div>
+                <div className="p-10 relative z-10">
+                  <h3 className="text-3xl font-bold mb-4 text-white">Financial planning Stuf</h3>
+                  <p className="text-gray-300 text-base leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
+                  </p>
+                  <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
+                    Learn more
+                  </button>
+                </div>
               </div>
-              <div className="p-8 pt-16">
-                <h3 className="text-2xl font-bold mb-3 pink-accent">Mortgage and rental Stuf</h3>
-                <p className="text-gray-400 text-base leading-relaxed">
-                  Understand housing options, from renting to buying your home.
-                </p>
-              </div>
-            </div>
 
-            <div className="bg-black text-white rounded-2xl scroll-reveal premium-card border border-gray-900 group hover:border-pink-accent/50 transition-all relative overflow-visible">
-              <div className="absolute -top-8 left-8 w-20 h-20 bg-gradient-to-br from-pink-accent to-pink-accent/80 rounded-2xl flex items-center justify-center shadow-2xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 border-4 border-black z-10">
-                <img
-                  src="/pensio_stuf.png"
-                  alt="Pension"
-                  className="w-12 h-12 object-contain drop-shadow-lg"
-                />
+              <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden scroll-reveal group hover:scale-[1.02] transition-all duration-300 shadow-2xl border-4 border-black relative">
+                <div className="absolute top-6 right-6 w-40 h-40 opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src="/mortgage_rental_stuf.png"
+                    alt="Mortgage and Rental"
+                    className="w-full h-full object-contain drop-shadow-2xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
+                  />
+                </div>
+                <div className="p-10 relative z-10">
+                  <h3 className="text-3xl font-bold mb-4 text-white">Mortgage and rental Stuf</h3>
+                  <p className="text-gray-300 text-base leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
+                  </p>
+                  <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
+                    Learn more
+                  </button>
+                </div>
               </div>
-              <div className="p-8 pt-16">
-                <h3 className="text-2xl font-bold mb-3 pink-accent">Pension Stuf</h3>
-                <p className="text-gray-400 text-base leading-relaxed">
-                  Plan for retirement early and secure your financial future.
-                </p>
+
+              <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl overflow-hidden scroll-reveal group hover:scale-[1.02] transition-all duration-300 shadow-2xl border-4 border-black relative">
+                <div className="absolute top-6 right-6 w-40 h-40 opacity-50 group-hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src="/pensio_stuf.png"
+                    alt="Pension"
+                    className="w-full h-full object-contain drop-shadow-2xl transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500"
+                  />
+                </div>
+                <div className="p-10 relative z-10">
+                  <h3 className="text-3xl font-bold mb-4 text-white">Pension Stuf</h3>
+                  <p className="text-gray-300 text-base leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
+                  </p>
+                  <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
+                    Learn more
+                  </button>
+                </div>
               </div>
             </div>
           </div>
