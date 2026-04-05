@@ -433,56 +433,92 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900">
-              <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
-                <LineChart className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
+            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-20 group-hover:opacity-30 transition-opacity">
+                <img
+                  src="https://images.pexels.com/photos/6801647/pexels-photo-6801647.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+                  alt=""
+                  className="w-full h-full object-cover rounded-bl-3xl"
+                />
               </div>
-              <h3 className="text-2xl font-bold mb-4 pink-accent">Investment Stuf</h3>
-              <p className="text-gray-400 mb-8 text-sm leading-relaxed">
-                Learn how to grow your money and make smart investment decisions.
-              </p>
-              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                Learn More
-              </button>
+              <div className="relative z-10">
+                <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+                  <LineChart className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 pink-accent">Investment Stuf</h3>
+                <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+                  Learn how to grow your money and make smart investment decisions.
+                </p>
+                <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
+                  Learn More
+                </button>
+              </div>
             </div>
 
-            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900">
-              <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
-                <Receipt className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
+            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-20 group-hover:opacity-30 transition-opacity">
+                <img
+                  src="https://images.pexels.com/photos/7788009/pexels-photo-7788009.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+                  alt=""
+                  className="w-full h-full object-cover rounded-bl-3xl"
+                />
               </div>
-              <h3 className="text-2xl font-bold mb-4 pink-accent">Financial Planning Stuf</h3>
-              <p className="text-gray-400 mb-8 text-sm leading-relaxed">
-                Master budgeting, saving, and planning to achieve your goals.
-              </p>
-              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                Learn More
-              </button>
+              <div className="relative z-10">
+                <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+                  <Receipt className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 pink-accent">Financial Planning Stuf</h3>
+                <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+                  Master budgeting, saving, and planning to achieve your goals.
+                </p>
+                <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
+                  Learn More
+                </button>
+              </div>
             </div>
 
-            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900">
-              <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
-                <Key className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
+            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-20 group-hover:opacity-30 transition-opacity">
+                <img
+                  src="https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+                  alt=""
+                  className="w-full h-full object-cover rounded-bl-3xl"
+                />
               </div>
-              <h3 className="text-2xl font-bold mb-4 pink-accent">Mortgage & Rental Stuf</h3>
-              <p className="text-gray-400 mb-8 text-sm leading-relaxed">
-                Understand housing options, from renting to buying your home.
-              </p>
-              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                Learn More
-              </button>
+              <div className="relative z-10">
+                <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+                  <Key className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 pink-accent">Mortgage & Rental Stuf</h3>
+                <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+                  Understand housing options, from renting to buying your home.
+                </p>
+                <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
+                  Learn More
+                </button>
+              </div>
             </div>
 
-            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900">
-              <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
-                <Coins className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
+            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-20 group-hover:opacity-30 transition-opacity">
+                <img
+                  src="https://images.pexels.com/photos/6120214/pexels-photo-6120214.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+                  alt=""
+                  className="w-full h-full object-cover rounded-bl-3xl"
+                />
               </div>
-              <h3 className="text-2xl font-bold mb-4 pink-accent">Pension Stuf</h3>
-              <p className="text-gray-400 mb-8 text-sm leading-relaxed">
-                Plan for retirement early and secure your financial future.
-              </p>
-              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                Learn More
-              </button>
+              <div className="relative z-10">
+                <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+                  <Coins className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 pink-accent">Pension Stuf</h3>
+                <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+                  Plan for retirement early and secure your financial future.
+                </p>
+                <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
+                  Learn More
+                </button>
+              </div>
             </div>
           </div>
         </div>
