@@ -448,7 +448,7 @@ function App() {
                   <img
                     src="/investment_stuf.png"
                     alt="Investment"
-                    className="w-full h-full object-contain opacity-90 drop-shadow-2xl"
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </div>
@@ -467,7 +467,7 @@ function App() {
                   <img
                     src="/financial_planning_stuf.png"
                     alt="Financial Planning"
-                    className="w-full h-full object-contain opacity-90 drop-shadow-2xl"
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </div>
@@ -486,7 +486,7 @@ function App() {
                   <img
                     src="/mortgage_rental_stuf.png"
                     alt="Mortgage and Rental"
-                    className="w-full h-full object-contain opacity-90 drop-shadow-2xl"
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </div>
@@ -505,7 +505,7 @@ function App() {
                   <img
                     src="/pensio_stuf.png"
                     alt="Pension"
-                    className="w-full h-full object-contain opacity-90 drop-shadow-2xl"
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </div>
