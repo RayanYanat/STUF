@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Users, TrendingUp, GraduationCap, Heart, Calendar, Target, Mail, Phone, MapPin, Home, Wallet, PiggyBank, Calculator } from 'lucide-react';
+import { FileText, Users, TrendingUp, GraduationCap, Heart, Calendar, Target, Mail, Phone, MapPin, Home, Wallet, PiggyBank, Calculator, LineChart, Receipt, Key, Coins } from 'lucide-react';
 import MobileMenu from './components/MobileMenu';
 
 const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { end: number; duration?: number; suffix?: string; isVisible: boolean }) => {
@@ -434,8 +434,8 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900">
-              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <TrendingUp className="w-8 h-8 text-pink-accent" />
+              <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+                <LineChart className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-4 pink-accent">Investment Stuf</h3>
               <p className="text-gray-400 mb-8 text-sm leading-relaxed">
@@ -447,8 +447,8 @@ function App() {
             </div>
 
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900">
-              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <Calculator className="w-8 h-8 text-pink-accent" />
+              <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+                <Receipt className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-4 pink-accent">Financial Planning Stuf</h3>
               <p className="text-gray-400 mb-8 text-sm leading-relaxed">
@@ -460,8 +460,8 @@ function App() {
             </div>
 
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900">
-              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <Home className="w-8 h-8 text-pink-accent" />
+              <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+                <Key className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-4 pink-accent">Mortgage & Rental Stuf</h3>
               <p className="text-gray-400 mb-8 text-sm leading-relaxed">
@@ -473,8 +473,8 @@ function App() {
             </div>
 
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900">
-              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <PiggyBank className="w-8 h-8 text-pink-accent" />
+              <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
+                <Coins className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
               </div>
               <h3 className="text-2xl font-bold mb-4 pink-accent">Pension Stuf</h3>
               <p className="text-gray-400 mb-8 text-sm leading-relaxed">
