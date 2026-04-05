@@ -442,9 +442,6 @@ function App() {
                 />
               </div>
               <div className="relative z-10">
-                <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
-                  <LineChart className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
-                </div>
                 <h3 className="text-2xl font-bold mb-4 pink-accent">Investment Stuf</h3>
                 <p className="text-gray-400 mb-8 text-sm leading-relaxed">
                   Learn how to grow your money and make smart investment decisions.
@@ -464,9 +461,6 @@ function App() {
                 />
               </div>
               <div className="relative z-10">
-                <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
-                  <Receipt className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
-                </div>
                 <h3 className="text-2xl font-bold mb-4 pink-accent">Financial Planning Stuf</h3>
                 <p className="text-gray-400 mb-8 text-sm leading-relaxed">
                   Master budgeting, saving, and planning to achieve your goals.
@@ -486,9 +480,6 @@ function App() {
                 />
               </div>
               <div className="relative z-10">
-                <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
-                  <Key className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
-                </div>
                 <h3 className="text-2xl font-bold mb-4 pink-accent">Mortgage & Rental Stuf</h3>
                 <p className="text-gray-400 mb-8 text-sm leading-relaxed">
                   Understand housing options, from renting to buying your home.
@@ -508,9 +499,6 @@ function App() {
                 />
               </div>
               <div className="relative z-10">
-                <div className="bg-pink-accent/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6">
-                  <Coins className="w-12 h-12 text-pink-accent" strokeWidth={2.5} />
-                </div>
                 <h3 className="text-2xl font-bold mb-4 pink-accent">Pension Stuf</h3>
                 <p className="text-gray-400 mb-8 text-sm leading-relaxed">
                   Plan for retirement early and secure your financial future.
