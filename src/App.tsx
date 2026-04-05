@@ -232,7 +232,7 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Financial literacy gap</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={6} isVisible={countersVisible} /> in 10
@@ -242,7 +242,7 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Mental wellbeing</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 -<CountUpAnimation end={10} isVisible={countersVisible} />%
@@ -252,7 +252,7 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Poverty rate</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
@@ -262,7 +262,7 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Houselessness</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 1 in <CountUpAnimation end={22} isVisible={countersVisible} />
@@ -272,7 +272,7 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Young homelessness</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={126} suffix="K" isVisible={countersVisible} />
@@ -434,7 +434,7 @@ function App() {
             </div>
 
             <div className="space-y-5">
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, #1a1a1a, #0d0d0d)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Investment Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -453,7 +453,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, #1a1a1a, #0d0d0d)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Financial planning Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -472,7 +472,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, #1a1a1a, #0d0d0d)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Mortgage and rental Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -491,7 +491,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, #1a1a1a, #0d0d0d)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Pension Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -879,7 +879,7 @@ function App() {
             </div>
 
             <div className="scroll-reveal">
-              <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl border border-gray-800" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="p-10 rounded-3xl border border-gray-800" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
                 <h3 className="text-2xl font-bold text-white mb-8">Send us a message</h3>
                 <form className="space-y-5">
                   <div>
