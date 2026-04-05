@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { FileText, Users, TrendingUp, GraduationCap, Heart } from 'lucide-react';
 import MobileMenu from './components/MobileMenu';
 
 const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { end: number; duration?: number; suffix?: string; isVisible: boolean }) => {
@@ -93,6 +94,12 @@ function App() {
           scroll-behavior: smooth;
         }
 
+        @media (max-width: 640px) {
+          body {
+            font-size: 16px;
+          }
+        }
+
         .gradient-text {
           background: #FFC3C3;
           -webkit-background-clip: text;
@@ -124,188 +131,260 @@ function App() {
           transform: translateY(0);
         }
 
-        .diagonal-text {
-          writing-mode: horizontal-tb;
-          transform: rotate(-15deg);
-          transform-origin: center;
+        .stat-number {
+          font-family: 'Veneer', 'Impact', sans-serif;
+          font-size: clamp(60px, 10vw, 120px);
+          line-height: 0.9;
+          color: #FFC3C3;
         }
       `}</style>
 
-      <header className="bg-pink-accent sticky top-0 z-50">
+      <header className="bg-pink-accent sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex justify-between items-center py-6">
+          <nav className="flex justify-between items-center py-4 lg:py-6">
             <div className="flex items-center">
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Logo_Web.svg/:/rs=h:69,cg:true,m/qt=q:100/ll"
-                alt="STUF"
-                className="h-16"
+                alt="STUF - Set Them Up Foundation"
+                className="h-12 lg:h-16"
               />
             </div>
-            <div className="hidden lg:block">
-              <div className="w-12 h-1 bg-black mb-2"></div>
-              <div className="w-12 h-1 bg-black mb-2"></div>
-              <div className="w-12 h-1 bg-black"></div>
+            <div className="hidden lg:flex items-center space-x-8">
+              <a href="#about" className="text-black font-bold hover:opacity-70 transition-opacity">About</a>
+              <a href="#impact" className="text-black font-bold hover:opacity-70 transition-opacity">Impact</a>
+              <a href="#programs" className="text-black font-bold hover:opacity-70 transition-opacity">Programs</a>
+              <a href="#team" className="text-black font-bold hover:opacity-70 transition-opacity">Team</a>
+              <Link to="/impact-reports" className="bg-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-800 transition-colors">
+                Impact Reports
+              </Link>
             </div>
             <MobileMenu />
           </nav>
         </div>
       </header>
 
-      <section className="relative bg-black min-h-[600px] lg:min-h-[830px] overflow-hidden flex items-center justify-center">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative text-white leading-[0.85] select-none">
-            <h1 className="text-[80px] sm:text-[120px] lg:text-[180px] font-bold mb-0 opacity-90">
-              INVESTMENTS
-            </h1>
-            <h1 className="text-[80px] sm:text-[120px] lg:text-[180px] font-bold mb-0 opacity-90 ml-12">
-              TAXES PENSIONS
-            </h1>
-            <h1 className="text-[80px] sm:text-[120px] lg:text-[180px] font-bold mb-0 opacity-90">
-              RENT
-            </h1>
-            <h1 className="text-[80px] sm:text-[120px] lg:text-[180px] font-bold mb-0 opacity-90 ml-24">
-              MORTGAGES
-            </h1>
+      <section className="relative bg-gradient-to-br from-black to-gray-900 text-white py-20 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-10"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="scroll-reveal">
+              <p className="text-pink-accent font-bold text-sm uppercase tracking-wider mb-4">Empowering Young People</p>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                Financial Literacy <br />
+                <span className="gradient-text">For Everyone</span>
+              </h1>
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                Breaking the cycle of poverty through free financial education. We're teaching young people the money skills they need to thrive.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#programs" className="bg-pink-accent text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition-all">
+                  Our Programs
+                </a>
+                <a href="#donate" className="border-2 border-pink-accent text-pink-accent px-8 py-4 rounded-full font-bold text-lg hover:bg-pink-accent hover:text-black transition-all">
+                  Support Us
+                </a>
+              </div>
+            </div>
+            <div className="scroll-reveal hidden lg:block">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-pink-accent opacity-20 blur-3xl rounded-full"></div>
+                <img
+                  src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Students learning"
+                  className="relative rounded-2xl shadow-2xl"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-pink-accent px-12 py-6 rotate-[-15deg] z-10">
-          <h2 className="text-[60px] sm:text-[80px] lg:text-[120px] font-bold text-black leading-none">
-            CONFUSED?
-          </h2>
         </div>
       </section>
 
       <section id="stats" className="bg-black py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 scroll-reveal">
-            <p className="text-white text-sm font-bold uppercase tracking-wider mb-6">Why we're here</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8">
-              Important STUF
+          <div className="text-center mb-16 scroll-reveal">
+            <p className="text-pink-accent font-bold text-sm uppercase tracking-wider mb-4">Why We're Here</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+              The Problem We're Solving
             </h2>
-            <p className="text-white text-xl max-w-md leading-relaxed">
-              Financial literacy is still out of reach for millions of young people.
-              <br /><br />
-              We're here to change that.
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Financial literacy is still out of reach for millions of young people. We're here to change that.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-            <div className="scroll-reveal">
-              <p className="text-white font-bold text-xl mb-4">Financial literacy</p>
-              <p className="text-[80px] lg:text-[120px] font-bold leading-none mb-4 pink-accent">
-                6 in 10
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gray-900 p-8 rounded-2xl scroll-reveal border border-gray-800 hover:border-pink-accent transition-all">
+              <p className="text-white font-bold text-lg mb-4">Financial literacy gap</p>
+              <p className="stat-number mb-4">
+                <CountUpAnimation end={6} isVisible={countersVisible} /> in 10
               </p>
-              <p className="text-white text-xl">
-                6 in 10 UK people feel they don't have the skills to manage their money properly
-              </p>
-            </div>
-
-            <div className="scroll-reveal">
-              <p className="text-white font-bold text-xl mb-4">Mental wellbeing</p>
-              <p className="text-[80px] lg:text-[120px] font-bold leading-none mb-4 pink-accent">
-                -10%
-              </p>
-              <p className="text-white text-xl">
-                10% lower mental wellbeing scores for people with lower levels of financial literacy
+              <p className="text-gray-300 text-lg">
+                UK people feel they don't have the skills to manage their money properly
               </p>
             </div>
 
-            <div className="scroll-reveal">
-              <p className="text-white font-bold text-xl mb-4">Lifting people out of poverty</p>
-              <p className="text-[80px] lg:text-[120px] font-bold leading-none mb-4 pink-accent">
+            <div className="bg-gray-900 p-8 rounded-2xl scroll-reveal border border-gray-800 hover:border-pink-accent transition-all">
+              <p className="text-white font-bold text-lg mb-4">Mental wellbeing</p>
+              <p className="stat-number mb-4">
+                -<CountUpAnimation end={10} isVisible={countersVisible} />%
+              </p>
+              <p className="text-gray-300 text-lg">
+                Lower mental wellbeing scores for people with lower financial literacy
+              </p>
+            </div>
+
+            <div className="bg-gray-900 p-8 rounded-2xl scroll-reveal border border-gray-800 hover:border-pink-accent transition-all">
+              <p className="text-white font-bold text-lg mb-4">Poverty rate</p>
+              <p className="stat-number mb-4">
                 <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
               </p>
-              <p className="text-white text-xl">
-                22% of people in the UK live in poverty
+              <p className="text-gray-300 text-lg">
+                Of people in the UK live in poverty
               </p>
             </div>
 
-            <div className="scroll-reveal">
-              <p className="text-white font-bold text-xl mb-4">Houselessness</p>
-              <p className="text-[80px] lg:text-[120px] font-bold leading-none mb-4 pink-accent">
-                1 in 22
+            <div className="bg-gray-900 p-8 rounded-2xl scroll-reveal border border-gray-800 hover:border-pink-accent transition-all">
+              <p className="text-white font-bold text-lg mb-4">Houselessness</p>
+              <p className="stat-number mb-4">
+                1 in <CountUpAnimation end={22} isVisible={countersVisible} />
               </p>
-              <p className="text-white text-xl">
-                1 in every 22 people lack a home (in some places in England)
+              <p className="text-gray-300 text-lg">
+                People lack a home in some places in England
               </p>
             </div>
 
-            <div className="scroll-reveal">
-              <p className="text-white font-bold text-xl mb-4">Young homelessness</p>
-              <p className="text-[80px] lg:text-[120px] font-bold leading-none mb-4 pink-accent">
-                <CountUpAnimation end={126} suffix=",000" isVisible={countersVisible} />
+            <div className="bg-gray-900 p-8 rounded-2xl scroll-reveal border border-gray-800 hover:border-pink-accent transition-all">
+              <p className="text-white font-bold text-lg mb-4">Young homelessness</p>
+              <p className="stat-number mb-4">
+                <CountUpAnimation end={126} suffix="K" isVisible={countersVisible} />
               </p>
-              <p className="text-white text-xl">
-                126,000 homeless under-18s in the UK
+              <p className="text-gray-300 text-lg">
+                Homeless under-18s in the UK
+              </p>
+            </div>
+
+            <div className="bg-gray-900 p-8 rounded-2xl scroll-reveal border border-gray-800 hover:border-pink-accent transition-all">
+              <p className="text-white font-bold text-lg mb-4">Our mission</p>
+              <Heart className="w-20 h-20 text-pink-accent mb-4" />
+              <p className="text-gray-300 text-lg">
+                Breaking the cycle of poverty through education
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="what-we-do" className="bg-pink-accent py-16 lg:py-24">
+      <section id="about" className="bg-pink-accent py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 scroll-reveal">
-            <p className="text-black text-sm font-bold uppercase tracking-wider mb-6">What we do</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8">
-              We've got the money STUF covered
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="scroll-reveal">
+              <p className="text-black font-bold text-sm uppercase tracking-wider mb-4">About Us</p>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6">
+                Who We Are
+              </h2>
+              <p className="text-xl text-black leading-relaxed mb-6">
+                The Set Them Up Foundation is on a mission to help young people, their teachers, and parents get a handle on the fundamentals of finance.
+              </p>
+              <p className="text-lg text-black leading-relaxed">
+                By working with schools, banks, and other likeminded partners, we provide lifelong skills, understanding, and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
+              </p>
+            </div>
+            <div className="scroll-reveal">
+              <img
+                src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Teaching financial literacy"
+                className="rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" className="bg-white py-16 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 scroll-reveal">
+            <p className="text-pink-accent font-bold text-sm uppercase tracking-wider mb-4">What We Do</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6">
+              Our Programs
             </h2>
-            <p className="text-black text-xl max-w-2xl leading-relaxed">
-              The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance. By working with schools, banks, and other likeminded partners we provide lifelong skills, understanding and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Comprehensive financial education covering all the important STUF
             </p>
           </div>
 
-          <div className="grid md:grid-cols-1 gap-6 mt-16">
-            <div className="bg-black p-8 lg:p-12 scroll-reveal flex justify-between items-center">
-              <div className="max-w-md">
-                <h3 className="text-2xl lg:text-3xl font-bold pink-accent mb-4">Investment Stuf</h3>
-                <p className="text-white text-xl mb-6">
-                  Learn how to grow your money and make it work for you.
-                </p>
-                <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wide hover:bg-white transition-all">
-                  Learn more
-                </button>
-              </div>
-              <div className="hidden lg:block w-48 h-48 bg-white/10"></div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-black text-white p-8 rounded-2xl scroll-reveal hover:scale-105 transition-transform">
+              <TrendingUp className="w-12 h-12 text-pink-accent mb-4" />
+              <h3 className="text-2xl font-bold mb-4 pink-accent">Investment Stuf</h3>
+              <p className="text-gray-300 mb-6">
+                Learn how to grow your money and make smart investment decisions for your future.
+              </p>
+              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold hover:bg-white transition-all">
+                Learn More
+              </button>
             </div>
 
-            <div className="bg-black p-8 lg:p-12 scroll-reveal flex justify-between items-center">
-              <div className="max-w-md">
-                <h3 className="text-2xl lg:text-3xl font-bold pink-accent mb-4">Financial planning Stuf</h3>
-                <p className="text-white text-xl mb-6">
-                  Master budgeting, saving, and planning for your future.
-                </p>
-                <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wide hover:bg-white transition-all">
-                  Learn more
-                </button>
-              </div>
-              <div className="hidden lg:block w-48 h-48 bg-white/10"></div>
+            <div className="bg-black text-white p-8 rounded-2xl scroll-reveal hover:scale-105 transition-transform">
+              <FileText className="w-12 h-12 text-pink-accent mb-4" />
+              <h3 className="text-2xl font-bold mb-4 pink-accent">Financial Planning Stuf</h3>
+              <p className="text-gray-300 mb-6">
+                Master budgeting, saving, and planning to achieve your financial goals.
+              </p>
+              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold hover:bg-white transition-all">
+                Learn More
+              </button>
             </div>
 
-            <div className="bg-black p-8 lg:p-12 scroll-reveal flex justify-between items-center">
-              <div className="max-w-md">
-                <h3 className="text-2xl lg:text-3xl font-bold pink-accent mb-4">Mortgage and rental Stuf</h3>
-                <p className="text-white text-xl mb-6">
-                  Get your own place. Understand the process.
-                </p>
-                <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wide hover:bg-white transition-all">
-                  Learn more
-                </button>
-              </div>
-              <div className="hidden lg:block w-48 h-48 bg-white/10"></div>
+            <div className="bg-black text-white p-8 rounded-2xl scroll-reveal hover:scale-105 transition-transform">
+              <svg className="w-12 h-12 text-pink-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+              <h3 className="text-2xl font-bold mb-4 pink-accent">Mortgage & Rental Stuf</h3>
+              <p className="text-gray-300 mb-6">
+                Understand housing options, from renting to buying your first home.
+              </p>
+              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold hover:bg-white transition-all">
+                Learn More
+              </button>
             </div>
 
-            <div className="bg-black p-8 lg:p-12 scroll-reveal flex justify-between items-center">
-              <div className="max-w-md">
-                <h3 className="text-2xl lg:text-3xl font-bold pink-accent mb-4">Pension Stuf</h3>
-                <p className="text-white text-xl mb-6">
-                  Plan for retirement. Future you will thank you.
-                </p>
-                <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wide hover:bg-white transition-all">
-                  Learn more
-                </button>
-              </div>
-              <div className="hidden lg:block w-48 h-48 bg-white/10"></div>
+            <div className="bg-black text-white p-8 rounded-2xl scroll-reveal hover:scale-105 transition-transform">
+              <svg className="w-12 h-12 text-pink-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <h3 className="text-2xl font-bold mb-4 pink-accent">Pension Stuf</h3>
+              <p className="text-gray-300 mb-6">
+                Plan for retirement early and secure your financial future.
+              </p>
+              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold hover:bg-white transition-all">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact" className="bg-gray-50 py-16 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 scroll-reveal">
+            <p className="text-pink-accent font-bold text-sm uppercase tracking-wider mb-4">Our Impact</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6">
+              Making A Difference
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-lg scroll-reveal text-center">
+              <div className="stat-number text-black mb-2">5,000+</div>
+              <p className="text-xl font-bold text-gray-700">Students Reached</p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-lg scroll-reveal text-center">
+              <div className="stat-number text-black mb-2">50+</div>
+              <p className="text-xl font-bold text-gray-700">Schools Partnered</p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-lg scroll-reveal text-center">
+              <div className="stat-number text-black mb-2">100%</div>
+              <p className="text-xl font-bold text-gray-700">Free Education</p>
             </div>
           </div>
         </div>
@@ -313,93 +392,97 @@ function App() {
 
       <section id="team" className="bg-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 scroll-reveal">
-            <p className="text-black text-sm font-bold uppercase tracking-wider mb-6">Our team</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8">
-              People behind the STUF
+          <div className="text-center mb-16 scroll-reveal">
+            <p className="text-pink-accent font-bold text-sm uppercase tracking-wider mb-4">Our Team</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6">
+              People Behind The STUF
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-black p-0 overflow-hidden scroll-reveal group">
-              <div className="flex items-center">
+            <div className="bg-black rounded-2xl overflow-hidden scroll-reveal group">
+              <div className="flex flex-col md:flex-row">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true"
                   alt="Jermaine Bishop"
-                  className="w-1/2 h-96 object-cover grayscale"
+                  className="w-full md:w-1/2 h-64 md:h-auto object-cover grayscale group-hover:grayscale-0 transition-all"
                 />
-                <div className="p-8 w-1/2">
+                <div className="p-8 flex flex-col justify-center">
                   <h3 className="text-2xl font-bold mb-2">
-                    <span className="pink-accent">Jermaine Bishop</span> <span className="text-white">Founding Trustee</span>
+                    <span className="pink-accent">Jermaine Bishop</span>
                   </h3>
-                  <p className="text-white text-xl mb-6">
-                    15+ years in Tech and Communications. Co-founder focused on free financial education.
+                  <p className="text-white text-lg mb-4">Founding Trustee</p>
+                  <p className="text-gray-300 mb-6">
+                    15+ years in Tech and Communications. Co-founder focused on providing free financial education.
                   </p>
-                  <button className="bg-pink-accent text-black px-6 py-2 rounded-full font-bold text-sm uppercase">
-                    Learn more
+                  <button className="bg-pink-accent text-black px-6 py-2 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
+                    Learn More
                   </button>
                 </div>
               </div>
             </div>
 
-            <div className="bg-black p-0 overflow-hidden scroll-reveal group">
-              <div className="flex items-center">
+            <div className="bg-black rounded-2xl overflow-hidden scroll-reveal group">
+              <div className="flex flex-col md:flex-row">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true"
                   alt="James Jordan"
-                  className="w-1/2 h-96 object-cover grayscale"
+                  className="w-full md:w-1/2 h-64 md:h-auto object-cover grayscale group-hover:grayscale-0 transition-all"
                 />
-                <div className="p-8 w-1/2">
+                <div className="p-8 flex flex-col justify-center">
                   <h3 className="text-2xl font-bold mb-2">
-                    <span className="pink-accent">James M. Jordan</span> <span className="text-white">Founding Trustee</span>
+                    <span className="pink-accent">James M. Jordan</span>
                   </h3>
-                  <p className="text-white text-xl mb-6">
+                  <p className="text-white text-lg mb-4">Founding Trustee</p>
+                  <p className="text-gray-300 mb-6">
                     Entrepreneur with Sales and Marketing expertise. Founded STUF to help young people.
                   </p>
-                  <button className="bg-pink-accent text-black px-6 py-2 rounded-full font-bold text-sm uppercase">
-                    Learn more
+                  <button className="bg-pink-accent text-black px-6 py-2 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
+                    Learn More
                   </button>
                 </div>
               </div>
             </div>
 
-            <div className="bg-black p-0 overflow-hidden scroll-reveal group">
-              <div className="flex items-center">
+            <div className="bg-black rounded-2xl overflow-hidden scroll-reveal group">
+              <div className="flex flex-col md:flex-row">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true"
                   alt="Tina Creed"
-                  className="w-1/2 h-96 object-cover grayscale"
+                  className="w-full md:w-1/2 h-64 md:h-auto object-cover grayscale group-hover:grayscale-0 transition-all"
                 />
-                <div className="p-8 w-1/2">
+                <div className="p-8 flex flex-col justify-center">
                   <h3 className="text-2xl font-bold mb-2">
-                    <span className="pink-accent">Tina Creed</span> <span className="text-white">Trustee</span>
+                    <span className="pink-accent">Tina Creed</span>
                   </h3>
-                  <p className="text-white text-xl mb-6">
+                  <p className="text-white text-lg mb-4">Trustee</p>
+                  <p className="text-gray-300 mb-6">
                     25 years in childcare/education. Former Ark Elvin Academy Governor.
                   </p>
-                  <button className="bg-pink-accent text-black px-6 py-2 rounded-full font-bold text-sm uppercase">
-                    Learn more
+                  <button className="bg-pink-accent text-black px-6 py-2 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
+                    Learn More
                   </button>
                 </div>
               </div>
             </div>
 
-            <div className="bg-black p-0 overflow-hidden scroll-reveal group">
-              <div className="flex items-center">
+            <div className="bg-black rounded-2xl overflow-hidden scroll-reveal group">
+              <div className="flex flex-col md:flex-row">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true"
                   alt="Truman Alberto Sullivan"
-                  className="w-1/2 h-96 object-cover grayscale"
+                  className="w-full md:w-1/2 h-64 md:h-auto object-cover grayscale group-hover:grayscale-0 transition-all"
                 />
-                <div className="p-8 w-1/2">
+                <div className="p-8 flex flex-col justify-center">
                   <h3 className="text-2xl font-bold mb-2">
-                    <span className="pink-accent">Truman Alberto Sullivan</span> <span className="text-white">Trustee</span>
+                    <span className="pink-accent">Truman Alberto Sullivan</span>
                   </h3>
-                  <p className="text-white text-xl mb-6">
+                  <p className="text-white text-lg mb-4">Trustee</p>
+                  <p className="text-gray-300 mb-6">
                     Head of Rugby at Skinners School, Kent. Decade in education sector.
                   </p>
-                  <button className="bg-pink-accent text-black px-6 py-2 rounded-full font-bold text-sm uppercase">
-                    Learn more
+                  <button className="bg-pink-accent text-black px-6 py-2 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
+                    Learn More
                   </button>
                 </div>
               </div>
@@ -408,156 +491,91 @@ function App() {
         </div>
       </section>
 
-      <section id="news" className="bg-black py-16 lg:py-24">
+      <section id="donate" className="bg-black py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 scroll-reveal">
-            <p className="text-white text-sm font-bold uppercase tracking-wider mb-6">Latest news</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold pink-accent mb-8">
-              Hot (off the press) STUF
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-8 scroll-reveal">
-              <p className="text-gray-500 text-sm mb-4">Twitter</p>
-              <p className="text-black text-xl font-bold mb-2">Set Them Up Foundation</p>
-              <p className="text-black text-lg leading-relaxed mb-4">
-                We're excited to announce our latest partnership bringing financial education to 1,000 more students this year. #STUF #FinancialLiteracy
-              </p>
-              <p className="text-gray-500 text-sm">5:30pm 8 Oct 2022</p>
-            </div>
-
-            <div className="bg-white scroll-reveal overflow-hidden">
-              <div className="h-48 bg-gray-300"></div>
-              <div className="p-8">
-                <p className="text-black text-xl font-bold mb-4">
-                  Event title to go here
-                </p>
-                <p className="text-black text-lg mb-4">
-                  Some text about an upcoming event would go in here and here #STUFconference
-                </p>
-                <p className="text-gray-500 text-sm">5:30pm 8 Oct 2022</p>
-              </div>
-            </div>
-
-            <div className="bg-black border-4 border-pink-accent p-8 scroll-reveal">
-              <p className="text-white text-sm mb-2">News</p>
-              <p className="pink-accent text-2xl font-bold mb-4">
-                Working with local communities
-              </p>
-              <p className="text-white text-lg leading-relaxed mb-4">
-                Some text about an goes in here about our community outreach programs and local partnerships.
-              </p>
-              <p className="text-gray-400 text-sm">5:30pm 8 Oct 2022</p>
-            </div>
-          </div>
-
-          <div className="text-right mt-8">
-            <Link to="#" className="text-white text-lg hover:text-pink-accent transition-colors">
-              View all news →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section id="roadmap" className="bg-pink-accent py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 scroll-reveal">
-            <p className="text-black text-sm font-bold uppercase tracking-wider mb-6">Our roadmap</p>
-            <div className="flex justify-between items-start">
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black">
-                STUF to come
-              </h2>
-              <p className="text-black text-lg max-w-2xl ml-12 hidden lg:block">
-                The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance.
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-8 mt-16">
-            {[
-              {
-                year: '2022',
-                items: ['Set up of the foundation', 'Production of the syllabus']
-              },
-              {
-                year: '2023',
-                items: ['Delivering the course; Wembley, London, Manchester and Birmingham', 'Mentorship programme begins', 'E-learning syllabus completed']
-              },
-              {
-                year: '2024',
-                items: ['Reach accreditation', 'Delivering the course; Leeds, Glasgow, Southampton, Liverpool and Newcastle', 'Apprentice and Employment programme begins']
-              },
-              {
-                year: '2025',
-                items: ['Become a necessary curriculum lesson', 'Coverage across the United Kingdom offering financial education to all schools', 'Worldwide outreach']
-              }
-            ].map((item, idx) => (
-              <div key={idx} className="border-t border-black pt-4 scroll-reveal">
-                <div className="flex items-start gap-8">
-                  <div className="bg-black text-white px-8 py-2 font-bold text-lg">
-                    {item.year}
-                  </div>
-                  <ul className="flex-1 space-y-2 text-black text-lg lg:text-xl">
-                    {item.items.map((text, i) => (
-                      <li key={i}>— {text}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="partners" className="bg-white py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 scroll-reveal">
-            <p className="text-black text-sm font-bold uppercase tracking-wider mb-6">Our partners</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8">
-              Collaboration STUF
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center">
-            {[1, 2, 3, 4, 5, 6, 7].map((_, idx) => (
-              <div key={idx} className="aspect-square rounded-full bg-gray-200 flex items-center justify-center scroll-reveal">
-                <span className="text-gray-400 text-xl">logo</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="cta" className="bg-black py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-12 scroll-reveal">
-            Help us make STUF happen
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="scroll-reveal">
-              <label className="text-white font-bold text-lg block mb-4">Enter your email</label>
-              <div className="flex gap-4">
+              <p className="text-pink-accent font-bold text-sm uppercase tracking-wider mb-4">Support Our Mission</p>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+                Help Us Make STUF Happen
+              </h2>
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                Your support helps us provide free financial education to thousands of young people across the UK.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#" className="bg-pink-accent text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition-all">
+                  Donate Now
+                </a>
+                <a href="#" className="border-2 border-pink-accent text-pink-accent px-8 py-4 rounded-full font-bold text-lg hover:bg-pink-accent hover:text-black transition-all">
+                  Become a Partner
+                </a>
+              </div>
+            </div>
+            <div className="bg-gray-900 p-8 rounded-2xl scroll-reveal">
+              <h3 className="text-2xl font-bold text-white mb-6">Stay Updated</h3>
+              <form className="space-y-4">
                 <input
                   type="email"
-                  placeholder="your@email.com"
-                  className="flex-1 px-6 py-4 text-lg border-2 border-white bg-transparent text-white placeholder-gray-400"
+                  placeholder="Enter your email"
+                  className="w-full px-6 py-4 bg-black text-white border-2 border-gray-700 rounded-full focus:border-pink-accent focus:outline-none"
                 />
-                <button className="bg-pink-accent text-black px-8 py-4 font-bold text-lg hover:bg-white transition-all whitespace-nowrap">
-                  Subscribe to our newsletter
+                <button
+                  type="submit"
+                  className="w-full bg-pink-accent text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition-all"
+                >
+                  Subscribe to Newsletter
                 </button>
-              </div>
-            </div>
-
-            <div className="scroll-reveal flex items-end justify-end">
-              <Link to="#donate" className="bg-pink-accent text-black px-12 py-6 font-bold text-xl hover:bg-white transition-all inline-block">
-                Donate to STUF
-              </Link>
+              </form>
             </div>
           </div>
         </div>
       </section>
+
+      <footer className="bg-pink-accent py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <img
+                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Logo_Web.svg/:/rs=h:69,cg:true,m/qt=q:100/ll"
+                alt="STUF"
+                className="h-12 mb-4"
+              />
+              <p className="text-black text-sm">
+                Breaking the cycle of poverty through financial education.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-black mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li><a href="#about" className="text-black hover:opacity-70">About Us</a></li>
+                <li><a href="#programs" className="text-black hover:opacity-70">Programs</a></li>
+                <li><a href="#team" className="text-black hover:opacity-70">Team</a></li>
+                <li><Link to="/impact-reports" className="text-black hover:opacity-70">Impact Reports</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-black mb-4">Get Involved</h4>
+              <ul className="space-y-2">
+                <li><a href="#donate" className="text-black hover:opacity-70">Donate</a></li>
+                <li><a href="#" className="text-black hover:opacity-70">Volunteer</a></li>
+                <li><a href="#" className="text-black hover:opacity-70">Partner With Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-black mb-4">Contact</h4>
+              <p className="text-black text-sm">
+                Email: info@setthemup.org<br />
+                Follow us on social media
+              </p>
+            </div>
+          </div>
+          <div className="border-t border-black mt-8 pt-8 text-center">
+            <p className="text-black text-sm">
+              © 2024 Set Them Up Foundation. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
