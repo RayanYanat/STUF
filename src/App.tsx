@@ -614,6 +614,108 @@ function App() {
         </div>
       </section>
 
+      <section className="bg-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-5xl mx-auto">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
+              Workshops in <span className="text-pink-accent">Action</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              From London to Uganda, we're empowering young people with essential financial knowledge through engaging, hands-on workshops.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="group relative overflow-hidden rounded-3xl scroll-reveal premium-card">
+              <img
+                src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Bristol STUF workshop in action"
+                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 w-full">
+                  <h3 className="text-3xl font-bold text-white">Bristol STUF</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-3xl scroll-reveal premium-card">
+              <img
+                src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Brent STUF workshop in action"
+                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 w-full">
+                  <h3 className="text-3xl font-bold text-white">Brent STUF</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-3xl scroll-reveal premium-card">
+              <img
+                src="https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Barnet STUF workshop in action"
+                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 w-full">
+                  <h3 className="text-3xl font-bold text-white">Barnet STUF</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-3xl scroll-reveal premium-card">
+              <img
+                src="https://images.pexels.com/photos/6802042/pexels-photo-6802042.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Money Matters workshop"
+                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 w-full">
+                  <h3 className="text-3xl font-bold text-white">Money Matters STUF</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-3xl scroll-reveal premium-card">
+              <img
+                src="https://images.pexels.com/photos/5940838/pexels-photo-5940838.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Community workshop"
+                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 w-full">
+                  <h3 className="text-3xl font-bold text-white">The Dome STUF</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-3xl scroll-reveal premium-card">
+              <img
+                src="https://images.pexels.com/photos/8088495/pexels-photo-8088495.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Uganda STUF workshop"
+                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
+                <div className="p-8 w-full">
+                  <h3 className="text-3xl font-bold text-white">Uganda STUF</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-16 text-center scroll-reveal">
+            <p className="text-gray-600 text-lg mb-8">
+              Want to bring financial education to your school or community?
+            </p>
+            <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="roadmap" className="bg-pink-accent py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
