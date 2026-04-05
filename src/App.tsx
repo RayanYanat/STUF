@@ -962,101 +962,81 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
-              <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
-                  <img
-                    src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true"
-                    alt="Jermaine Bishop"
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-                <div className="p-10 flex flex-col justify-center w-full md:w-3/5">
-                  <h3 className="text-2xl font-bold mb-2">
-                    <span className="pink-accent">Jermaine Bishop</span>
-                  </h3>
-                  <p className="text-white text-base mb-6 font-medium">Founding Trustee</p>
-                  <p className="text-gray-400 mb-8 text-sm leading-relaxed">
-                    15+ years in Tech and Communications. Co-founder focused on providing free financial education.
-                  </p>
-                  <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
-              <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
-                  <img
-                    src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true"
-                    alt="James Jordan"
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-                <div className="p-10 flex flex-col justify-center w-full md:w-3/5">
-                  <h3 className="text-2xl font-bold mb-2">
-                    <span className="pink-accent">James M. Jordan</span>
-                  </h3>
-                  <p className="text-white text-base mb-6 font-medium">Founding Trustee</p>
-                  <p className="text-gray-400 mb-8 text-sm leading-relaxed">
-                    Entrepreneur with Sales and Marketing expertise. Founded STUF to help young people.
-                  </p>
-                  <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
-              <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
-                  <img
-                    src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true"
-                    alt="Tina Creed"
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-                <div className="p-10 flex flex-col justify-center w-full md:w-3/5">
-                  <h3 className="text-2xl font-bold mb-2">
-                    <span className="pink-accent">Tina Creed</span>
-                  </h3>
-                  <p className="text-white text-base mb-6 font-medium">Trustee</p>
-                  <p className="text-gray-400 mb-8 text-sm leading-relaxed">
-                    25 years in childcare/education. Former Ark Elvin Academy Governor.
-                  </p>
-                  <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
-              <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
-                  <img
-                    src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true"
-                    alt="Truman Alberto Sullivan"
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-                <div className="p-10 flex flex-col justify-center w-full md:w-3/5">
-                  <h3 className="text-2xl font-bold mb-2">
-                    <span className="pink-accent">Truman Alberto Sullivan</span>
-                  </h3>
-                  <p className="text-white text-base mb-6 font-medium">Trustee</p>
-                  <p className="text-gray-400 mb-8 text-sm leading-relaxed">
-                    Head of Rugby at Skinners School, Kent. Decade in education sector.
-                  </p>
-                  <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
-                    Learn More
-                  </button>
+            {[
+              {
+                name: 'Jermaine Bishop',
+                role: 'Founding Trustee',
+                bio: '15+ years in Tech and Communications. Co-founder focused on providing free financial education.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true'
+              },
+              {
+                name: 'James M. Jordan',
+                role: 'Founding Trustee',
+                bio: 'Entrepreneur with Sales and Marketing expertise. Founded STUF to help young people.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true'
+              },
+              {
+                name: 'Tina Creed',
+                role: 'Trustee',
+                bio: '25 years in childcare/education. Former Ark Elvin Academy Governor.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+              },
+              {
+                name: 'Truman Alberto Sullivan',
+                role: 'Trustee',
+                bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+              },
+              {
+                name: 'Akeem Oyebanji',
+                role: 'Trustee',
+                bio: 'Financial services professional with expertise in banking and investment.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Akeem.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+              },
+              {
+                name: 'Ife Grillo',
+                role: 'Special Advisor',
+                bio: 'Strategic advisor bringing insights from corporate and nonprofit sectors.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Ife.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+              },
+              {
+                name: 'Anthony McCalla',
+                role: 'Special Advisor',
+                bio: 'Experienced advisor in education and youth development programs.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Anthony.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+              },
+              {
+                name: 'Femi Owolade-Coombes',
+                role: 'Education Consultant',
+                bio: 'Educational strategist specializing in curriculum development and pedagogy.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Femi.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+              },
+            ].map((member) => (
+              <div key={member.name} className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
+                <div className="flex flex-col md:flex-row">
+                  <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-10 flex flex-col justify-center w-full md:w-3/5">
+                    <h3 className="text-2xl font-bold mb-2">
+                      <span className="pink-accent">{member.name}</span>
+                    </h3>
+                    <p className="text-white text-base mb-6 font-medium">{member.role}</p>
+                    <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+                      {member.bio}
+                    </p>
+                    <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
+                      Learn More
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
