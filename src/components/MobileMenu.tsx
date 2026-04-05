@@ -7,8 +7,8 @@ interface MenuSection {
 }
 
 const sections: MenuSection[] = [
-  { id: 'about', label: 'About' },
-  { id: 'stats', label: 'Impact' },
+  { id: 'who-we-help', label: 'Who We Help' },
+  { id: 'impact', label: 'Impact' },
   { id: 'programs', label: 'Programs' },
   { id: 'workshops', label: 'Workshops' },
   { id: 'team', label: 'Team' },
