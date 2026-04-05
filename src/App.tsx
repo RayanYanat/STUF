@@ -804,39 +804,113 @@ function App() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-50 to-white p-12 rounded-3xl scroll-reveal border border-gray-200 premium-card">
-            <div className="text-center mb-10">
+          <div className="bg-gradient-to-br from-gray-50 to-white p-12 lg:p-16 rounded-3xl scroll-reveal border border-gray-200 premium-card">
+            <div className="text-center mb-16">
               <p className="text-lg text-gray-700 font-medium">
                 We partner with schools, financial institutions, and educational organizations committed to empowering young people
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-10">
-              <div className="text-center">
-                <div className="bg-white p-8 rounded-2xl shadow-md premium-card border border-gray-100">
-                  <GraduationCap className="w-12 h-12 text-pink-accent mx-auto mb-4" />
-                  <h4 className="font-bold text-black text-lg mb-2">Schools</h4>
-                  <p className="text-gray-600 text-sm">50+ educational institutions</p>
-                </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/BRENT%20LOGO%20%2B%20white%20%2B%20LOGOTYPE%20black%20small.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:514,h:200,cg:true"
+                  alt="Brent Council"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
               </div>
-              <div className="text-center">
-                <div className="bg-white p-8 rounded-2xl shadow-md premium-card border border-gray-100">
-                  <TrendingUp className="w-12 h-12 text-pink-accent mx-auto mb-4" />
-                  <h4 className="font-bold text-black text-lg mb-2">Banks</h4>
-                  <p className="text-gray-600 text-sm">Financial sector supporters</p>
-                </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/bentley%20logo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  alt="Bentley"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
               </div>
-              <div className="text-center">
-                <div className="bg-white p-8 rounded-2xl shadow-md premium-card border border-gray-100">
-                  <Users className="w-12 h-12 text-pink-accent mx-auto mb-4" />
-                  <h4 className="font-bold text-black text-lg mb-2">Community</h4>
-                  <p className="text-gray-600 text-sm">Local organizations</p>
-                </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Power%20up%20london%20logo.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:334,h:200,cg:true"
+                  alt="Power Up London"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/CAF-Logo-Standard.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:320,h:200,cg:true"
+                  alt="CAF"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Woodward-Logo-March-2023-374x374.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  alt="Woodward"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/64ee2af5aa132.webp/:/rs=w:916,h:200,cg:true,m/cr=w:916,h:200"
+                  alt="Partner"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/clothworkers_foundation_navy.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:650,h:200,cg:true"
+                  alt="Clothworkers Foundation"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/images%20(2).png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  alt="Partner"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/DiNN%2Blogo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  alt="DiNN"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-fdb8e4a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:200,h:200,cg:true"
+                  alt="Partner"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Camden-Giving-cmyk-logo-01-300x133.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:300,h:133,cg:true"
+                  alt="Camden Giving"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/living%20wage.jpg/:/rs=w:253,h:200,cg:true,m/cr=w:253,h:200"
+                  alt="Living Wage"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
               </div>
             </div>
 
             <div className="text-center">
-              <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all">
+              <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all shadow-lg hover:shadow-xl">
                 Become a Partner
               </a>
             </div>
