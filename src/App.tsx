@@ -964,51 +964,51 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
+                name: 'James Jordan',
+                role: 'Founding Trustee',
+                bio: 'Entrepreneur with Sales and Marketing expertise. Founded STUF to help young people.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true'
+              },
+              {
                 name: 'Jermaine Bishop',
                 role: 'Founding Trustee',
                 bio: '15+ years in Tech and Communications. Co-founder focused on providing free financial education.',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true'
               },
               {
-                name: 'James M. Jordan',
-                role: 'Founding Trustee',
-                bio: 'Entrepreneur with Sales and Marketing expertise. Founded STUF to help young people.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true'
+                name: 'Thomas Hamer',
+                role: 'Trustee',
+                bio: 'Experienced trustee bringing strategic oversight and governance expertise.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
               },
               {
-                name: 'Tina Creed',
+                name: 'Matthew Smith',
                 role: 'Trustee',
-                bio: '25 years in childcare/education. Former Ark Elvin Academy Governor.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+                bio: 'Strategic advisor with expertise in organizational development and growth.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+              },
+              {
+                name: 'Zofia Barnes',
+                role: 'Trustee',
+                bio: 'Professional with extensive experience in education and community development.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Akeem.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+              },
+              {
+                name: 'Paul Mokuolu',
+                role: 'Trustee',
+                bio: 'Specialist in youth development and educational program delivery.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Ife.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+              },
+              {
+                name: 'Jalpa Lai',
+                role: 'Trustee',
+                bio: 'Expert in financial literacy and youth empowerment initiatives.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Anthony.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
               },
               {
                 name: 'Truman Alberto Sullivan',
                 role: 'Trustee',
                 bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
-              },
-              {
-                name: 'Akeem Oyebanji',
-                role: 'Trustee',
-                bio: 'Financial services professional with expertise in banking and investment.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Akeem.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
-              },
-              {
-                name: 'Ife Grillo',
-                role: 'Special Advisor',
-                bio: 'Strategic advisor bringing insights from corporate and nonprofit sectors.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Ife.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
-              },
-              {
-                name: 'Anthony McCalla',
-                role: 'Special Advisor',
-                bio: 'Experienced advisor in education and youth development programs.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Anthony.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
-              },
-              {
-                name: 'Femi Owolade-Coombes',
-                role: 'Education Consultant',
-                bio: 'Educational strategist specializing in curriculum development and pedagogy.',
                 image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Femi.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
               },
             ].map((member) => (
