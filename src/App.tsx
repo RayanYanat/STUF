@@ -961,88 +961,126 @@ function App() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                name: 'James Jordan',
-                role: 'Founder & Trustee',
-                bio: 'Ambitious entrepreneur with expertise in Sales and Marketing. Founded STUF to provide financial education to underprivileged children.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png'
-              },
-              {
-                name: 'Jermaine Bishop',
-                role: 'Founding Trustee',
-                bio: '15+ years of experience in Tech and Communications sectors. Co-founder focused on providing free financial education to lower-income children.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png'
-              },
-              {
-                name: 'Tina Creed',
-                role: 'Advisory',
-                bio: '25 years in childcare/education. Former Ark Elvin Academy Governor',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png'
-              },
-              {
-                name: 'Thomas Hamer',
-                role: 'Trustee',
-                bio: '9+ years in financial services across Venture/PE, Corporate Banking, and Wealth Management',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png'
-              },
-              {
-                name: 'Matthew Smith',
-                role: 'Trustee',
-                bio: 'Sports and Business Development expertise with major European tax refund company',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Matthew.png'
-              },
-              {
-                name: 'Zofia Barnes',
-                role: 'Trustee',
-                bio: '11+ years in Banking and Finance. LSE Masters in Gender Studies, Policy & Inequalities',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Zofia.png'
-              },
-              {
-                name: 'Paul Mokuolu',
-                role: 'Trustee',
-                bio: 'Decade in financial sector. Technical Specialist at Bank of England',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-c729d57.png/:/cr=t:16.75%25,l:0%25,w:100%25,h:66.5%25/rs=w:365,h:365,cg:true/qt=q:93'
-              },
-              {
-                name: 'Jalpa Lai',
-                role: 'Trustee',
-                bio: '6+ years mentoring diverse youth, specializing in financial coaching',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-875f474.png/:/cr=t:0%25,l:4.38%25,w:91.25%25,h:100%25/rs=w:365,h:365,cg:true/qt=q:93'
-              },
-              {
-                name: 'Truman Alberto Sullivan',
-                role: 'Trustee',
-                bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png'
-              },
-            ].map((member) => (
-              <div key={member.name} className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
-                <div className="flex flex-col md:flex-row">
-                  <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-10 flex flex-col justify-center w-full md:w-3/5">
-                    <h3 className="text-2xl font-bold mb-2">
-                      <span className="pink-accent">{member.name}</span>
-                    </h3>
-                    <p className="text-white text-base mb-6 font-medium">{member.role}</p>
-                    <p className="text-gray-400 mb-8 text-sm leading-relaxed">
-                      {member.bio}
-                    </p>
-                    <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
-                      Learn More
-                    </button>
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-black mb-8 scroll-reveal">Founders</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              {[
+                {
+                  name: 'James Jordan',
+                  role: 'Founder & Trustee',
+                  bio: 'Ambitious entrepreneur with expertise in Sales and Marketing. Founded STUF to provide financial education to underprivileged children.',
+                  quote: 'When I left school at 16, I had no grasp of finance basics...I started STUF because I want to make sure other young people avoid the mistakes I did',
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png'
+                },
+                {
+                  name: 'Jermaine Bishop',
+                  role: 'Founding Trustee',
+                  bio: '15+ years of experience in Tech and Communications sectors. Co-founder focused on providing free financial education to lower-income children.',
+                  quote: 'I want to teach children how to manage, save and invest money to open up more opportunities',
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png'
+                },
+              ].map((member) => (
+                <div key={member.name} className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="p-10 flex flex-col justify-center w-full md:w-3/5">
+                      <h3 className="text-2xl font-bold mb-2">
+                        <span className="pink-accent">{member.name}</span>
+                      </h3>
+                      <p className="text-white text-base mb-6 font-medium">{member.role}</p>
+                      <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+                        {member.bio}
+                      </p>
+                      <blockquote className="border-l-4 border-pink-accent pl-4 italic text-gray-300 text-sm leading-relaxed">
+                        "{member.quote}"
+                      </blockquote>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-3xl font-bold text-black mb-8 scroll-reveal">Team Members</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              {[
+                {
+                  name: 'Thomas Hamer',
+                  role: 'Trustee',
+                  bio: '9+ years in financial services across Venture/PE, Corporate Banking, and Wealth Management',
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png'
+                },
+                {
+                  name: 'Matthew Smith',
+                  role: 'Trustee',
+                  bio: 'Sports and Business Development expertise with major European tax refund company',
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Matthew.png'
+                },
+                {
+                  name: 'Zofia Barnes',
+                  role: 'Trustee',
+                  bio: '11+ years in Banking and Finance. LSE Masters in Gender Studies, Policy & Inequalities',
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Zofia.png'
+                },
+                {
+                  name: 'Paul Mokuolu',
+                  role: 'Trustee',
+                  bio: 'Decade in financial sector. Technical Specialist at Bank of England',
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-c729d57.png/:/cr=t:16.75%25,l:0%25,w:100%25,h:66.5%25/rs=w:365,h:365,cg:true/qt=q:93'
+                },
+                {
+                  name: 'Jalpa Lai',
+                  role: 'Trustee',
+                  bio: '6+ years mentoring diverse youth, specializing in financial coaching',
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-875f474.png/:/cr=t:0%25,l:4.38%25,w:91.25%25,h:100%25/rs=w:365,h:365,cg:true/qt=q:93'
+                },
+                {
+                  name: 'Truman Alberto Sullivan',
+                  role: 'Trustee',
+                  bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector',
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png'
+                },
+                {
+                  name: 'Tina Creed',
+                  role: 'Advisory',
+                  bio: '25 years in childcare/education. Former Ark Elvin Academy Governor',
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png'
+                },
+              ].map((member) => (
+                <div key={member.name} className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="p-10 flex flex-col justify-center w-full md:w-3/5">
+                      <h3 className="text-2xl font-bold mb-2">
+                        <span className="pink-accent">{member.name}</span>
+                      </h3>
+                      <p className="text-white text-base mb-6 font-medium">{member.role}</p>
+                      <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+                        {member.bio}
+                      </p>
+                      <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
