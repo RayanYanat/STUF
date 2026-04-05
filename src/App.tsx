@@ -967,49 +967,55 @@ function App() {
                 name: 'James Jordan',
                 role: 'Founding Trustee',
                 bio: 'Entrepreneur with Sales and Marketing expertise. Founded STUF to help young people.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png'
               },
               {
                 name: 'Jermaine Bishop',
                 role: 'Founding Trustee',
                 bio: '15+ years in Tech and Communications. Co-founder focused on providing free financial education.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,h:600,cg:true'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png'
+              },
+              {
+                name: 'Tina Creed',
+                role: 'Advisory',
+                bio: '25 years in childcare/education. Former Ark Elvin Academy Governor.',
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png'
               },
               {
                 name: 'Thomas Hamer',
                 role: 'Trustee',
                 bio: 'Experienced trustee bringing strategic oversight and governance expertise.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png'
               },
               {
                 name: 'Matthew Smith',
                 role: 'Trustee',
                 bio: 'Strategic advisor with expertise in organizational development and growth.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Matthew.png'
               },
               {
                 name: 'Zofia Barnes',
                 role: 'Trustee',
                 bio: 'Professional with extensive experience in education and community development.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Akeem.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Zofia.png'
               },
               {
                 name: 'Paul Mokuolu',
                 role: 'Trustee',
                 bio: 'Specialist in youth development and educational program delivery.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Ife.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Paul.png'
               },
               {
                 name: 'Jalpa Lai',
                 role: 'Trustee',
                 bio: 'Expert in financial literacy and youth empowerment initiatives.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Anthony.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jalpa.png'
               },
               {
                 name: 'Truman Alberto Sullivan',
                 role: 'Trustee',
                 bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Femi.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:365,h:365,cg:true'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png'
               },
             ].map((member) => (
               <div key={member.name} className="bg-black rounded-3xl overflow-hidden scroll-reveal group border border-gray-900">
