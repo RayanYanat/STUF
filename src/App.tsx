@@ -436,7 +436,7 @@ function App() {
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
                 <img
-                  src="/expertise-financialplanning-1.png"
+                  src="/investment_stuf.png"
                   alt=""
                   className="w-full h-full object-cover rounded-bl-3xl"
                 />
@@ -458,7 +458,7 @@ function App() {
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
                 <img
-                  src="/financialadviceimage.png"
+                  src="/financial_planning_stuf.png"
                   alt=""
                   className="w-full h-full object-cover rounded-bl-3xl"
                 />
@@ -480,7 +480,7 @@ function App() {
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
                 <img
-                  src="/expertise-mortgagerental-1.png"
+                  src="/mortgage_rental_stuf.png"
                   alt=""
                   className="w-full h-full object-cover rounded-bl-3xl"
                 />
@@ -502,7 +502,7 @@ function App() {
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
                 <img
-                  src="/pensions-image.png"
+                  src="/pensio_stuf.png"
                   alt=""
                   className="w-full h-full object-cover rounded-bl-3xl"
                 />
