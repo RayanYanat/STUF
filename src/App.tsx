@@ -434,9 +434,9 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 opacity-20 group-hover:opacity-30 transition-opacity">
+              <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
                 <img
-                  src="https://images.pexels.com/photos/6801647/pexels-photo-6801647.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+                  src="/expertise-financialplanning-1.png"
                   alt=""
                   className="w-full h-full object-cover rounded-bl-3xl"
                 />
@@ -456,9 +456,9 @@ function App() {
             </div>
 
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 opacity-20 group-hover:opacity-30 transition-opacity">
+              <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
                 <img
-                  src="https://images.pexels.com/photos/7788009/pexels-photo-7788009.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+                  src="/financialadviceimage.png"
                   alt=""
                   className="w-full h-full object-cover rounded-bl-3xl"
                 />
@@ -478,9 +478,9 @@ function App() {
             </div>
 
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 opacity-20 group-hover:opacity-30 transition-opacity">
+              <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
                 <img
-                  src="https://images.pexels.com/photos/6963944/pexels-photo-6963944.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+                  src="/expertise-mortgagerental-1.png"
                   alt=""
                   className="w-full h-full object-cover rounded-bl-3xl"
                 />
@@ -500,9 +500,9 @@ function App() {
             </div>
 
             <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 opacity-20 group-hover:opacity-30 transition-opacity">
+              <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
                 <img
-                  src="https://images.pexels.com/photos/6120214/pexels-photo-6120214.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
+                  src="/pensions-image.png"
                   alt=""
                   className="w-full h-full object-cover rounded-bl-3xl"
                 />
