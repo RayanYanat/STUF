@@ -432,80 +432,80 @@ function App() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
-                <img
-                  src="/investment_stuf.png"
-                  alt=""
-                  className="w-full h-full object-cover rounded-bl-3xl"
-                />
-              </div>
-              <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-4 pink-accent">Investment Stuf</h3>
-                <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+          <div className="flex flex-col gap-6">
+            <div className="bg-black text-white p-8 rounded-3xl scroll-reveal premium-card border border-gray-900 flex items-center justify-between group hover:border-pink-accent/30 transition-all">
+              <div className="flex-1">
+                <h3 className="text-3xl font-bold mb-3 pink-accent">Investment Stuf</h3>
+                <p className="text-gray-400 mb-6 text-base leading-relaxed max-w-md">
                   Learn how to grow your money and make smart investment decisions.
                 </p>
-                <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                  Learn More
+                <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
+                  Learn more
                 </button>
+              </div>
+              <div className="w-64 h-64 flex-shrink-0 ml-8">
+                <img
+                  src="/investment_stuf.png"
+                  alt="Investment"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
 
-            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
-                <img
-                  src="/financial_planning_stuf.png"
-                  alt=""
-                  className="w-full h-full object-cover rounded-bl-3xl"
-                />
-              </div>
-              <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-4 pink-accent">Financial Planning Stuf</h3>
-                <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+            <div className="bg-black text-white p-8 rounded-3xl scroll-reveal premium-card border border-gray-900 flex items-center justify-between group hover:border-pink-accent/30 transition-all">
+              <div className="flex-1">
+                <h3 className="text-3xl font-bold mb-3 pink-accent">Financial planning Stuf</h3>
+                <p className="text-gray-400 mb-6 text-base leading-relaxed max-w-md">
                   Master budgeting, saving, and planning to achieve your goals.
                 </p>
-                <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                  Learn More
+                <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
+                  Learn more
                 </button>
+              </div>
+              <div className="w-64 h-64 flex-shrink-0 ml-8">
+                <img
+                  src="/financial_planning_stuf.png"
+                  alt="Financial Planning"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
 
-            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
-                <img
-                  src="/mortgage_rental_stuf.png"
-                  alt=""
-                  className="w-full h-full object-cover rounded-bl-3xl"
-                />
-              </div>
-              <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-4 pink-accent">Mortgage & Rental Stuf</h3>
-                <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+            <div className="bg-black text-white p-8 rounded-3xl scroll-reveal premium-card border border-gray-900 flex items-center justify-between group hover:border-pink-accent/30 transition-all">
+              <div className="flex-1">
+                <h3 className="text-3xl font-bold mb-3 pink-accent">Mortgage and rental Stuf</h3>
+                <p className="text-gray-400 mb-6 text-base leading-relaxed max-w-md">
                   Understand housing options, from renting to buying your home.
                 </p>
-                <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                  Learn More
+                <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
+                  Learn more
                 </button>
+              </div>
+              <div className="w-64 h-64 flex-shrink-0 ml-8">
+                <img
+                  src="/mortgage_rental_stuf.png"
+                  alt="Mortgage and Rental"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
 
-            <div className="bg-black text-white p-10 rounded-3xl scroll-reveal premium-card border border-gray-900 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-40 h-40 opacity-30 group-hover:opacity-40 transition-opacity">
-                <img
-                  src="/pensio_stuf.png"
-                  alt=""
-                  className="w-full h-full object-cover rounded-bl-3xl"
-                />
-              </div>
-              <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-4 pink-accent">Pension Stuf</h3>
-                <p className="text-gray-400 mb-8 text-sm leading-relaxed">
+            <div className="bg-black text-white p-8 rounded-3xl scroll-reveal premium-card border border-gray-900 flex items-center justify-between group hover:border-pink-accent/30 transition-all">
+              <div className="flex-1">
+                <h3 className="text-3xl font-bold mb-3 pink-accent">Pension Stuf</h3>
+                <p className="text-gray-400 mb-6 text-base leading-relaxed max-w-md">
                   Plan for retirement early and secure your financial future.
                 </p>
-                <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
-                  Learn More
+                <button className="bg-pink-accent text-black px-8 py-3 rounded-full font-bold text-sm hover:bg-white transition-all">
+                  Learn more
                 </button>
+              </div>
+              <div className="w-64 h-64 flex-shrink-0 ml-8">
+                <img
+                  src="/pensio_stuf.png"
+                  alt="Pension"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </div>
