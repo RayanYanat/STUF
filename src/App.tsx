@@ -1003,13 +1003,13 @@ function App() {
                 name: 'Paul Mokuolu',
                 role: 'Trustee',
                 bio: 'Specialist in youth development and educational program delivery.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Paul.png'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-c729d57.png/:/cr=t:16.75%25,l:0%25,w:100%25,h:66.5%25/rs=w:365,h:365,cg:true/qt=q:93'
               },
               {
                 name: 'Jalpa Lai',
                 role: 'Trustee',
                 bio: 'Expert in financial literacy and youth empowerment initiatives.',
-                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jalpa.png'
+                image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-875f474.png/:/cr=t:0%25,l:4.38%25,w:91.25%25,h:100%25/rs=w:365,h:365,cg:true/qt=q:93'
               },
               {
                 name: 'Truman Alberto Sullivan',
