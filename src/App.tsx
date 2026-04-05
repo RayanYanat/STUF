@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Users, TrendingUp, GraduationCap, Heart } from 'lucide-react';
+import { FileText, Users, TrendingUp, GraduationCap, Heart, Calendar, Target, Mail, Phone, MapPin } from 'lucide-react';
 import MobileMenu from './components/MobileMenu';
 
 const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { end: number; duration?: number; suffix?: string; isVisible: boolean }) => {
@@ -169,9 +169,10 @@ function App() {
             </div>
             <div className="hidden lg:flex items-center space-x-8">
               <a href="#about" className="text-black font-bold hover:opacity-70 transition-opacity">About</a>
-              <a href="#impact" className="text-black font-bold hover:opacity-70 transition-opacity">Impact</a>
               <a href="#programs" className="text-black font-bold hover:opacity-70 transition-opacity">Programs</a>
+              <a href="#workshops" className="text-black font-bold hover:opacity-70 transition-opacity">Workshops</a>
               <a href="#team" className="text-black font-bold hover:opacity-70 transition-opacity">Team</a>
+              <a href="#contact" className="text-black font-bold hover:opacity-70 transition-opacity">Contact</a>
               <Link to="/impact-reports" className="bg-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-800 transition-colors">
                 Impact Reports
               </Link>
@@ -414,6 +415,268 @@ function App() {
             <div className="bg-white p-12 rounded-3xl shadow-xl scroll-reveal text-center border border-gray-100 premium-card">
               <div className="stat-number text-black mb-4">100%</div>
               <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide">Free Education</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="workshops" className="bg-black py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Learn With Us</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Interactive Workshops
+            </h2>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              Join our hands-on financial literacy workshops designed for young people, parents, and educators
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 premium-card">
+              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <GraduationCap className="w-8 h-8 text-pink-accent" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">Student Workshops</h3>
+              <p className="text-gray-400 text-base leading-relaxed mb-6">
+                Interactive sessions teaching money management, budgeting, and financial planning basics
+              </p>
+              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
+                Book a Workshop
+              </button>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 premium-card">
+              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <Users className="w-8 h-8 text-pink-accent" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">Parent Sessions</h3>
+              <p className="text-gray-400 text-base leading-relaxed mb-6">
+                Empowering parents with the knowledge to guide their children's financial education
+              </p>
+              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
+                Book a Workshop
+              </button>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl scroll-reveal border border-gray-800 premium-card">
+              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <FileText className="w-8 h-8 text-pink-accent" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">Teacher Training</h3>
+              <p className="text-gray-400 text-base leading-relaxed mb-6">
+                Equipping educators with resources and methods to teach financial literacy effectively
+              </p>
+              <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm hover:bg-white transition-all w-full">
+                Book a Workshop
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" className="bg-pink-accent py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">Our Journey</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              Roadmap to Impact
+            </h2>
+            <p className="text-xl text-black/80 max-w-3xl mx-auto">
+              Our strategic plan to expand financial literacy education across the UK
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
+              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <Target className="w-8 h-8 text-black" />
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-3">2024 Q2</h3>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">Foundation Building</h4>
+              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
+                <li>• Launch pilot programs</li>
+                <li>• Partner with 10 schools</li>
+                <li>• Develop core curriculum</li>
+                <li>• Build volunteer network</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
+              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <Calendar className="w-8 h-8 text-black" />
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-3">2024 Q3-Q4</h3>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">Scaling Up</h4>
+              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
+                <li>• Expand to 50+ schools</li>
+                <li>• Launch digital platform</li>
+                <li>• Train 100+ educators</li>
+                <li>• Reach 5,000 students</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
+              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <TrendingUp className="w-8 h-8 text-black" />
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-3">2025</h3>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">National Reach</h4>
+              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
+                <li>• 100+ school partnerships</li>
+                <li>• Regional hubs established</li>
+                <li>• Mobile app launch</li>
+                <li>• 20,000+ students impacted</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
+              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <Heart className="w-8 h-8 text-black" />
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-3">2026+</h3>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">Lasting Change</h4>
+              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
+                <li>• UK-wide coverage</li>
+                <li>• Policy advocacy</li>
+                <li>• International expansion</li>
+                <li>• 100,000+ lives changed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" className="bg-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Working Together</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              Our Partners
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Collaborating with leading organizations to maximize our impact
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-50 to-white p-12 rounded-3xl scroll-reveal border border-gray-200 premium-card">
+            <div className="text-center mb-10">
+              <p className="text-lg text-gray-700 font-medium">
+                We partner with schools, financial institutions, and educational organizations committed to empowering young people
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-10">
+              <div className="text-center">
+                <div className="bg-white p-8 rounded-2xl shadow-md premium-card border border-gray-100">
+                  <GraduationCap className="w-12 h-12 text-pink-accent mx-auto mb-4" />
+                  <h4 className="font-bold text-black text-lg mb-2">Schools</h4>
+                  <p className="text-gray-600 text-sm">50+ educational institutions</p>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="bg-white p-8 rounded-2xl shadow-md premium-card border border-gray-100">
+                  <TrendingUp className="w-12 h-12 text-pink-accent mx-auto mb-4" />
+                  <h4 className="font-bold text-black text-lg mb-2">Banks</h4>
+                  <p className="text-gray-600 text-sm">Financial sector supporters</p>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="bg-white p-8 rounded-2xl shadow-md premium-card border border-gray-100">
+                  <Users className="w-12 h-12 text-pink-accent mx-auto mb-4" />
+                  <h4 className="font-bold text-black text-lg mb-2">Community</h4>
+                  <p className="text-gray-600 text-sm">Local organizations</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all">
+                Become a Partner
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="bg-black py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16">
+            <div className="scroll-reveal">
+              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Get In Touch</p>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+                Contact Us
+              </h2>
+              <p className="text-xl text-gray-400 mb-10 leading-relaxed">
+                Have questions or want to get involved? We'd love to hear from you.
+              </p>
+
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-pink-accent/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-pink-accent" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1 text-base">Email</h4>
+                    <p className="text-gray-400 text-sm">info@setthemup.org</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-pink-accent/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-pink-accent" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1 text-base">Phone</h4>
+                    <p className="text-gray-400 text-sm">Available upon request</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-pink-accent/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-pink-accent" />
+                  </div>
+                  <div>
+                    <h4 className="text-white font-semibold mb-1 text-base">Location</h4>
+                    <p className="text-gray-400 text-sm">United Kingdom</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="scroll-reveal">
+              <div className="bg-gradient-to-br from-gray-900 to-black p-10 rounded-3xl border border-gray-800">
+                <h3 className="text-2xl font-bold text-white mb-8">Send us a message</h3>
+                <form className="space-y-5">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      className="w-full px-6 py-4 bg-black text-white border-2 border-gray-700 rounded-2xl focus:border-pink-accent focus:outline-none transition-colors text-base"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="Your Email"
+                      className="w-full px-6 py-4 bg-black text-white border-2 border-gray-700 rounded-2xl focus:border-pink-accent focus:outline-none transition-colors text-base"
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      placeholder="Your Message"
+                      rows={5}
+                      className="w-full px-6 py-4 bg-black text-white border-2 border-gray-700 rounded-2xl focus:border-pink-accent focus:outline-none transition-colors text-base resize-none"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full bg-pink-accent text-black px-8 py-4 rounded-full font-bold text-base hover:bg-white transition-all"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>

@@ -7,14 +7,14 @@ interface MenuSection {
 }
 
 const sections: MenuSection[] = [
+  { id: 'about', label: 'About' },
   { id: 'stats', label: 'Impact' },
-  { id: 'what-we-do', label: 'What We Do' },
-  { id: 'who-we-help', label: 'Who We Help' },
   { id: 'programs', label: 'Programs' },
+  { id: 'workshops', label: 'Workshops' },
   { id: 'team', label: 'Team' },
   { id: 'roadmap', label: 'Roadmap' },
-  { id: 'workshop-locations', label: 'Locations' },
   { id: 'partners', label: 'Partners' },
+  { id: 'contact', label: 'Contact' },
   { id: 'donate', label: 'Donate' },
 ];
 
