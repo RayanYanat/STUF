@@ -233,15 +233,18 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Financial Gap</p>
-              <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
-                <CountUpAnimation end={6} isVisible={countersVisible} /> in 10
-              </p>
-              <p className="text-gray-400 text-base leading-relaxed">
-                UK adults can't manage their money properly.<br />
-                We're changing that.
-              </p>
+            <div className="relative p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group overflow-hidden" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 to-black/70 rounded-3xl"></div>
+              <div className="relative z-10">
+                <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Financial Gap</p>
+                <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
+                  <CountUpAnimation end={6} isVisible={countersVisible} /> in 10
+                </p>
+                <p className="text-gray-400 text-base leading-relaxed">
+                  UK adults can't manage their money properly.<br />
+                  We're changing that.
+                </p>
+              </div>
             </div>
 
             <div className="relative p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group overflow-hidden" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -300,17 +303,6 @@ function App() {
               </div>
             </div>
 
-            <div className="relative p-10 rounded-3xl scroll-reveal border border-pink-accent/30 hover:border-pink-accent/50 transition-all premium-card group overflow-hidden" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 to-black/70 rounded-3xl"></div>
-              <div className="relative z-10">
-                <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Our Mission</p>
-                <Heart className="w-16 h-16 text-pink-accent mb-6 group-hover:scale-110 transition-transform" />
-                <p className="text-gray-400 text-base leading-relaxed">
-                  Break the cycle.<br />
-                  Teach the STUF that matters.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
