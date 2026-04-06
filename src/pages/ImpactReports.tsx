@@ -121,7 +121,7 @@ function ImpactReports() {
               </Link>
               <Link
                 to="/"
-                className="flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm bg-pink-accent text-black hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm bg-pink-accent text-black hover:bg-opacity-90 hover:shadow-lg hover:shadow-pink-accent/30 transition-all duration-300 hover:scale-105"
               >
                 <ArrowLeft className="w-4 h-4" />
                 Back to Home
@@ -130,7 +130,7 @@ function ImpactReports() {
           </div>
         </header>
 
-        <section className="py-20 lg:py-32 bg-gray-50">
+        <section className="py-20 lg:py-32 bg-gradient-to-b from-pink-accent/5 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto mb-16 scroll-reveal">
               <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Impact</p>
@@ -144,10 +144,10 @@ function ImpactReports() {
 
           <div className="max-w-5xl mx-auto">
             <div className="group scroll-reveal">
-              <div className="bg-white rounded-3xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-500 premium-card">
+              <div className="bg-white rounded-3xl overflow-hidden border-2 border-pink-accent/20 hover:border-pink-accent/50 hover:shadow-2xl hover:shadow-pink-accent/10 transition-all duration-500 premium-card">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative overflow-hidden h-64 md:h-auto">
-                    <div className="absolute inset-0 bg-gradient-to-br from-pink-accent/10 to-transparent z-10"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-pink-accent/20 to-transparent z-10"></div>
                     <img
                       src="/PHOTO-2025-08-06-12-15-28_(2).jpg"
                       alt="Money Matters Academy Impact Report 2025"
@@ -177,7 +177,7 @@ function ImpactReports() {
                       <a
                         href="/STUF_PDF_FINALE_REPORT.pdf"
                         download
-                        className="flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold text-sm bg-pink-accent text-black hover:shadow-xl transition-all duration-300 hover:scale-105"
+                        className="flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold text-sm bg-pink-accent text-black hover:shadow-xl hover:shadow-pink-accent/30 transition-all duration-300 hover:scale-105"
                       >
                         <Download className="w-5 h-5" />
                         Download Report
@@ -186,7 +186,7 @@ function ImpactReports() {
                         href="/STUF_PDF_FINALE_REPORT.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold text-sm border-2 border-gray-200 text-black hover:border-pink-accent hover:shadow-lg transition-all duration-300"
+                        className="flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold text-sm border-2 border-pink-accent/50 text-black hover:border-pink-accent hover:bg-pink-accent/10 hover:shadow-lg transition-all duration-300"
                       >
                         <ExternalLink className="w-5 h-5" />
                         View Online
@@ -202,8 +202,8 @@ function ImpactReports() {
                 Why We Share Our Impact
               </h3>
               <div className="grid sm:grid-cols-3 gap-6">
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-500 premium-card">
-                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-6 bg-pink-accent/10">
+                <div className="bg-white p-8 rounded-2xl border-2 border-pink-accent/20 hover:border-pink-accent hover:shadow-xl hover:shadow-pink-accent/10 transition-all duration-500 premium-card">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-6 bg-pink-accent/20">
                     <BarChart3 className="w-7 h-7 text-pink-accent" />
                   </div>
                   <h4 className="text-xl font-bold text-black mb-3">Transparency</h4>
@@ -211,8 +211,8 @@ function ImpactReports() {
                     Open reporting on our activities, reach, and outcomes to build trust with partners and supporters
                   </p>
                 </div>
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-500 premium-card">
-                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-6 bg-pink-accent/10">
+                <div className="bg-white p-8 rounded-2xl border-2 border-pink-accent/20 hover:border-pink-accent hover:shadow-xl hover:shadow-pink-accent/10 transition-all duration-500 premium-card">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-6 bg-pink-accent/20">
                     <Target className="w-7 h-7 text-pink-accent" />
                   </div>
                   <h4 className="text-xl font-bold text-black mb-3">Accountability</h4>
@@ -220,8 +220,8 @@ function ImpactReports() {
                     Demonstrating responsible stewardship of resources and commitment to our mission
                   </p>
                 </div>
-                <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-500 premium-card">
-                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-6 bg-pink-accent/10">
+                <div className="bg-white p-8 rounded-2xl border-2 border-pink-accent/20 hover:border-pink-accent hover:shadow-xl hover:shadow-pink-accent/10 transition-all duration-500 premium-card">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center mb-6 bg-pink-accent/20">
                     <TrendingUp className="w-7 h-7 text-pink-accent" />
                   </div>
                   <h4 className="text-xl font-bold text-black mb-3">Growth</h4>
@@ -233,7 +233,7 @@ function ImpactReports() {
             </div>
 
             <div className="mt-16 text-center scroll-reveal">
-              <div className="bg-gradient-to-br from-gray-50 to-white p-12 rounded-3xl border border-gray-200 hover:shadow-xl transition-all duration-500">
+              <div className="bg-gradient-to-br from-pink-accent/10 to-white p-12 rounded-3xl border-2 border-pink-accent/30 hover:border-pink-accent hover:shadow-xl hover:shadow-pink-accent/20 transition-all duration-500">
                 <h3 className="text-2xl lg:text-3xl font-bold text-black mb-4">
                   Interested in Partnering?
                 </h3>
@@ -243,13 +243,13 @@ function ImpactReports() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
                     href="mailto:hello@stuf.org.uk"
-                    className="px-10 py-5 rounded-full font-bold text-sm bg-pink-accent text-black hover:shadow-xl transition-all duration-300 hover:scale-105"
+                    className="px-10 py-5 rounded-full font-bold text-sm bg-pink-accent text-black hover:shadow-xl hover:shadow-pink-accent/30 transition-all duration-300 hover:scale-105"
                   >
                     Contact Us
                   </a>
                   <Link
                     to="/#donate"
-                    className="px-10 py-5 rounded-full font-bold text-sm border-2 border-gray-200 text-black hover:border-pink-accent hover:shadow-lg transition-all duration-300"
+                    className="px-10 py-5 rounded-full font-bold text-sm border-2 border-pink-accent/50 text-black hover:border-pink-accent hover:bg-pink-accent/10 hover:shadow-lg transition-all duration-300"
                   >
                     Donate
                   </Link>
