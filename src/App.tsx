@@ -105,20 +105,23 @@ function App() {
         }
 
         .gradient-text {
-          color: #F6C1CC;
+          background: linear-gradient(135deg, #FFC3C3 0%, #FFD5D5 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
           font-weight: 700;
         }
 
         .pink-accent {
-          color: #F6C1CC;
+          color: #FFC3C3;
         }
 
         .bg-pink-accent {
-          background-color: #F6C1CC;
+          background-color: #FFC3C3;
         }
 
         .border-pink-accent {
-          border-color: #F6C1CC;
+          border-color: #FFC3C3;
         }
 
         .scroll-reveal {
@@ -136,346 +139,370 @@ function App() {
           font-family: 'Veneer', 'Impact', sans-serif;
           font-size: clamp(48px, 8vw, 90px);
           line-height: 1;
-          color: #F6C1CC;
+          color: #FFC3C3;
           font-weight: 700;
         }
 
         .premium-card {
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          backdrop-filter: blur(10px);
+          transition: all 0.3s ease;
         }
 
         .premium-card:hover {
-          transform: translateY(-2px);
+          transform: translateY(-4px);
         }
 
         p {
-          line-height: 1.6;
-        }
-
-        button, a {
-          transition: all 0.2s ease;
+          line-height: 1.7;
         }
       `}</style>
 
-      <header className="bg-pink-accent sticky top-0 z-50">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <nav className="flex justify-between items-center py-5 lg:py-6">
+      <header className="bg-pink-accent sticky top-0 z-50 shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex justify-between items-center py-4 lg:py-6">
             <div className="flex items-center">
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Logo_Web.svg/:/rs=h:69,cg:true,m/qt=q:100/ll"
-                alt="STUF"
-                className="h-12 lg:h-14"
+                alt="STUF - Set Them Up Foundation"
+                className="h-12 lg:h-16"
               />
             </div>
             <div className="hidden lg:flex items-center space-x-8">
-              <a href="#who-we-help" className="text-black font-semibold hover:opacity-70 transition-opacity" style={{ fontFamily: 'Inter' }}>Schools</a>
-              <a href="#impact" className="text-black font-semibold hover:opacity-70 transition-opacity" style={{ fontFamily: 'Inter' }}>Impact</a>
-              <a href="#programs" className="text-black font-semibold hover:opacity-70 transition-opacity" style={{ fontFamily: 'Inter' }}>Programs</a>
-              <a href="#team" className="text-black font-semibold hover:opacity-70 transition-opacity" style={{ fontFamily: 'Inter' }}>Team</a>
-              <Link to="/contact" className="bg-black text-pink-accent px-6 py-2 font-semibold hover:opacity-85 transition-opacity" style={{ fontFamily: 'Inter' }}>Contact</Link>
+              <a href="#who-we-help" className="text-black font-bold hover:opacity-70 transition-opacity">Who We Help</a>
+              <a href="#impact" className="text-black font-bold hover:opacity-70 transition-opacity">Impact</a>
+              <a href="#programs" className="text-black font-bold hover:opacity-70 transition-opacity">Programs</a>
+              <a href="#team" className="text-black font-bold hover:opacity-70 transition-opacity">Team</a>
+              <Link to="/contact" className="text-black font-bold hover:opacity-70 transition-opacity">Contact</Link>
             </div>
             <MobileMenu />
           </nav>
         </div>
       </header>
 
-      <section className="relative bg-black text-white py-40 lg:py-56 overflow-hidden">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-[55%_45%] gap-24 items-center">
+      <section className="relative bg-black text-white py-24 lg:py-40 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="scroll-reveal">
-              <h1 className="text-6xl sm:text-7xl lg:text-[5.5rem] font-bold mb-10 leading-[0.92] tracking-tight">
-                MONEY <span className="gradient-text">STUF.</span><br />
-                MADE SIMPLE.
+              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Empowering Young People</p>
+              <h1 className="text-5xl sm:text-6xl lg:text-[4.5rem] font-bold mb-8 leading-[1.1]">
+                Building Financial Futures <br />
+                <span className="gradient-text">for UK's Next Generation</span>
               </h1>
-              <div className="space-y-4 mb-14 max-w-lg">
-                <p className="text-2xl text-white/90" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.4' }}>
-                  Confused? Who wouldn't be.
-                </p>
-                <p className="text-lg text-white/70" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                  We teach 15–19 year olds the money STUF they should already know.
-                </p>
+              <p className="text-xl text-gray-400 mb-10 max-w-xl">
+                We equip 15–19 year olds with essential money skills through expert-led workshops, transforming how young people think about budgeting, saving, and investing.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link to="/contact" className="bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-opacity-90 hover:shadow-xl hover:shadow-pink-accent/20 transition-all">
+                  Partner with Us
+                </Link>
+                <Link to="/impact-reports" className="border-2 border-pink-accent text-pink-accent px-10 py-4 rounded-full font-bold text-base hover:bg-pink-accent hover:text-black transition-all">
+                  View Our Impact
+                </Link>
               </div>
-              <Link to="/contact" className="inline-block bg-pink-accent text-black px-10 py-4 font-semibold text-base hover:opacity-90 transition-all" style={{ fontFamily: 'Inter' }}>
-                Get Started
-              </Link>
             </div>
             <div className="scroll-reveal hidden lg:block">
-              <img
-                src="/1.jpg"
-                alt="Students learning"
-                className="w-full h-auto"
-              />
+              <div className="relative">
+                <div className="absolute -inset-6 bg-gradient-to-r from-pink-accent/20 to-pink-accent/5 blur-3xl rounded-full"></div>
+                <img
+                  src="/1.jpg"
+                  alt="Students learning"
+                  className="relative rounded-3xl shadow-2xl ring-1 ring-white/10"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="stats" className="bg-white py-40 lg:py-48">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-28 scroll-reveal max-w-3xl mx-auto">
-            <h2 className="text-6xl sm:text-7xl lg:text-[5rem] font-bold text-black mb-10 leading-[0.95] tracking-tight">
-              WHY THIS <span className="gradient-text">MATTERS</span>
+      <section id="stats" className="bg-black py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Why We're Here</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              The Problem We're Solving
             </h2>
-            <p className="text-xl text-black/60 max-w-2xl mx-auto" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.5' }}>
-              Money problems start young. We're here to fix that.
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+              Financial literacy is still out of reach for millions of young people. We're here to change that.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-black p-14 scroll-reveal group">
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Financial literacy gap</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={6} isVisible={countersVisible} /> in 10
               </p>
-              <p className="text-white/80 text-base" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                Don't know how to manage money
+              <p className="text-gray-400 text-base leading-relaxed">
+                UK people feel they don't have the skills to manage their money properly
               </p>
             </div>
 
-            <div className="bg-black p-14 scroll-reveal group">
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Mental wellbeing</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 -<CountUpAnimation end={10} isVisible={countersVisible} />%
               </p>
-              <p className="text-white/80 text-base" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                Mental health impact from money stress
+              <p className="text-gray-400 text-base leading-relaxed">
+                Lower mental wellbeing scores for people with lower financial literacy
               </p>
             </div>
 
-            <div className="bg-black p-14 scroll-reveal group">
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Poverty rate</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
               </p>
-              <p className="text-white/80 text-base" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                UK people living in poverty
+              <p className="text-gray-400 text-base leading-relaxed">
+                Of people in the UK live in poverty
               </p>
             </div>
 
-            <div className="bg-black p-14 scroll-reveal group">
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Houselessness</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 1 in <CountUpAnimation end={22} isVisible={countersVisible} />
               </p>
-              <p className="text-white/80 text-base" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                Without a stable home
+              <p className="text-gray-400 text-base leading-relaxed">
+                People lack a home in some places in England
               </p>
             </div>
 
-            <div className="bg-black p-14 scroll-reveal group">
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Young homelessness</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={126} suffix="K" isVisible={countersVisible} />
               </p>
-              <p className="text-white/80 text-base" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                Young people homeless
+              <p className="text-gray-400 text-base leading-relaxed">
+                Homeless under-18s in the UK
               </p>
             </div>
 
-            <div className="bg-pink-accent p-14 scroll-reveal group">
-              <Heart className="w-20 h-20 text-black mb-8 group-hover:scale-105 transition-transform" />
-              <p className="text-black text-base font-medium" style={{ fontFamily: 'Inter', fontWeight: '500', lineHeight: '1.6' }}>
-                We're breaking the cycle
+            <div className="bg-gradient-to-br from-pink-accent/10 to-black p-10 rounded-3xl scroll-reveal border border-pink-accent/30 hover:border-pink-accent/50 transition-all premium-card group">
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Our mission</p>
+              <Heart className="w-16 h-16 text-pink-accent mb-6 group-hover:scale-110 transition-transform" />
+              <p className="text-gray-400 text-base leading-relaxed">
+                Breaking the cycle of poverty through education
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" className="bg-black py-40 lg:py-48">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-24 items-center">
+      <section id="about" className="bg-pink-accent py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="scroll-reveal">
-              <h2 className="text-6xl sm:text-7xl lg:text-[5rem] font-bold text-white mb-12 leading-[0.95] tracking-tight">
-                THE <span className="gradient-text">BASICS</span> THEY NEVER TAUGHT YOU
+              <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">About Us</p>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
+                Who We Are
               </h2>
-              <div className="space-y-6">
-                <p className="text-2xl text-white/90" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.4' }}>
-                  Budgets. Savings. Investments. Mortgages.
-                </p>
-                <p className="text-lg text-white/60" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                  We teach the financial STUF schools skip. Real skills. No jargon.
-                </p>
+              <p className="text-xl text-black/90 leading-relaxed mb-6 font-medium">
+                The Set Them Up Foundation is on a mission to help young people, their teachers, and parents get a handle on the fundamentals of finance.
+              </p>
+              <p className="text-base text-black/80 leading-relaxed">
+                By working with schools, banks, and other likeminded partners, we provide lifelong skills, understanding, and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
+              </p>
+            </div>
+            <div className="scroll-reveal">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-black/5 blur-2xl rounded-3xl"></div>
+                <img
+                  src="/6.jpg"
+                  alt="Teaching financial literacy"
+                  className="relative rounded-3xl shadow-2xl ring-1 ring-black/10"
+                />
               </div>
             </div>
-            <div className="scroll-reveal">
-              <img
-                src="/6.jpg"
-                alt="Teaching financial literacy"
-                className="w-full h-auto"
-              />
-            </div>
           </div>
         </div>
       </section>
 
-      <section id="who-we-help" className="bg-white py-40 lg:py-48">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-28 scroll-reveal max-w-3xl mx-auto">
-            <h2 className="text-6xl sm:text-7xl lg:text-[5rem] font-bold text-black mb-10 leading-[0.95] tracking-tight">
-              WHO WE <span className="gradient-text">WORK WITH</span>
+      <section id="who-we-help" className="bg-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Who We Help</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              Partnering Across the Education Ecosystem
             </h2>
-            <p className="text-xl text-black/60 max-w-2xl mx-auto" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.5' }}>
-              Schools. Funders. Partners who get it.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We work with schools, funders, and partners to create lasting impact through financial education
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-black p-14 scroll-reveal premium-card">
-              <h3 className="text-4xl font-bold text-white mb-6 leading-none tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>SCHOOLS</h3>
-              <p className="text-white/70 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                Real workshops. Real impact. Fits your timetable.
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-gray-50 to-white p-10 rounded-3xl scroll-reveal border border-gray-200 premium-card">
+              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+                🏫
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-4">Schools & Colleges</h3>
+              <p className="text-gray-600 text-base leading-relaxed mb-6">
+                Bring engaging, curriculum-aligned financial literacy workshops to your students. Our expert-led sessions fit seamlessly into your timetable.
               </p>
-              <a href="#contact" className="text-pink-accent font-medium text-sm hover:opacity-70" style={{ fontFamily: 'Inter' }}>
-                Get started →
+              <a href="#contact" className="text-pink-accent font-semibold text-sm hover:underline">
+                Learn more →
               </a>
             </div>
 
-            <div className="bg-black p-14 scroll-reveal premium-card">
-              <h3 className="text-4xl font-bold text-white mb-6 leading-none tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>FUNDERS</h3>
-              <p className="text-white/70 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                Proven results. Measurable change. Your money matters.
+            <div className="bg-gradient-to-br from-gray-50 to-white p-10 rounded-3xl scroll-reveal border border-gray-200 premium-card">
+              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+                🤝
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-4">Funders & Donors</h3>
+              <p className="text-gray-600 text-base leading-relaxed mb-6">
+                Support proven programs that create measurable impact. Your investment directly transforms young lives through financial education.
               </p>
-              <Link to="/impact-reports" className="text-pink-accent font-medium text-sm hover:opacity-70" style={{ fontFamily: 'Inter' }}>
-                See the impact →
+              <Link to="/impact-reports" className="text-pink-accent font-semibold text-sm hover:underline">
+                View impact report →
               </Link>
             </div>
 
-            <div className="bg-black p-14 scroll-reveal premium-card">
-              <h3 className="text-4xl font-bold text-white mb-6 leading-none tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PARTNERS</h3>
-              <p className="text-white/70 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                Join the movement. Make it count.
+            <div className="bg-gradient-to-br from-gray-50 to-white p-10 rounded-3xl scroll-reveal border border-gray-200 premium-card">
+              <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-3xl">
+                💼
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-4">Corporate Partners</h3>
+              <p className="text-gray-600 text-base leading-relaxed mb-6">
+                Align your CSR goals with youth financial empowerment. Co-create programs, provide volunteers, and make a real difference.
               </p>
-              <a href="#contact" className="text-pink-accent font-medium text-sm hover:opacity-70" style={{ fontFamily: 'Inter' }}>
-                Let's talk →
+              <a href="#contact" className="text-pink-accent font-semibold text-sm hover:underline">
+                Partner with us →
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="how-it-works" className="bg-pink-accent py-40 lg:py-48">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-28 scroll-reveal max-w-3xl mx-auto">
-            <h2 className="text-6xl sm:text-7xl lg:text-[5rem] font-bold text-black mb-8 leading-[0.95] tracking-tight">
-              HOW IT <span className="text-white">WORKS</span>
+      <section id="how-it-works" className="bg-gradient-to-b from-gray-50 to-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">How It Works</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              Simple, Effective, Impact-Driven
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-16">
+          <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center scroll-reveal">
-              <div className="w-28 h-28 bg-black text-pink-accent flex items-center justify-center text-5xl font-bold mx-auto mb-8 tracking-tighter" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+              <div className="w-20 h-20 bg-pink-accent text-black rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
                 1
               </div>
-              <h3 className="text-4xl font-bold text-black mb-5 tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>CONNECT</h3>
-              <p className="text-black/70 leading-relaxed text-base max-w-xs mx-auto" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                Tell us what you need. We make it work.
+              <h3 className="text-2xl font-bold text-black mb-4">Connect</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Reach out to discuss your school's needs and student demographics. We'll design a program that fits your schedule and goals.
               </p>
             </div>
 
             <div className="text-center scroll-reveal">
-              <div className="w-28 h-28 bg-black text-pink-accent flex items-center justify-center text-5xl font-bold mx-auto mb-8 tracking-tighter" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+              <div className="w-20 h-20 bg-pink-accent text-black rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
                 2
               </div>
-              <h3 className="text-4xl font-bold text-black mb-5 tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>DELIVER</h3>
-              <p className="text-black/70 leading-relaxed text-base max-w-xs mx-auto" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                Real experts. Real talk. No boring lectures.
+              <h3 className="text-2xl font-bold text-black mb-4">Deliver</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Our expert facilitators deliver engaging, interactive workshops that make financial concepts accessible and relevant to young people.
               </p>
             </div>
 
             <div className="text-center scroll-reveal">
-              <div className="w-28 h-28 bg-black text-pink-accent flex items-center justify-center text-5xl font-bold mx-auto mb-8 tracking-tighter" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+              <div className="w-20 h-20 bg-pink-accent text-black rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
                 3
               </div>
-              <h3 className="text-4xl font-bold text-black mb-5 tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>IMPACT</h3>
-              <p className="text-black/70 leading-relaxed text-base max-w-xs mx-auto" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                Track progress. See results. Change lives.
+              <h3 className="text-2xl font-bold text-black mb-4">Measure Impact</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Track student progress and outcomes through our comprehensive evaluation framework. See the real difference in financial confidence.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="programs" className="bg-white py-40 lg:py-48">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-[40%_60%] gap-20 items-start">
+      <section id="programs" className="bg-pink-accent py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-[45%_55%] gap-12 items-start">
             <div className="scroll-reveal lg:sticky lg:top-32">
-              <h2 className="text-6xl sm:text-7xl font-bold text-black mb-10 leading-[0.92] tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
-                ALL THE MONEY <span className="gradient-text">STUF</span>
+              <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">What we do</p>
+              <h2 className="text-5xl sm:text-6xl font-bold text-black mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+                WE'VE GOT THE MONEY STUF COVERED
               </h2>
-              <p className="text-lg text-black/60 leading-relaxed" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                From saving your first pound to buying your first home.
+              <p className="text-lg text-black leading-relaxed">
+                The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance. By working with schools, banks, and other likeminded partners we provide lifelong skills, understanding and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
               </p>
             </div>
 
-            <div className="space-y-4">
-              <div className="bg-black scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-12">
-                <div className="flex-1">
-                  <h3 className="text-4xl font-bold mb-4 text-white tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>INVESTMENT STUF</h3>
-                  <p className="text-white/60 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                    Make your money work harder
+            <div className="space-y-5">
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className="p-8 flex-1">
+                  <h3 className="text-2xl font-bold mb-3 text-white">Investment Stuf</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
                   </p>
-                  <button className="bg-pink-accent text-black px-8 py-3 font-medium text-sm hover:opacity-90 transition-all" style={{ fontFamily: 'Inter' }}>
+                  <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
                   </button>
                 </div>
-                <div className="w-36 h-36 flex-shrink-0 -mr-6 transform group-hover:scale-105 transition-all duration-500">
+                <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <img
                     src="/investment_stuf.png"
                     alt="Investment"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </div>
 
-              <div className="bg-black scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-12">
-                <div className="flex-1">
-                  <h3 className="text-4xl font-bold mb-4 text-white tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PLANNING STUF</h3>
-                  <p className="text-white/60 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                    Budget like a boss
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className="p-8 flex-1">
+                  <h3 className="text-2xl font-bold mb-3 text-white">Financial planning Stuf</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
                   </p>
-                  <button className="bg-pink-accent text-black px-8 py-3 font-medium text-sm hover:opacity-90 transition-all" style={{ fontFamily: 'Inter' }}>
+                  <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
                   </button>
                 </div>
-                <div className="w-36 h-36 flex-shrink-0 -mr-6 transform group-hover:scale-105 transition-all duration-500">
+                <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <img
                     src="/financial_planning_stuf.png"
                     alt="Financial Planning"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </div>
 
-              <div className="bg-black scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-12">
-                <div className="flex-1">
-                  <h3 className="text-4xl font-bold mb-4 text-white tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>MORTGAGE STUF</h3>
-                  <p className="text-white/60 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                    Get on the property ladder
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className="p-8 flex-1">
+                  <h3 className="text-2xl font-bold mb-3 text-white">Mortgage and rental Stuf</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
                   </p>
-                  <button className="bg-pink-accent text-black px-8 py-3 font-medium text-sm hover:opacity-90 transition-all" style={{ fontFamily: 'Inter' }}>
+                  <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
                   </button>
                 </div>
-                <div className="w-36 h-36 flex-shrink-0 -mr-6 transform group-hover:scale-105 transition-all duration-500">
+                <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <img
                     src="/mortgage_rental_stuf.png"
                     alt="Mortgage and Rental"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </div>
 
-              <div className="bg-black scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-12">
-                <div className="flex-1">
-                  <h3 className="text-4xl font-bold mb-4 text-white tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PENSION STUF</h3>
-                  <p className="text-white/60 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
-                    Sort your future self out
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className="p-8 flex-1">
+                  <h3 className="text-2xl font-bold mb-3 text-white">Pension Stuf</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    Some light-hearted copy here to support the image
                   </p>
-                  <button className="bg-pink-accent text-black px-8 py-3 font-medium text-sm hover:opacity-90 transition-all" style={{ fontFamily: 'Inter' }}>
+                  <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
                   </button>
                 </div>
-                <div className="w-36 h-36 flex-shrink-0 -mr-6 transform group-hover:scale-105 transition-all duration-500">
+                <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                   <img
                     src="/pensio_stuf.png"
                     alt="Pension"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain drop-shadow-2xl"
                   />
                 </div>
               </div>
@@ -484,60 +511,63 @@ function App() {
         </div>
       </section>
 
-      <section id="impact" className="bg-white py-32 lg:py-40">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-24 scroll-reveal max-w-4xl mx-auto">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-8 leading-tight">
-              THE <span className="gradient-text">NUMBERS</span>
+      <section id="impact" className="bg-gradient-to-b from-gray-50 to-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Impact</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              Making A Difference
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-10 mb-20">
-            <div className="bg-black p-12 scroll-reveal text-center premium-card">
-              <div className="stat-number text-pink-accent mb-4">10,000+</div>
-              <p className="text-lg font-semibold text-white" style={{ fontFamily: 'Inter' }}>Students Reached</p>
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white p-12 rounded-3xl shadow-xl scroll-reveal text-center border border-gray-100 premium-card">
+              <div className="stat-number text-black mb-4">10,000+</div>
+              <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide">Students Reached</p>
             </div>
-            <div className="bg-black p-12 scroll-reveal text-center premium-card">
-              <div className="stat-number text-pink-accent mb-4">150+</div>
-              <p className="text-lg font-semibold text-white" style={{ fontFamily: 'Inter' }}>Partner Schools</p>
+            <div className="bg-white p-12 rounded-3xl shadow-xl scroll-reveal text-center border border-gray-100 premium-card">
+              <div className="stat-number text-black mb-4">150+</div>
+              <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide">Partner Schools</p>
             </div>
-            <div className="bg-black p-12 scroll-reveal text-center premium-card">
-              <div className="stat-number text-pink-accent mb-4">95%</div>
-              <p className="text-lg font-semibold text-white" style={{ fontFamily: 'Inter' }}>Satisfaction Rate</p>
+            <div className="bg-white p-12 rounded-3xl shadow-xl scroll-reveal text-center border border-gray-100 premium-card">
+              <div className="stat-number text-black mb-4">95%</div>
+              <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide">Satisfaction Rate</p>
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-20 items-center scroll-reveal">
+          <div className="grid lg:grid-cols-2 gap-16 items-center scroll-reveal">
             <div>
-              <h3 className="text-4xl sm:text-5xl font-bold text-black mb-10 leading-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
-                REAL CHANGE. REAL FAST.
+              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Real Impact</p>
+              <h3 className="text-3xl sm:text-4xl font-bold text-black mb-8 leading-tight">
+                Transforming Young Lives Through Financial Education
               </h3>
               <div className="space-y-8">
                 <div className="border-l-4 border-pink-accent pl-6">
-                  <h4 className="text-5xl font-bold text-black mb-2" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>89%</h4>
-                  <p className="text-black leading-relaxed text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                    Feel more confident about money after one workshop
+                  <h4 className="text-4xl font-bold text-black mb-2">89%</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Of students report increased confidence in managing personal finances after completing our program
                   </p>
                 </div>
                 <div className="border-l-4 border-pink-accent pl-6">
-                  <h4 className="text-5xl font-bold text-black mb-2" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>£2.4M</h4>
-                  <p className="text-black leading-relaxed text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                    Future value we've helped create
+                  <h4 className="text-4xl font-bold text-black mb-2">£2.4M</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Estimated future value created through improved financial decision-making skills
                   </p>
                 </div>
                 <div className="border-l-4 border-pink-accent pl-6">
-                  <h4 className="text-5xl font-bold text-black mb-2" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>40+</h4>
-                  <p className="text-black leading-relaxed text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                    Hours delivered weekly across the UK
+                  <h4 className="text-4xl font-bold text-black mb-2">40+</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Hours of workshop content delivered each week across the UK
                   </p>
                 </div>
               </div>
             </div>
-            <div>
+            <div className="relative">
+              <div className="absolute -inset-4 bg-pink-accent/5 blur-2xl rounded-3xl"></div>
               <img
                 src="/7.jpg"
                 alt="Impact visualization"
-                className="rounded-none"
+                className="relative rounded-3xl shadow-2xl ring-1 ring-gray-200"
               />
             </div>
           </div>
@@ -545,14 +575,14 @@ function App() {
       </section>
 
 
-      <section className="bg-black py-32 lg:py-40">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-24 scroll-reveal max-w-5xl mx-auto">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
-              STUF IN <span className="gradient-text">ACTION</span>
+      <section className="bg-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-5xl mx-auto">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
+              Workshops in <span className="text-pink-accent">Action</span>
             </h2>
-            <p className="text-2xl text-white max-w-4xl mx-auto" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-              London to Uganda. Real workshops. Real impact.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              From London to Uganda, we're empowering young people with essential financial knowledge through engaging, hands-on workshops.
             </p>
           </div>
 
@@ -587,70 +617,87 @@ function App() {
             ))}
           </div>
 
-          <div className="mt-20 text-center scroll-reveal">
-            <p className="text-white text-2xl mb-10" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-              Want this at your school?
+          <div className="mt-16 text-center scroll-reveal">
+            <p className="text-gray-600 text-lg mb-8">
+              Want to bring financial education to your school or community?
             </p>
-            <a href="#contact" className="inline-block bg-pink-accent text-black px-8 py-3 font-semibold text-base hover:opacity-85 transition-opacity" style={{ fontFamily: 'Inter' }}>
+            <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all">
               Get Started
             </a>
           </div>
         </div>
       </section>
 
-      <section id="roadmap" className="bg-white py-32 lg:py-40">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-24 scroll-reveal max-w-4xl mx-auto">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-8 leading-tight">
-              WHERE WE'RE <span className="gradient-text">HEADING</span>
+      <section id="roadmap" className="bg-pink-accent py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">Our Journey</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              Roadmap to Impact
             </h2>
-            <p className="text-2xl text-black max-w-3xl mx-auto" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-              Four phases. One mission.
+            <p className="text-xl text-black/80 max-w-3xl mx-auto">
+              Our strategic plan to expand financial literacy education across the UK
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-black p-10 scroll-reveal premium-card">
-              <h3 className="text-4xl font-bold text-pink-accent mb-3" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PHASE 1</h3>
-              <h4 className="text-xl font-semibold text-white mb-6" style={{ fontFamily: 'Inter' }}>Build It</h4>
-              <ul className="space-y-2 text-base text-white leading-relaxed" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                <li>Launch pilots</li>
-                <li>Find schools</li>
-                <li>Create content</li>
-                <li>Test & refine</li>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
+              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <Target className="w-8 h-8 text-black" />
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-3">Phase 1</h3>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">Foundation Building</h4>
+              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
+                <li>• Launch pilot programs</li>
+                <li>• Partner with initial schools</li>
+                <li>• Develop core curriculum</li>
+                <li>• Build volunteer network</li>
+                <li>• Establish impact metrics</li>
               </ul>
             </div>
 
-            <div className="bg-black p-10 scroll-reveal premium-card">
-              <h3 className="text-4xl font-bold text-pink-accent mb-3" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PHASE 2</h3>
-              <h4 className="text-xl font-semibold text-white mb-6" style={{ fontFamily: 'Inter' }}>Scale It</h4>
-              <ul className="space-y-2 text-base text-white leading-relaxed" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                <li>150+ schools</li>
-                <li>Digital tools</li>
-                <li>10K students</li>
-                <li>More partners</li>
+            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
+              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <Calendar className="w-8 h-8 text-black" />
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-3">Phase 2</h3>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">Scaling Up</h4>
+              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
+                <li>• Expand to 150+ schools</li>
+                <li>• Launch digital platform</li>
+                <li>• Train educator network</li>
+                <li>• Reach 10,000 students</li>
+                <li>• Build corporate partnerships</li>
               </ul>
             </div>
 
-            <div className="bg-black p-10 scroll-reveal premium-card">
-              <h3 className="text-4xl font-bold text-pink-accent mb-3" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PHASE 3</h3>
-              <h4 className="text-xl font-semibold text-white mb-6" style={{ fontFamily: 'Inter' }}>Go National</h4>
-              <ul className="space-y-2 text-base text-white leading-relaxed" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                <li>12+ counties</li>
-                <li>Regional hubs</li>
-                <li>25K+ students</li>
-                <li>Mobile app</li>
+            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
+              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <TrendingUp className="w-8 h-8 text-black" />
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-3">Phase 3</h3>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">National Reach</h4>
+              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
+                <li>• Coverage across 12+ counties</li>
+                <li>• Regional hubs established</li>
+                <li>• Mobile app launch</li>
+                <li>• 25,000+ students reached</li>
+                <li>• Teacher training program</li>
               </ul>
             </div>
 
-            <div className="bg-black p-10 scroll-reveal premium-card">
-              <h3 className="text-4xl font-bold text-pink-accent mb-3" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PHASE 4</h3>
-              <h4 className="text-xl font-semibold text-white mb-6" style={{ fontFamily: 'Inter' }}>Change Everything</h4>
-              <ul className="space-y-2 text-base text-white leading-relaxed" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                <li>UK-wide</li>
-                <li>Policy work</li>
-                <li>100K+ lives</li>
-                <li>Go global</li>
+            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
+              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <Heart className="w-8 h-8 text-black" />
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-3">Phase 4</h3>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">Lasting Change</h4>
+              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
+                <li>• UK-wide coverage</li>
+                <li>• Policy advocacy work</li>
+                <li>• International expansion</li>
+                <li>• 100,000+ lives changed</li>
+                <li>• Self-sustaining model</li>
               </ul>
             </div>
           </div>
@@ -659,11 +706,12 @@ function App() {
 
 
 
-      <section id="team" className="bg-pink-accent py-32 lg:py-40">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-24 scroll-reveal max-w-4xl mx-auto">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
-              PEOPLE BEHIND THE <span className="text-white">STUF</span>
+      <section id="team" className="bg-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Team</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              People Behind The STUF
             </h2>
           </div>
 
@@ -791,26 +839,27 @@ function App() {
         </div>
       </section>
 
-      <section id="partners" className="bg-white py-32 lg:py-40">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-24 scroll-reveal max-w-4xl mx-auto">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-8 leading-tight">
-              WHO'S <span className="gradient-text">WITH US</span>
+      <section id="partners" className="bg-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Working Together</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              Our Partners
             </h2>
-            <p className="text-2xl text-black max-w-3xl mx-auto" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-              Big names. Bigger impact.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Collaborating with leading organizations to maximize our impact
             </p>
           </div>
 
-          <div className="bg-black p-12 lg:p-16 scroll-reveal premium-card">
+          <div className="bg-gradient-to-br from-gray-50 to-white p-12 lg:p-16 rounded-3xl scroll-reveal border border-gray-200 premium-card">
             <div className="text-center mb-16">
-              <p className="text-xl text-white font-medium" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                Schools. Banks. Organizations who care.
+              <p className="text-lg text-gray-700 font-medium">
+                We partner with schools, financial institutions, and educational organizations committed to empowering young people
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/BRENT%20LOGO%20%2B%20white%20%2B%20LOGOTYPE%20black%20small.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:514,h:200,cg:true"
                   alt="Brent Council"
@@ -818,7 +867,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/bentley%20logo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                   alt="Bentley"
@@ -826,7 +875,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Power%20up%20london%20logo.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:334,h:200,cg:true"
                   alt="Power Up London"
@@ -834,7 +883,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/CAF-Logo-Standard.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:320,h:200,cg:true"
                   alt="CAF"
@@ -842,7 +891,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Woodward-Logo-March-2023-374x374.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                   alt="Woodward"
@@ -850,7 +899,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/64ee2af5aa132.webp/:/rs=w:916,h:200,cg:true,m/cr=w:916,h:200"
                   alt="Partner"
@@ -858,7 +907,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/clothworkers_foundation_navy.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:650,h:200,cg:true"
                   alt="Clothworkers Foundation"
@@ -866,7 +915,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/images%20(2).png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                   alt="Partner"
@@ -874,7 +923,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/DiNN%2Blogo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                   alt="DiNN"
@@ -882,7 +931,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-fdb8e4a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:200,h:200,cg:true"
                   alt="Partner"
@@ -890,7 +939,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Camden-Giving-cmyk-logo-01-300x133.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:300,h:133,cg:true"
                   alt="Camden Giving"
@@ -898,7 +947,7 @@ function App() {
                 />
               </div>
 
-              <div className="bg-white p-6 premium-card flex items-center justify-center">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/living%20wage.jpg/:/rs=w:253,h:200,cg:true,m/cr=w:253,h:200"
                   alt="Living Wage"
@@ -908,54 +957,55 @@ function App() {
             </div>
 
             <div className="text-center">
-              <a href="#contact" className="inline-block bg-pink-accent text-black px-8 py-3 font-semibold text-base hover:opacity-85 transition-opacity" style={{ fontFamily: 'Inter' }}>
-                Join Us
+              <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all shadow-lg hover:shadow-xl">
+                Become a Partner
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <footer className="bg-black py-20">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-12 mb-16">
+      <footer className="bg-pink-accent py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Logo_Web.svg/:/rs=h:69,cg:true,m/qt=q:100/ll"
                 alt="STUF"
-                className="h-14 mb-6 brightness-0 invert"
+                className="h-14 mb-6"
               />
-              <p className="text-white text-base leading-relaxed" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                Breaking the cycle.
+              <p className="text-black/80 text-sm leading-relaxed">
+                Breaking the cycle of poverty through financial education.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-5 text-lg" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>LINKS</h4>
+              <h4 className="font-bold text-black mb-5 text-base uppercase tracking-wide">Quick Links</h4>
               <ul className="space-y-3">
-                <li><a href="#about" className="text-white hover:text-pink-accent transition-colors text-base" style={{ fontFamily: 'Inter' }}>About</a></li>
-                <li><a href="#programs" className="text-white hover:text-pink-accent transition-colors text-base" style={{ fontFamily: 'Inter' }}>Programs</a></li>
-                <li><a href="#team" className="text-white hover:text-pink-accent transition-colors text-base" style={{ fontFamily: 'Inter' }}>Team</a></li>
-                <li><Link to="/impact-reports" className="text-white hover:text-pink-accent transition-colors text-base" style={{ fontFamily: 'Inter' }}>Impact</Link></li>
+                <li><a href="#about" className="text-black/80 hover:text-black transition-colors text-sm">About Us</a></li>
+                <li><a href="#programs" className="text-black/80 hover:text-black transition-colors text-sm">Programs</a></li>
+                <li><a href="#team" className="text-black/80 hover:text-black transition-colors text-sm">Team</a></li>
+                <li><Link to="/impact-reports" className="text-black/80 hover:text-black transition-colors text-sm">Impact Reports</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-5 text-lg" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>GET INVOLVED</h4>
+              <h4 className="font-bold text-black mb-5 text-base uppercase tracking-wide">Get Involved</h4>
               <ul className="space-y-3">
-                <li><a href="#donate" className="text-white hover:text-pink-accent transition-colors text-base" style={{ fontFamily: 'Inter' }}>Donate</a></li>
-                <li><a href="#" className="text-white hover:text-pink-accent transition-colors text-base" style={{ fontFamily: 'Inter' }}>Volunteer</a></li>
-                <li><a href="#" className="text-white hover:text-pink-accent transition-colors text-base" style={{ fontFamily: 'Inter' }}>Partner</a></li>
+                <li><a href="#donate" className="text-black/80 hover:text-black transition-colors text-sm">Donate</a></li>
+                <li><a href="#" className="text-black/80 hover:text-black transition-colors text-sm">Volunteer</a></li>
+                <li><a href="#" className="text-black/80 hover:text-black transition-colors text-sm">Partner With Us</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-5 text-lg" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>CONTACT</h4>
-              <p className="text-white text-base leading-relaxed" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                info@setthemup.org
+              <h4 className="font-bold text-black mb-5 text-base uppercase tracking-wide">Contact</h4>
+              <p className="text-black/80 text-sm leading-relaxed">
+                Email: info@setthemup.org<br />
+                Follow us on social media
               </p>
             </div>
           </div>
-          <div className="border-t border-white/20 pt-8 text-center">
-            <p className="text-white/70 text-sm" style={{ fontFamily: 'Inter' }}>
-              © 2024 STUF. All rights reserved.
+          <div className="border-t border-black/20 pt-8 text-center">
+            <p className="text-black/70 text-sm">
+              © 2024 Set Them Up Foundation. All rights reserved.
             </p>
           </div>
         </div>
