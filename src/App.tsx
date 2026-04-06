@@ -1229,7 +1229,7 @@ function App() {
                 <li><a href="#about" className="text-black/80 hover:text-black transition-colors text-sm">About Us</a></li>
                 <li><a href="#programs" className="text-black/80 hover:text-black transition-colors text-sm">Programs</a></li>
                 <li><a href="#team" className="text-black/80 hover:text-black transition-colors text-sm">Team</a></li>
-                <li><a href="/STUF_2025_ANNUAL_REPORT.pdf" target="_blank" rel="noopener noreferrer" className="text-black/80 hover:text-black transition-colors text-sm">2025 Annual Report</a></li>
+                <li><Link to="/impact-reports" className="text-black/80 hover:text-black transition-colors text-sm">2025 Annual Report</Link></li>
               </ul>
             </div>
             <div>
