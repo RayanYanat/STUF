@@ -607,10 +607,10 @@ function App() {
               <div className="stat-number text-black mb-4">150+</div>
               <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide">Partner Schools</p>
             </div>
-            <a href="/STUF_2025_ANNUAL_REPORT.pdf" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-pink-accent to-pink-accent/80 p-12 rounded-3xl shadow-xl scroll-reveal text-center border-2 border-pink-accent premium-card group hover:shadow-2xl hover:scale-105 transition-all duration-300">
+            <a href="/STUF_2025_ANNUAL_REPORT.pdf" target="_blank" rel="noopener noreferrer" className="bg-white p-12 rounded-3xl shadow-xl scroll-reveal text-center border border-gray-100 premium-card group hover:shadow-2xl hover:scale-105 hover:border-pink-accent transition-all duration-300">
               <div className="stat-number text-black mb-4 group-hover:scale-110 transition-transform">2025</div>
-              <p className="text-lg font-semibold text-black uppercase tracking-wide mb-2">Annual Report</p>
-              <p className="text-sm text-black/70 font-medium">Click to view our impact</p>
+              <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide mb-2 group-hover:text-pink-accent transition-colors">Annual Report</p>
+              <p className="text-sm text-gray-600 font-medium group-hover:text-pink-accent transition-colors">Click to view our impact</p>
             </a>
           </div>
 
