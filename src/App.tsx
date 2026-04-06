@@ -185,20 +185,22 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="scroll-reveal">
-              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Empowering Young People</p>
+              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">For Young People</p>
               <h1 className="text-5xl sm:text-6xl lg:text-[4.5rem] font-bold mb-8 leading-[1.1]">
-                Building Financial Futures <br />
-                <span className="gradient-text">for UK's Next Generation</span>
+                Money STUF<br />
+                <span className="gradient-text">That Actually Makes Sense</span>
               </h1>
               <p className="text-xl text-gray-400 mb-10 max-w-xl">
-                We equip 15–19 year olds with essential money skills through expert-led workshops, transforming how young people think about budgeting, saving, and investing.
+                15–19 year olds learning real money skills.<br />
+                No boring lectures.<br />
+                Just stuff you'll actually use.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact" className="bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-opacity-90 hover:shadow-xl hover:shadow-pink-accent/20 transition-all">
-                  Partner with Us
+                  Work With Us
                 </Link>
                 <Link to="/impact-reports" className="border-2 border-pink-accent text-pink-accent px-10 py-4 rounded-full font-bold text-base hover:bg-pink-accent hover:text-black transition-all">
-                  View Our Impact
+                  See What We Do
                 </Link>
               </div>
             </div>
@@ -219,43 +221,48 @@ function App() {
       <section id="stats" className="bg-black py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Why We're Here</p>
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">The Reality</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              The Problem We're Solving
+              Why This Matters
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Financial literacy is still out of reach for millions of young people. We're here to change that.
+              Money stuff isn't taught.<br />
+              Young people struggle.<br />
+              We're changing that.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
-              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Financial literacy gap</p>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">The Gap</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={6} isVisible={countersVisible} /> in 10
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
-                UK people feel they don't have the skills to manage their money properly
+                People don't know how to manage money.<br />
+                That's not okay.
               </p>
             </div>
 
             <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
-              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Mental wellbeing</p>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Mental Health</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 -<CountUpAnimation end={10} isVisible={countersVisible} />%
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
-                Lower mental wellbeing scores for people with lower financial literacy
+                Money stress hits hard.<br />
+                Mental health drops.
               </p>
             </div>
 
             <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
-              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Poverty rate</p>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Living In Poverty</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
-                Of people in the UK live in poverty
+                1 in 5 people.<br />
+                Right here in the UK.
               </p>
             </div>
 
@@ -270,20 +277,22 @@ function App() {
             </div>
 
             <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
-              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Young homelessness</p>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Young & Homeless</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={126} suffix="K" isVisible={countersVisible} />
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
-                Homeless under-18s in the UK
+                Kids under 18.<br />
+                No home.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-pink-accent/10 to-black p-10 rounded-3xl scroll-reveal border border-pink-accent/30 hover:border-pink-accent/50 transition-all premium-card group">
-              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Our mission</p>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">What We Do</p>
               <Heart className="w-16 h-16 text-pink-accent mb-6 group-hover:scale-110 transition-transform" />
               <p className="text-gray-400 text-base leading-relaxed">
-                Breaking the cycle of poverty through education
+                Break the cycle.<br />
+                Teach money STUF.
               </p>
             </div>
           </div>
@@ -299,10 +308,14 @@ function App() {
                 Who We Are
               </h2>
               <p className="text-xl text-black/90 leading-relaxed mb-6 font-medium">
-                The Set Them Up Foundation is on a mission to help young people, their teachers, and parents get a handle on the fundamentals of finance.
+                We teach young people money STUF.<br />
+                The stuff schools skip.<br />
+                The stuff parents never learned.
               </p>
               <p className="text-base text-black/80 leading-relaxed">
-                By working with schools, banks, and other likeminded partners, we provide lifelong skills, understanding, and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
+                We work with schools and banks to open doors.<br />
+                Give kids skills that stick.<br />
+                Break poverty for good.
               </p>
             </div>
             <div className="scroll-reveal">
@@ -324,10 +337,11 @@ function App() {
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Who We Help</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Partnering Across the Education Ecosystem
+              Work With Us
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We work with schools, funders, and partners to create lasting impact through financial education
+              Schools. Funders. Partners.<br />
+              Let's make a difference together.
             </p>
           </div>
 
@@ -338,10 +352,12 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Schools & Colleges</h3>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                Bring engaging, curriculum-aligned financial literacy workshops to your students. Our expert-led sessions fit seamlessly into your timetable.
+                Real-world money workshops.<br />
+                Students actually pay attention.<br />
+                Fits your schedule.
               </p>
               <a href="#contact" className="text-pink-accent font-semibold text-sm hover:underline">
-                Learn more →
+                Get started →
               </a>
             </div>
 
@@ -351,10 +367,12 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Funders & Donors</h3>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                Support proven programs that create measurable impact. Your investment directly transforms young lives through financial education.
+                Fund programs that work.<br />
+                See real results.<br />
+                Change lives.
               </p>
               <Link to="/impact-reports" className="text-pink-accent font-semibold text-sm hover:underline">
-                View impact report →
+                See our impact →
               </Link>
             </div>
 
@@ -364,10 +382,12 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Corporate Partners</h3>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                Align your CSR goals with youth financial empowerment. Co-create programs, provide volunteers, and make a real difference.
+                Match your values to action.<br />
+                Send volunteers.<br />
+                Actually make a difference.
               </p>
               <a href="#contact" className="text-pink-accent font-semibold text-sm hover:underline">
-                Partner with us →
+                Let's talk →
               </a>
             </div>
           </div>
@@ -379,7 +399,7 @@ function App() {
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">How It Works</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Simple, Effective, Impact-Driven
+              Three Steps. Real Impact.
             </h2>
           </div>
 
@@ -390,7 +410,9 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Connect</h3>
               <p className="text-gray-600 leading-relaxed">
-                Reach out to discuss your school's needs and student demographics. We'll design a program that fits your schedule and goals.
+                Tell us what you need.<br />
+                We design a program.<br />
+                It fits your schedule.
               </p>
             </div>
 
@@ -400,7 +422,9 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Deliver</h3>
               <p className="text-gray-600 leading-relaxed">
-                Our expert facilitators deliver engaging, interactive workshops that make financial concepts accessible and relevant to young people.
+                We show up.<br />
+                Run engaging workshops.<br />
+                Make money make sense.
               </p>
             </div>
 
@@ -408,9 +432,11 @@ function App() {
               <div className="w-20 h-20 bg-pink-accent text-black rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
                 3
               </div>
-              <h3 className="text-2xl font-bold text-black mb-4">Measure Impact</h3>
+              <h3 className="text-2xl font-bold text-black mb-4">Track Results</h3>
               <p className="text-gray-600 leading-relaxed">
-                Track student progress and outcomes through our comprehensive evaluation framework. See the real difference in financial confidence.
+                Students gain confidence.<br />
+                We track the progress.<br />
+                You see the difference.
               </p>
             </div>
           </div>
@@ -426,16 +452,20 @@ function App() {
                 WE'VE GOT THE MONEY STUF COVERED
               </h2>
               <p className="text-lg text-black leading-relaxed">
-                The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance. By working with schools, banks, and other likeminded partners we provide lifelong skills, understanding and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
+                We work with schools and banks.<br />
+                Teach money skills that stick.<br />
+                Open doors that used to be closed.<br />
+                Break the poverty cycle for good.
               </p>
             </div>
 
             <div className="space-y-5">
               <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="p-8 flex-1">
-                  <h3 className="text-2xl font-bold mb-3 text-white">Investment Stuf</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-white">Investment STUF</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                    Some light-hearted copy here to support the image
+                    Make your money work.<br />
+                    Not sit there.
                   </p>
                   <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
@@ -452,9 +482,10 @@ function App() {
 
               <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="p-8 flex-1">
-                  <h3 className="text-2xl font-bold mb-3 text-white">Financial planning Stuf</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-white">Financial Planning STUF</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                    Some light-hearted copy here to support the image
+                    Plan ahead.<br />
+                    Stay in control.
                   </p>
                   <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
@@ -471,9 +502,10 @@ function App() {
 
               <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="p-8 flex-1">
-                  <h3 className="text-2xl font-bold mb-3 text-white">Mortgage and rental Stuf</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-white">Mortgage & Rental STUF</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                    Some light-hearted copy here to support the image
+                    Get a place.<br />
+                    Know your rights.
                   </p>
                   <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
@@ -490,9 +522,10 @@ function App() {
 
               <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="p-8 flex-1">
-                  <h3 className="text-2xl font-bold mb-3 text-white">Pension Stuf</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-white">Pension STUF</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                    Some light-hearted copy here to support the image
+                    Future you matters.<br />
+                    Start now.
                   </p>
                   <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
@@ -516,7 +549,7 @@ function App() {
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Impact</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Making A Difference
+              Real Numbers
             </h2>
           </div>
 
@@ -537,27 +570,31 @@ function App() {
 
           <div className="grid lg:grid-cols-2 gap-16 items-center scroll-reveal">
             <div>
-              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Real Impact</p>
+              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">What Changes</p>
               <h3 className="text-3xl sm:text-4xl font-bold text-black mb-8 leading-tight">
-                Transforming Young Lives Through Financial Education
+                Students Learn.<br />
+                Confidence Grows.
               </h3>
               <div className="space-y-8">
                 <div className="border-l-4 border-pink-accent pl-6">
                   <h4 className="text-4xl font-bold text-black mb-2">89%</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Of students report increased confidence in managing personal finances after completing our program
+                    Students feel more confident.<br />
+                    Ready to handle money stuff.
                   </p>
                 </div>
                 <div className="border-l-4 border-pink-accent pl-6">
                   <h4 className="text-4xl font-bold text-black mb-2">£2.4M</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Estimated future value created through improved financial decision-making skills
+                    Future value created.<br />
+                    Better decisions add up.
                   </p>
                 </div>
                 <div className="border-l-4 border-pink-accent pl-6">
                   <h4 className="text-4xl font-bold text-black mb-2">40+</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Hours of workshop content delivered each week across the UK
+                    Hours of workshops weekly.<br />
+                    All across the UK.
                   </p>
                 </div>
               </div>
@@ -579,10 +616,12 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-5xl mx-auto">
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
-              Workshops in <span className="text-pink-accent">Action</span>
+              Where We've <span className="text-pink-accent">Been</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              From London to Uganda, we're empowering young people with essential financial knowledge through engaging, hands-on workshops.
+              London to Uganda.<br />
+              Real workshops. Real students.<br />
+              Real change.
             </p>
           </div>
 
@@ -619,10 +658,10 @@ function App() {
 
           <div className="mt-16 text-center scroll-reveal">
             <p className="text-gray-600 text-lg mb-8">
-              Want to bring financial education to your school or community?
+              Want us at your school?
             </p>
             <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all">
-              Get Started
+              Let's Do It
             </a>
           </div>
         </div>
@@ -631,12 +670,14 @@ function App() {
       <section id="roadmap" className="bg-pink-accent py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">Our Journey</p>
+            <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">The Plan</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Roadmap to Impact
+              Where We're Going
             </h2>
             <p className="text-xl text-black/80 max-w-3xl mx-auto">
-              Our strategic plan to expand financial literacy education across the UK
+              Start small.<br />
+              Scale up.<br />
+              Change everything.
             </p>
           </div>
 
@@ -646,13 +687,13 @@ function App() {
                 <Target className="w-8 h-8 text-black" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-3">Phase 1</h3>
-              <h4 className="text-lg font-semibold text-black/90 mb-4">Foundation Building</h4>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">Build The Base</h4>
               <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
-                <li>• Launch pilot programs</li>
-                <li>• Partner with initial schools</li>
-                <li>• Develop core curriculum</li>
-                <li>• Build volunteer network</li>
-                <li>• Establish impact metrics</li>
+                <li>• Start pilots</li>
+                <li>• Get first schools</li>
+                <li>• Create curriculum</li>
+                <li>• Find volunteers</li>
+                <li>• Track what works</li>
               </ul>
             </div>
 
@@ -661,13 +702,13 @@ function App() {
                 <Calendar className="w-8 h-8 text-black" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-3">Phase 2</h3>
-              <h4 className="text-lg font-semibold text-black/90 mb-4">Scaling Up</h4>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">Go Bigger</h4>
               <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
-                <li>• Expand to 150+ schools</li>
-                <li>• Launch digital platform</li>
-                <li>• Train educator network</li>
-                <li>• Reach 10,000 students</li>
-                <li>• Build corporate partnerships</li>
+                <li>• 150+ schools</li>
+                <li>• Digital tools</li>
+                <li>• Train teachers</li>
+                <li>• 10K students</li>
+                <li>• Corporate partners</li>
               </ul>
             </div>
 
@@ -676,13 +717,13 @@ function App() {
                 <TrendingUp className="w-8 h-8 text-black" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-3">Phase 3</h3>
-              <h4 className="text-lg font-semibold text-black/90 mb-4">National Reach</h4>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">Go National</h4>
               <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
-                <li>• Coverage across 12+ counties</li>
-                <li>• Regional hubs established</li>
-                <li>• Mobile app launch</li>
-                <li>• 25,000+ students reached</li>
-                <li>• Teacher training program</li>
+                <li>• 12+ counties</li>
+                <li>• Regional hubs</li>
+                <li>• Launch app</li>
+                <li>• 25K students</li>
+                <li>• Train more teachers</li>
               </ul>
             </div>
 
@@ -691,13 +732,13 @@ function App() {
                 <Heart className="w-8 h-8 text-black" />
               </div>
               <h3 className="text-2xl font-bold text-black mb-3">Phase 4</h3>
-              <h4 className="text-lg font-semibold text-black/90 mb-4">Lasting Change</h4>
+              <h4 className="text-lg font-semibold text-black/90 mb-4">Change Everything</h4>
               <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
-                <li>• UK-wide coverage</li>
-                <li>• Policy advocacy work</li>
-                <li>• International expansion</li>
-                <li>• 100,000+ lives changed</li>
-                <li>• Self-sustaining model</li>
+                <li>• Entire UK</li>
+                <li>• Influence policy</li>
+                <li>• Go global</li>
+                <li>• 100K+ lives</li>
+                <li>• Self-sustaining</li>
               </ul>
             </div>
           </div>
@@ -711,7 +752,7 @@ function App() {
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Team</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              People Behind The STUF
+              Who Does The STUF
             </h2>
           </div>
 
@@ -722,15 +763,15 @@ function App() {
                 {
                   name: 'James Jordan',
                   role: 'Founder & Trustee',
-                  bio: 'Ambitious entrepreneur with expertise in Sales and Marketing. Founded STUF to provide financial education to underprivileged children.',
-                  quote: 'When I left school at 16, I had no grasp of finance basics...I started STUF because I want to make sure other young people avoid the mistakes I did',
+                  bio: 'Sales guy. Marketing guy. Started STUF to teach kids what schools skip.',
+                  quote: 'Left school at 16. Had no clue about money. Starting STUF so other kids learn what I missed.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png'
                 },
                 {
                   name: 'Jermaine Bishop',
                   role: 'Founding Trustee',
-                  bio: '15+ years of experience in Tech and Communications sectors. Co-founder focused on providing free financial education to lower-income children.',
-                  quote: 'I want to teach children how to manage, save and invest money to open up more opportunities',
+                  bio: '15 years in tech. Co-founded STUF. Free money education for kids who need it.',
+                  quote: 'Teach kids to manage money. Open doors. Create opportunities.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png'
                 },
               ].map((member) => (
@@ -769,43 +810,43 @@ function App() {
                 {
                   name: 'Thomas Hamer',
                   role: 'Trustee',
-                  bio: '9+ years in financial services across Venture/PE, Corporate Banking, and Wealth Management',
+                  bio: '9 years in finance. Banking, wealth management, the works.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png'
                 },
                 {
                   name: 'Matthew Smith',
                   role: 'Trustee',
-                  bio: 'Sports and Business Development expertise with major European tax refund company',
+                  bio: 'Sports and business guy. Knows how to grow things.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Matthew.png'
                 },
                 {
                   name: 'Zofia Barnes',
                   role: 'Trustee',
-                  bio: '11+ years in Banking and Finance. LSE Masters in Gender Studies, Policy & Inequalities',
+                  bio: '11 years in banking. LSE Masters. Focuses on inequality and policy.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Zofia.png'
                 },
                 {
                   name: 'Paul Mokuolu',
                   role: 'Trustee',
-                  bio: 'Decade in financial sector. Technical Specialist at Bank of England',
+                  bio: '10 years in finance. Bank of England specialist.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-c729d57.png/:/cr=t:16.75%25,l:0%25,w:100%25,h:66.5%25/rs=w:365,h:365,cg:true/qt=q:93'
                 },
                 {
                   name: 'Jalpa Lai',
                   role: 'Trustee',
-                  bio: '6+ years mentoring diverse youth, specializing in financial coaching',
+                  bio: '6 years mentoring young people. Money coaching specialist.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-875f474.png/:/cr=t:0%25,l:4.38%25,w:91.25%25,h:100%25/rs=w:365,h:365,cg:true/qt=q:93'
                 },
                 {
                   name: 'Truman Alberto Sullivan',
                   role: 'Trustee',
-                  bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector',
+                  bio: 'Teacher. Rugby coach. 10 years in schools.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png'
                 },
                 {
                   name: 'Tina Creed',
                   role: 'Advisory',
-                  bio: '25 years in childcare/education. Former Ark Elvin Academy Governor',
+                  bio: '25 years with kids. Former school governor. Knows education.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png'
                 },
               ].map((member) => (
@@ -842,19 +883,22 @@ function App() {
       <section id="partners" className="bg-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Working Together</p>
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Partners</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Our Partners
+              Who Backs Us
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Collaborating with leading organizations to maximize our impact
+              Schools. Councils. Foundations.<br />
+              All in on change.
             </p>
           </div>
 
           <div className="bg-gradient-to-br from-gray-50 to-white p-12 lg:p-16 rounded-3xl scroll-reveal border border-gray-200 premium-card">
             <div className="text-center mb-16">
               <p className="text-lg text-gray-700 font-medium">
-                We partner with schools, financial institutions, and educational organizations committed to empowering young people
+                Partners who care.<br />
+                Organizations that act.<br />
+                Together we go further.
               </p>
             </div>
 
@@ -958,7 +1002,7 @@ function App() {
 
             <div className="text-center">
               <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all shadow-lg hover:shadow-xl">
-                Become a Partner
+                Join Us
               </a>
             </div>
           </div>
@@ -975,7 +1019,8 @@ function App() {
                 className="h-14 mb-6"
               />
               <p className="text-black/80 text-sm leading-relaxed">
-                Breaking the cycle of poverty through financial education.
+                Teaching money STUF.<br />
+                Breaking poverty cycles.
               </p>
             </div>
             <div>
