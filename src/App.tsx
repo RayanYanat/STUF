@@ -333,9 +333,9 @@ function App() {
       <section id="who-we-help" className="bg-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">Who We Help</p>
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Who We Help</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Partner With <span className="text-pink-accent">STUF</span>
+              Partner With STUF
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Schools, funders, corporates.<br />
@@ -400,9 +400,9 @@ function App() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">How It Works</p>
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">How It Works</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              <span className="text-pink-accent">Simple.</span> <span className="text-pink-accent">Impactful.</span> On Their Level.
+              Simple. Impactful. On Their Level.
             </h2>
           </div>
 
