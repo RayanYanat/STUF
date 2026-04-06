@@ -141,16 +141,19 @@ function App() {
         }
 
         .premium-card {
-          backdrop-filter: blur(10px);
-          transition: all 0.3s ease;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .premium-card:hover {
-          transform: translateY(-4px);
+          transform: translateY(-2px);
         }
 
         p {
-          line-height: 1.7;
+          line-height: 1.6;
+        }
+
+        button, a {
+          transition: all 0.2s ease;
         }
       `}</style>
 
@@ -176,95 +179,97 @@ function App() {
         </div>
       </header>
 
-      <section className="relative bg-black text-white py-32 lg:py-48 overflow-hidden">
+      <section className="relative bg-black text-white py-40 lg:py-56 overflow-hidden">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-[55%_45%] gap-24 items-center">
             <div className="scroll-reveal">
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-8 leading-[0.95]">
+              <h1 className="text-6xl sm:text-7xl lg:text-[5.5rem] font-bold mb-10 leading-[0.92] tracking-tight">
                 MONEY <span className="gradient-text">STUF.</span><br />
                 MADE SIMPLE.
               </h1>
-              <p className="text-xl text-white mb-12 max-w-xl leading-relaxed" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                Confused? Who wouldn't be.<br />
-                We teach 15–19 year olds the money STUF they should already know.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="bg-pink-accent text-black px-8 py-3 font-semibold text-base hover:opacity-85 transition-opacity" style={{ fontFamily: 'Inter' }}>
-                  Get Started
-                </Link>
+              <div className="space-y-4 mb-14 max-w-lg">
+                <p className="text-2xl text-white/90" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.4' }}>
+                  Confused? Who wouldn't be.
+                </p>
+                <p className="text-lg text-white/70" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
+                  We teach 15–19 year olds the money STUF they should already know.
+                </p>
               </div>
+              <Link to="/contact" className="inline-block bg-pink-accent text-black px-10 py-4 font-semibold text-base hover:opacity-90 transition-all" style={{ fontFamily: 'Inter' }}>
+                Get Started
+              </Link>
             </div>
             <div className="scroll-reveal hidden lg:block">
               <img
                 src="/1.jpg"
                 alt="Students learning"
-                className="rounded-none"
+                className="w-full h-auto"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="stats" className="bg-black py-32 lg:py-40">
+      <section id="stats" className="bg-white py-40 lg:py-48">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-24 scroll-reveal max-w-4xl mx-auto">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+          <div className="text-center mb-28 scroll-reveal max-w-3xl mx-auto">
+            <h2 className="text-6xl sm:text-7xl lg:text-[5rem] font-bold text-black mb-10 leading-[0.95] tracking-tight">
               WHY THIS <span className="gradient-text">MATTERS</span>
             </h2>
-            <p className="text-2xl text-white max-w-3xl mx-auto" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+            <p className="text-xl text-black/60 max-w-2xl mx-auto" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.5' }}>
               Money problems start young. We're here to fix that.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-12 scroll-reveal bg-white group">
-              <p className="stat-number mb-4 group-hover:scale-105 transition-transform">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-black p-14 scroll-reveal group">
+              <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={6} isVisible={countersVisible} /> in 10
               </p>
-              <p className="text-black text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+              <p className="text-white/80 text-base" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 Don't know how to manage money
               </p>
             </div>
 
-            <div className="p-12 scroll-reveal bg-white group">
-              <p className="stat-number mb-4 group-hover:scale-105 transition-transform">
+            <div className="bg-black p-14 scroll-reveal group">
+              <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 -<CountUpAnimation end={10} isVisible={countersVisible} />%
               </p>
-              <p className="text-black text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+              <p className="text-white/80 text-base" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 Mental health impact from money stress
               </p>
             </div>
 
-            <div className="p-12 scroll-reveal bg-white group">
-              <p className="stat-number mb-4 group-hover:scale-105 transition-transform">
+            <div className="bg-black p-14 scroll-reveal group">
+              <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
               </p>
-              <p className="text-black text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+              <p className="text-white/80 text-base" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 UK people living in poverty
               </p>
             </div>
 
-            <div className="p-12 scroll-reveal bg-white group">
-              <p className="stat-number mb-4 group-hover:scale-105 transition-transform">
+            <div className="bg-black p-14 scroll-reveal group">
+              <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 1 in <CountUpAnimation end={22} isVisible={countersVisible} />
               </p>
-              <p className="text-black text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+              <p className="text-white/80 text-base" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 Without a stable home
               </p>
             </div>
 
-            <div className="p-12 scroll-reveal bg-white group">
-              <p className="stat-number mb-4 group-hover:scale-105 transition-transform">
+            <div className="bg-black p-14 scroll-reveal group">
+              <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={126} suffix="K" isVisible={countersVisible} />
               </p>
-              <p className="text-black text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+              <p className="text-white/80 text-base" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 Young people homeless
               </p>
             </div>
 
-            <div className="bg-pink-accent p-12 scroll-reveal group">
-              <Heart className="w-16 h-16 text-black mb-6 group-hover:scale-110 transition-transform" />
-              <p className="text-black text-lg font-semibold" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+            <div className="bg-pink-accent p-14 scroll-reveal group">
+              <Heart className="w-20 h-20 text-black mb-8 group-hover:scale-105 transition-transform" />
+              <p className="text-black text-base font-medium" style={{ fontFamily: 'Inter', fontWeight: '500', lineHeight: '1.6' }}>
                 We're breaking the cycle
               </p>
             </div>
@@ -272,69 +277,71 @@ function App() {
         </div>
       </section>
 
-      <section id="about" className="bg-white py-32 lg:py-40">
+      <section id="about" className="bg-black py-40 lg:py-48">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div className="scroll-reveal">
-              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-10 leading-[1.05]">
+              <h2 className="text-6xl sm:text-7xl lg:text-[5rem] font-bold text-white mb-12 leading-[0.95] tracking-tight">
                 THE <span className="gradient-text">BASICS</span> THEY NEVER TAUGHT YOU
               </h2>
-              <p className="text-xl text-black leading-relaxed mb-6" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                Budgets. Savings. Investments. Mortgages.
-              </p>
-              <p className="text-xl text-black leading-relaxed" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                We teach the financial STUF schools skip. Real skills. No jargon.
-              </p>
+              <div className="space-y-6">
+                <p className="text-2xl text-white/90" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.4' }}>
+                  Budgets. Savings. Investments. Mortgages.
+                </p>
+                <p className="text-lg text-white/60" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
+                  We teach the financial STUF schools skip. Real skills. No jargon.
+                </p>
+              </div>
             </div>
             <div className="scroll-reveal">
               <img
                 src="/6.jpg"
                 alt="Teaching financial literacy"
-                className="rounded-none"
+                className="w-full h-auto"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="who-we-help" className="bg-white py-32 lg:py-40">
+      <section id="who-we-help" className="bg-white py-40 lg:py-48">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-24 scroll-reveal max-w-4xl mx-auto">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-8 leading-tight">
+          <div className="text-center mb-28 scroll-reveal max-w-3xl mx-auto">
+            <h2 className="text-6xl sm:text-7xl lg:text-[5rem] font-bold text-black mb-10 leading-[0.95] tracking-tight">
               WHO WE <span className="gradient-text">WORK WITH</span>
             </h2>
-            <p className="text-2xl text-black max-w-3xl mx-auto" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+            <p className="text-xl text-black/60 max-w-2xl mx-auto" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.5' }}>
               Schools. Funders. Partners who get it.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-10">
-            <div className="bg-black p-12 scroll-reveal premium-card">
-              <h3 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>SCHOOLS</h3>
-              <p className="text-white text-base leading-relaxed mb-6" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-black p-14 scroll-reveal premium-card">
+              <h3 className="text-4xl font-bold text-white mb-6 leading-none tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>SCHOOLS</h3>
+              <p className="text-white/70 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 Real workshops. Real impact. Fits your timetable.
               </p>
-              <a href="#contact" className="text-pink-accent font-semibold text-sm hover:underline" style={{ fontFamily: 'Inter' }}>
+              <a href="#contact" className="text-pink-accent font-medium text-sm hover:opacity-70" style={{ fontFamily: 'Inter' }}>
                 Get started →
               </a>
             </div>
 
-            <div className="bg-black p-12 scroll-reveal premium-card">
-              <h3 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>FUNDERS</h3>
-              <p className="text-white text-base leading-relaxed mb-6" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+            <div className="bg-black p-14 scroll-reveal premium-card">
+              <h3 className="text-4xl font-bold text-white mb-6 leading-none tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>FUNDERS</h3>
+              <p className="text-white/70 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 Proven results. Measurable change. Your money matters.
               </p>
-              <Link to="/impact-reports" className="text-pink-accent font-semibold text-sm hover:underline" style={{ fontFamily: 'Inter' }}>
+              <Link to="/impact-reports" className="text-pink-accent font-medium text-sm hover:opacity-70" style={{ fontFamily: 'Inter' }}>
                 See the impact →
               </Link>
             </div>
 
-            <div className="bg-black p-12 scroll-reveal premium-card">
-              <h3 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PARTNERS</h3>
-              <p className="text-white text-base leading-relaxed mb-6" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+            <div className="bg-black p-14 scroll-reveal premium-card">
+              <h3 className="text-4xl font-bold text-white mb-6 leading-none tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PARTNERS</h3>
+              <p className="text-white/70 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 Join the movement. Make it count.
               </p>
-              <a href="#contact" className="text-pink-accent font-semibold text-sm hover:underline" style={{ fontFamily: 'Inter' }}>
+              <a href="#contact" className="text-pink-accent font-medium text-sm hover:opacity-70" style={{ fontFamily: 'Inter' }}>
                 Let's talk →
               </a>
             </div>
@@ -342,41 +349,41 @@ function App() {
         </div>
       </section>
 
-      <section id="how-it-works" className="bg-pink-accent py-32 lg:py-40">
+      <section id="how-it-works" className="bg-pink-accent py-40 lg:py-48">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-24 scroll-reveal max-w-4xl mx-auto">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-8 leading-tight">
+          <div className="text-center mb-28 scroll-reveal max-w-3xl mx-auto">
+            <h2 className="text-6xl sm:text-7xl lg:text-[5rem] font-bold text-black mb-8 leading-[0.95] tracking-tight">
               HOW IT <span className="text-white">WORKS</span>
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-16">
             <div className="text-center scroll-reveal">
-              <div className="w-24 h-24 bg-black text-pink-accent flex items-center justify-center text-4xl font-bold mx-auto mb-6" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+              <div className="w-28 h-28 bg-black text-pink-accent flex items-center justify-center text-5xl font-bold mx-auto mb-8 tracking-tighter" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
                 1
               </div>
-              <h3 className="text-3xl font-bold text-black mb-4" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>CONNECT</h3>
-              <p className="text-black leading-relaxed text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+              <h3 className="text-4xl font-bold text-black mb-5 tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>CONNECT</h3>
+              <p className="text-black/70 leading-relaxed text-base max-w-xs mx-auto" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 Tell us what you need. We make it work.
               </p>
             </div>
 
             <div className="text-center scroll-reveal">
-              <div className="w-24 h-24 bg-black text-pink-accent flex items-center justify-center text-4xl font-bold mx-auto mb-6" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+              <div className="w-28 h-28 bg-black text-pink-accent flex items-center justify-center text-5xl font-bold mx-auto mb-8 tracking-tighter" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
                 2
               </div>
-              <h3 className="text-3xl font-bold text-black mb-4" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>DELIVER</h3>
-              <p className="text-black leading-relaxed text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+              <h3 className="text-4xl font-bold text-black mb-5 tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>DELIVER</h3>
+              <p className="text-black/70 leading-relaxed text-base max-w-xs mx-auto" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 Real experts. Real talk. No boring lectures.
               </p>
             </div>
 
             <div className="text-center scroll-reveal">
-              <div className="w-24 h-24 bg-black text-pink-accent flex items-center justify-center text-4xl font-bold mx-auto mb-6" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+              <div className="w-28 h-28 bg-black text-pink-accent flex items-center justify-center text-5xl font-bold mx-auto mb-8 tracking-tighter" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
                 3
               </div>
-              <h3 className="text-3xl font-bold text-black mb-4" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>IMPACT</h3>
-              <p className="text-black leading-relaxed text-lg" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+              <h3 className="text-4xl font-bold text-black mb-5 tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>IMPACT</h3>
+              <p className="text-black/70 leading-relaxed text-base max-w-xs mx-auto" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                 Track progress. See results. Change lives.
               </p>
             </div>
@@ -384,30 +391,30 @@ function App() {
         </div>
       </section>
 
-      <section id="programs" className="bg-black py-32 lg:py-40">
+      <section id="programs" className="bg-white py-40 lg:py-48">
         <div className="max-w-[1100px] mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-[45%_55%] gap-16 items-start">
+          <div className="grid lg:grid-cols-[40%_60%] gap-20 items-start">
             <div className="scroll-reveal lg:sticky lg:top-32">
-              <h2 className="text-6xl sm:text-7xl font-bold text-white mb-10 leading-[1]" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+              <h2 className="text-6xl sm:text-7xl font-bold text-black mb-10 leading-[0.92] tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
                 ALL THE MONEY <span className="gradient-text">STUF</span>
               </h2>
-              <p className="text-xl text-white leading-relaxed" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
-                From saving your first pound to buying your first home. We've got it covered.
+              <p className="text-lg text-black/60 leading-relaxed" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
+                From saving your first pound to buying your first home.
               </p>
             </div>
 
-            <div className="space-y-6">
-              <div className="bg-white scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-10">
+            <div className="space-y-4">
+              <div className="bg-black scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-12">
                 <div className="flex-1">
-                  <h3 className="text-3xl font-bold mb-3 text-black" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>INVESTMENT STUF</h3>
-                  <p className="text-black text-base leading-relaxed mb-6" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+                  <h3 className="text-4xl font-bold mb-4 text-white tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>INVESTMENT STUF</h3>
+                  <p className="text-white/60 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                     Make your money work harder
                   </p>
-                  <button className="bg-pink-accent text-black px-6 py-2 font-semibold text-sm hover:opacity-85 transition-opacity" style={{ fontFamily: 'Inter' }}>
+                  <button className="bg-pink-accent text-black px-8 py-3 font-medium text-sm hover:opacity-90 transition-all" style={{ fontFamily: 'Inter' }}>
                     Learn more
                   </button>
                 </div>
-                <div className="w-40 h-40 flex-shrink-0 -mr-8 transform group-hover:scale-110 transition-all duration-500">
+                <div className="w-36 h-36 flex-shrink-0 -mr-6 transform group-hover:scale-105 transition-all duration-500">
                   <img
                     src="/investment_stuf.png"
                     alt="Investment"
@@ -416,17 +423,17 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-white scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-10">
+              <div className="bg-black scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-12">
                 <div className="flex-1">
-                  <h3 className="text-3xl font-bold mb-3 text-black" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PLANNING STUF</h3>
-                  <p className="text-black text-base leading-relaxed mb-6" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+                  <h3 className="text-4xl font-bold mb-4 text-white tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PLANNING STUF</h3>
+                  <p className="text-white/60 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                     Budget like a boss
                   </p>
-                  <button className="bg-pink-accent text-black px-6 py-2 font-semibold text-sm hover:opacity-85 transition-opacity" style={{ fontFamily: 'Inter' }}>
+                  <button className="bg-pink-accent text-black px-8 py-3 font-medium text-sm hover:opacity-90 transition-all" style={{ fontFamily: 'Inter' }}>
                     Learn more
                   </button>
                 </div>
-                <div className="w-40 h-40 flex-shrink-0 -mr-8 transform group-hover:scale-110 transition-all duration-500">
+                <div className="w-36 h-36 flex-shrink-0 -mr-6 transform group-hover:scale-105 transition-all duration-500">
                   <img
                     src="/financial_planning_stuf.png"
                     alt="Financial Planning"
@@ -435,17 +442,17 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-white scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-10">
+              <div className="bg-black scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-12">
                 <div className="flex-1">
-                  <h3 className="text-3xl font-bold mb-3 text-black" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>MORTGAGE STUF</h3>
-                  <p className="text-black text-base leading-relaxed mb-6" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+                  <h3 className="text-4xl font-bold mb-4 text-white tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>MORTGAGE STUF</h3>
+                  <p className="text-white/60 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                     Get on the property ladder
                   </p>
-                  <button className="bg-pink-accent text-black px-6 py-2 font-semibold text-sm hover:opacity-85 transition-opacity" style={{ fontFamily: 'Inter' }}>
+                  <button className="bg-pink-accent text-black px-8 py-3 font-medium text-sm hover:opacity-90 transition-all" style={{ fontFamily: 'Inter' }}>
                     Learn more
                   </button>
                 </div>
-                <div className="w-40 h-40 flex-shrink-0 -mr-8 transform group-hover:scale-110 transition-all duration-500">
+                <div className="w-36 h-36 flex-shrink-0 -mr-6 transform group-hover:scale-105 transition-all duration-500">
                   <img
                     src="/mortgage_rental_stuf.png"
                     alt="Mortgage and Rental"
@@ -454,17 +461,17 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-white scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-10">
+              <div className="bg-black scroll-reveal group transition-all duration-300 flex items-center justify-between relative overflow-visible p-12">
                 <div className="flex-1">
-                  <h3 className="text-3xl font-bold mb-3 text-black" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PENSION STUF</h3>
-                  <p className="text-black text-base leading-relaxed mb-6" style={{ fontFamily: 'Inter', lineHeight: '1.5' }}>
+                  <h3 className="text-4xl font-bold mb-4 text-white tracking-tight" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>PENSION STUF</h3>
+                  <p className="text-white/60 text-base leading-relaxed mb-8" style={{ fontFamily: 'Inter', fontWeight: '400', lineHeight: '1.6' }}>
                     Sort your future self out
                   </p>
-                  <button className="bg-pink-accent text-black px-6 py-2 font-semibold text-sm hover:opacity-85 transition-opacity" style={{ fontFamily: 'Inter' }}>
+                  <button className="bg-pink-accent text-black px-8 py-3 font-medium text-sm hover:opacity-90 transition-all" style={{ fontFamily: 'Inter' }}>
                     Learn more
                   </button>
                 </div>
-                <div className="w-40 h-40 flex-shrink-0 -mr-8 transform group-hover:scale-110 transition-all duration-500">
+                <div className="w-36 h-36 flex-shrink-0 -mr-6 transform group-hover:scale-105 transition-all duration-500">
                   <img
                     src="/pensio_stuf.png"
                     alt="Pension"
