@@ -174,7 +174,7 @@ function App() {
               <a href="#expertise" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Expertise</a>
               <a href="#team" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Team</a>
               <Link to="/impact-reports" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Reports</Link>
-              <Link to="/contact" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Contact</Link>
+              <a href="#contact" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Contact</a>
               <div className="ml-4 pl-4 border-l border-gray-200">
                 <a href="#donate" className="bg-pink-accent text-black px-6 py-2.5 rounded-full font-bold text-sm hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2 transform hover:scale-105">
                   <Heart className="w-4 h-4" />
@@ -204,9 +204,9 @@ function App() {
                 STUF will give you the skills to pay the bills.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-opacity-90 hover:shadow-xl hover:shadow-pink-accent/20 transition-all">
+                <a href="#contact" className="bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-opacity-90 hover:shadow-xl hover:shadow-pink-accent/20 transition-all">
                   Let's Talk Money STUF
-                </Link>
+                </a>
                 <Link to="/impact-reports" className="border-2 border-pink-accent text-pink-accent px-10 py-4 rounded-full font-bold text-base hover:bg-pink-accent hover:text-black transition-all">
                   See Our Impact
                 </Link>
@@ -1115,6 +1115,57 @@ function App() {
         </div>
       </section>
 
+      <section id="contact" className="bg-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Contact Us</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              Get In <span className="text-pink-accent">Touch</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Have questions or want to bring financial education to your school? We'd love to hear from you.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 mb-8 scroll-reveal">
+              <a href="mailto:hello@stuf.org.uk" className="bg-gradient-to-br from-pink-accent to-pink-accent/80 p-8 rounded-3xl flex items-start gap-5 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 group border-2 border-pink-accent">
+                <Mail className="w-7 h-7 text-black flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+                <div>
+                  <div className="text-xs font-bold text-black/70 uppercase tracking-wider mb-2">Email UK</div>
+                  <div className="text-xl font-bold text-black">hello@stuf.org.uk</div>
+                  <p className="text-sm text-black/70 mt-2">For UK partnerships and inquiries</p>
+                </div>
+              </a>
+
+              <a href="mailto:info@ug-stuf.com" className="bg-white border-2 border-gray-200 p-8 rounded-3xl flex items-start gap-5 hover:border-pink-accent hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group">
+                <div className="w-7 h-7 flex-shrink-0 mt-1 text-3xl group-hover:scale-110 transition-transform">🇺🇬</div>
+                <div>
+                  <div className="text-xs font-bold text-black/70 uppercase tracking-wider mb-2">Email Uganda</div>
+                  <div className="text-xl font-bold text-black">info@ug-stuf.com</div>
+                  <p className="text-sm text-gray-600 mt-2">For Uganda operations and programs</p>
+                </div>
+              </a>
+            </div>
+
+            <div className="bg-gray-50 p-8 lg:p-10 rounded-3xl border border-gray-200 scroll-reveal">
+              <div className="flex items-start gap-5">
+                <MapPin className="w-7 h-7 text-pink-accent flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="text-lg font-bold text-black mb-4 uppercase tracking-wide">Our Location</h4>
+                  <p className="text-gray-700 leading-relaxed text-base">
+                    Set Them Up Foundation CIC<br />
+                    IDEALondon, 69 Wilson St<br />
+                    Shoreditch, London, England<br />
+                    EC2A 2BB
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-pink-accent py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
@@ -1149,8 +1200,8 @@ function App() {
             <div>
               <h4 className="font-bold text-black mb-5 text-base uppercase tracking-wide">Contact</h4>
               <p className="text-black/80 text-sm leading-relaxed">
-                Email: info@setthemup.org<br />
-                Follow us on social media
+                UK: hello@stuf.org.uk<br />
+                Uganda: info@ug-stuf.com
               </p>
             </div>
           </div>
