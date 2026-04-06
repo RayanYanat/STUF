@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface MenuSection {
   id: string;
   label: string;
+  isLink?: boolean;
 }
 
 const sections: MenuSection[] = [
@@ -14,8 +16,7 @@ const sections: MenuSection[] = [
   { id: 'team', label: 'Team' },
   { id: 'roadmap', label: 'Roadmap' },
   { id: 'partners', label: 'Partners' },
-  { id: 'contact', label: 'Contact' },
-  { id: 'donate', label: 'Donate' },
+  { id: '/contact', label: 'Contact', isLink: true },
 ];
 
 export default function MobileMenu() {
@@ -60,17 +61,32 @@ export default function MobileMenu() {
           <div className="absolute top-full right-0 mt-2 z-50 bg-white rounded-2xl shadow-2xl overflow-hidden w-56 border border-gray-100">
             <div className="py-2">
               {sections.map((section, index) => (
-                <button
-                  key={section.id}
-                  onClick={() => scrollToSection(section.id)}
-                  className="w-full text-left px-5 py-3 text-sm font-medium text-gray-700 hover:bg-pink-50 transition-all duration-200"
-                  style={{
-                    animationDelay: `${index * 30}ms`,
-                    animation: 'fadeInUp 0.3s ease-out forwards'
-                  }}
-                >
-                  {section.label}
-                </button>
+                section.isLink ? (
+                  <Link
+                    key={section.id}
+                    to={section.id}
+                    onClick={() => setIsOpen(false)}
+                    className="block w-full text-left px-5 py-3 text-sm font-medium text-gray-700 hover:bg-pink-50 transition-all duration-200"
+                    style={{
+                      animationDelay: `${index * 30}ms`,
+                      animation: 'fadeInUp 0.3s ease-out forwards'
+                    }}
+                  >
+                    {section.label}
+                  </Link>
+                ) : (
+                  <button
+                    key={section.id}
+                    onClick={() => scrollToSection(section.id)}
+                    className="w-full text-left px-5 py-3 text-sm font-medium text-gray-700 hover:bg-pink-50 transition-all duration-200"
+                    style={{
+                      animationDelay: `${index * 30}ms`,
+                      animation: 'fadeInUp 0.3s ease-out forwards'
+                    }}
+                  >
+                    {section.label}
+                  </button>
+                )
               ))}
             </div>
           </div>
