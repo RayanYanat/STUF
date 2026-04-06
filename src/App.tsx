@@ -172,7 +172,6 @@ function App() {
               <a href="#impact" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Impact</a>
               <a href="#programs" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Programs</a>
               <a href="#team" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Team</a>
-              <Link to="/impact-reports" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Reports</Link>
               <a href="#donate" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Donate</a>
               <div className="ml-4 pl-4 border-l border-gray-200">
                 <a href="#contact" className="bg-pink-accent text-black px-6 py-2.5 rounded-full font-bold text-sm hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2 transform hover:scale-105">
@@ -393,8 +392,13 @@ function App() {
         </div>
       </section>
 
-      <section id="how-it-works" className="bg-gradient-to-b from-gray-50 to-white py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="how-it-works" className="bg-gradient-to-b from-gray-50 to-white py-20 lg:py-32 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-pink-accent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-accent rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">How It Works</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
@@ -402,41 +406,83 @@ function App() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="text-center scroll-reveal">
-              <div className="w-20 h-20 bg-pink-accent text-black rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
-                1
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+            <div className="scroll-reveal group">
+              <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl border-2 border-gray-100 hover:border-pink-accent transition-all duration-300 premium-card h-full">
+                <div className="relative mb-8">
+                  <div className="w-24 h-24 bg-gradient-to-br from-pink-accent to-pink-accent/70 text-black rounded-2xl flex items-center justify-center text-4xl font-bold shadow-xl shadow-pink-accent/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                    1
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-pink-accent rounded-full opacity-50 group-hover:scale-150 transition-all duration-300"></div>
+                </div>
+                <h3 className="text-3xl font-bold text-black mb-6 group-hover:text-pink-accent transition-colors">Connect</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-pink-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 leading-relaxed font-medium">Tell us what you need</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-pink-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 leading-relaxed font-medium">We design the program</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-pink-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 leading-relaxed font-medium">Fits your schedule</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-black mb-4">Connect</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Tell us what you need.<br />
-                We design the program.<br />
-                Fits your schedule.
-              </p>
             </div>
 
-            <div className="text-center scroll-reveal">
-              <div className="w-20 h-20 bg-pink-accent text-black rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
-                2
+            <div className="scroll-reveal group">
+              <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl border-2 border-gray-100 hover:border-pink-accent transition-all duration-300 premium-card h-full">
+                <div className="relative mb-8">
+                  <div className="w-24 h-24 bg-gradient-to-br from-pink-accent to-pink-accent/70 text-black rounded-2xl flex items-center justify-center text-4xl font-bold shadow-xl shadow-pink-accent/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                    2
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-pink-accent rounded-full opacity-50 group-hover:scale-150 transition-all duration-300"></div>
+                </div>
+                <h3 className="text-3xl font-bold text-black mb-6 group-hover:text-pink-accent transition-colors">Deliver</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-pink-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 leading-relaxed font-medium">Experts teach the STUF</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-pink-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 leading-relaxed font-medium">Interactive. Practical. Real</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-pink-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 leading-relaxed font-medium">Students leave confident</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-black mb-4">Deliver</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Experts teach the STUF.<br />
-                Interactive. Practical. Real.<br />
-                Students leave confident.
-              </p>
             </div>
 
-            <div className="text-center scroll-reveal">
-              <div className="w-20 h-20 bg-pink-accent text-black rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
-                3
+            <div className="scroll-reveal group">
+              <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl border-2 border-gray-100 hover:border-pink-accent transition-all duration-300 premium-card h-full">
+                <div className="relative mb-8">
+                  <div className="w-24 h-24 bg-gradient-to-br from-pink-accent to-pink-accent/70 text-black rounded-2xl flex items-center justify-center text-4xl font-bold shadow-xl shadow-pink-accent/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                    3
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-pink-accent rounded-full opacity-50 group-hover:scale-150 transition-all duration-300"></div>
+                </div>
+                <h3 className="text-3xl font-bold text-black mb-6 group-hover:text-pink-accent transition-colors">Measure Impact</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-pink-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 leading-relaxed font-medium">Track progress</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-pink-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 leading-relaxed font-medium">Measure what matters</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-pink-accent rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 leading-relaxed font-medium">See real results</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-black mb-4">Measure Impact</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Track progress.<br />
-                Measure what matters.<br />
-                See real results.
-              </p>
             </div>
           </div>
         </div>
@@ -523,8 +569,8 @@ function App() {
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Pension STUF</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                    Pension STUF.<br />
-                    (Bcos future you will thank current you)
+                    Bcos future you will thank current you.<br />
+                    Made simple.
                   </p>
                   <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
@@ -561,10 +607,11 @@ function App() {
               <div className="stat-number text-black mb-4">150+</div>
               <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide">Partner Schools</p>
             </div>
-            <div className="bg-white p-12 rounded-3xl shadow-xl scroll-reveal text-center border border-gray-100 premium-card">
-              <div className="stat-number text-black mb-4">95%</div>
-              <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide">Satisfaction Rate</p>
-            </div>
+            <a href="/STUF_2025_ANNUAL_REPORT.pdf" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-pink-accent to-pink-accent/80 p-12 rounded-3xl shadow-xl scroll-reveal text-center border-2 border-pink-accent premium-card group hover:shadow-2xl hover:scale-105 transition-all duration-300">
+              <div className="stat-number text-black mb-4 group-hover:scale-110 transition-transform">2025</div>
+              <p className="text-lg font-semibold text-black uppercase tracking-wide mb-2">Annual Report</p>
+              <p className="text-sm text-black/70 font-medium">Click to view our impact</p>
+            </a>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center scroll-reveal">
@@ -1182,7 +1229,7 @@ function App() {
                 <li><a href="#about" className="text-black/80 hover:text-black transition-colors text-sm">About Us</a></li>
                 <li><a href="#programs" className="text-black/80 hover:text-black transition-colors text-sm">Programs</a></li>
                 <li><a href="#team" className="text-black/80 hover:text-black transition-colors text-sm">Team</a></li>
-                <li><Link to="/impact-reports" className="text-black/80 hover:text-black transition-colors text-sm">Impact Reports</Link></li>
+                <li><a href="/STUF_2025_ANNUAL_REPORT.pdf" target="_blank" rel="noopener noreferrer" className="text-black/80 hover:text-black transition-colors text-sm">2025 Annual Report</a></li>
               </ul>
             </div>
             <div>

@@ -14,7 +14,6 @@ const sections: MenuSection[] = [
   { id: 'impact', label: 'Impact' },
   { id: 'programs', label: 'Programs' },
   { id: 'team', label: 'Team' },
-  { id: '/impact-reports', label: 'Reports', isLink: true },
   { id: 'donate', label: 'Donate' },
   { id: 'contact', label: 'Contact', isDonate: true },
 ];
