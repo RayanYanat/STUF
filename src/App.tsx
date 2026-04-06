@@ -607,11 +607,11 @@ function App() {
               <div className="stat-number text-black mb-4">150+</div>
               <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide">Partner Schools</p>
             </div>
-            <a href="/STUF_2025_ANNUAL_REPORT.pdf" target="_blank" rel="noopener noreferrer" className="bg-white p-12 rounded-3xl shadow-xl scroll-reveal text-center border border-gray-100 premium-card group hover:shadow-2xl hover:scale-105 hover:border-pink-accent transition-all duration-300">
+            <Link to="/impact-reports" className="bg-white p-12 rounded-3xl shadow-xl scroll-reveal text-center border border-gray-100 premium-card group hover:shadow-2xl hover:scale-105 hover:border-pink-accent transition-all duration-300">
               <div className="stat-number text-black mb-4 group-hover:scale-110 transition-transform">2025</div>
               <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide mb-2 group-hover:text-pink-accent transition-colors">Annual Report</p>
               <p className="text-sm text-gray-600 font-medium group-hover:text-pink-accent transition-colors">Click to view our impact</p>
-            </a>
+            </Link>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center scroll-reveal">
