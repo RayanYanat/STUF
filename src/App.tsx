@@ -660,77 +660,70 @@ function App() {
 
       <section id="roadmap" className="bg-pink-accent py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">Our Roadmap</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Building The Future
-            </h2>
-            <p className="text-xl text-black/80 max-w-3xl mx-auto">
-              Our plan to scale.<br />
-              More schools. More students.<br />
-              More impact.
-            </p>
+          <div className="grid lg:grid-cols-[40%_60%] gap-16 items-start mb-16">
+            <div className="scroll-reveal lg:sticky lg:top-32">
+              <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">Our roadmap</p>
+              <h2 className="text-5xl sm:text-6xl font-bold text-black mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+                STUF TO COME
+              </h2>
+            </div>
+            <div className="scroll-reveal">
+              <p className="text-lg text-black leading-relaxed">
+                The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance. By working with schools, banks, and other likeminded partners we provide lifelong skills, understanding and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
+              </p>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
-              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <Target className="w-8 h-8 text-black" />
+          <div className="space-y-0">
+            <div className="bg-white border-b-4 border-black scroll-reveal">
+              <div className="grid lg:grid-cols-[200px_1fr] gap-8 p-8 lg:p-10">
+                <div className="bg-black text-white px-8 py-4 rounded-lg flex items-center justify-center">
+                  <h3 className="text-3xl font-bold">2022</h3>
+                </div>
+                <div className="space-y-3">
+                  <p className="text-black text-base leading-relaxed">— Set up of the foundation</p>
+                  <p className="text-black text-base leading-relaxed">— Production of the syllabus</p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-black mb-3">Phase 1</h3>
-              <h4 className="text-lg font-semibold text-black/90 mb-4">Foundation</h4>
-              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
-                <li>• Launch pilot programs</li>
-                <li>• Partner with schools</li>
-                <li>• Develop core curriculum</li>
-                <li>• Build volunteer network</li>
-                <li>• Establish impact metrics</li>
-              </ul>
             </div>
 
-            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
-              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <Calendar className="w-8 h-8 text-black" />
+            <div className="bg-white border-b-4 border-black scroll-reveal">
+              <div className="grid lg:grid-cols-[200px_1fr] gap-8 p-8 lg:p-10">
+                <div className="bg-black text-white px-8 py-4 rounded-lg flex items-center justify-center border-l-8 border-pink-accent/50">
+                  <h3 className="text-3xl font-bold">2023</h3>
+                </div>
+                <div className="space-y-3">
+                  <p className="text-black text-base leading-relaxed">— Delivering the course; Wembley, London, Manchester and Birmingham</p>
+                  <p className="text-black text-base leading-relaxed">— Mentorship programme begins</p>
+                  <p className="text-black text-base leading-relaxed">— E-learning syllabus completed</p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-black mb-3">Phase 2</h3>
-              <h4 className="text-lg font-semibold text-black/90 mb-4">Scale Up</h4>
-              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
-                <li>• Expand to 150+ schools</li>
-                <li>• Launch digital platform</li>
-                <li>• Train educators</li>
-                <li>• Reach 10,000 students</li>
-                <li>• Build corporate partnerships</li>
-              </ul>
             </div>
 
-            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
-              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <TrendingUp className="w-8 h-8 text-black" />
+            <div className="bg-white border-b-4 border-black scroll-reveal">
+              <div className="grid lg:grid-cols-[200px_1fr] gap-8 p-8 lg:p-10">
+                <div className="bg-black text-white px-8 py-4 rounded-lg flex items-center justify-center">
+                  <h3 className="text-3xl font-bold">2024</h3>
+                </div>
+                <div className="space-y-3">
+                  <p className="text-black text-base leading-relaxed">— Reach accreditation</p>
+                  <p className="text-black text-base leading-relaxed">— Delivering the course; Leeds, Glasgow, Southampton, Liverpool and Newcastle</p>
+                  <p className="text-black text-base leading-relaxed">— Apprentice and Employment programme begins</p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-black mb-3">Phase 3</h3>
-              <h4 className="text-lg font-semibold text-black/90 mb-4">National Reach</h4>
-              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
-                <li>• Coverage across 12+ counties</li>
-                <li>• Establish regional hubs</li>
-                <li>• Mobile app launch</li>
-                <li>• 25,000+ students reached</li>
-                <li>• Teacher training program</li>
-              </ul>
             </div>
 
-            <div className="bg-white p-10 rounded-3xl scroll-reveal premium-card shadow-xl">
-              <div className="bg-pink-accent/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <Heart className="w-8 h-8 text-black" />
+            <div className="bg-white scroll-reveal">
+              <div className="grid lg:grid-cols-[200px_1fr] gap-8 p-8 lg:p-10">
+                <div className="bg-black text-white px-8 py-4 rounded-lg flex items-center justify-center">
+                  <h3 className="text-3xl font-bold">2025</h3>
+                </div>
+                <div className="space-y-3">
+                  <p className="text-black text-base leading-relaxed">— Become a necessary curriculum lesson</p>
+                  <p className="text-black text-base leading-relaxed">— Coverage across the United Kingdom offering financial education to all schools</p>
+                  <p className="text-black text-base leading-relaxed">— Worldwide outreach</p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-black mb-3">Phase 4</h3>
-              <h4 className="text-lg font-semibold text-black/90 mb-4">Lasting Change</h4>
-              <ul className="space-y-2 text-sm text-black/70 leading-relaxed">
-                <li>• UK-wide coverage</li>
-                <li>• Policy advocacy</li>
-                <li>• International expansion</li>
-                <li>• 100,000+ lives transformed</li>
-                <li>• Self-sustaining model</li>
-              </ul>
             </div>
           </div>
         </div>
