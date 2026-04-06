@@ -171,14 +171,13 @@ function App() {
               <a href="#who-we-help" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Who We Help</a>
               <a href="#impact" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Impact</a>
               <a href="#programs" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Programs</a>
-              <a href="#expertise" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Expertise</a>
               <a href="#team" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Team</a>
               <Link to="/impact-reports" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Reports</Link>
-              <a href="#contact" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Contact</a>
+              <a href="#donate" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Donate</a>
               <div className="ml-4 pl-4 border-l border-gray-200">
-                <a href="#donate" className="bg-pink-accent text-black px-6 py-2.5 rounded-full font-bold text-sm hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2 transform hover:scale-105">
-                  <Heart className="w-4 h-4" />
-                  <span>Support Our Mission</span>
+                <a href="#contact" className="bg-pink-accent text-black px-6 py-2.5 rounded-full font-bold text-sm hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2 transform hover:scale-105">
+                  <Mail className="w-4 h-4" />
+                  <span>Contact</span>
                 </a>
               </div>
             </div>

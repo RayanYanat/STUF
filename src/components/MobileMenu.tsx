@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, Heart } from 'lucide-react';
+import { Menu, X, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface MenuSection {
@@ -13,11 +13,10 @@ const sections: MenuSection[] = [
   { id: 'who-we-help', label: 'Who We Help' },
   { id: 'impact', label: 'Impact' },
   { id: 'programs', label: 'Programs' },
-  { id: 'expertise', label: 'Expertise' },
   { id: 'team', label: 'Team' },
   { id: '/impact-reports', label: 'Reports', isLink: true },
-  { id: 'contact', label: 'Contact' },
-  { id: 'donate', label: 'Support Our Mission', isDonate: true },
+  { id: 'donate', label: 'Donate' },
+  { id: 'contact', label: 'Contact', isDonate: true },
 ];
 
 export default function MobileMenu() {
@@ -73,7 +72,7 @@ export default function MobileMenu() {
                         animation: 'fadeInUp 0.3s ease-out forwards'
                       }}
                     >
-                      <Heart className="w-4 h-4" />
+                      <Mail className="w-4 h-4" />
                       <span>{section.label}</span>
                     </button>
                   );
