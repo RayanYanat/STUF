@@ -833,88 +833,6 @@ function App() {
         </div>
       </section>
 
-      <section id="contact" className="bg-black py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
-            <div className="scroll-reveal">
-              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Get In Touch</p>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-                Contact Us
-              </h2>
-              <p className="text-xl text-gray-400 mb-10 leading-relaxed">
-                Have questions or want to get involved? We'd love to hear from you.
-              </p>
-
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-pink-accent/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-pink-accent" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1 text-base">Email</h4>
-                    <p className="text-gray-400 text-sm">info@setthemup.org</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-pink-accent/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-pink-accent" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1 text-base">Phone</h4>
-                    <p className="text-gray-400 text-sm">Available upon request</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-pink-accent/10 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-pink-accent" />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1 text-base">Location</h4>
-                    <p className="text-gray-400 text-sm">United Kingdom</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="scroll-reveal">
-              <div className="p-10 rounded-3xl border border-gray-800" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
-                <h3 className="text-2xl font-bold text-white mb-8">Send us a message</h3>
-                <form className="space-y-5">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Your Name"
-                      className="w-full px-6 py-4 bg-black text-white border-2 border-gray-700 rounded-2xl focus:border-pink-accent focus:outline-none transition-colors text-base"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Your Email"
-                      className="w-full px-6 py-4 bg-black text-white border-2 border-gray-700 rounded-2xl focus:border-pink-accent focus:outline-none transition-colors text-base"
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      placeholder="Your Message"
-                      rows={5}
-                      className="w-full px-6 py-4 bg-black text-white border-2 border-gray-700 rounded-2xl focus:border-pink-accent focus:outline-none transition-colors text-base resize-none"
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full bg-pink-accent text-black px-8 py-4 rounded-full font-bold text-base hover:bg-white transition-all"
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="team" className="bg-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1049,17 +967,53 @@ function App() {
         </div>
       </section>
 
-      <section id="donate" className="bg-black py-20 lg:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-reveal">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Ready to Transform Financial Education?
-          </h2>
-          <p className="text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-            Join 150+ schools across the UK empowering students with essential money skills.
-          </p>
-          <a href="#contact" className="inline-block bg-pink-accent text-black px-12 py-5 rounded-full font-bold text-lg hover:bg-white hover:shadow-xl hover:shadow-pink-accent/20 transition-all">
-            Start the Conversation
-          </a>
+      <section id="contact" className="bg-pink-accent/10 py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 scroll-reveal">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-8 leading-tight">
+              Ready to Transform <span className="text-pink-accent">Financial Education?</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Join schools and partners across the UK empowering students with essential money skills.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto scroll-reveal">
+            <a href="mailto:hello@stuf.org.uk" className="bg-pink-accent/40 hover:bg-pink-accent/60 backdrop-blur-sm border-2 border-pink-accent/50 px-10 py-8 rounded-full transition-all duration-300 flex items-center justify-center gap-4 group">
+              <Mail className="w-6 h-6 text-black flex-shrink-0" />
+              <div className="text-left">
+                <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Email</div>
+                <div className="text-lg font-bold text-black">hello@stuf.org.uk</div>
+              </div>
+            </a>
+
+            <a href="mailto:info@ug-stuf.com" className="bg-white hover:bg-gray-50 border-2 border-black px-10 py-8 rounded-full transition-all duration-300 flex items-center justify-center gap-4 group">
+              <div className="w-6 h-6 flex-shrink-0 flex items-center justify-center">
+                <span className="text-2xl">🇺🇬</span>
+              </div>
+              <div className="text-left">
+                <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Uganda</div>
+                <div className="text-lg font-bold text-black">info@ug-stuf.com</div>
+              </div>
+            </a>
+          </div>
+
+          <div className="mt-16 max-w-3xl mx-auto text-center scroll-reveal">
+            <div className="bg-white/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-200">
+              <div className="flex items-start gap-4 justify-center">
+                <MapPin className="w-6 h-6 text-pink-accent flex-shrink-0 mt-1" />
+                <div className="text-left">
+                  <h4 className="text-base font-bold text-black mb-2 uppercase tracking-wide">Our Location</h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Set Them Up Foundation CIC<br />
+                    IDEALondon, 69 Wilson St<br />
+                    Shoreditch, London, England<br />
+                    EC2A 2BB
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
