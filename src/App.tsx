@@ -916,9 +916,6 @@ function App() {
                       <p className="text-gray-400 mb-8 text-sm leading-relaxed">
                         {member.bio}
                       </p>
-                      <button className="bg-pink-accent text-black px-6 py-3 rounded-full font-bold text-sm self-start hover:bg-white transition-all">
-                        Learn More
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -1192,8 +1189,7 @@ function App() {
               <h4 className="font-bold text-black mb-5 text-base uppercase tracking-wide">Get Involved</h4>
               <ul className="space-y-3">
                 <li><a href="#donate" className="text-black/80 hover:text-black transition-colors text-sm">Donate</a></li>
-                <li><a href="#" className="text-black/80 hover:text-black transition-colors text-sm">Volunteer</a></li>
-                <li><a href="#" className="text-black/80 hover:text-black transition-colors text-sm">Partner With Us</a></li>
+                <li><a href="#contact" className="text-black/80 hover:text-black transition-colors text-sm">Contact Us</a></li>
               </ul>
             </div>
             <div>

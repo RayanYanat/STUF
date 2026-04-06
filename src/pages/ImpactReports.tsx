@@ -287,8 +287,7 @@ function ImpactReports() {
               <h4 className="font-bold text-black mb-5 text-base uppercase tracking-wide">Get Involved</h4>
               <ul className="space-y-3">
                 <li><Link to="/#donate" className="text-black/80 hover:text-black transition-colors text-sm">Donate</Link></li>
-                <li><a href="#" className="text-black/80 hover:text-black transition-colors text-sm">Volunteer</a></li>
-                <li><a href="#" className="text-black/80 hover:text-black transition-colors text-sm">Partner With Us</a></li>
+                <li><Link to="/#contact" className="text-black/80 hover:text-black transition-colors text-sm">Contact Us</Link></li>
               </ul>
             </div>
             <div>
