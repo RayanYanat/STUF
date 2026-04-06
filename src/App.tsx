@@ -169,8 +169,8 @@ function App() {
             </div>
             <div className="hidden lg:flex items-center space-x-1">
               <a href="#who-we-help" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Who We Help</a>
-              <a href="#impact" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Impact</a>
               <a href="#programs" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Programs</a>
+              <a href="#impact" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Impact</a>
               <a href="#team" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Team</a>
               <a href="#donate" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Donate</a>
               <div className="ml-4 pl-4 border-l border-gray-200">

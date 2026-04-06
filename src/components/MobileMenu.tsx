@@ -11,8 +11,8 @@ interface MenuSection {
 
 const sections: MenuSection[] = [
   { id: 'who-we-help', label: 'Who We Help' },
-  { id: 'impact', label: 'Impact' },
   { id: 'programs', label: 'Programs' },
+  { id: 'impact', label: 'Impact' },
   { id: 'team', label: 'Team' },
   { id: 'donate', label: 'Donate' },
   { id: 'contact', label: 'Contact', isDonate: true },
