@@ -1,19 +1,7 @@
-import { Mail, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
 
   return (
     <>
@@ -68,95 +56,38 @@ function Contact() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold text-black mb-8">Contact Information</h2>
-
-              <div className="space-y-6 mb-12">
-                <a href="mailto:hello@stuf.org.uk" className="bg-pink-accent/40 border-2 border-pink-accent/50 px-8 py-6 rounded-3xl flex items-start gap-4 hover:bg-pink-accent/60 transition-all">
-                  <Mail className="w-6 h-6 text-black flex-shrink-0 mt-1" />
-                  <div>
-                    <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Email UK</div>
-                    <div className="text-lg font-bold text-black">hello@stuf.org.uk</div>
-                  </div>
-                </a>
-
-                <a href="mailto:info@ug-stuf.com" className="bg-white border-2 border-black px-8 py-6 rounded-3xl flex items-start gap-4 hover:bg-gray-50 transition-all">
-                  <div className="w-6 h-6 flex-shrink-0 mt-1 text-2xl">🇺🇬</div>
-                  <div>
-                    <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Email Uganda</div>
-                    <div className="text-lg font-bold text-black">info@ug-stuf.com</div>
-                  </div>
-                </a>
-              </div>
-
-              <div className="bg-white/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-200">
-                <div className="flex items-start gap-4">
-                  <MapPin className="w-6 h-6 text-pink-accent flex-shrink-0 mt-1" />
-                  <div>
-                    <h4 className="text-base font-bold text-black mb-3 uppercase tracking-wide">Our Location</h4>
-                    <p className="text-gray-700 leading-relaxed">
-                      Set Them Up Foundation CIC<br />
-                      IDEALondon, 69 Wilson St<br />
-                      Shoreditch, London, England<br />
-                      EC2A 2BB
-                    </p>
-                  </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6 mb-12">
+              <a href="mailto:hello@stuf.org.uk" className="bg-pink-accent/40 border-2 border-pink-accent/50 px-8 py-6 rounded-3xl flex items-start gap-4 hover:bg-pink-accent/60 transition-all">
+                <Mail className="w-6 h-6 text-black flex-shrink-0 mt-1" />
+                <div>
+                  <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Email UK</div>
+                  <div className="text-lg font-bold text-black">hello@stuf.org.uk</div>
                 </div>
-              </div>
+              </a>
+
+              <a href="mailto:info@ug-stuf.com" className="bg-white border-2 border-black px-8 py-6 rounded-3xl flex items-start gap-4 hover:bg-gray-50 transition-all">
+                <div className="w-6 h-6 flex-shrink-0 mt-1 text-2xl">🇺🇬</div>
+                <div>
+                  <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Email Uganda</div>
+                  <div className="text-lg font-bold text-black">info@ug-stuf.com</div>
+                </div>
+              </a>
             </div>
 
-            <div>
-              <h2 className="text-3xl font-bold text-black mb-8">Send Us A Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="bg-white/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-200">
+              <div className="flex items-start gap-4">
+                <MapPin className="w-6 h-6 text-pink-accent flex-shrink-0 mt-1" />
                 <div>
-                  <label className="block text-sm font-semibold text-black mb-2">Name</label>
-                  <input
-                    type="text"
-                    value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="w-full px-6 py-4 bg-white border-2 border-gray-200 rounded-2xl focus:border-pink-accent focus:outline-none transition-colors"
-                    required
-                  />
+                  <h4 className="text-base font-bold text-black mb-3 uppercase tracking-wide">Our Location</h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    Set Them Up Foundation CIC<br />
+                    IDEALondon, 69 Wilson St<br />
+                    Shoreditch, London, England<br />
+                    EC2A 2BB
+                  </p>
                 </div>
-                <div>
-                  <label className="block text-sm font-semibold text-black mb-2">Email</label>
-                  <input
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="w-full px-6 py-4 bg-white border-2 border-gray-200 rounded-2xl focus:border-pink-accent focus:outline-none transition-colors"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-black mb-2">Subject</label>
-                  <input
-                    type="text"
-                    value={formData.subject}
-                    onChange={(e) => setFormData({...formData, subject: e.target.value})}
-                    className="w-full px-6 py-4 bg-white border-2 border-gray-200 rounded-2xl focus:border-pink-accent focus:outline-none transition-colors"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-black mb-2">Message</label>
-                  <textarea
-                    value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    rows={6}
-                    className="w-full px-6 py-4 bg-white border-2 border-gray-200 rounded-2xl focus:border-pink-accent focus:outline-none transition-colors resize-none"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-pink-accent text-black px-8 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all flex items-center justify-center gap-2"
-                >
-                  <Send className="w-5 h-5" />
-                  Send Message
-                </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>

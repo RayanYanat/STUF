@@ -431,7 +431,7 @@ function App() {
             </div>
 
             <div className="space-y-5">
-              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, #1a1a1a, #0d0d0d)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Investment Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -450,7 +450,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, #1a1a1a, #0d0d0d)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Financial planning Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -469,7 +469,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, #1a1a1a, #0d0d0d)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Mortgage and rental Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -488,7 +488,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, #1a1a1a, #0d0d0d)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+              <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Pension Stuf</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
@@ -734,7 +734,7 @@ function App() {
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png'
                 },
               ].map((member) => (
-                <div key={member.name} className="rounded-3xl overflow-hidden scroll-reveal group border border-gray-900" style={{ backgroundImage: 'url(/texture_background.png)', backgroundColor: '#000', backgroundBlendMode: 'overlay', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div key={member.name} className="rounded-3xl overflow-hidden scroll-reveal group border border-gray-900" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                   <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
                       <img
@@ -809,7 +809,7 @@ function App() {
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png'
                 },
               ].map((member) => (
-                <div key={member.name} className="rounded-3xl overflow-hidden scroll-reveal group border border-gray-900" style={{ backgroundImage: 'url(/texture_background.png)', backgroundColor: '#000', backgroundBlendMode: 'overlay', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div key={member.name} className="rounded-3xl overflow-hidden scroll-reveal group border border-gray-900" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                   <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-2/5 h-80 md:h-auto overflow-hidden">
                       <img
@@ -835,62 +835,6 @@ function App() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="bg-pink-accent/10 py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 scroll-reveal">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-8 leading-tight">
-              Ready to Transform <span className="text-pink-accent">Financial Education?</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Join schools and partners across the UK empowering students with essential money skills.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto scroll-reveal">
-            <a href="mailto:hello@stuf.org.uk" className="bg-pink-accent/40 hover:bg-pink-accent/60 backdrop-blur-sm border-2 border-pink-accent/50 px-10 py-8 rounded-full transition-all duration-300 flex items-center justify-center gap-4 group">
-              <Mail className="w-6 h-6 text-black flex-shrink-0" />
-              <div className="text-left">
-                <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Email</div>
-                <div className="text-lg font-bold text-black">hello@stuf.org.uk</div>
-              </div>
-            </a>
-
-            <a href="mailto:info@ug-stuf.com" className="bg-white hover:bg-gray-50 border-2 border-black px-10 py-8 rounded-full transition-all duration-300 flex items-center justify-center gap-4 group">
-              <div className="w-6 h-6 flex-shrink-0 flex items-center justify-center">
-                <span className="text-2xl">🇺🇬</span>
-              </div>
-              <div className="text-left">
-                <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Uganda</div>
-                <div className="text-lg font-bold text-black">info@ug-stuf.com</div>
-              </div>
-            </a>
-          </div>
-
-          <div className="mt-16 max-w-3xl mx-auto text-center scroll-reveal">
-            <div className="bg-white/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-200">
-              <div className="flex items-start gap-4 justify-center">
-                <MapPin className="w-6 h-6 text-pink-accent flex-shrink-0 mt-1" />
-                <div className="text-left">
-                  <h4 className="text-base font-bold text-black mb-2 uppercase tracking-wide">Our Location</h4>
-                  <p className="text-gray-700 leading-relaxed">
-                    Set Them Up Foundation CIC<br />
-                    IDEALondon, 69 Wilson St<br />
-                    Shoreditch, London, England<br />
-                    EC2A 2BB
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-12 text-center scroll-reveal">
-            <Link to="/contact" className="inline-block bg-black text-pink-accent px-12 py-5 rounded-full font-bold text-lg hover:bg-gray-800 transition-all shadow-lg">
-              Full Contact Form
-            </Link>
           </div>
         </div>
       </section>
