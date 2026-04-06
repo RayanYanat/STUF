@@ -157,22 +157,30 @@ function App() {
         }
       `}</style>
 
-      <header className="bg-pink-accent sticky top-0 z-50 shadow-lg">
+      <header className="bg-white sticky top-0 z-50 border-b border-gray-100 backdrop-blur-lg bg-white/95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex justify-between items-center py-4 lg:py-6">
+          <nav className="flex justify-between items-center py-5 lg:py-6">
             <div className="flex items-center">
               <img
                 src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Logo_Web.svg/:/rs=h:69,cg:true,m/qt=q:100/ll"
                 alt="STUF - Set Them Up Foundation"
-                className="h-12 lg:h-16"
+                className="h-10 lg:h-14"
               />
             </div>
-            <div className="hidden lg:flex items-center space-x-8">
-              <a href="#who-we-help" className="text-black font-bold hover:opacity-70 transition-opacity">Who We Help</a>
-              <a href="#impact" className="text-black font-bold hover:opacity-70 transition-opacity">Impact</a>
-              <a href="#programs" className="text-black font-bold hover:opacity-70 transition-opacity">Programs</a>
-              <a href="#team" className="text-black font-bold hover:opacity-70 transition-opacity">Team</a>
-              <Link to="/contact" className="text-black font-bold hover:opacity-70 transition-opacity">Contact</Link>
+            <div className="hidden lg:flex items-center space-x-1">
+              <a href="#who-we-help" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Who We Help</a>
+              <a href="#impact" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Impact</a>
+              <a href="#programs" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Programs</a>
+              <a href="#expertise" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Expertise</a>
+              <a href="#team" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Team</a>
+              <Link to="/impact-reports" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Reports</Link>
+              <Link to="/contact" className="text-gray-700 font-semibold hover:text-black px-4 py-2 rounded-lg hover:bg-gray-50 transition-all text-sm">Contact</Link>
+              <div className="ml-4 pl-4 border-l border-gray-200">
+                <a href="#donate" className="bg-pink-accent text-black px-6 py-2.5 rounded-full font-bold text-sm hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 inline-flex items-center space-x-2 transform hover:scale-105">
+                  <Heart className="w-4 h-4" />
+                  <span>Support Our Mission</span>
+                </a>
+              </div>
             </div>
             <MobileMenu />
           </nav>
