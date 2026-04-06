@@ -333,11 +333,9 @@ function App() {
       <section id="who-we-help" className="bg-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <div className="inline-block bg-pink-accent/15 px-5 py-2.5 rounded-full mb-6 border border-pink-accent/30">
-              <p className="text-pink-accent font-bold text-sm uppercase tracking-widest">Who We Help</p>
-            </div>
+            <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">Who We Help</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Partner With STUF
+              Partner With <span className="text-pink-accent">STUF</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Schools, funders, corporates.<br />
@@ -402,11 +400,9 @@ function App() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <div className="inline-block bg-pink-accent/15 px-5 py-2.5 rounded-full mb-6 border border-pink-accent/30">
-              <p className="text-pink-accent font-bold text-sm uppercase tracking-widest">How It Works</p>
-            </div>
+            <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">How It Works</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Simple. Impactful. On Their Level.
+              <span className="text-pink-accent">Simple.</span> <span className="text-pink-accent">Impactful.</span> On Their Level.
             </h2>
           </div>
 
