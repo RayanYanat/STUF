@@ -185,19 +185,19 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="scroll-reveal">
-              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Finance, Simplified</p>
+              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Money STUF. Made Simple.</p>
               <h1 className="text-5xl sm:text-6xl lg:text-[4.5rem] font-bold mb-8 leading-[1.1]">
-                Take Control<br />
-                <span className="gradient-text">Of Your Money</span>
+                We've Got The<br />
+                <span className="gradient-text">Money STUF Covered</span>
               </h1>
               <p className="text-xl text-gray-400 mb-10 max-w-xl">
-                Real money skills for 15–19 year olds.<br />
-                Learn budgeting, saving, investing.<br />
-                Build your financial future.
+                Real finance skills for 15–19 year olds.<br />
+                Budgeting, saving, investing.<br />
+                STUF will give you the skills to pay the bills.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact" className="bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-opacity-90 hover:shadow-xl hover:shadow-pink-accent/20 transition-all">
-                  Get Started
+                  Let's Talk Money STUF
                 </Link>
                 <Link to="/impact-reports" className="border-2 border-pink-accent text-pink-accent px-10 py-4 rounded-full font-bold text-base hover:bg-pink-accent hover:text-black transition-all">
                   See Our Impact
@@ -223,12 +223,12 @@ function App() {
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">The Reality</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Why STUF Exists
+              Confused? Who Wouldn't Be.
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Financial literacy isn't taught in schools.<br />
               Young people pay the price.<br />
-              We're here to change that.
+              We've got you.
             </p>
           </div>
 
@@ -239,8 +239,8 @@ function App() {
                 <CountUpAnimation end={6} isVisible={countersVisible} /> in 10
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
-                UK adults lack money management skills.<br />
-                Education changes this.
+                UK adults can't manage their money properly.<br />
+                We're changing that.
               </p>
             </div>
 
@@ -250,8 +250,8 @@ function App() {
                 -<CountUpAnimation end={10} isVisible={countersVisible} />%
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
-                Lower wellbeing from money stress.<br />
-                Financial skills reduce anxiety.
+                Money stress ruins mental health.<br />
+                Money STUF helps.
               </p>
             </div>
 
@@ -262,7 +262,7 @@ function App() {
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
                 Of UK residents live in poverty.<br />
-                Education breaks the cycle.
+                We're breaking the cycle.
               </p>
             </div>
 
@@ -272,8 +272,8 @@ function App() {
                 1 in <CountUpAnimation end={22} isVisible={countersVisible} />
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
-                People lack stable housing.<br />
-                Financial literacy helps prevent this.
+                People can't afford housing.<br />
+                Money STUF helps prevent this.
               </p>
             </div>
 
@@ -283,8 +283,8 @@ function App() {
                 <CountUpAnimation end={126} suffix="K" isVisible={countersVisible} />
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
-                Young people without homes in UK.<br />
-                Early education prevents this.
+                Young people without homes.<br />
+                We teach the STUF that prevents this.
               </p>
             </div>
 
@@ -292,8 +292,8 @@ function App() {
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Our Mission</p>
               <Heart className="w-16 h-16 text-pink-accent mb-6 group-hover:scale-110 transition-transform" />
               <p className="text-gray-400 text-base leading-relaxed">
-                Break the poverty cycle.<br />
-                Empower through financial education.
+                Break the cycle.<br />
+                Teach the STUF that matters.
               </p>
             </div>
           </div>
@@ -309,14 +309,14 @@ function App() {
                 Who We Are
               </h2>
               <p className="text-xl text-black/90 leading-relaxed mb-6 font-medium">
-                STUF teaches essential money skills.<br />
-                Skills schools don't cover.<br />
-                Skills that create opportunity.
+                Making money STUF simple for 15-19 year olds.<br />
+                The STUF schools don't teach.<br />
+                The STUF you actually need.
               </p>
               <p className="text-base text-black/80 leading-relaxed">
-                We partner with schools and financial institutions.<br />
-                Deliver expert-led workshops.<br />
-                Transform financial futures.
+                We partner with schools, banks, and likeminded partners.<br />
+                Teaching real skills, not theory.<br />
+                So you can break the cycle for good.
               </p>
             </div>
             <div className="scroll-reveal">
@@ -341,8 +341,8 @@ function App() {
               Partner With STUF
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Schools, funders, and corporates.<br />
-              Together we create lasting impact.
+              Schools, funders, corporates.<br />
+              Together we teach the money STUF that matters.
             </p>
           </div>
 
@@ -353,9 +353,9 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Schools & Colleges</h3>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                Engaging financial literacy workshops.<br />
-                Curriculum-aligned content.<br />
-                Flexible scheduling.
+                Real money STUF for your students.<br />
+                Fits your timetable.<br />
+                Actually useful.
               </p>
               <a href="#contact" className="text-pink-accent font-semibold text-sm hover:underline">
                 Book a workshop →
@@ -368,9 +368,9 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Funders & Donors</h3>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                Support proven programs.<br />
-                Track measurable outcomes.<br />
-                Transform young lives.
+                Fund proven programs.<br />
+                See real impact.<br />
+                Change lives.
               </p>
               <Link to="/impact-reports" className="text-pink-accent font-semibold text-sm hover:underline">
                 See our impact →
@@ -383,9 +383,9 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Corporate Partners</h3>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
-                Align CSR with youth empowerment.<br />
-                Engage employee volunteers.<br />
-                Create meaningful impact.
+                Match CSR goals with real impact.<br />
+                Engage your people.<br />
+                Make a difference.
               </p>
               <a href="#contact" className="text-pink-accent font-semibold text-sm hover:underline">
                 Partner with us →
@@ -400,7 +400,7 @@ function App() {
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">How It Works</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Simple Process, Powerful Results
+              Simple. Impactful. On Their Level.
             </h2>
           </div>
 
@@ -411,9 +411,9 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Connect</h3>
               <p className="text-gray-600 leading-relaxed">
-                Share your school's needs.<br />
-                We design a tailored program.<br />
-                Perfect fit for your schedule.
+                Tell us what you need.<br />
+                We design the program.<br />
+                Fits your schedule.
               </p>
             </div>
 
@@ -423,9 +423,9 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Deliver</h3>
               <p className="text-gray-600 leading-relaxed">
-                Expert facilitators deliver workshops.<br />
-                Interactive, practical sessions.<br />
-                Students gain confidence.
+                Experts teach the STUF.<br />
+                Interactive. Practical. Real.<br />
+                Students leave confident.
               </p>
             </div>
 
@@ -435,9 +435,9 @@ function App() {
               </div>
               <h3 className="text-2xl font-bold text-black mb-4">Measure Impact</h3>
               <p className="text-gray-600 leading-relaxed">
-                Track student progress.<br />
-                Evaluate learning outcomes.<br />
-                See measurable results.
+                Track progress.<br />
+                Measure what matters.<br />
+                See real results.
               </p>
             </div>
           </div>
@@ -453,10 +453,10 @@ function App() {
                 WE'VE GOT THE MONEY STUF COVERED
               </h2>
               <p className="text-lg text-black leading-relaxed">
-                Partner with schools and financial institutions.<br />
-                Deliver lifelong money skills.<br />
-                Create access to financial opportunity.<br />
-                Break generational poverty cycles.
+                Schools, banks, and partners working together.<br />
+                Teaching lifelong skills.<br />
+                Opening doors to opportunity.<br />
+                Breaking the cycle for good.
               </p>
             </div>
 
@@ -465,8 +465,8 @@ function App() {
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Investment STUF</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                    Grow your wealth.<br />
-                    Start investing early.
+                    Learn better money habits.<br />
+                    Get better STUF.
                   </p>
                   <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
@@ -484,9 +484,9 @@ function App() {
               <div className="rounded-2xl scroll-reveal group transition-all duration-300 shadow-xl flex items-center justify-between relative overflow-visible" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Financial Planning STUF</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                    Budget smarter.<br />
-                    Achieve your goals.
+              <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    Just planning STUF.<br />
+                    Made simple.
                   </p>
                   <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
@@ -505,8 +505,8 @@ function App() {
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Mortgage & Rental STUF</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                    Understand housing finance.<br />
-                    Make informed decisions.
+                    It's just tenant STUF.<br />
+                    Made simple.
                   </p>
                   <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
@@ -525,8 +525,8 @@ function App() {
                 <div className="p-8 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-white">Pension STUF</h3>
                   <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                    Secure your future.<br />
-                    Build retirement wealth.
+                    Pension STUF.<br />
+                    (Bcos future you will thank current you)
                   </p>
                   <button className="bg-pink-accent text-black px-8 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all">
                     Learn more
@@ -550,7 +550,7 @@ function App() {
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Impact</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Our Impact In Numbers
+              Real Impact. Real Numbers.
             </h2>
           </div>
 
@@ -573,21 +573,21 @@ function App() {
             <div>
               <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Proven Results</p>
               <h3 className="text-3xl sm:text-4xl font-bold text-black mb-8 leading-tight">
-                Transform Financial Futures
+                Changing Lives With Money STUF
               </h3>
               <div className="space-y-8">
                 <div className="border-l-4 border-pink-accent pl-6">
                   <h4 className="text-4xl font-bold text-black mb-2">89%</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Increase in financial confidence.<br />
-                    Students ready to manage money.
+                    More confident with money.<br />
+                    After our workshops.
                   </p>
                 </div>
                 <div className="border-l-4 border-pink-accent pl-6">
                   <h4 className="text-4xl font-bold text-black mb-2">£2.4M</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    Estimated future value created.<br />
-                    Through improved financial decisions.
+                    Future value created.<br />
+                    Better decisions = better STUF.
                   </p>
                 </div>
                 <div className="border-l-4 border-pink-accent pl-6">
@@ -620,8 +620,8 @@ function App() {
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               From London to Uganda.<br />
-              Empowering young people with essential financial knowledge.<br />
-              Creating lasting impact.
+              Teaching the money STUF you actually need.<br />
+              Real workshops. Real impact.
             </p>
           </div>
 
@@ -658,7 +658,7 @@ function App() {
 
           <div className="mt-16 text-center scroll-reveal">
             <p className="text-gray-600 text-lg mb-8">
-              Bring financial education to your school.
+              Want to bring money STUF to your school?
             </p>
             <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all">
               Get Started
@@ -675,9 +675,9 @@ function App() {
               Building The Future
             </h2>
             <p className="text-xl text-black/80 max-w-3xl mx-auto">
-              Strategic growth plan.<br />
-              Expanding financial literacy education.<br />
-              Nationwide impact.
+              Our plan to scale.<br />
+              More schools. More students.<br />
+              More impact.
             </p>
           </div>
 
@@ -752,7 +752,7 @@ function App() {
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Team</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Meet The Team
+              The People Behind The STUF
             </h2>
           </div>
 
@@ -763,15 +763,15 @@ function App() {
                 {
                   name: 'James Jordan',
                   role: 'Founder & Trustee',
-                  bio: 'Sales and marketing expert. Founded STUF to provide financial education to underserved youth.',
-                  quote: 'Left school at 16 with no financial knowledge. Started STUF to ensure young people gain the skills I missed.',
+                  bio: 'Sales and marketing guy. Started STUF to teach the money STUF schools don\'t.',
+                  quote: 'Left school at 16. Had no clue about money. Started STUF so other young people don\'t make the same mistakes.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png'
                 },
                 {
                   name: 'Jermaine Bishop',
                   role: 'Founding Trustee',
-                  bio: '15+ years in tech and communications. Co-founder focused on delivering free financial education.',
-                  quote: 'Teaching young people to manage, save, and invest opens doors to opportunities they deserve.',
+                  bio: '15+ years in tech. Co-founded STUF to teach free money STUF to young people who need it.',
+                  quote: 'Teach kids to manage, save and invest. Open doors. Give them opportunities.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png'
                 },
               ].map((member) => (
@@ -888,16 +888,16 @@ function App() {
               Our Partners
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Collaborating with leading organizations.<br />
-              Maximizing impact together.
+              Working with leading organizations.<br />
+              Making real impact together.
             </p>
           </div>
 
           <div className="bg-gradient-to-br from-gray-50 to-white p-12 lg:p-16 rounded-3xl scroll-reveal border border-gray-200 premium-card">
             <div className="text-center mb-16">
               <p className="text-lg text-gray-700 font-medium">
-                Partnering with schools, financial institutions, and educational organizations.<br />
-                Committed to empowering young people.
+                Schools, banks, and organizations.<br />
+                All committed to teaching money STUF.
               </p>
             </div>
 
