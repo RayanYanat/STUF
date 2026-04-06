@@ -287,15 +287,6 @@ function App() {
                 We teach the STUF that prevents this.
               </p>
             </div>
-
-            <div className="bg-gradient-to-br from-pink-accent/10 to-black p-10 rounded-3xl scroll-reveal border border-pink-accent/30 hover:border-pink-accent/50 transition-all premium-card group">
-              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Our Mission</p>
-              <Heart className="w-16 h-16 text-pink-accent mb-6 group-hover:scale-110 transition-transform" />
-              <p className="text-gray-400 text-base leading-relaxed">
-                Break the cycle.<br />
-                Teach the STUF that matters.
-              </p>
-            </div>
           </div>
         </div>
       </section>
