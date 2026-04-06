@@ -658,70 +658,127 @@ function App() {
         </div>
       </section>
 
-      <section id="roadmap" className="bg-pink-accent py-20 lg:py-32">
+      <section id="roadmap" className="bg-black py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-[40%_60%] gap-16 items-start mb-16">
+          <div className="grid lg:grid-cols-[45%_55%] gap-16 items-start mb-20">
             <div className="scroll-reveal lg:sticky lg:top-32">
-              <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">Our roadmap</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-black mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our roadmap</p>
+              <h2 className="text-5xl sm:text-6xl font-bold text-white mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
                 STUF TO COME
               </h2>
             </div>
             <div className="scroll-reveal">
-              <p className="text-lg text-black leading-relaxed">
+              <p className="text-xl text-gray-300 leading-relaxed">
                 The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance. By working with schools, banks, and other likeminded partners we provide lifelong skills, understanding and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
               </p>
             </div>
           </div>
 
-          <div className="space-y-0">
-            <div className="bg-white border-b-4 border-black scroll-reveal">
-              <div className="grid lg:grid-cols-[200px_1fr] gap-8 p-8 lg:p-10">
-                <div className="bg-black text-white px-8 py-4 rounded-lg flex items-center justify-center">
-                  <h3 className="text-3xl font-bold">2022</h3>
-                </div>
-                <div className="space-y-3">
-                  <p className="text-black text-base leading-relaxed">— Set up of the foundation</p>
-                  <p className="text-black text-base leading-relaxed">— Production of the syllabus</p>
+          <div className="relative">
+            <div className="absolute left-0 lg:left-24 top-0 bottom-0 w-0.5 bg-gradient-to-b from-pink-accent via-pink-accent/50 to-transparent hidden md:block"></div>
+
+            <div className="space-y-16">
+              <div className="scroll-reveal">
+                <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
+                  <div className="relative">
+                    <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
+                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>2022</h3>
+                    </div>
+                    <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border border-gray-800">
+                    <ul className="space-y-4">
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>Set up of the foundation</span>
+                      </li>
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>Production of the syllabus</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="bg-white border-b-4 border-black scroll-reveal">
-              <div className="grid lg:grid-cols-[200px_1fr] gap-8 p-8 lg:p-10">
-                <div className="bg-black text-white px-8 py-4 rounded-lg flex items-center justify-center border-l-8 border-pink-accent/50">
-                  <h3 className="text-3xl font-bold">2023</h3>
-                </div>
-                <div className="space-y-3">
-                  <p className="text-black text-base leading-relaxed">— Delivering the course; Wembley, London, Manchester and Birmingham</p>
-                  <p className="text-black text-base leading-relaxed">— Mentorship programme begins</p>
-                  <p className="text-black text-base leading-relaxed">— E-learning syllabus completed</p>
+              <div className="scroll-reveal">
+                <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
+                  <div className="relative">
+                    <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
+                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>2023</h3>
+                    </div>
+                    <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border border-gray-800">
+                    <ul className="space-y-4">
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>Delivering the course; Wembley, London, Manchester and Birmingham</span>
+                      </li>
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>Mentorship programme begins</span>
+                      </li>
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>E-learning syllabus completed</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="bg-white border-b-4 border-black scroll-reveal">
-              <div className="grid lg:grid-cols-[200px_1fr] gap-8 p-8 lg:p-10">
-                <div className="bg-black text-white px-8 py-4 rounded-lg flex items-center justify-center">
-                  <h3 className="text-3xl font-bold">2024</h3>
-                </div>
-                <div className="space-y-3">
-                  <p className="text-black text-base leading-relaxed">— Reach accreditation</p>
-                  <p className="text-black text-base leading-relaxed">— Delivering the course; Leeds, Glasgow, Southampton, Liverpool and Newcastle</p>
-                  <p className="text-black text-base leading-relaxed">— Apprentice and Employment programme begins</p>
+              <div className="scroll-reveal">
+                <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
+                  <div className="relative">
+                    <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
+                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>2024</h3>
+                    </div>
+                    <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border border-gray-800">
+                    <ul className="space-y-4">
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>Reach accreditation</span>
+                      </li>
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>Delivering the course; Leeds, Glasgow, Southampton, Liverpool and Newcastle</span>
+                      </li>
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>Apprentice and Employment programme begins</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="bg-white scroll-reveal">
-              <div className="grid lg:grid-cols-[200px_1fr] gap-8 p-8 lg:p-10">
-                <div className="bg-black text-white px-8 py-4 rounded-lg flex items-center justify-center">
-                  <h3 className="text-3xl font-bold">2025</h3>
-                </div>
-                <div className="space-y-3">
-                  <p className="text-black text-base leading-relaxed">— Become a necessary curriculum lesson</p>
-                  <p className="text-black text-base leading-relaxed">— Coverage across the United Kingdom offering financial education to all schools</p>
-                  <p className="text-black text-base leading-relaxed">— Worldwide outreach</p>
+              <div className="scroll-reveal">
+                <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
+                  <div className="relative">
+                    <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
+                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>2025</h3>
+                    </div>
+                    <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border border-pink-accent/50">
+                    <ul className="space-y-4">
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>Become a necessary curriculum lesson</span>
+                      </li>
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>Coverage across the United Kingdom offering financial education to all schools</span>
+                      </li>
+                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
+                        <span className="text-pink-accent mr-3 text-xl">•</span>
+                        <span>Worldwide outreach</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
