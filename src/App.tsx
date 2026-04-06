@@ -723,7 +723,7 @@ function App() {
             </div>
             <div className="scroll-reveal">
               <p className="text-xl text-gray-300 leading-relaxed">
-                The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance. By working with schools, banks, and other likeminded partners we provide lifelong skills, understanding and access to previously closed off worlds of money – so that one day, we can break the cycle of poverty for good.
+                The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance. By working with schools, banks, and other likeminded partners we provide lifelong skills, understanding and access to previously closed off worlds of money so that one day, we can break the cycle of poverty for good.
               </p>
             </div>
           </div>
