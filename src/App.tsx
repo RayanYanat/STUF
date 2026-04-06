@@ -245,7 +245,7 @@ function App() {
             </div>
 
             <div className="relative p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group overflow-hidden" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 to-black/95 rounded-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 to-black/70 rounded-3xl"></div>
               <div className="relative z-10">
                 <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Mental Wellbeing</p>
                 <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
@@ -259,7 +259,7 @@ function App() {
             </div>
 
             <div className="relative p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group overflow-hidden" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 to-black/95 rounded-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 to-black/70 rounded-3xl"></div>
               <div className="relative z-10">
                 <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Poverty Crisis</p>
                 <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
@@ -273,7 +273,7 @@ function App() {
             </div>
 
             <div className="relative p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group overflow-hidden" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 to-black/95 rounded-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 to-black/70 rounded-3xl"></div>
               <div className="relative z-10">
                 <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Housing Crisis</p>
                 <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
@@ -287,7 +287,7 @@ function App() {
             </div>
 
             <div className="relative p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group overflow-hidden" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 to-black/95 rounded-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 to-black/70 rounded-3xl"></div>
               <div className="relative z-10">
                 <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Youth Homelessness</p>
                 <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
@@ -301,7 +301,7 @@ function App() {
             </div>
 
             <div className="relative p-10 rounded-3xl scroll-reveal border border-pink-accent/30 hover:border-pink-accent/50 transition-all premium-card group overflow-hidden" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 to-black/95 rounded-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 to-black/70 rounded-3xl"></div>
               <div className="relative z-10">
                 <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Our Mission</p>
                 <Heart className="w-16 h-16 text-pink-accent mb-6 group-hover:scale-110 transition-transform" />
