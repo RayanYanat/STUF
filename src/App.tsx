@@ -246,7 +246,7 @@ function App() {
                 <CountUpAnimation end={6} isVisible={countersVisible} /> in 10
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
-                UK adults can't manage their money properly.<br />
+                UK people can't manage their money properly.<br />
                 We're changing that.
               </p>
             </div>
