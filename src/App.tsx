@@ -921,7 +921,65 @@ function App() {
         </div>
       </section>
 
-      <section id="partners" className="bg-white py-20 lg:py-32">
+      <section id="donate" className="bg-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="scroll-reveal">
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-8 leading-[1.1]">
+                Help Us <span className="text-pink-accent">Empower</span> the Next Generation
+              </h2>
+              <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+                Your donation directly funds workshops, mentorship programs, and educational resources for young people from underprivileged backgrounds.
+              </p>
+
+              <div className="space-y-8">
+                <div className="bg-gray-50 p-8 rounded-3xl border-2 border-gray-200">
+                  <h3 className="text-2xl font-bold text-black mb-6">Bank Transfer</h3>
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center pb-4 border-b border-gray-300">
+                      <span className="text-gray-700 font-semibold">Account Number:</span>
+                      <span className="text-pink-accent text-xl font-bold">21432168</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-700 font-semibold">Sort Code:</span>
+                      <span className="text-pink-accent text-xl font-bold">30-99-50</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gray-50 p-8 rounded-3xl border-2 border-gray-200">
+                  <h3 className="text-2xl font-bold text-black mb-4">PayPal Donation</h3>
+                  <p className="text-gray-600 mb-6">Support us securely through PayPal</p>
+                  <a
+                    href="https://www.paypal.com/donate"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-[#0070ba] hover:bg-[#005ea6] text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  >
+                    <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20.067 8.478c.492.88.556 2.014.3 3.327-.74 3.806-3.276 5.12-6.514 5.12h-.5a.805.805 0 00-.794.68l-.04.22-.63 3.993-.028.15a.805.805 0 01-.793.68H7.822a.563.563 0 01-.556-.65l1.32-8.365h2.054l-.273 1.73h1.11c2.42 0 4.315-.98 4.932-3.817.24-1.103.134-2.02-.323-2.66.535.068 1.027.218 1.481.45-.04-.32-.096-.64-.168-.968z"/>
+                      <path d="M18.865 5.365c-.48-.86-1.477-1.433-2.97-1.433H9.513a.805.805 0 00-.794.68l-2.347 14.89a.563.563 0 00.556.65h3.245l.816-5.173.04-.22a.805.805 0 01.794-.68h.5c3.238 0 5.774-1.314 6.514-5.12.256-1.313.192-2.446-.3-3.327-.15-.268-.33-.506-.532-.717.144.024.285.053.423.088.482.12.925.304 1.323.544-.24-.85-.675-1.543-1.286-2.082z"/>
+                    </svg>
+                    Donate via PayPal
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="scroll-reveal">
+              <div className="rounded-3xl overflow-hidden shadow-2xl">
+                <img
+                  src="/Harrow_club_workshop.jpg"
+                  alt="STUF workshop with students"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" className="bg-gray-50 py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Partners</p>
