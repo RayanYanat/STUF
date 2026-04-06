@@ -209,7 +209,7 @@ function App() {
               <div className="relative">
                 <div className="absolute -inset-6 bg-gradient-to-r from-pink-accent/20 to-pink-accent/5 blur-3xl rounded-full"></div>
                 <img
-                  src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/1.jpg"
                   alt="Students learning"
                   className="relative rounded-3xl shadow-2xl ring-1 ring-white/10"
                 />
@@ -312,7 +312,7 @@ function App() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-black/5 blur-2xl rounded-3xl"></div>
                 <img
-                  src="https://images.pexels.com/photos/5905857/pexels-photo-5905857.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/6.jpg"
                   alt="Teaching financial literacy"
                   className="relative rounded-3xl shadow-2xl ring-1 ring-black/10"
                 />
@@ -568,7 +568,7 @@ function App() {
             <div className="relative">
               <div className="absolute -inset-4 bg-pink-accent/5 blur-2xl rounded-3xl"></div>
               <img
-                src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/7.jpg"
                 alt="Impact visualization"
                 className="relative rounded-3xl shadow-2xl ring-1 ring-gray-200"
               />
