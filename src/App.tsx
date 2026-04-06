@@ -707,131 +707,6 @@ function App() {
         </div>
       </section>
 
-      <section id="partners" className="bg-white py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
-            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Working Together</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Our Partners
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Collaborating with leading organizations to maximize our impact
-            </p>
-          </div>
-
-          <div className="bg-gradient-to-br from-gray-50 to-white p-12 lg:p-16 rounded-3xl scroll-reveal border border-gray-200 premium-card">
-            <div className="text-center mb-16">
-              <p className="text-lg text-gray-700 font-medium">
-                We partner with schools, financial institutions, and educational organizations committed to empowering young people
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/BRENT%20LOGO%20%2B%20white%20%2B%20LOGOTYPE%20black%20small.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:514,h:200,cg:true"
-                  alt="Brent Council"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/bentley%20logo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
-                  alt="Bentley"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Power%20up%20london%20logo.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:334,h:200,cg:true"
-                  alt="Power Up London"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/CAF-Logo-Standard.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:320,h:200,cg:true"
-                  alt="CAF"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Woodward-Logo-March-2023-374x374.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
-                  alt="Woodward"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/64ee2af5aa132.webp/:/rs=w:916,h:200,cg:true,m/cr=w:916,h:200"
-                  alt="Partner"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/clothworkers_foundation_navy.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:650,h:200,cg:true"
-                  alt="Clothworkers Foundation"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/images%20(2).png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
-                  alt="Partner"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/DiNN%2Blogo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
-                  alt="DiNN"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-fdb8e4a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:200,h:200,cg:true"
-                  alt="Partner"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Camden-Giving-cmyk-logo-01-300x133.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:300,h:133,cg:true"
-                  alt="Camden Giving"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-
-              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
-                <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/living%20wage.jpg/:/rs=w:253,h:200,cg:true,m/cr=w:253,h:200"
-                  alt="Living Wage"
-                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all shadow-lg hover:shadow-xl">
-                Become a Partner
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
       <section id="team" className="bg-white py-20 lg:py-32">
@@ -1012,6 +887,132 @@ function App() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" className="bg-white py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
+            <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Working Together</p>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
+              Our Partners
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Collaborating with leading organizations to maximize our impact
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-50 to-white p-12 lg:p-16 rounded-3xl scroll-reveal border border-gray-200 premium-card">
+            <div className="text-center mb-16">
+              <p className="text-lg text-gray-700 font-medium">
+                We partner with schools, financial institutions, and educational organizations committed to empowering young people
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/BRENT%20LOGO%20%2B%20white%20%2B%20LOGOTYPE%20black%20small.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:514,h:200,cg:true"
+                  alt="Brent Council"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/bentley%20logo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  alt="Bentley"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Power%20up%20london%20logo.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:334,h:200,cg:true"
+                  alt="Power Up London"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/CAF-Logo-Standard.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:320,h:200,cg:true"
+                  alt="CAF"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Woodward-Logo-March-2023-374x374.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  alt="Woodward"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/64ee2af5aa132.webp/:/rs=w:916,h:200,cg:true,m/cr=w:916,h:200"
+                  alt="Partner"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/clothworkers_foundation_navy.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:650,h:200,cg:true"
+                  alt="Clothworkers Foundation"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/images%20(2).png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  alt="Partner"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/DiNN%2Blogo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  alt="DiNN"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-fdb8e4a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:200,h:200,cg:true"
+                  alt="Partner"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Camden-Giving-cmyk-logo-01-300x133.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:300,h:133,cg:true"
+                  alt="Camden Giving"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/living%20wage.jpg/:/rs=w:253,h:200,cg:true,m/cr=w:253,h:200"
+                  alt="Living Wage"
+                  className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#contact" className="inline-block bg-pink-accent text-black px-10 py-4 rounded-full font-bold text-base hover:bg-black hover:text-pink-accent transition-all shadow-lg hover:shadow-xl">
+                Become a Partner
+              </a>
             </div>
           </div>
         </div>
