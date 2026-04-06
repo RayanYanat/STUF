@@ -157,7 +157,7 @@ function ImpactReports() {
                   <div className="relative overflow-hidden h-64 md:h-auto">
                     <div className="absolute inset-0 bg-gradient-to-br from-pink-accent/20 to-pink-accent/5 z-10"></div>
                     <img
-                      src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=800"
+                      src="/PHOTO-2025-08-06-12-15-28_(2).jpg"
                       alt="Money Matters Academy Impact Report 2025"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
