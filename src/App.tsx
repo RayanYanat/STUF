@@ -75,7 +75,7 @@ function App() {
     <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        @import url('https://fonts.cdnfonts.com/css/veneer');
+        @import url('https://fonts.cdnfonts.com/css/veneer-2');
 
         h1, h2, h3, h4, h5, h6 {
           font-family: 'Veneer', 'Impact', sans-serif;
