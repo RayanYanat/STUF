@@ -78,7 +78,7 @@ function App() {
         @import url('https://fonts.cdnfonts.com/css/veneer-2');
 
         h1, h2, h3, h4, h5, h6 {
-          font-family: 'Veneer', 'Impact', sans-serif;
+          font-family: 'Veneer Regular', 'Impact', sans-serif;
           font-weight: 700;
           letter-spacing: -0.02em;
           text-transform: uppercase;
@@ -136,7 +136,7 @@ function App() {
         }
 
         .stat-number {
-          font-family: 'Veneer', 'Impact', sans-serif;
+          font-family: 'Veneer Regular', 'Impact', sans-serif;
           font-size: clamp(48px, 8vw, 90px);
           line-height: 1;
           color: #FFC3C3;
@@ -493,7 +493,7 @@ function App() {
           <div className="grid lg:grid-cols-[45%_55%] gap-12 items-start">
             <div className="scroll-reveal lg:sticky lg:top-32">
               <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">What we do</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-black mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+              <h2 className="text-5xl sm:text-6xl font-bold text-black mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>
                 WE'VE GOT THE MONEY STUF COVERED
               </h2>
               <p className="text-lg text-black leading-relaxed">
@@ -717,7 +717,7 @@ function App() {
           <div className="grid lg:grid-cols-[45%_55%] gap-16 items-start mb-20">
             <div className="scroll-reveal lg:sticky lg:top-32">
               <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our roadmap</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-white mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>
+              <h2 className="text-5xl sm:text-6xl font-bold text-white mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>
                 STUF TO COME
               </h2>
             </div>
@@ -736,7 +736,7 @@ function App() {
                 <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
                   <div className="relative">
                     <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
-                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>2022</h3>
+                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>2022</h3>
                     </div>
                     <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
                   </div>
@@ -759,7 +759,7 @@ function App() {
                 <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
                   <div className="relative">
                     <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
-                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>2023</h3>
+                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>2023</h3>
                     </div>
                     <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
                   </div>
@@ -786,7 +786,7 @@ function App() {
                 <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
                   <div className="relative">
                     <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
-                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>2024</h3>
+                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>2024</h3>
                     </div>
                     <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
                   </div>
@@ -813,7 +813,7 @@ function App() {
                 <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
                   <div className="relative">
                     <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
-                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer', 'Impact', sans-serif" }}>2025</h3>
+                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>2025</h3>
                     </div>
                     <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
                   </div>
