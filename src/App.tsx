@@ -190,7 +190,7 @@ function App() {
           <img
             src="/processed-96299112-4B08-432D-B031-245DDBD7B5DC.jpeg"
             alt="STUF Financial Education"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black"></div>
         </div>
