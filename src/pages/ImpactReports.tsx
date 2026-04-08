@@ -293,8 +293,7 @@ function ImpactReports() {
             <div>
               <h4 className="font-bold text-black mb-5 text-base uppercase tracking-wide">Contact</h4>
               <p className="text-black/80 text-sm leading-relaxed">
-                UK: hello@stuf.org.uk<br />
-                Uganda: info@ug-stuf.com
+                hello@stuf.org.uk
               </p>
             </div>
           </div>

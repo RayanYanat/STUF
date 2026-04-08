@@ -57,20 +57,12 @@ function Contact() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="space-y-6 mb-12">
+            <div className="mb-12">
               <a href="mailto:hello@stuf.org.uk" className="bg-pink-accent/40 border-2 border-pink-accent/50 px-8 py-6 rounded-3xl flex items-start gap-4 hover:bg-pink-accent/60 transition-all">
                 <Mail className="w-6 h-6 text-black flex-shrink-0 mt-1" />
                 <div>
-                  <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Email UK</div>
+                  <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Email Us</div>
                   <div className="text-lg font-bold text-black">hello@stuf.org.uk</div>
-                </div>
-              </a>
-
-              <a href="mailto:info@ug-stuf.com" className="bg-white border-2 border-black px-8 py-6 rounded-3xl flex items-start gap-4 hover:bg-gray-50 transition-all">
-                <div className="w-6 h-6 flex-shrink-0 mt-1 text-2xl">🇺🇬</div>
-                <div>
-                  <div className="text-sm font-semibold text-black/70 uppercase tracking-wide mb-1">Email Uganda</div>
-                  <div className="text-lg font-bold text-black">info@ug-stuf.com</div>
                 </div>
               </a>
             </div>

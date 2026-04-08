@@ -185,6 +185,17 @@ function App() {
         </div>
       </header>
 
+      <section className="relative w-full h-[60vh] lg:h-[70vh] overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/thumbnail_IMG_2059.jpg"
+            alt="STUF Financial Education"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black"></div>
+        </div>
+      </section>
+
       <section className="relative bg-black text-white py-24 lg:py-40 overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
 
@@ -232,8 +243,8 @@ function App() {
               Confused? Who Wouldn't Be.
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Financial literacy isn't taught in schools.<br />
-              Young people pay the price.<br />
+              Many young people miss out on relatable, engaging financial education.<br />
+              We teach the STUF that actually connects.<br />
               We've got you.
             </p>
           </div>
@@ -251,13 +262,13 @@ function App() {
             </div>
 
             <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
-              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Mental Wellbeing</p>
+              <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Savings Crisis</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
-                -<CountUpAnimation end={10} isVisible={countersVisible} />%
+                11.5M
               </p>
               <p className="text-gray-400 text-base leading-relaxed">
-                Money stress ruins mental health.<br />
-                Money STUF helps.
+                UK residents with under £100 in savings.<br />
+                Money STUF builds security.
               </p>
             </div>
 
@@ -600,7 +611,7 @@ function App() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="bg-white p-12 rounded-3xl shadow-xl scroll-reveal text-center border border-gray-100 premium-card">
-              <div className="stat-number text-black mb-4">10,000+</div>
+              <div className="stat-number text-black mb-4">6,000+</div>
               <p className="text-lg font-semibold text-gray-700 uppercase tracking-wide">Students Reached</p>
             </div>
             <div className="bg-white p-12 rounded-3xl shadow-xl scroll-reveal text-center border border-gray-100 premium-card">
@@ -664,7 +675,7 @@ function App() {
               Workshops In <span className="text-pink-accent">Action</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              From London to Uganda.<br />
+              Across the UK.<br />
               Teaching the money STUF you actually need.<br />
               Real workshops. Real impact.
             </p>
@@ -683,7 +694,6 @@ function App() {
               { name: 'King College STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_2268.JPG/:/cr=t:0%25,l:0%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true' },
               { name: 'Kent STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0079.jpg/:/rs=w:800,h:800,cg:true,m/cr=w:800,h:800' },
               { name: 'Southwark STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-1a71eb1.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true' },
-              { name: 'Uganda STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/20240814_150409.jpg/:/cr=t:11.54%25,l:11.54%25,w:76.92%25,h:76.92%25/rs=w:800,h:800,cg:true,m' },
             ].map((workshop) => (
               <div key={workshop.name} className="group relative overflow-hidden rounded-3xl scroll-reveal premium-card">
                 <img
@@ -711,136 +721,6 @@ function App() {
           </div>
         </div>
       </section>
-
-      <section id="roadmap" className="bg-black py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-[45%_55%] gap-16 items-start mb-20">
-            <div className="scroll-reveal lg:sticky lg:top-32">
-              <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our roadmap</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-white mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>
-                STUF TO COME
-              </h2>
-            </div>
-            <div className="scroll-reveal">
-              <p className="text-xl text-gray-300 leading-relaxed">
-                The Set Them Up Foundation are on a mission to help young people; their teachers and parents, get a handle on the fundamentals of finance. By working with schools, banks, and other likeminded partners we provide lifelong skills, understanding and access to previously closed off worlds of money so that one day, we can break the cycle of poverty for good.
-              </p>
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="absolute left-0 lg:left-24 top-0 bottom-0 w-0.5 bg-gradient-to-b from-pink-accent via-pink-accent/50 to-transparent hidden md:block"></div>
-
-            <div className="space-y-16">
-              <div className="scroll-reveal">
-                <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
-                  <div className="relative">
-                    <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
-                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>2022</h3>
-                    </div>
-                    <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
-                  </div>
-                  <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border border-gray-800">
-                    <ul className="space-y-4">
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>Set up of the foundation</span>
-                      </li>
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>Production of the syllabus</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="scroll-reveal">
-                <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
-                  <div className="relative">
-                    <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
-                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>2023</h3>
-                    </div>
-                    <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
-                  </div>
-                  <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border border-gray-800">
-                    <ul className="space-y-4">
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>Delivering the course; Wembley, London, Manchester and Birmingham</span>
-                      </li>
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>Mentorship programme begins</span>
-                      </li>
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>E-learning syllabus completed</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="scroll-reveal">
-                <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
-                  <div className="relative">
-                    <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
-                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>2024</h3>
-                    </div>
-                    <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
-                  </div>
-                  <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border border-gray-800">
-                    <ul className="space-y-4">
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>Reach accreditation</span>
-                      </li>
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>Delivering the course; Leeds, Glasgow, Southampton, Liverpool and Newcastle</span>
-                      </li>
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>Apprentice and Employment programme begins</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="scroll-reveal">
-                <div className="grid lg:grid-cols-[180px_1fr] gap-8 items-start">
-                  <div className="relative">
-                    <div className="bg-pink-accent text-black px-8 py-6 rounded-2xl shadow-2xl">
-                      <h3 className="text-4xl font-bold text-center" style={{ fontFamily: "'Veneer Regular', 'Impact', sans-serif" }}>2025</h3>
-                    </div>
-                    <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-accent rounded-full border-4 border-black hidden lg:block"></div>
-                  </div>
-                  <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border border-pink-accent/50">
-                    <ul className="space-y-4">
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>Become a necessary curriculum lesson</span>
-                      </li>
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>Coverage across the United Kingdom offering financial education to all schools</span>
-                      </li>
-                      <li className="text-gray-300 text-base leading-relaxed flex items-start">
-                        <span className="text-pink-accent mr-3 text-xl">•</span>
-                        <span>Worldwide outreach</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
 
       <section id="team" className="bg-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1171,22 +1051,13 @@ function App() {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-6 mb-8 scroll-reveal">
+            <div className="mb-8 scroll-reveal">
               <a href="mailto:hello@stuf.org.uk" className="bg-gradient-to-br from-pink-accent to-pink-accent/80 p-8 rounded-3xl flex items-start gap-5 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 group border-2 border-pink-accent">
                 <Mail className="w-7 h-7 text-black flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
                 <div>
-                  <div className="text-xs font-bold text-black/70 uppercase tracking-wider mb-2">Email UK</div>
+                  <div className="text-xs font-bold text-black/70 uppercase tracking-wider mb-2">Email Us</div>
                   <div className="text-xl font-bold text-black">hello@stuf.org.uk</div>
-                  <p className="text-sm text-black/70 mt-2">For UK partnerships and inquiries</p>
-                </div>
-              </a>
-
-              <a href="mailto:info@ug-stuf.com" className="bg-white border-2 border-gray-200 p-8 rounded-3xl flex items-start gap-5 hover:border-pink-accent hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group">
-                <div className="w-7 h-7 flex-shrink-0 mt-1 text-3xl group-hover:scale-110 transition-transform">🇺🇬</div>
-                <div>
-                  <div className="text-xs font-bold text-black/70 uppercase tracking-wider mb-2">Email Uganda</div>
-                  <div className="text-xl font-bold text-black">info@ug-stuf.com</div>
-                  <p className="text-sm text-gray-600 mt-2">For Uganda operations and programs</p>
+                  <p className="text-sm text-black/70 mt-2">For partnerships and inquiries</p>
                 </div>
               </a>
             </div>
@@ -1242,8 +1113,7 @@ function App() {
             <div>
               <h4 className="font-bold text-black mb-5 text-base uppercase tracking-wide">Contact</h4>
               <p className="text-black/80 text-sm leading-relaxed">
-                UK: hello@stuf.org.uk<br />
-                Uganda: info@ug-stuf.com
+                hello@stuf.org.uk
               </p>
             </div>
           </div>
