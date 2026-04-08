@@ -188,7 +188,7 @@ function App() {
       <section className="relative w-full h-[60vh] lg:h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/processed-96299112-4B08-432D-B031-245DDBD7B5DC.jpeg"
+            src="/Harrow_club_workshop.jpg"
             alt="STUF Financial Education"
             className="w-full h-full object-cover object-top"
           />
