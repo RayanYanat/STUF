@@ -80,11 +80,8 @@ function App() {
         h1, h2, h3, h4, h5, h6 {
           font-family: 'Veneer Extras', 'Impact', sans-serif;
           font-weight: 400;
-          letter-spacing: -0.02em;
+          letter-spacing: -0.01em;
           text-transform: uppercase;
-          -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.15);
-          text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
-          filter: contrast(1.1);
         }
 
         * {
@@ -144,9 +141,6 @@ function App() {
           line-height: 1;
           color: #FFC3C3;
           font-weight: 400;
-          -webkit-text-stroke: 0.3px rgba(255, 195, 195, 0.25);
-          text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
-          filter: contrast(1.1);
         }
 
         .premium-card {
