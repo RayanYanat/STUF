@@ -185,12 +185,12 @@ function App() {
         </div>
       </header>
 
-      <section className="relative w-full h-[60vh] lg:h-[70vh] overflow-hidden">
+      <section className="relative w-full h-[70vh] lg:h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="/Harrow_club_workshop.jpg"
             alt="STUF Financial Education"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black"></div>
         </div>
@@ -318,7 +318,7 @@ function App() {
               </h2>
               <p className="text-xl text-black/90 leading-relaxed mb-6 font-medium">
                 Making money STUF simple for 15-19 year olds.<br />
-                We teach in an engaging and relatable way.<br />
+                Simple, engaging, relatable.<br />
                 The STUF you actually need.
               </p>
               <p className="text-base text-black/80 leading-relaxed">
