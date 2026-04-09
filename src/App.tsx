@@ -786,43 +786,43 @@ function App() {
               {[
                 {
                   name: 'Thomas Hamer',
-                  role: 'Trustee',
+                  role: 'Co-Chair Board – Research',
                   bio: '9+ years across venture capital, corporate banking, and wealth management.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png'
                 },
                 {
                   name: 'Matthew Smith',
-                  role: 'Trustee',
+                  role: 'Co-Chair Board – Business Development & Delivery',
                   bio: 'Sports and business development expertise with major European companies.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Matthew.png'
                 },
                 {
                   name: 'Zofia Barnes',
-                  role: 'Trustee',
+                  role: 'Policy – Board Member',
                   bio: '11+ years in banking. LSE Masters in Gender Studies, Policy & Inequalities.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Zofia.png'
                 },
                 {
                   name: 'Paul Mokuolu',
-                  role: 'Trustee',
+                  role: 'Partnerships – Board Member',
                   bio: 'Decade in financial sector. Technical Specialist at Bank of England.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-c729d57.png/:/cr=t:16.75%25,l:0%25,w:100%25,h:66.5%25/rs=w:365,h:365,cg:true/qt=q:93'
                 },
                 {
                   name: 'Jalpa Lai',
-                  role: 'Trustee',
+                  role: 'Mentorship – Board Member',
                   bio: '6+ years mentoring diverse youth. Financial coaching specialist.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-875f474.png/:/cr=t:0%25,l:4.38%25,w:91.25%25,h:100%25/rs=w:365,h:365,cg:true/qt=q:93'
                 },
                 {
                   name: 'Truman Alberto Sullivan',
-                  role: 'Trustee',
+                  role: 'Advisory Board Member',
                   bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png'
                 },
                 {
                   name: 'Tina Creed',
-                  role: 'Advisory',
+                  role: 'Advisory Member',
                   bio: '25 years in childcare and education. Former Ark Elvin Academy Governor.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png'
                 },
