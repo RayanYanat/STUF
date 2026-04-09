@@ -900,7 +900,7 @@ function App() {
             <div className="scroll-reveal">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/Harrow_club_workshop.jpg"
+                  src="/PHOTO-2025-08-06-12-15-28_(2).jpg"
                   alt="STUF workshop with students"
                   className="w-full h-full object-cover"
                 />
