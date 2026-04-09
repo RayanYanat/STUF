@@ -75,15 +75,16 @@ function App() {
     <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        @import url('https://fonts.cdnfonts.com/css/veneer-4');
+        @import url('https://fonts.cdnfonts.com/css/veneer');
 
         h1, h2, h3, h4, h5, h6 {
           font-family: 'Veneer', 'Impact', sans-serif;
-          font-weight: 900;
-          letter-spacing: -0.03em;
+          font-weight: 400;
+          letter-spacing: -0.02em;
           text-transform: uppercase;
-          -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.1);
-          text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
+          -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.15);
+          text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+          filter: contrast(1.1);
         }
 
         * {
@@ -142,9 +143,10 @@ function App() {
           font-size: clamp(48px, 8vw, 90px);
           line-height: 1;
           color: #FFC3C3;
-          font-weight: 900;
-          -webkit-text-stroke: 0.5px rgba(255, 195, 195, 0.2);
-          text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+          font-weight: 400;
+          -webkit-text-stroke: 0.3px rgba(255, 195, 195, 0.25);
+          text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
+          filter: contrast(1.1);
         }
 
         .premium-card {
