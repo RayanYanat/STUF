@@ -75,13 +75,15 @@ function App() {
     <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        @import url('https://fonts.cdnfonts.com/css/veneer-2');
+        @import url('https://fonts.cdnfonts.com/css/veneer-4');
 
         h1, h2, h3, h4, h5, h6 {
-          font-family: 'Veneer Regular', 'Impact', sans-serif;
-          font-weight: 700;
-          letter-spacing: -0.02em;
+          font-family: 'Veneer', 'Impact', sans-serif;
+          font-weight: 900;
+          letter-spacing: -0.03em;
           text-transform: uppercase;
+          -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.1);
+          text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
         }
 
         * {
@@ -136,11 +138,13 @@ function App() {
         }
 
         .stat-number {
-          font-family: 'Veneer Regular', 'Impact', sans-serif;
+          font-family: 'Veneer', 'Impact', sans-serif;
           font-size: clamp(48px, 8vw, 90px);
           line-height: 1;
           color: #FFC3C3;
-          font-weight: 700;
+          font-weight: 900;
+          -webkit-text-stroke: 0.5px rgba(255, 195, 195, 0.2);
+          text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
         }
 
         .premium-card {
@@ -318,7 +322,7 @@ function App() {
               </h2>
               <p className="text-xl text-black/90 leading-relaxed mb-6 font-medium">
                 Making money STUF simple for 15-19 year olds.<br />
-                Simple, engaging, relatable.<br />
+                Engaging, relatable, built to make sense.<br />
                 The STUF you actually need.
               </p>
               <p className="text-base text-black/80 leading-relaxed">
