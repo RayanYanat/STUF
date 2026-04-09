@@ -78,12 +78,9 @@ function App() {
 
         h1, h2, h3, h4, h5, h6 {
           font-family: 'Veneer Two', 'Impact', sans-serif;
-          font-weight: 400;
+          font-weight: 700;
           letter-spacing: -0.02em;
           text-transform: uppercase;
-          -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.15);
-          text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
-          filter: contrast(1.1);
         }
 
         * {
@@ -142,10 +139,7 @@ function App() {
           font-size: clamp(48px, 8vw, 90px);
           line-height: 1;
           color: #FFC3C3;
-          font-weight: 400;
-          -webkit-text-stroke: 0.3px rgba(255, 195, 195, 0.25);
-          text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
-          filter: contrast(1.1);
+          font-weight: 700;
         }
 
         .premium-card {
@@ -509,7 +503,7 @@ function App() {
           <div className="grid lg:grid-cols-[45%_55%] gap-12 items-start">
             <div className="scroll-reveal lg:sticky lg:top-32">
               <p className="text-black font-semibold text-sm uppercase tracking-widest mb-6">What we do</p>
-              <h2 className="text-5xl sm:text-6xl font-bold text-black mb-8 leading-[1.1]" style={{ fontFamily: "'Veneer Two', 'Impact', sans-serif" }}>
+              <h2 className="text-5xl sm:text-6xl font-bold text-black mb-8 leading-[1.1]">
                 WE'VE GOT THE MONEY STUF COVERED
               </h2>
               <p className="text-lg text-black leading-relaxed">
