@@ -84,7 +84,7 @@ function App() {
         }
 
         h1, h2, h3, h4, h5, h6 {
-          font-family: 'Veneer Two', serif !important;
+          font-family: 'Veneer Three', serif !important;
           font-weight: 400 !important;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
@@ -134,7 +134,7 @@ function App() {
         }
 
         .stat-number {
-          font-family: 'Veneer Two', serif !important;
+          font-family: 'Veneer Three', serif !important;
           font-size: clamp(48px, 8vw, 90px);
           line-height: 1;
           color: #FFC3C3;
