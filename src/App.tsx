@@ -78,9 +78,9 @@ function App() {
         @import url('https://fonts.cdnfonts.com/css/veneer-extras');
 
         h1, h2, h3, h4, h5, h6 {
-          font-family: 'Veneer Extras', 'Impact', sans-serif;
-          font-weight: 400;
-          letter-spacing: -0.01em;
+          font-family: 'Veneer Extras';
+          font-weight: normal;
+          letter-spacing: 0;
           text-transform: uppercase;
         }
 
@@ -136,11 +136,11 @@ function App() {
         }
 
         .stat-number {
-          font-family: 'Veneer Extras', 'Impact', sans-serif;
+          font-family: 'Veneer Extras';
           font-size: clamp(48px, 8vw, 90px);
           line-height: 1;
           color: #FFC3C3;
-          font-weight: 400;
+          font-weight: normal;
         }
 
         .premium-card {
