@@ -135,7 +135,7 @@ function ImpactReports() {
             <div className="text-center max-w-4xl mx-auto mb-16 scroll-reveal">
               <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Impact</p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-                Impact <span className="text-pink-accent">Reports</span>
+                Impact <span className="text-pink-accent" style={{fontFamily: "'Veneer Three', serif"}}>Reports</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Transparency and accountability in our mission to transform financial education for young people across the UK
