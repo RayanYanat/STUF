@@ -185,12 +185,12 @@ function App() {
         </div>
       </header>
 
-      <section className="relative w-full h-[60vh] lg:h-[70vh] overflow-hidden">
+      <section className="relative w-full h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/Harrow_club_workshop.jpg"
+            src="/processed-91D350D5-02D5-4AFF-ACC7-674239C3CA20.jpeg"
             alt="STUF Financial Education"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black"></div>
         </div>
@@ -318,7 +318,7 @@ function App() {
               </h2>
               <p className="text-xl text-black/90 leading-relaxed mb-6 font-medium">
                 Making money STUF simple for 15-19 year olds.<br />
-                The STUF schools don't teach.<br />
+                We teach in an engaging and relatable way.<br />
                 The STUF you actually need.
               </p>
               <p className="text-base text-black/80 leading-relaxed">
@@ -1069,9 +1069,8 @@ function App() {
                   <h4 className="text-lg font-bold text-black mb-4 uppercase tracking-wide">Our Location</h4>
                   <p className="text-gray-700 leading-relaxed text-base">
                     Set Them Up Foundation CIC<br />
-                    IDEALondon, 69 Wilson St<br />
-                    Shoreditch, London, England<br />
-                    EC2A 2BB
+                    First Floor, 3space, 37 Warren Street<br />
+                    London, United Kingdom, W1T 6AD
                   </p>
                 </div>
               </div>
