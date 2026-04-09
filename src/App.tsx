@@ -185,12 +185,12 @@ function App() {
         </div>
       </header>
 
-      <section className="relative w-full h-screen overflow-hidden">
+      <section className="relative w-full h-[60vh] lg:h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/processed-91D350D5-02D5-4AFF-ACC7-674239C3CA20.jpeg"
+            src="/Harrow_club_workshop.jpg"
             alt="STUF Financial Education"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black"></div>
         </div>
@@ -900,7 +900,7 @@ function App() {
             <div className="scroll-reveal">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/PHOTO-2025-08-06-12-15-28_(2).jpg"
+                  src="/processed-91D350D5-02D5-4AFF-ACC7-674239C3CA20.jpeg"
                   alt="STUF workshop with students"
                   className="w-full h-full object-cover"
                 />
