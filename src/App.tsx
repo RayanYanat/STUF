@@ -108,6 +108,11 @@ function App() {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
+          -webkit-text-stroke: 0 !important;
+          text-rendering: optimizeLegibility;
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+          font-weight: 800 !important;
+          letter-spacing: -0.02em;
         }
 
         .pink-accent {
