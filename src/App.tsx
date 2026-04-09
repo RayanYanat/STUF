@@ -739,14 +739,14 @@ function App() {
               {[
                 {
                   name: 'James Jordan',
-                  role: 'Founder & Trustee',
+                  role: 'Development Director',
                   bio: 'Sales and marketing guy. Started STUF to teach the money STUF schools don\'t.',
                   quote: 'Left school at 16. Had no clue about money. Started STUF so other young people don\'t make the same mistakes.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png'
                 },
                 {
                   name: 'Jermaine Bishop',
-                  role: 'Founding Trustee',
+                  role: 'Operations Director',
                   bio: '15+ years in tech. Co-founded STUF to teach free money STUF to young people who need it.',
                   quote: 'Teach kids to manage, save and invest. Open doors. Give them opportunities.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png'
