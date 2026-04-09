@@ -86,8 +86,11 @@ function App() {
         h1, h2, h3, h4, h5, h6 {
           font-family: 'Veneer Two', serif !important;
           font-weight: 400 !important;
-          -webkit-font-smoothing: auto;
-          -moz-osx-font-smoothing: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: geometricPrecision;
+          -webkit-text-stroke: 0.45px currentColor;
+          paint-order: stroke fill;
         }
 
         html {
@@ -136,8 +139,11 @@ function App() {
           line-height: 1;
           color: #FFC3C3;
           font-weight: 400 !important;
-          -webkit-font-smoothing: auto;
-          -moz-osx-font-smoothing: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: geometricPrecision;
+          -webkit-text-stroke: 0.45px currentColor;
+          paint-order: stroke fill;
         }
 
         .premium-card {
