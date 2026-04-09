@@ -191,7 +191,7 @@ function App() {
           <img
             src="/Harrow_club_workshop.jpg"
             alt="STUF Financial Education"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black"></div>
         </div>
