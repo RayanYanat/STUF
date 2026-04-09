@@ -75,16 +75,16 @@ function App() {
     <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        @import url('https://fonts.cdnfonts.com/css/veneer-stencil');
+        @import url('https://fonts.cdnfonts.com/css/veneer-extras');
 
         h1, h2, h3, h4, h5, h6 {
-          font-family: 'Veneer Stencil', 'Impact', sans-serif;
+          font-family: 'Veneer Extras', 'Impact', sans-serif;
           font-weight: 400;
-          letter-spacing: -0.025em;
+          letter-spacing: -0.02em;
           text-transform: uppercase;
-          -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.2);
-          text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.12);
-          filter: contrast(1.15) brightness(0.98);
+          -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.15);
+          text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+          filter: contrast(1.1);
         }
 
         * {
@@ -139,14 +139,14 @@ function App() {
         }
 
         .stat-number {
-          font-family: 'Veneer Stencil', 'Impact', sans-serif;
+          font-family: 'Veneer Extras', 'Impact', sans-serif;
           font-size: clamp(48px, 8vw, 90px);
           line-height: 1;
           color: #FFC3C3;
           font-weight: 400;
-          -webkit-text-stroke: 0.4px rgba(255, 195, 195, 0.3);
-          text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.15);
-          filter: contrast(1.15) brightness(0.98);
+          -webkit-text-stroke: 0.3px rgba(255, 195, 195, 0.25);
+          text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
+          filter: contrast(1.1);
         }
 
         .premium-card {
