@@ -74,13 +74,12 @@ html {
   scroll-behavior: smooth;
 }
 
-h2, h3 {
-  font-family: 'Veneer Two', serif;
-  font-weight: 400;
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.stat-number {
+  font-family: 'Veneer Two', serif !important;
+  font-weight: 400 !important;
+  font-synthesis: none;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-}
-
-.section-title {
-  font-family: 'Veneer Two', serif;
 }

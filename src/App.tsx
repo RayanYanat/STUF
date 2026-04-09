@@ -76,28 +76,22 @@ function App() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
+        body {
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          overflow-x: hidden;
+        }
+
         h1, h2, h3, h4, h5, h6 {
-          font-family: 'Veneer Two', serif;
-          font-weight: 400;
-          font-size: 1em;
-          line-height: 1.2;
-          letter-spacing: 0;
+          font-family: 'Veneer Two', serif !important;
+          font-weight: 400 !important;
           -webkit-font-smoothing: auto;
           -moz-osx-font-smoothing: auto;
         }
 
-        * {
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-        }
-
         html {
           scroll-behavior: smooth;
-        }
-
-        body {
-          overflow-x: hidden;
         }
 
         @media (max-width: 640px) {
@@ -111,7 +105,6 @@ function App() {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
-          font-weight: 700;
         }
 
         .pink-accent {
@@ -138,11 +131,11 @@ function App() {
         }
 
         .stat-number {
-          font-family: 'Veneer Two', serif;
+          font-family: 'Veneer Two', serif !important;
           font-size: clamp(48px, 8vw, 90px);
           line-height: 1;
           color: #FFC3C3;
-          font-weight: 400;
+          font-weight: 400 !important;
           -webkit-font-smoothing: auto;
           -moz-osx-font-smoothing: auto;
         }
