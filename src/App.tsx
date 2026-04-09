@@ -75,12 +75,15 @@ function App() {
     <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Righteous:wght@400&display=swap');
 
         h1, h2, h3, h4, h5, h6 {
-          font-family: 'Veneer Two', 'Impact', sans-serif;
-          font-weight: 700;
-          letter-spacing: -0.02em;
+          font-family: 'Righteous', sans-serif;
+          font-weight: 400;
+          letter-spacing: 0.03em;
           text-transform: uppercase;
+          -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+          paint-order: stroke fill;
         }
 
         * {
