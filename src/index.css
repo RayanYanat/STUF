@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Veneer Two';
   src: url('/veneer-two.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @tailwind base;
