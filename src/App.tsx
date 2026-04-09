@@ -104,10 +104,7 @@ function App() {
         }
 
         .gradient-text {
-          background: linear-gradient(135deg, #FFC3C3 0%, #FFD5D5 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
+          color: #FFFFFF;
           font-family: 'Veneer Two', serif !important;
         }
 
