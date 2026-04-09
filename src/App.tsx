@@ -78,7 +78,7 @@ function App() {
 
         @font-face {
           font-family: 'Veneer Extras';
-          src: url('https://fonts.cdnfonts.com/s/18970/VeneerExtras.woff') format('woff');
+          src: url('/VeneerExtras.otf') format('opentype');
           font-weight: normal;
           font-style: normal;
           font-display: swap;
@@ -87,8 +87,19 @@ function App() {
         h1, h2, h3, h4, h5, h6 {
           font-family: 'Veneer Extras', sans-serif;
           font-weight: normal;
-          letter-spacing: 0;
+          letter-spacing: 0.02em;
           text-transform: uppercase;
+          background: linear-gradient(135deg, rgba(255, 195, 195, 0.1), rgba(255, 213, 213, 0.05));
+          -webkit-background-clip: text;
+          background-clip: text;
+          position: relative;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+          text-shadow:
+            0 1px 0 rgba(0, 0, 0, 0.02),
+            0 2px 2px rgba(0, 0, 0, 0.03),
+            0 4px 4px rgba(0, 0, 0, 0.02);
         }
 
         * {
