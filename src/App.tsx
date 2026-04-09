@@ -105,7 +105,7 @@ function App() {
 
         .gradient-text {
           color: #FFFFFF;
-          font-family: 'Veneer Two', serif !important;
+          font-family: 'Veneer Three', serif !important;
         }
 
         .pink-accent {
