@@ -7,7 +7,7 @@ export default {
         'pink-accent': '#EEBDC2',
       },
       fontFamily: {
-        'veneer-three': ['Veneer Three', 'serif'],
+        'veneer-two': ['Veneer Two', 'serif'],
       },
     },
   },

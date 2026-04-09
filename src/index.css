@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Veneer+Three:wght@400&display=swap');
+@font-face {
+  font-family: 'Veneer Two';
+  src: url('/veneer-two.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @tailwind base;
 @tailwind components;
@@ -69,9 +74,9 @@ html {
 }
 
 h2, h3 {
-  font-family: 'Veneer Three', serif;
+  font-family: 'Veneer Two', serif;
 }
 
 .section-title {
-  font-family: 'Veneer Three', serif;
+  font-family: 'Veneer Two', serif;
 }
