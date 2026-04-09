@@ -75,15 +75,15 @@ function App() {
     <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Righteous:wght@400&display=swap');
 
         h1, h2, h3, h4, h5, h6 {
-          font-family: 'Righteous', sans-serif;
+          font-family: 'Veneer Two', serif;
           font-weight: 400;
-          letter-spacing: 0.03em;
-          text-transform: uppercase;
-          -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
-          paint-order: stroke fill;
+          font-size: 1em;
+          line-height: 1.2;
+          letter-spacing: 0;
+          -webkit-font-smoothing: auto;
+          -moz-osx-font-smoothing: auto;
         }
 
         * {
@@ -138,11 +138,13 @@ function App() {
         }
 
         .stat-number {
-          font-family: 'Veneer Two', 'Impact', sans-serif;
+          font-family: 'Veneer Two', serif;
           font-size: clamp(48px, 8vw, 90px);
           line-height: 1;
           color: #FFC3C3;
-          font-weight: 700;
+          font-weight: 400;
+          -webkit-font-smoothing: auto;
+          -moz-osx-font-smoothing: auto;
         }
 
         .premium-card {

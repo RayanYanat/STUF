@@ -76,6 +76,9 @@ html {
 
 h2, h3 {
   font-family: 'Veneer Two', serif;
+  font-weight: 400;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 .section-title {
