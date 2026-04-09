@@ -6,6 +6,9 @@ export default {
       colors: {
         'pink-accent': '#EEBDC2',
       },
+      fontFamily: {
+        'veneer-three': ['Veneer Three', 'serif'],
+      },
     },
   },
   plugins: [],
