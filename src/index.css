@@ -67,3 +67,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+h2, h3 {
+  font-family: 'Veneer Three', serif;
+}
+
+.section-title {
+  font-family: 'Veneer Three', serif;
+}
