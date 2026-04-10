@@ -820,12 +820,6 @@ function App() {
                   bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png'
                 },
-                {
-                  name: 'Tina Creed',
-                  role: 'Advisory Member',
-                  bio: '25 years in childcare and education. Former Ark Elvin Academy Governor.',
-                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Tina.png'
-                },
               ].map((member) => (
                 <div key={member.name} className="rounded-3xl overflow-hidden scroll-reveal group" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                   <div className="flex flex-col md:flex-row">
