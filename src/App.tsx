@@ -531,11 +531,15 @@ function App() {
                   </button>
                 </div>
                 <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                  <img
-                    src="/investment_stuf.png"
-                    alt="Investment"
-                    className="w-full h-full object-contain drop-shadow-2xl"
-                  />
+                  <picture>
+                    <source srcSet="/investment_stuf.webp" type="image/webp" />
+                    <img
+                      src="/investment_stuf.png"
+                      alt="Investment"
+                      className="w-full h-full object-contain drop-shadow-2xl"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
 
@@ -551,11 +555,15 @@ function App() {
                   </button>
                 </div>
                 <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                  <img
-                    src="/financial_planning_stuf.png"
-                    alt="Financial Planning"
-                    className="w-full h-full object-contain drop-shadow-2xl"
-                  />
+                  <picture>
+                    <source srcSet="/financial_planning_stuf.webp" type="image/webp" />
+                    <img
+                      src="/financial_planning_stuf.png"
+                      alt="Financial Planning"
+                      className="w-full h-full object-contain drop-shadow-2xl"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
 
@@ -571,11 +579,15 @@ function App() {
                   </button>
                 </div>
                 <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                  <img
-                    src="/mortgage_rental_stuf.png"
-                    alt="Mortgage and Rental"
-                    className="w-full h-full object-contain drop-shadow-2xl"
-                  />
+                  <picture>
+                    <source srcSet="/mortgage_rental_stuf.webp" type="image/webp" />
+                    <img
+                      src="/mortgage_rental_stuf.png"
+                      alt="Mortgage and Rental"
+                      className="w-full h-full object-contain drop-shadow-2xl"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
 
@@ -591,11 +603,15 @@ function App() {
                   </button>
                 </div>
                 <div className="w-48 h-48 flex-shrink-0 -mr-12 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                  <img
-                    src="/pensio_stuf.png"
-                    alt="Pension"
-                    className="w-full h-full object-contain drop-shadow-2xl"
-                  />
+                  <picture>
+                    <source srcSet="/pensio_stuf.webp" type="image/webp" />
+                    <img
+                      src="/pensio_stuf.png"
+                      alt="Pension"
+                      className="w-full h-full object-contain drop-shadow-2xl"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -896,11 +912,15 @@ function App() {
 
             <div className="scroll-reveal">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
-                <img
-                  src="/processed-91D350D5-02D5-4AFF-ACC7-674239C3CA20.jpeg"
-                  alt="STUF workshop with students"
-                  className="w-full h-full object-cover"
-                />
+                <picture>
+                  <source srcSet="/processed-91D350D5-02D5-4AFF-ACC7-674239C3CA20.webp" type="image/webp" />
+                  <img
+                    src="/processed-91D350D5-02D5-4AFF-ACC7-674239C3CA20.jpeg"
+                    alt="STUF workshop with students"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
             </div>
           </div>
