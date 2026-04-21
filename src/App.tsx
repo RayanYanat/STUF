@@ -325,7 +325,7 @@ function App() {
                 The STUF you actually need.
               </p>
               <p className="text-base text-black/80 leading-relaxed">
-                We partner with schools, colleges and youth associations, banks, and likeminded partners.<br />
+                We partner with schools, colleges, youth associations, banks, and likeminded partners.<br />
                 Teaching real skills, not theory.<br />
                 So you can break the cycle for good.
               </p>
@@ -362,7 +362,7 @@ function App() {
               <div className="bg-pink-accent/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-3xl">
                 🏫
               </div>
-              <h3 className="text-2xl font-bold text-black mb-4">Schools & Colleges</h3>
+              <h3 className="text-2xl font-bold text-black mb-4">Schools, Colleges and Youth Associations</h3>
               <p className="text-gray-600 text-base leading-relaxed mb-6">
                 Real money STUF for your students.<br />
                 Fits your timetable.<br />
