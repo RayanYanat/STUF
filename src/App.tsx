@@ -40,6 +40,16 @@ function App() {
   const [countersVisible, setCountersVisible] = useState(false);
 
   useEffect(() => {
+    if (document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        document.body.classList.add('fonts-loaded');
+      });
+    } else {
+      document.body.classList.add('fonts-loaded');
+    }
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -131,6 +141,10 @@ function App() {
           transform: translateY(0);
         }
 
+        body.fonts-loaded .scroll-reveal {
+          transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
         .stat-number {
           font-family: 'Veneer Three', serif !important;
           font-size: clamp(48px, 8vw, 90px);
@@ -193,6 +207,8 @@ function App() {
             alt="STUF Financial Education"
             className="w-full h-full object-cover"
             style={{ objectPosition: '50% 35%' }}
+            loading="eager"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black"></div>
         </div>
@@ -230,7 +246,9 @@ function App() {
                   src="/1.jpg"
                   alt="Students learning"
                   className="relative rounded-3xl shadow-2xl ring-1 ring-white/10"
-                  decoding="async"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="sync"
                 />
               </div>
             </div>
