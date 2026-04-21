@@ -74,7 +74,7 @@ function App() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap&subset=latin');
 
         body {
           font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -230,6 +230,7 @@ function App() {
                   src="/1.jpg"
                   alt="Students learning"
                   className="relative rounded-3xl shadow-2xl ring-1 ring-white/10"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -324,7 +325,7 @@ function App() {
                 The STUF you actually need.
               </p>
               <p className="text-base text-black/80 leading-relaxed">
-                We partner with schools, banks, and likeminded partners.<br />
+                We partner with schools, colleges and youth associations, banks, and likeminded partners.<br />
                 Teaching real skills, not theory.<br />
                 So you can break the cycle for good.
               </p>
@@ -922,7 +923,7 @@ function App() {
           <div className="bg-gradient-to-br from-gray-50 to-white p-12 lg:p-16 rounded-3xl scroll-reveal border border-gray-200 premium-card">
             <div className="text-center mb-16">
               <p className="text-lg text-gray-700 font-medium">
-                Schools, banks, and organizations.<br />
+                Schools, colleges and youth associations, banks, and organizations.<br />
                 All committed to teaching money STUF.
               </p>
             </div>
@@ -1020,6 +1021,14 @@ function App() {
                 <img
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/living%20wage.jpg/:/rs=w:253,h:200,cg:true,m/cr=w:253,h:200"
                   alt="Living Wage"
+                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
+                <img
+                  src="/image.png"
+                  alt="Investec"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
                 />
               </div>
