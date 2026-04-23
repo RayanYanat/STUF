@@ -258,7 +258,7 @@ function ImpactReports() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
 
       <footer className="bg-pink-accent py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -304,7 +304,7 @@ function ImpactReports() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
     </>
   );
 }
