@@ -60,10 +60,11 @@ function App() {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.05 }
     );
 
-    document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+    const elements = document.querySelectorAll('.scroll-reveal');
+    elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
@@ -108,14 +109,9 @@ function App() {
           scroll-behavior: auto;
         }
 
-        @media (max-width: 640px) {
-          html {
-            scroll-behavior: auto;
-          }
-        }
-
         img {
           content-visibility: auto;
+          will-change: contents;
         }
 
         @media (max-width: 640px) {
@@ -124,11 +120,12 @@ function App() {
           }
 
           .scroll-reveal {
-            transition: opacity 0.6s ease-out !important;
+            transition: opacity 0.5s ease-out !important;
             transform: none !important;
           }
 
           .scroll-reveal.animate-in {
+            opacity: 1 !important;
             transform: none !important;
           }
         }
@@ -172,6 +169,16 @@ function App() {
             transition-duration: 0.01ms !important;
             scroll-behavior: auto !important;
           }
+
+          .premium-card:hover {
+            transform: none !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .scroll-reveal {
+            will-change: opacity;
+          }
         }
 
         .stat-number {
@@ -189,11 +196,13 @@ function App() {
 
         .premium-card {
           backdrop-filter: blur(10px);
-          transition: all 0.3s ease;
+          transition: background-color 0.3s ease;
         }
 
-        .premium-card:hover {
-          transform: translateY(-4px);
+        @media (hover: hover) {
+          .premium-card:hover {
+            transform: translateY(-4px);
+          }
         }
 
         p {
