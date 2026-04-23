@@ -5,6 +5,17 @@ export default defineConfig({
   plugins: [react()],
   publicDir: 'public',
   build: {
+    target: 'esnext',
+    sourcemap: false,
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      }
+    },
+    cssMinify: true,
+    reportCompressedSize: false,
     rollupOptions: {
       output: {
         manualChunks: {
@@ -12,8 +23,6 @@ export default defineConfig({
           lucide: ['lucide-react'],
         }
       }
-    },
-    target: 'esnext',
-    sourcemap: false,
+    }
   }
 })

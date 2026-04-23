@@ -206,6 +206,8 @@ function App() {
         <div className="absolute inset-0">
           <img
             src="/Harrow_club_workshop.jpg"
+            srcSet="/Harrow_club_workshop-mobile.jpg 600w, /Harrow_club_workshop.jpg 1920w"
+            sizes="(max-width: 768px) 100vw, 100vw"
             alt="STUF Financial Education"
             className="w-full h-full object-cover"
             style={{ objectPosition: '50% 35%' }}
@@ -246,6 +248,8 @@ function App() {
                 <div className="absolute -inset-6 bg-gradient-to-r from-pink-accent/20 to-pink-accent/5 blur-3xl rounded-full"></div>
                 <img
                   src="/1.jpg"
+                  srcSet="/1-mobile.jpg 600w, /1.jpg 1200w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   alt="Students learning"
                   className="relative rounded-3xl shadow-2xl ring-1 ring-white/10"
                   loading="eager"
@@ -355,8 +359,11 @@ function App() {
                 <div className="absolute -inset-4 bg-black/5 blur-2xl rounded-3xl"></div>
                 <img
                   src="/6.jpg"
+                  srcSet="/6-mobile.jpg 600w, /6.jpg 1200w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   alt="Teaching financial literacy"
                   className="relative rounded-3xl shadow-2xl ring-1 ring-black/10"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -698,8 +705,11 @@ function App() {
               <div className="absolute -inset-4 bg-pink-accent/5 blur-2xl rounded-3xl"></div>
               <img
                 src="/7.jpg"
+                srcSet="/7-mobile.jpg 600w, /7.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 alt="Impact visualization"
                 className="relative rounded-3xl shadow-2xl ring-1 ring-gray-200"
+                loading="lazy"
               />
             </div>
           </div>
