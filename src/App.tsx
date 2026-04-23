@@ -89,6 +89,15 @@ function App() {
         viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover');
       }
       document.documentElement.style.zoom = '1';
+      document.body.style.zoom = '1';
+    };
+
+    const handleScroll = () => {
+      forceZoom();
+      if (window.innerWidth < 768 && document.documentElement.clientWidth > window.innerWidth) {
+        document.documentElement.style.width = '100vw';
+        document.documentElement.style.overflowX = 'hidden';
+      }
     };
 
     document.addEventListener('touchmove', preventPinchZoom, { passive: false });
@@ -96,12 +105,18 @@ function App() {
     document.addEventListener('keydown', preventKeyZoom, { passive: false });
     document.addEventListener('wheel', preventWheelZoom, { passive: false });
     document.addEventListener('orientationchange', forceZoom);
+    document.addEventListener('scroll', handleScroll);
     window.addEventListener('load', forceZoom);
     window.addEventListener('resize', forceZoom);
 
     forceZoom();
 
-    const interval = setInterval(forceZoom, 500);
+    const interval = setInterval(() => {
+      forceZoom();
+      if (document.documentElement.clientWidth !== window.innerWidth) {
+        forceZoom();
+      }
+    }, 100);
 
     return () => {
       document.removeEventListener('touchmove', preventPinchZoom);
@@ -109,6 +124,7 @@ function App() {
       document.removeEventListener('keydown', preventKeyZoom);
       document.removeEventListener('wheel', preventWheelZoom);
       document.removeEventListener('orientationchange', forceZoom);
+      document.removeEventListener('scroll', handleScroll);
       window.removeEventListener('load', forceZoom);
       window.removeEventListener('resize', forceZoom);
       clearInterval(interval);
