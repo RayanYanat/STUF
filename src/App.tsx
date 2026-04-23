@@ -47,30 +47,6 @@ function App() {
     } else {
       document.body.classList.add('fonts-loaded');
     }
-
-    const preventPinchZoom = (e: TouchEvent) => {
-      if (e.touches.length > 1) {
-        e.preventDefault();
-      }
-    };
-
-    const preventDoubleClickZoom = () => {
-      const lastTouchEnd = { time: 0 };
-      document.addEventListener('touchend', (e) => {
-        const now = Date.now();
-        if (now - lastTouchEnd.time <= 300) {
-          e.preventDefault();
-        }
-        lastTouchEnd.time = now;
-      }, false);
-    };
-
-    document.addEventListener('touchmove', preventPinchZoom, { passive: false });
-    preventDoubleClickZoom();
-
-    return () => {
-      document.removeEventListener('touchmove', preventPinchZoom);
-    };
   }, []);
 
   useEffect(() => {
@@ -115,27 +91,6 @@ function App() {
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           overflow-x: hidden;
-          position: fixed;
-          width: 100%;
-          height: 100%;
-          touch-action: pan-y;
-          -webkit-user-select: none;
-          user-select: none;
-          -webkit-touch-callout: none;
-        }
-
-        html {
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-        }
-
-        #root {
-          width: 100%;
-          height: 100%;
-          overflow-y: auto;
-          overflow-x: hidden;
-          -webkit-overflow-scrolling: touch;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -150,19 +105,6 @@ function App() {
 
         html {
           scroll-behavior: smooth;
-          -webkit-text-size-adjust: 100%;
-          text-size-adjust: 100%;
-        }
-
-        * {
-          -webkit-tap-highlight-color: transparent;
-        }
-
-        @supports (width: 100svw) {
-          html, body, #root {
-            width: 100svw;
-            height: 100svh;
-          }
         }
 
         @media (max-width: 640px) {
