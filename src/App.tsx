@@ -50,6 +50,73 @@ function App() {
   }, []);
 
   useEffect(() => {
+    // Prevent all zoom mechanisms
+    const preventPinchZoom = (e: TouchEvent) => {
+      if (e.touches.length > 1) {
+        e.preventDefault();
+        return false;
+      }
+    };
+
+    let lastTouchEnd = 0;
+    const preventDoubleTap = (e: TouchEvent) => {
+      const now = Date.now();
+      if (now - lastTouchEnd <= 300) {
+        e.preventDefault();
+        return false;
+      }
+      lastTouchEnd = now;
+    };
+
+    const preventKeyZoom = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && (e.key === '+' || e.key === '-' || e.key === '=' || e.key === '_')) {
+        e.preventDefault();
+        return false;
+      }
+    };
+
+    const preventWheelZoom = (e: WheelEvent) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        return false;
+      }
+    };
+
+    // Force zoom to 100%
+    const forceZoom = () => {
+      const viewport = document.querySelector('meta[name="viewport"]');
+      if (viewport) {
+        viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover');
+      }
+      document.documentElement.style.zoom = '1';
+      (window as any).scrollTo({ left: 0, top: 0, behavior: 'auto' });
+    };
+
+    document.addEventListener('touchmove', preventPinchZoom, { passive: false });
+    document.addEventListener('touchend', preventDoubleTap, { passive: false });
+    document.addEventListener('keydown', preventKeyZoom, { passive: false });
+    document.addEventListener('wheel', preventWheelZoom, { passive: false });
+    document.addEventListener('orientationchange', forceZoom);
+    window.addEventListener('load', forceZoom);
+    window.addEventListener('resize', forceZoom);
+
+    forceZoom();
+
+    const interval = setInterval(forceZoom, 500);
+
+    return () => {
+      document.removeEventListener('touchmove', preventPinchZoom);
+      document.removeEventListener('touchend', preventDoubleTap);
+      document.removeEventListener('keydown', preventKeyZoom);
+      document.removeEventListener('wheel', preventWheelZoom);
+      document.removeEventListener('orientationchange', forceZoom);
+      window.removeEventListener('load', forceZoom);
+      window.removeEventListener('resize', forceZoom);
+      clearInterval(interval);
+    };
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -111,6 +178,26 @@ function App() {
           body {
             font-size: 16px;
           }
+
+          * {
+            max-width: 100%;
+            max-height: 100%;
+          }
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+
+        /* Lock zoom at 100% */
+        html {
+          zoom: 1 !important;
+        }
+
+        body.fonts-loaded {
+          zoom: 1 !important;
+          transform: scale(1) !important;
         }
 
         .gradient-text {
