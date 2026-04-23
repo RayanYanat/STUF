@@ -89,7 +89,6 @@ function App() {
         viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover');
       }
       document.documentElement.style.zoom = '1';
-      (window as any).scrollTo({ left: 0, top: 0, behavior: 'auto' });
     };
 
     document.addEventListener('touchmove', preventPinchZoom, { passive: false });
