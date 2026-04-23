@@ -1,7 +1,14 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { FileText, Users, TrendingUp, GraduationCap, Heart, Calendar, Target, Mail, Phone, MapPin, Home, Wallet, PiggyBank, Calculator, LineChart, Receipt, Key, Coins } from 'lucide-react';
 import MobileMenu from './components/MobileMenu';
+
+const CARD_STYLE = {
+  backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundBlendMode: 'overlay, normal'
+};
 
 const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { end: number; duration?: number; suffix?: string; isVisible: boolean }) => {
   const [count, setCount] = useState(0);
@@ -48,25 +55,13 @@ function App() {
       document.body.classList.add('fonts-loaded');
     }
 
-    const preventPinchZoom = (e: TouchEvent) => {
+    const preventPinchZoom = useCallback((e: TouchEvent) => {
       if (e.touches.length > 1) {
         e.preventDefault();
       }
-    };
-
-    const preventDoubleClickZoom = () => {
-      const lastTouchEnd = { time: 0 };
-      document.addEventListener('touchend', (e) => {
-        const now = Date.now();
-        if (now - lastTouchEnd.time <= 300) {
-          e.preventDefault();
-        }
-        lastTouchEnd.time = now;
-      }, false);
-    };
+    }, []);
 
     document.addEventListener('touchmove', preventPinchZoom, { passive: false });
-    preventDoubleClickZoom();
 
     return () => {
       document.removeEventListener('touchmove', preventPinchZoom);
@@ -74,41 +69,41 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const revealObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
             entry.target.classList.add('animate-in');
-            observer.unobserve(entry.target);
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
+    const statsObserver = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
           setCountersVisible(true);
-          observer.disconnect();
+          statsObserver.disconnect();
         }
       },
       { threshold: 0.1 }
     );
+
+    document.querySelectorAll('.scroll-reveal').forEach((el) => revealObserver.observe(el));
     const statsSection = document.getElementById('stats');
-    if (statsSection) observer.observe(statsSection);
-    return () => observer.disconnect();
+    if (statsSection) statsObserver.observe(statsSection);
+
+    return () => {
+      revealObserver.disconnect();
+      statsObserver.disconnect();
+    };
   }, []);
 
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap&subset=latin');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap&subset=latin');
 
         body {
           font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -323,7 +318,7 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={CARD_STYLE}>
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Financial Gap</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={6} isVisible={countersVisible} /> in 10
@@ -334,7 +329,7 @@ function App() {
               </p>
             </div>
 
-            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={CARD_STYLE}>
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Savings Crisis</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 11.5M
@@ -345,7 +340,7 @@ function App() {
               </p>
             </div>
 
-            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={CARD_STYLE}>
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Poverty Crisis</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={22} suffix="%" isVisible={countersVisible} />
@@ -356,7 +351,7 @@ function App() {
               </p>
             </div>
 
-            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={CARD_STYLE}>
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Housing Crisis</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 1 in <CountUpAnimation end={22} isVisible={countersVisible} />
@@ -367,7 +362,7 @@ function App() {
               </p>
             </div>
 
-            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={{ backgroundImage: 'url(/texture_background.png), linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0))', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay, normal' }}>
+            <div className="p-10 rounded-3xl scroll-reveal border border-gray-800 hover:border-pink-accent/50 transition-all premium-card group" style={CARD_STYLE}>
               <p className="text-white font-semibold text-base mb-6 uppercase tracking-wide">Youth Homelessness</p>
               <p className="stat-number mb-6 group-hover:scale-105 transition-transform">
                 <CountUpAnimation end={126} suffix="K" isVisible={countersVisible} />
@@ -796,6 +791,8 @@ function App() {
                   alt={`${workshop.name} workshop in action`}
                   className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
+                  width="800"
+                  height="320"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
                   <div className="p-8 w-full">
@@ -1030,6 +1027,9 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/BRENT%20LOGO%20%2B%20white%20%2B%20LOGOTYPE%20black%20small.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:514,h:200,cg:true"
                   alt="Brent Council"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
+                  width="514"
+                  height="200"
                 />
               </div>
 
