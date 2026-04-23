@@ -1,0 +1,116 @@
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Veneer Three', serif !important;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  -webkit-text-stroke: 0.45px currentColor;
+  paint-order: stroke fill;
+}
+
+img {
+  content-visibility: auto;
+  will-change: contents;
+}
+
+.gradient-text {
+  color: #FFFFFF;
+  font-family: 'Veneer Three', serif !important;
+}
+
+.pink-accent {
+  color: #FFC3C3;
+}
+
+.bg-pink-accent {
+  background-color: #FFC3C3;
+}
+
+.border-pink-accent {
+  border-color: #FFC3C3;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-reveal.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.fonts-loaded .scroll-reveal {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stat-number {
+  font-family: 'Veneer Three', serif !important;
+  font-size: clamp(48px, 8vw, 90px);
+  line-height: 1;
+  color: #FFC3C3;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  -webkit-text-stroke: 0.45px currentColor;
+  paint-order: stroke fill;
+}
+
+.premium-card {
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
+}
+
+@media (hover: hover) {
+  .premium-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+p {
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .scroll-reveal {
+    transition: opacity 0.5s ease-out !important;
+    transform: none !important;
+  }
+
+  .scroll-reveal.animate-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .premium-card:hover {
+    transform: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-reveal {
+    will-change: opacity;
+  }
+}
