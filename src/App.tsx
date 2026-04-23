@@ -46,6 +46,12 @@ const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { en
 function App() {
   const [countersVisible, setCountersVisible] = useState(false);
 
+  const preventPinchZoom = useCallback((e: TouchEvent) => {
+    if (e.touches.length > 1) {
+      e.preventDefault();
+    }
+  }, []);
+
   useEffect(() => {
     if (document.fonts.ready) {
       document.fonts.ready.then(() => {
@@ -55,18 +61,12 @@ function App() {
       document.body.classList.add('fonts-loaded');
     }
 
-    const preventPinchZoom = useCallback((e: TouchEvent) => {
-      if (e.touches.length > 1) {
-        e.preventDefault();
-      }
-    }, []);
-
     document.addEventListener('touchmove', preventPinchZoom, { passive: false });
 
     return () => {
       document.removeEventListener('touchmove', preventPinchZoom);
     };
-  }, []);
+  }, [preventPinchZoom]);
 
   useEffect(() => {
     const revealObserver = new IntersectionObserver(
