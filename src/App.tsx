@@ -38,7 +38,6 @@ const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { en
 
 function App() {
   const [countersVisible, setCountersVisible] = useState(false);
-  const [heroLoaded, setHeroLoaded] = useState(false);
 
   useEffect(() => {
     if (document.fonts.ready) {
@@ -49,16 +48,30 @@ function App() {
       document.body.classList.add('fonts-loaded');
     }
 
-    // Preload hero image after page renders
-    const timer = setTimeout(() => {
-      const img = new Image();
-      img.onload = () => setHeroLoaded(true);
-      img.src = window.innerWidth <= 768 ? '/Harrow_club_workshop-mobile.jpg' : '/Harrow_club_workshop.jpg';
-    }, 2000);
+    const preventPinchZoom = (e: TouchEvent) => {
+      if (e.touches.length > 1) {
+        e.preventDefault();
+      }
+    };
 
-    return () => clearTimeout(timer);
+    const preventDoubleClickZoom = () => {
+      const lastTouchEnd = { time: 0 };
+      document.addEventListener('touchend', (e) => {
+        const now = Date.now();
+        if (now - lastTouchEnd.time <= 300) {
+          e.preventDefault();
+        }
+        lastTouchEnd.time = now;
+      }, false);
+    };
+
+    document.addEventListener('touchmove', preventPinchZoom, { passive: false });
+    preventDoubleClickZoom();
+
+    return () => {
+      document.removeEventListener('touchmove', preventPinchZoom);
+    };
   }, []);
-
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -70,11 +83,10 @@ function App() {
           }
         });
       },
-      { threshold: 0.05 }
+      { threshold: 0.1 }
     );
 
-    const elements = document.querySelectorAll('.scroll-reveal');
-    elements.forEach((el) => observer.observe(el));
+    document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
@@ -95,6 +107,129 @@ function App() {
 
   return (
     <>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap&subset=latin');
+
+        body {
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          overflow-x: hidden;
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          touch-action: pan-y;
+          -webkit-user-select: none;
+          user-select: none;
+          -webkit-touch-callout: none;
+        }
+
+        html {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+
+        #root {
+          width: 100%;
+          height: 100%;
+          overflow-y: auto;
+          overflow-x: hidden;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+          font-family: 'Veneer Three', serif !important;
+          font-weight: 400 !important;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: geometricPrecision;
+          -webkit-text-stroke: 0.45px currentColor;
+          paint-order: stroke fill;
+        }
+
+        html {
+          scroll-behavior: smooth;
+          -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+        }
+
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        @supports (width: 100svw) {
+          html, body, #root {
+            width: 100svw;
+            height: 100svh;
+          }
+        }
+
+        @media (max-width: 640px) {
+          body {
+            font-size: 16px;
+          }
+        }
+
+        .gradient-text {
+          color: #FFFFFF;
+          font-family: 'Veneer Three', serif !important;
+        }
+
+        .pink-accent {
+          color: #FFC3C3;
+        }
+
+        .bg-pink-accent {
+          background-color: #FFC3C3;
+        }
+
+        .border-pink-accent {
+          border-color: #FFC3C3;
+        }
+
+        .scroll-reveal {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-reveal.animate-in {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        body.fonts-loaded .scroll-reveal {
+          transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .stat-number {
+          font-family: 'Veneer Three', serif !important;
+          font-size: clamp(48px, 8vw, 90px);
+          line-height: 1;
+          color: #FFC3C3;
+          font-weight: 400 !important;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: geometricPrecision;
+          -webkit-text-stroke: 0.45px currentColor;
+          paint-order: stroke fill;
+        }
+
+        .premium-card {
+          backdrop-filter: blur(10px);
+          transition: all 0.3s ease;
+        }
+
+        .premium-card:hover {
+          transform: translateY(-4px);
+        }
+
+        p {
+          line-height: 1.7;
+        }
+      `}</style>
+
       <header className="bg-white sticky top-0 z-50 border-b border-gray-100 backdrop-blur-lg bg-white/95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex justify-between items-center py-5 lg:py-6">
@@ -125,21 +260,24 @@ function App() {
         </div>
       </header>
 
-      <section className="relative w-full h-screen lg:h-[85vh] overflow-hidden bg-gradient-to-br from-gray-900 via-black to-black flex items-center justify-center" style={{ minHeight: '100vh' }}>
-        {heroLoaded && (
+      <section className="relative w-full h-[70vh] lg:h-[80vh] overflow-hidden">
+        <div className="absolute inset-0">
           <img
-            src={window.innerWidth <= 768 ? '/Harrow_club_workshop-mobile.jpg' : '/Harrow_club_workshop.jpg'}
+            src="/Harrow_club_workshop.jpg"
+            srcSet="/Harrow_club_workshop-mobile.jpg 600w, /Harrow_club_workshop.jpg 1920w"
+            sizes="(max-width: 768px) 100vw, 100vw"
             alt="STUF Financial Education"
-            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
-            style={{ objectPosition: '50% 35%', opacity: 0.7 }}
-            decoding="async"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: '50% 35%' }}
+            loading="eager"
+            fetchPriority="high"
           />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black"></div>
+        </div>
       </section>
 
-      <section className="relative bg-black text-white py-24 lg:py-40 overflow-hidden" style={{ contentVisibility: 'auto' }}>
-        <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255,195,195,0.1) 0%, transparent 50%)' }}></div>
+      <section className="relative bg-black text-white py-24 lg:py-40 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
