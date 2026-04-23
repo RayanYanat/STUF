@@ -38,6 +38,7 @@ const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { en
 
 function App() {
   const [countersVisible, setCountersVisible] = useState(false);
+  const [heroLoaded, setHeroLoaded] = useState(false);
 
   useEffect(() => {
     if (document.fonts.ready) {
@@ -47,6 +48,15 @@ function App() {
     } else {
       document.body.classList.add('fonts-loaded');
     }
+
+    // Preload hero image after page renders
+    const timer = setTimeout(() => {
+      const img = new Image();
+      img.onload = () => setHeroLoaded(true);
+      img.src = window.innerWidth <= 768 ? '/Harrow_club_workshop-mobile.jpg' : '/Harrow_club_workshop.jpg';
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, []);
 
 
@@ -115,24 +125,17 @@ function App() {
         </div>
       </header>
 
-      <section className="relative w-full h-screen lg:h-[85vh] overflow-hidden bg-gradient-to-b from-gray-900 to-black" style={{ minHeight: '100vh', contentVisibility: 'auto' }}>
-        <div className="absolute inset-0">
+      <section className="relative w-full h-screen lg:h-[85vh] overflow-hidden bg-gradient-to-br from-gray-900 via-black to-black flex items-center justify-center" style={{ minHeight: '100vh' }}>
+        {heroLoaded && (
           <img
-            src="/Harrow_club_workshop.jpg"
-            srcSet="/Harrow_club_workshop-mobile.jpg 640w, /Harrow_club_workshop.jpg 1920w"
-            sizes="(max-width: 640px) 640px, 100vw"
+            src={window.innerWidth <= 768 ? '/Harrow_club_workshop-mobile.jpg' : '/Harrow_club_workshop.jpg'}
             alt="STUF Financial Education"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: '50% 35%' }}
-            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
+            style={{ objectPosition: '50% 35%', opacity: 0.7 }}
             decoding="async"
-            onLoad={(e) => {
-              const img = e.currentTarget;
-              img.style.opacity = '1';
-            }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black"></div>
-        </div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black z-10"></div>
       </section>
 
       <section className="relative bg-black text-white py-24 lg:py-40 overflow-hidden" style={{ contentVisibility: 'auto' }}>
