@@ -115,25 +115,13 @@ function App() {
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           overflow-x: hidden;
-          position: fixed;
-          width: 100%;
-          height: 100%;
-          touch-action: pan-y;
           -webkit-user-select: none;
           user-select: none;
           -webkit-touch-callout: none;
         }
 
-        html {
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-        }
-
         #root {
           width: 100%;
-          height: 100%;
-          overflow-y: auto;
           overflow-x: hidden;
           -webkit-overflow-scrolling: touch;
         }
