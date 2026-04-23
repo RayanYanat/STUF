@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Users, TrendingUp, GraduationCap, Heart, Calendar, Target, Mail, Phone, MapPin, Home, Wallet, PiggyBank, Calculator, LineChart, Receipt, Key, Coins } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import MobileMenu from './components/MobileMenu';
 
 const CARD_STYLE = {
@@ -103,8 +103,6 @@ function App() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap&subset=latin');
-
         body {
           font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
           -webkit-font-smoothing: antialiased;
@@ -791,6 +789,7 @@ function App() {
                   alt={`${workshop.name} workshop in action`}
                   className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
+                  decoding="async"
                   width="800"
                   height="320"
                 />
@@ -850,6 +849,7 @@ function App() {
                         alt={member.name}
                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                         loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div className="p-10 flex flex-col justify-center w-full md:w-3/5">
@@ -919,6 +919,7 @@ function App() {
                         alt={member.name}
                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                         loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div className="p-10 flex flex-col justify-center w-full md:w-3/5">
@@ -1038,6 +1039,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/bentley%20logo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                   alt="Bentley"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1046,6 +1048,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Power%20up%20london%20logo.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:334,h:200,cg:true"
                   alt="Power Up London"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1054,6 +1057,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/CAF-Logo-Standard.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:320,h:200,cg:true"
                   alt="CAF"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1062,6 +1066,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Woodward-Logo-March-2023-374x374.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                   alt="Woodward"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1070,6 +1075,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/64ee2af5aa132.webp/:/rs=w:916,h:200,cg:true,m/cr=w:916,h:200"
                   alt="Partner"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1078,6 +1084,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/clothworkers_foundation_navy.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:650,h:200,cg:true"
                   alt="Clothworkers Foundation"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1086,6 +1093,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/images%20(2).png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                   alt="Partner"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1094,6 +1102,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/DiNN%2Blogo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
                   alt="DiNN"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1102,6 +1111,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-fdb8e4a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:200,h:200,cg:true"
                   alt="Partner"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1110,6 +1120,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Camden-Giving-cmyk-logo-01-300x133.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:300,h:133,cg:true"
                   alt="Camden Giving"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1118,6 +1129,7 @@ function App() {
                   src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/living%20wage.jpg/:/rs=w:253,h:200,cg:true,m/cr=w:253,h:200"
                   alt="Living Wage"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
 
@@ -1126,6 +1138,7 @@ function App() {
                   src="/image.png"
                   alt="Investec"
                   className="max-h-16 w-auto object-contain transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
             </div>
