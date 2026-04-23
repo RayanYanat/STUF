@@ -49,20 +49,6 @@ function App() {
     }
   }, []);
 
-  useEffect(() => {
-    // Simple pinch-zoom prevention
-    const preventPinchZoom = (e: TouchEvent) => {
-      if (e.touches.length > 1) {
-        e.preventDefault();
-      }
-    };
-
-    document.addEventListener('touchmove', preventPinchZoom, { passive: false });
-
-    return () => {
-      document.removeEventListener('touchmove', preventPinchZoom);
-    };
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -119,12 +105,31 @@ function App() {
         }
 
         html {
-          scroll-behavior: smooth;
+          scroll-behavior: auto;
+        }
+
+        @media (max-width: 640px) {
+          html {
+            scroll-behavior: auto;
+          }
+        }
+
+        img {
+          content-visibility: auto;
         }
 
         @media (max-width: 640px) {
           body {
             font-size: 16px;
+          }
+
+          .scroll-reveal {
+            transition: opacity 0.6s ease-out !important;
+            transform: none !important;
+          }
+
+          .scroll-reveal.animate-in {
+            transform: none !important;
           }
         }
 
@@ -158,6 +163,15 @@ function App() {
 
         body.fonts-loaded .scroll-reveal {
           transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+          }
         }
 
         .stat-number {
