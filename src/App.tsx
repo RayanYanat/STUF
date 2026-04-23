@@ -177,9 +177,11 @@ function App() {
           <nav className="flex justify-between items-center py-5 lg:py-6">
             <div className="flex items-center">
               <img
-                src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Logo_Web.svg/:/rs=h:69,cg:true,m/qt=q:100/ll"
+                src="/logo.png"
                 alt="STUF - Set Them Up Foundation"
                 className="h-10 lg:h-14"
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
             <div className="hidden lg:flex items-center space-x-1">
