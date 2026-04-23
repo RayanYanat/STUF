@@ -114,3 +114,16 @@ p {
     will-change: opacity;
   }
 }
+
+/* Critical rendering path optimization */
+header {
+  contain: layout style paint;
+}
+
+section {
+  contain: layout style paint;
+}
+
+img {
+  contain: strict;
+}

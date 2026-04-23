@@ -115,24 +115,28 @@ function App() {
         </div>
       </header>
 
-      <section className="relative w-full h-[70vh] lg:h-[80vh] overflow-hidden">
+      <section className="relative w-full h-screen lg:h-[85vh] overflow-hidden bg-gradient-to-b from-gray-900 to-black" style={{ minHeight: '100vh', contentVisibility: 'auto' }}>
         <div className="absolute inset-0">
           <img
             src="/Harrow_club_workshop.jpg"
-            srcSet="/Harrow_club_workshop-mobile.jpg 600w, /Harrow_club_workshop.jpg 1920w"
-            sizes="(max-width: 768px) 100vw, 100vw"
+            srcSet="/Harrow_club_workshop-mobile.jpg 640w, /Harrow_club_workshop.jpg 1920w"
+            sizes="(max-width: 640px) 640px, 100vw"
             alt="STUF Financial Education"
             className="w-full h-full object-cover"
             style={{ objectPosition: '50% 35%' }}
-            loading="eager"
-            fetchPriority="high"
+            loading="lazy"
+            decoding="async"
+            onLoad={(e) => {
+              const img = e.currentTarget;
+              img.style.opacity = '1';
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black"></div>
         </div>
       </section>
 
-      <section className="relative bg-black text-white py-24 lg:py-40 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
+      <section className="relative bg-black text-white py-24 lg:py-40 overflow-hidden" style={{ contentVisibility: 'auto' }}>
+        <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255,195,195,0.1) 0%, transparent 50%)' }}></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
