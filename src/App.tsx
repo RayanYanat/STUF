@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, MapPin } from 'lucide-react';
 import MobileMenu from './components/MobileMenu';
@@ -46,28 +46,6 @@ const CountUpAnimation = ({ end, duration = 2000, suffix = '', isVisible }: { en
 function App() {
   const [countersVisible, setCountersVisible] = useState(false);
 
-  const preventPinchZoom = useCallback((e: TouchEvent) => {
-    if (e.touches.length > 1) {
-      e.preventDefault();
-    }
-  }, []);
-
-  useEffect(() => {
-    if (document.fonts.ready) {
-      document.fonts.ready.then(() => {
-        document.body.classList.add('fonts-loaded');
-      });
-    } else {
-      document.body.classList.add('fonts-loaded');
-    }
-
-    document.addEventListener('touchmove', preventPinchZoom, { passive: false });
-
-    return () => {
-      document.removeEventListener('touchmove', preventPinchZoom);
-    };
-  }, [preventPinchZoom]);
-
   useEffect(() => {
     const revealObserver = new IntersectionObserver(
       (entries) => {
@@ -102,116 +80,7 @@ function App() {
 
   return (
     <>
-      <style>{`
-        body {
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          overflow-x: hidden;
-          -webkit-user-select: none;
-          user-select: none;
-          -webkit-touch-callout: none;
-        }
-
-        #root {
-          width: 100%;
-          overflow-x: hidden;
-          -webkit-overflow-scrolling: touch;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-          font-family: 'Veneer Three', serif !important;
-          font-weight: 400 !important;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          text-rendering: geometricPrecision;
-          -webkit-text-stroke: 0.45px currentColor;
-          paint-order: stroke fill;
-        }
-
-        html {
-          scroll-behavior: smooth;
-          -webkit-text-size-adjust: 100%;
-          text-size-adjust: 100%;
-        }
-
-        * {
-          -webkit-tap-highlight-color: transparent;
-        }
-
-        @supports (width: 100svw) {
-          html, body, #root {
-            width: 100svw;
-            height: 100svh;
-          }
-        }
-
-        @media (max-width: 640px) {
-          body {
-            font-size: 16px;
-          }
-        }
-
-        .gradient-text {
-          color: #FFFFFF;
-          font-family: 'Veneer Three', serif !important;
-        }
-
-        .pink-accent {
-          color: #FFC3C3;
-        }
-
-        .bg-pink-accent {
-          background-color: #FFC3C3;
-        }
-
-        .border-pink-accent {
-          border-color: #FFC3C3;
-        }
-
-        .scroll-reveal {
-          opacity: 0;
-          transform: translateY(30px);
-          transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .scroll-reveal.animate-in {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        body.fonts-loaded .scroll-reveal {
-          transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .stat-number {
-          font-family: 'Veneer Three', serif !important;
-          font-size: clamp(48px, 8vw, 90px);
-          line-height: 1;
-          color: #FFC3C3;
-          font-weight: 400 !important;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          text-rendering: geometricPrecision;
-          -webkit-text-stroke: 0.45px currentColor;
-          paint-order: stroke fill;
-        }
-
-        .premium-card {
-          backdrop-filter: blur(10px);
-          transition: all 0.3s ease;
-        }
-
-        .premium-card:hover {
-          transform: translateY(-4px);
-        }
-
-        p {
-          line-height: 1.7;
-        }
-      `}</style>
-
-      <header className="bg-white sticky top-0 z-50 border-b border-gray-100 backdrop-blur-lg bg-white/95">
+      <header className="bg-white sticky top-0 z-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex justify-between items-center py-5 lg:py-6">
             <div className="flex items-center">
@@ -284,7 +153,7 @@ function App() {
             </div>
             <div className="scroll-reveal hidden lg:block">
               <div className="relative">
-                <div className="absolute -inset-6 bg-gradient-to-r from-pink-accent/20 to-pink-accent/5 blur-3xl rounded-full"></div>
+                <div className="absolute -inset-6 bg-gradient-to-r from-pink-accent/20 to-pink-accent/5 rounded-full opacity-40"></div>
                 <img
                   src="/1.jpg"
                   srcSet="/1-mobile.jpg 600w, /1.jpg 1200w"
@@ -301,7 +170,7 @@ function App() {
         </div>
       </section>
 
-      <section id="stats" className="bg-black py-20 lg:py-32">
+      <section id="stats" className="bg-black py-20 lg:py-32 section-lazy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">The Reality</p>
@@ -374,7 +243,7 @@ function App() {
         </div>
       </section>
 
-      <section id="about" className="bg-pink-accent py-20 lg:py-32">
+      <section id="about" className="bg-pink-accent py-20 lg:py-32 section-lazy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="scroll-reveal">
@@ -395,7 +264,7 @@ function App() {
             </div>
             <div className="scroll-reveal">
               <div className="relative">
-                <div className="absolute -inset-4 bg-black/5 blur-2xl rounded-3xl"></div>
+                <div className="absolute -inset-4 bg-black/5 rounded-3xl"></div>
                 <img
                   src="/6.jpg"
                   srcSet="/6-mobile.jpg 600w, /6.jpg 1200w"
@@ -410,7 +279,7 @@ function App() {
         </div>
       </section>
 
-      <section id="who-we-help" className="bg-white py-20 lg:py-32">
+      <section id="who-we-help" className="bg-white py-20 lg:py-32 section-lazy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Who We Help</p>
@@ -472,10 +341,10 @@ function App() {
         </div>
       </section>
 
-      <section id="how-it-works" className="bg-gradient-to-b from-gray-50 to-white py-20 lg:py-32 relative overflow-hidden">
+      <section id="how-it-works" className="bg-gradient-to-b from-gray-50 to-white py-20 lg:py-32 relative overflow-hidden section-lazy">
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-pink-accent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-accent rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-pink-accent rounded-full"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-accent rounded-full"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -568,7 +437,7 @@ function App() {
         </div>
       </section>
 
-      <section id="programs" className="bg-pink-accent py-20 lg:py-32">
+      <section id="programs" className="bg-pink-accent py-20 lg:py-32 section-lazy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-[45%_55%] gap-12 items-start">
             <div className="scroll-reveal lg:sticky lg:top-32">
@@ -685,7 +554,7 @@ function App() {
         </div>
       </section>
 
-      <section id="impact" className="bg-gradient-to-b from-gray-50 to-white py-20 lg:py-32">
+      <section id="impact" className="bg-gradient-to-b from-gray-50 to-white py-20 lg:py-32 section-lazy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Impact</p>
@@ -741,7 +610,7 @@ function App() {
               </div>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 bg-pink-accent/5 blur-2xl rounded-3xl"></div>
+              <div className="absolute -inset-4 bg-pink-accent/5 rounded-3xl"></div>
               <img
                 src="/7.jpg"
                 srcSet="/7-mobile.jpg 600w, /7.jpg 1200w"
@@ -756,7 +625,7 @@ function App() {
       </section>
 
 
-      <section className="bg-white py-20 lg:py-32">
+      <section className="bg-white py-20 lg:py-32 section-lazy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-5xl mx-auto">
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
@@ -771,17 +640,17 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: 'Bristol STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Bristol%20Class%20STUF.jpg/:/cr=t:11.67%25,l:0%25,w:100%25,h:76.67%25/rs=w:800,h:800,cg:true' },
-              { name: 'Brent STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20240306-WA0014.jpg/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true' },
-              { name: 'Barnet STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_4275.jpeg/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true' },
-              { name: 'Bushey STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_4243.jpeg/:/cr=t:21.15%25,l:11.54%25,w:76.92%25,h:57.69%25/rs=w:800,h:800,cg:true,m' },
-              { name: 'Camden STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0094.jpg/:/cr=t:18.7%25,l:0%25,w:100%25,h:75%25/rs=w:800,h:800,cg:true' },
-              { name: 'Croydon STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/20241120_100054.jpg/:/cr=t:31.31%25,l:0%25,w:100%25,h:46.72%25/rs=w:800,h:800,cg:true' },
-              { name: 'Harrow STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20240228-WA0021.jpg/:/cr=t:12.5%25,l:0%25,w:100%25,h:75%25/rs=w:800,h:800,cg:true' },
-              { name: 'Kensington & Chelsea STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-9fc4e86.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true' },
-              { name: 'King College STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_2268.JPG/:/cr=t:0%25,l:0%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true' },
-              { name: 'Kent STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0079.jpg/:/rs=w:800,h:800,cg:true,m/cr=w:800,h:800' },
-              { name: 'Southwark STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-1a71eb1.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:800,h:800,cg:true' },
+              { name: 'Bristol STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Bristol%20Class%20STUF.jpg/:/cr=t:11.67%25,l:0%25,w:100%25,h:76.67%25/rs=w:480,h:480,cg:true' },
+              { name: 'Brent STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20240306-WA0014.jpg/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:480,h:480,cg:true' },
+              { name: 'Barnet STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_4275.jpeg/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:480,h:480,cg:true' },
+              { name: 'Bushey STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_4243.jpeg/:/cr=t:21.15%25,l:11.54%25,w:76.92%25,h:57.69%25/rs=w:480,h:480,cg:true,m' },
+              { name: 'Camden STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0094.jpg/:/cr=t:18.7%25,l:0%25,w:100%25,h:75%25/rs=w:480,h:480,cg:true' },
+              { name: 'Croydon STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/20241120_100054.jpg/:/cr=t:31.31%25,l:0%25,w:100%25,h:46.72%25/rs=w:480,h:480,cg:true' },
+              { name: 'Harrow STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20240228-WA0021.jpg/:/cr=t:12.5%25,l:0%25,w:100%25,h:75%25/rs=w:480,h:480,cg:true' },
+              { name: 'Kensington & Chelsea STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-9fc4e86.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:480,h:480,cg:true' },
+              { name: 'King College STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG_2268.JPG/:/cr=t:0%25,l:0%25,w:75%25,h:100%25/rs=w:480,h:480,cg:true' },
+              { name: 'Kent STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/IMG-20230612-WA0079.jpg/:/rs=w:480,h:480,cg:true,m/cr=w:480,h:480' },
+              { name: 'Southwark STUF', image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-1a71eb1.png/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:480,h:480,cg:true' },
             ].map((workshop) => (
               <div key={workshop.name} className="group relative overflow-hidden rounded-3xl scroll-reveal premium-card">
                 <img
@@ -813,7 +682,7 @@ function App() {
         </div>
       </section>
 
-      <section id="team" className="bg-white py-20 lg:py-32">
+      <section id="team" className="bg-white py-20 lg:py-32 section-lazy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Our Team</p>
@@ -831,14 +700,14 @@ function App() {
                   role: 'Development Director',
                   bio: 'Sales and marketing guy. Started STUF to teach the money STUF schools don\'t.',
                   quote: 'Left school at 16. Had no clue about money. Started STUF so other young people don\'t make the same mistakes.',
-                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png'
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png/:/rs=w:400,h:400,cg:true'
                 },
                 {
                   name: 'Jermaine Bishop',
                   role: 'Operations Director',
                   bio: '15+ years in tech. Co-founded STUF to teach free money STUF to young people who need it.',
                   quote: 'Teach kids to manage, save and invest. Open doors. Give them opportunities.',
-                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png'
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png/:/rs=w:400,h:400,cg:true'
                 },
               ].map((member) => (
                 <div key={member.name} className="rounded-3xl overflow-hidden scroll-reveal group" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -878,19 +747,19 @@ function App() {
                   name: 'Thomas Hamer',
                   role: 'Co-Chair Board – Research',
                   bio: '9+ years across venture capital, corporate banking, and wealth management.',
-                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png'
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Thomas.png/:/rs=w:400,h:400,cg:true'
                 },
                 {
                   name: 'Matthew Smith',
                   role: 'Co-Chair Board – Business Development & Delivery',
                   bio: 'Sports and business development expertise with major European companies.',
-                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Matthew.png'
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Matthew.png/:/rs=w:400,h:400,cg:true'
                 },
                 {
                   name: 'Zofia Barnes',
                   role: 'Policy – Board Member',
                   bio: '11+ years in banking. LSE Masters in Gender Studies, Policy & Inequalities.',
-                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Zofia.png'
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Zofia.png/:/rs=w:400,h:400,cg:true'
                 },
                 {
                   name: 'Paul Mokuolu',
@@ -908,7 +777,7 @@ function App() {
                   name: 'Truman Alberto Sullivan',
                   role: 'Advisory Board Member',
                   bio: 'Head of Rugby at Skinners School, Kent. Decade in education sector.',
-                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png'
+                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Truman.png/:/rs=w:400,h:400,cg:true'
                 },
               ].map((member) => (
                 <div key={member.name} className="rounded-3xl overflow-hidden scroll-reveal group" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -939,7 +808,7 @@ function App() {
         </div>
       </section>
 
-      <section id="donate" className="bg-white py-20 lg:py-32">
+      <section id="donate" className="bg-white py-20 lg:py-32 section-lazy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="scroll-reveal">
@@ -1001,7 +870,7 @@ function App() {
         </div>
       </section>
 
-      <section id="partners" className="bg-gray-50 py-20 lg:py-32">
+      <section id="partners" className="bg-gray-50 py-20 lg:py-32 section-lazy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Partners</p>
@@ -1025,110 +894,110 @@ function App() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/BRENT%20LOGO%20%2B%20white%20%2B%20LOGOTYPE%20black%20small.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:514,h:200,cg:true"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/BRENT%20LOGO%20%2B%20white%20%2B%20LOGOTYPE%20black%20small.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:260,h:100,cg:true"
                   alt="Brent Council"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
-                  width="514"
-                  height="200"
+                  width="260"
+                  height="100"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/bentley%20logo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/bentley%20logo.png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100"
                   alt="Bentley"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Power%20up%20london%20logo.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:334,h:200,cg:true"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Power%20up%20london%20logo.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:170,h:100,cg:true"
                   alt="Power Up London"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/CAF-Logo-Standard.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:320,h:200,cg:true"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/CAF-Logo-Standard.webp/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:160,h:100,cg:true"
                   alt="CAF"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Woodward-Logo-March-2023-374x374.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Woodward-Logo-March-2023-374x374.jpg/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100"
                   alt="Woodward"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/64ee2af5aa132.webp/:/rs=w:916,h:200,cg:true,m/cr=w:916,h:200"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/64ee2af5aa132.webp/:/rs=w:300,h:100,cg:true,m/cr=w:300,h:100"
                   alt="Partner"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/clothworkers_foundation_navy.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:650,h:200,cg:true"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/clothworkers_foundation_navy.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:260,h:80,cg:true"
                   alt="Clothworkers Foundation"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/images%20(2).png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/images%20(2).png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100"
                   alt="Partner"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/DiNN%2Blogo.png/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/DiNN%2Blogo.png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100"
                   alt="DiNN"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-fdb8e4a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:200,h:200,cg:true"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/blob-fdb8e4a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:100,h:100,cg:true"
                   alt="Partner"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Camden-Giving-cmyk-logo-01-300x133.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:300,h:133,cg:true"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/Camden-Giving-cmyk-logo-01-300x133.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:150,h:67,cg:true"
                   alt="Camden Giving"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
 
               <div className="bg-white p-6 rounded-2xl shadow-sm premium-card border border-gray-100 flex items-center justify-center">
                 <img
-                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/living%20wage.jpg/:/rs=w:253,h:200,cg:true,m/cr=w:253,h:200"
+                  src="https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/living%20wage.jpg/:/rs=w:130,h:100,cg:true,m/cr=w:130,h:100"
                   alt="Living Wage"
-                  className="max-h-16 w-auto object-contain transition-all duration-300"
+                  className="max-h-16 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
@@ -1152,7 +1021,7 @@ function App() {
         </div>
       </section>
 
-      <section id="contact" className="bg-white py-20 lg:py-32">
+      <section id="contact" className="bg-white py-20 lg:py-32 section-lazy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 scroll-reveal max-w-4xl mx-auto">
             <p className="text-pink-accent font-semibold text-sm uppercase tracking-widest mb-6">Contact Us</p>

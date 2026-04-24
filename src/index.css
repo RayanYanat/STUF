@@ -1,87 +1,35 @@
 @font-face {
-  font-family: 'Veneer Two';
-  src: url('/veneer-two.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  size-adjust: 95%;
-}
-
-@font-face {
   font-family: 'Veneer Three';
   src: url('/veneer-three-regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  size-adjust: 95%;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  @keyframes fade-in-up {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes fade-in-right {
-    from {
-      opacity: 0;
-      transform: translateX(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes scale-in {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  .animate-fade-in-up {
-    animation: fade-in-up 0.8s ease-out;
-  }
-
-  .animate-fade-in-right {
-    animation: fade-in-right 0.8s ease-out;
-  }
-
-  .animate-fade-in {
-    animation: fade-in 0.6s ease-out;
-  }
-
-  .animate-scale-in {
-    animation: scale-in 0.5s ease-out;
-  }
-}
-
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -95,4 +43,62 @@ h1, h2, h3, h4, h5, h6,
   text-rendering: geometricPrecision;
   -webkit-text-stroke: 0.45px currentColor;
   paint-order: stroke fill;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.gradient-text {
+  color: #FFFFFF;
+  font-family: 'Veneer Three', serif !important;
+}
+
+.pink-accent {
+  color: #FFC3C3;
+}
+
+.bg-pink-accent {
+  background-color: #FFC3C3;
+}
+
+.border-pink-accent {
+  border-color: #FFC3C3;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-reveal.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stat-number {
+  font-size: clamp(48px, 8vw, 90px);
+  line-height: 1;
+  color: #FFC3C3;
+}
+
+.premium-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-4px);
+}
+
+.section-lazy {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
 }

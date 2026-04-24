@@ -26,87 +26,8 @@ function ImpactReports() {
 
   return (
     <>
-      <style>{`
-        h1, h2, h3, h4, h5, h6 {
-          font-family: 'Veneer Regular', 'Impact', sans-serif;
-          font-weight: 700;
-          letter-spacing: -0.02em;
-          text-transform: uppercase;
-        }
-
-        * {
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-        }
-
-        html {
-          scroll-behavior: smooth;
-        }
-
-        body {
-          overflow-x: hidden;
-        }
-
-        .scroll-reveal {
-          opacity: 0;
-          transform: translateY(30px);
-          transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-                      transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .scroll-reveal.animate-in {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        .gradient-text {
-          background: linear-gradient(135deg, #EEBDC2 0%, #C9969E 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-
-        .shine-effect {
-          position: relative;
-          overflow: hidden;
-        }
-
-        .shine-effect::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-          transition: left 0.5s;
-        }
-
-        .shine-effect:hover::before {
-          left: 100%;
-        }
-
-        .premium-card {
-          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .premium-card:hover {
-          transform: translateY(-8px);
-        }
-
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
-        }
-
-        .animate-float {
-          animation: float 6s ease-in-out infinite;
-        }
-      `}</style>
-
       <div className="min-h-screen bg-white">
-        <header className="bg-white sticky top-0 z-50 border-b border-gray-100 backdrop-blur-lg bg-white/95">
+        <header className="bg-white sticky top-0 z-50 border-b border-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <nav className="flex justify-between items-center py-5 lg:py-6">
               <Link to="/" className="flex items-center group">

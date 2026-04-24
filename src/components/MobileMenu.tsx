@@ -53,7 +53,7 @@ export default function MobileMenu() {
       {isOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+            className="fixed inset-0 bg-black/60 z-40"
             style={{ top: '73px' }}
             onClick={() => setIsOpen(false)}
           />

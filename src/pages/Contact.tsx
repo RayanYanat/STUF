@@ -5,26 +5,6 @@ function Contact() {
 
   return (
     <>
-      <style>{`
-        h1, h2, h3, h4, h5, h6 {
-          font-family: 'Veneer Regular', 'Impact', sans-serif;
-          font-weight: 700;
-          letter-spacing: -0.02em;
-          text-transform: uppercase;
-        }
-
-        * {
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        }
-
-        .gradient-text {
-          background: linear-gradient(135deg, #FFC3C3 0%, #FFD5D5 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-      `}</style>
-
       <header className="bg-pink-accent sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex justify-between items-center py-4 lg:py-6">
@@ -64,7 +44,7 @@ function Contact() {
               </a>
             </div>
 
-            <div className="bg-white/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-200">
+            <div className="bg-white p-8 rounded-3xl border border-gray-200">
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-pink-accent flex-shrink-0 mt-1" />
                 <div>
