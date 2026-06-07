@@ -6,6 +6,14 @@ export default defineConfig({
   publicDir: 'public',
   server: {
     middlewareMode: false,
+    // Local dev: serve the app from Vite (5173) and forward chatbot function
+    // calls to the netlify dev runtime on 8888.
+    proxy: {
+      '/.netlify/functions': {
+        target: 'http://localhost:8888',
+        changeOrigin: true,
+      },
+    },
   },
   build: {
     target: 'es2020',
