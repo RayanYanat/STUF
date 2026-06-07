@@ -5,6 +5,7 @@ import App from './App.tsx';
 import './index.css';
 
 const ImpactReports = lazy(() => import('./pages/ImpactReports.tsx'));
+const ChatWidget = lazy(() => import('./components/Chatbot/ChatWidget.tsx'));
 
 function ScrollToTop() {
   const location = useLocation();
@@ -25,6 +26,9 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/" element={<App />} />
           <Route path="/impact-reports" element={<ImpactReports />} />
         </Routes>
+      </Suspense>
+      <Suspense fallback={null}>
+        <ChatWidget />
       </Suspense>
     </BrowserRouter>
   </StrictMode>
