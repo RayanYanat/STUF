@@ -693,7 +693,7 @@ function App() {
 
           <div className="mb-16">
             <h3 className="text-3xl font-bold text-black mb-8 scroll-reveal">Founders</h3>
-            <div className="grid grid-cols-1 gap-8 max-w-2xl">
+            <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
               {[
                 {
                   name: 'James Jordan',
