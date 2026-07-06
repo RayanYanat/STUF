@@ -693,7 +693,7 @@ function App() {
 
           <div className="mb-16">
             <h3 className="text-3xl font-bold text-black mb-8 scroll-reveal">Founders</h3>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 gap-8 max-w-2xl">
               {[
                 {
                   name: 'James Jordan',
@@ -701,13 +701,6 @@ function App() {
                   bio: 'Sales and marketing guy. Started STUF to teach the money STUF schools don\'t.',
                   quote: 'Left school at 16. Had no clue about money. Started STUF so other young people don\'t make the same mistakes.',
                   image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_James.png/:/rs=w:400,h:400,cg:true'
-                },
-                {
-                  name: 'Jermaine Bishop',
-                  role: 'Operations Director',
-                  bio: '15+ years in tech. Co-founded STUF to teach free money STUF to young people who need it.',
-                  quote: 'Teach kids to manage, save and invest. Open doors. Give them opportunities.',
-                  image: 'https://img1.wsimg.com/isteam/ip/38f5ab4c-5e7f-492b-a381-8756166883f9/STUF_Headshots_Jermaine.png/:/rs=w:400,h:400,cg:true'
                 },
               ].map((member) => (
                 <div key={member.name} className="rounded-3xl overflow-hidden scroll-reveal group" style={{ backgroundImage: 'url(/texture_background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
